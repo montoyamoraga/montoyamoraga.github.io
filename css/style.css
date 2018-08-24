@@ -1,3 +1,38 @@
 body {
+    background-color: #fff;
     font-family: 'Lato', sans-serif;
+}
+
+#main-text {
+    margin: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+p {
+    font-size: 15pt;
+    line-height: 1.4em;
+    max-width: 750px;
+    margin: 3.0% 7.0%;
+}
+
+a {
+    text-decoration: none;
+    color: #00E600;
+    background-color: #ffffff;
+    text-shadow: -1px 4px 3px rgba(238, 130, 238, 0.4);
+}
+
+a:hover {
+    background-color: #000000;
+}
+
+@media screen and (max-width: 500px) {
+    p {
+        font-size: 15pt;
+        line-height: 1.7em;
+        width: 100%;
+    }
 }
