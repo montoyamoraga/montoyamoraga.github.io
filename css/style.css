@@ -20,9 +20,8 @@ p {
 
 a {
     text-decoration: none;
-    color: #00E600;
+    color: magenta;
     background-color: #ffffff;
-    text-shadow: -1px 4px 3px rgba(238, 130, 238, 0.4);
 }
 
 a:hover, a:active {
