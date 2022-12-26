@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  max-width: 100%;
+  font-family: sans-serif;
+  margin: 30px;
+}
+
+img {
+  max-width: 100%;
+}
+
+video {
+  max-width: 100%;
+}
+
+p {
+  font-size: 15pt;
+  line-height: 1.5em;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: magenta;
+  background-color: #ffffff;
+}
+
+a:hover,
+a:active {
+  /* background-color: #000000; */
+  color: magenta;
+  border: 1px solid;
+  box-shadow: 5px 10px greenyellow;
+}
+
+div {
+  margin: 20px;
+}
+
+.cajita {
+  border: 1px solid;
+  box-shadow: 5px 10px greenyellow;
+}
+
+.contenedor {
+  max-width: 100%;
+  margin: auto;
+}
+
+.proyectos {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  text-align: center;
+}
+
+.proyectos li {
+  list-style: none;
+  margin: 3px;
+  padding: 0;
+  width: 25%;
+  padding: 20px 20px 20px 20px;
+  margin: 0;
+}
+
+.proyectos a {
+  padding: 4px;
+  padding: 0;
+  display: block;
+  text-decoration: none;
+}
+
+.proyectos .titulo {
+  font-style: normal;
+}
+
+.proyectos .proyecto-meta {
+  margin-top: 5px;
+}
+
+.proyectos img {
+  width: 100%;
+  display: block;
+}
+
+.proyectos video {
+  width: 100%;
+  padding-top: auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1200px) {
+  .proyectos li {
+    width: 33%;
+    padding: 20px;
+    margin: 0;
+  }
+  .masonry {
+    column-count: 2;
+    column-gap: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 950px) {
+  .proyectos li {
+    width: 50%;
+    padding: 20px;
+    margin: 0;
+  }
+  .student-projects {
+    column-count: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .proyectos li {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+  header {
+    padding: 10px;
+    text-align: left;
+  }
+  #logo {
+    padding: 0;
+    display: block;
+  }
+  header nav {
+    margin: 0;
+  }
+  header nav a {
+    margin: 0;
+    padding: 0;
+  }
+  .masonry {
+    column-count: 1;
+    column-gap: 0;
+    padding: 10px;
+  }
+}
