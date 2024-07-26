@@ -12,20 +12,20 @@ div {
   flex-direction: row;
 }
 
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
-  }
-}
-
 .left {
   background-color: magenta;
-  flex-grow: 1;
+  flex-grow: 0;
 }
 
 .right {
   background-color: greenyellow;
-  flex-grow: 4;
+  flex-grow: 0;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
 
 body {
@@ -78,7 +78,7 @@ p {
 }
 
 li {
-  margin: auto;
+  margin: 10px;
 }
 
 /* .proyectos {
