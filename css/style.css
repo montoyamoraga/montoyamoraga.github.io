@@ -1,5 +1,31 @@
 * {
   box-sizing: border-box;
+  align-items: stretch;
+}
+
+div {
+  margin: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+.left {
+  background-color: magenta;
+  flex-grow: 1;
+}
+
+.right {
+  background-color: greenyellow;
+  flex-grow: 4;
 }
 
 body {
@@ -7,15 +33,6 @@ body {
   max-width: 100%;
   font-family: sans-serif;
   margin: 30px;
-}
-
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-  padding: 10px;
 }
 
 img {
@@ -40,19 +57,15 @@ a {
 
 a:hover,
 a:active {
-  /* background-color: #000000; */
+  background-color: #000000;
   color: magenta;
   border: 1px solid;
   box-shadow: 5px 10px greenyellow;
 }
 
-div {
-  margin: 20px;
-}
-
 .cajita {
   border: 1px solid;
-  box-shadow: 5px 10px greenyellow;
+  box-shadow: 5px 10px magenta;
 }
 
 .contenedor {
@@ -60,7 +73,15 @@ div {
   margin: auto;
 }
 
-.proyectos {
+h1 {
+  margin: auto;
+}
+
+li {
+  margin: auto;
+}
+
+/* .proyectos {
   text-align: center;
   list-style: none;
   margin: 0;
@@ -69,36 +90,36 @@ div {
   flex-wrap: wrap;
   text-align: left;
   text-align: center;
-}
+} */
 
-.proyectos li {
+/* .proyectos li {
   list-style: none;
   margin: 3px;
   padding: 0;
   width: 25%;
   padding: 20px 20px 20px 20px;
   margin: 0;
-}
+} */
 
-.proyectos a {
+/* .proyectos a {
   padding: 4px;
   padding: 0;
   display: block;
   text-decoration: none;
-}
+} */
 
-.proyectos .titulo {
+/* .proyectos .titulo {
   font-style: normal;
-}
+} */
 
-.proyectos .proyecto-meta {
+/* .proyectos .proyecto-meta {
   margin-top: 5px;
-}
+} */
 
-.proyectos img {
+/* .proyectos img {
   width: 100%;
   display: block;
-}
+} */
 
 /* .proyectos video {
   width: 100%;
@@ -109,7 +130,7 @@ div {
   transform: translateY(-50%);
 } */
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .proyectos li {
     width: 33%;
     padding: 20px;
@@ -120,9 +141,9 @@ div {
     column-gap: 20px;
     padding: 20px;
   }
-}
+} */
 
-@media (max-width: 950px) {
+/* @media (max-width: 950px) {
   .proyectos li {
     width: 50%;
     padding: 20px;
@@ -131,9 +152,9 @@ div {
   .student-projects {
     column-count: 1;
   }
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .proyectos li {
     width: 100%;
     padding: 10px;
@@ -159,4 +180,4 @@ div {
     column-gap: 0;
     padding: 10px;
   }
-}
+} */
