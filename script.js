@@ -20,6 +20,10 @@ function updateContent(langData) {
     const key = element.getAttribute('data-i18n');
     element.innerHTML = langData[key];
   });
+  document.querySelectorAll('[data-link]').forEach((element) => {
+    const key = element.getAttribute('data-link');
+    element.href = langData[key];
+  });
 }
 
 function setLanguagePreference(lang) {

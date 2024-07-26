@@ -13,7 +13,7 @@ div {
 }
 
 .left {
-  background-color: magenta;
+  background-color: pink;
   flex-grow: 0;
 }
 
@@ -63,7 +63,7 @@ a:active {
 
 .cajita {
   border: 1px solid;
-  box-shadow: 5px 10px magenta;
+  box-shadow: 5px 10px pink;
 }
 
 .contenedor {
