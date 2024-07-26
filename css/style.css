@@ -9,6 +9,15 @@ body {
   margin: 30px;
 }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+}
+
 img {
   max-width: 100%;
 }
