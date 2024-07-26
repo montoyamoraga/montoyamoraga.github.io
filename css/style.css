@@ -50,17 +50,15 @@ p {
 }
 
 a {
-  text-decoration: none;
-  color: magenta;
-  background-color: #ffffff;
+  text-decoration: underline;
+  color: blue;
+  /* background-color: #ffffff; */
 }
 
 a:hover,
 a:active {
-  background-color: #000000;
-  color: magenta;
-  border: 1px solid;
-  box-shadow: 5px 10px greenyellow;
+  background-color: white;
+  color: blue;
 }
 
 .cajita {
@@ -73,8 +71,10 @@ a:active {
   margin: auto;
 }
 
-h1 {
-  margin: auto;
+h1,
+h2,
+p {
+  margin: 10px;
 }
 
 li {
