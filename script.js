@@ -24,6 +24,10 @@ function updateContent(langData) {
     const key = element.getAttribute('data-link');
     element.href = langData[key];
   });
+  document.querySelectorAll('[data-image]').forEach((element) => {
+    const key = element.getAttribute('data-image');
+    element.src = langData[key];
+  });
 }
 
 function setLanguagePreference(lang) {
