@@ -47,6 +47,12 @@ let navbar = `
         <a data-i18n="teaching-dis9034" href="/teaching/dis9034"></a>
         </li>
     </ol>
+    <h5 data-i18n="undergraduate-uai"></h5>
+    <ol>
+        <li>
+        <a data-i18n="teaching-dis145" href="/teaching/dis145"></a>
+        </li>
+    </ol>
     </div>
     <div>
     <p data-i18n="archive"></p>

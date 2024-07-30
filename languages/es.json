@@ -9,6 +9,7 @@
   "teaching": "docencia",
   "undergraduate-uchile": "pregrado - universidad de chile",
   "undergraduate-udp": "pregrado - universidad diego portales",
+  "undergraduate-uai": "pregrado - universidad adolfo ibáńez",
   "teaching-institution": "institución",
   "teaching-course-description": "descripción del curso",
   "teaching-team": "equipo docente",
@@ -143,5 +144,6 @@
   "teaching-aud5i022": "aud5i022 - diseño de interfaces electrónicas",
   "teaching-audiv020": "audiv020 - diseño de instrumentos musicales digitales",
   "teaching-audiv027": "audiv027 - inteligencia artificial",
+  "teaching-dis145": "dis145 - diseño y construcción de interfaces",
   "myself-professional-name": "aarón montoya-moraga"
 }
