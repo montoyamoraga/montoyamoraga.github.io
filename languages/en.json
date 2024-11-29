@@ -1,4 +1,5 @@
 {
+  "colophon": "this website was manually written using HTML, CSS, and JS. it doesn't rely on external libraries, nor use any tracking system or cookies, nor collect data about you when you visit. it is hosted on GitHub Pages.",
   "archive": "archive",
   "archive-power-supply": "power supply",
   "home": "home",
