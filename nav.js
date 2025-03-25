@@ -13,6 +13,26 @@ let navbar = `
     </ol>
     </div>
     <div>
+    <h5 data-i18n="undergraduate-udp"></h5>
+    <ol>
+        <li>
+        <a data-i18n="teaching-dis8644" href="/teaching/dis8644/"></a>
+        </li>
+        <li>
+        <a data-i18n="teaching-dis8636" href="/teaching/dis8636/"></a>
+        </li>
+        <li>
+        <a data-i18n="teaching-dis8637" href="/teaching/dis8637"></a>
+        </li>
+        <li>
+        <a data-i18n="teaching-dis9005" href="/teaching/dis9005"></a>
+        </li>
+        <li>
+        <a data-i18n="teaching-dis9034" href="/teaching/dis9034"></a>
+        </li>
+    </ol>
+    <h5 data-i18n="undergraduate-uai"></h5>
+    <ol>
     <h3 data-i18n="teaching"></h3>
     <h5 data-i18n="undergraduate-uchile"></h5>
     <ol>
@@ -32,23 +52,6 @@ let navbar = `
         <a data-i18n="teaching-audiv027" href="/teaching/audiv027"></a>
         </li>
     </ol>
-    <h5 data-i18n="undergraduate-udp"></h5>
-    <ol>
-        <li>
-        <a data-i18n="teaching-dis8636" href="/teaching/dis8636/"></a>
-        </li>
-        <li>
-        <a data-i18n="teaching-dis8637" href="/teaching/dis8637"></a>
-        </li>
-        <li>
-        <a data-i18n="teaching-dis9005" href="/teaching/dis9005"></a>
-        </li>
-        <li>
-        <a data-i18n="teaching-dis9034" href="/teaching/dis9034"></a>
-        </li>
-    </ol>
-    <h5 data-i18n="undergraduate-uai"></h5>
-    <ol>
         <li>
         <a data-i18n="teaching-dis145" href="/teaching/dis145"></a>
         </li>
