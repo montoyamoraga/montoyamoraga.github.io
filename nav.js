@@ -4,7 +4,7 @@ let navbar = `
     <a href="./" id="english">en</a> /
     <a href="./" id="espanol">es</a>
     </h3>
-    <p><a href="/">home</a></p>
+    <h3><a href="/">home</a></h3>
     <h3><a href="/info">info</a></h3>
     <div>
     <h3 data-i18n="projects"></h3>
@@ -13,8 +13,12 @@ let navbar = `
     </ol>
     </div>
     <div>
+    <h3 data-i18n="teaching"></h3>
     <h5 data-i18n="undergraduate-udp"></h5>
     <ol>
+         <li>
+        <a data-i18n="teaching-dis8645" href="/teaching/dis8645/"></a>
+        </li>
         <li>
         <a data-i18n="teaching-dis8644" href="/teaching/dis8644/"></a>
         </li>
@@ -33,7 +37,6 @@ let navbar = `
     </ol>
     <h5 data-i18n="undergraduate-uai"></h5>
     <ol>
-    <h3 data-i18n="teaching"></h3>
     <h5 data-i18n="undergraduate-uchile"></h5>
     <ol>
         <li>
