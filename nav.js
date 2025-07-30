@@ -35,8 +35,6 @@ let navbar = `
         <a data-i18n="teaching-dis9034" href="/teaching/dis9034"></a>
         </li>
     </ol>
-    <h5 data-i18n="undergraduate-uai"></h5>
-    <ol>
     <h5 data-i18n="undergraduate-uchile"></h5>
     <ol>
         <li>
@@ -55,6 +53,8 @@ let navbar = `
         <a data-i18n="teaching-audiv027" href="/teaching/audiv027"></a>
         </li>
     </ol>
+    <h5 data-i18n="undergraduate-uai"></h5>
+    <ol>
         <li>
         <a data-i18n="teaching-dis145" href="/teaching/dis145"></a>
         </li>
