@@ -5,7 +5,7 @@
     <link
       rel="icon"
       type="image/png"
-      href="../../assets/favicon.ico"
+      href="../../../assets/favicon.ico"
     />
     <title>dis8636</title>
     <meta
@@ -15,7 +15,15 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
   </head>
   <body>
-    <button id="menu-btn" class="boton-piruetas">menú</button>
+    <button
+      id="menu-btn"
+      class="boton-piruetas"
+      onclick="
+        document
+          .getElementById('divLeftMenu')
+          .classList.toggle('active')
+      "
+    >menú</button>
 
     <div class="flex-container">
       <div id="divLeftMenu" class="left"></div>
@@ -39,19 +47,19 @@
 
               <div class="carousel-track" id="track">
                 <img
-                  src="../../media/dis8636-elisa-errazuriz.jpg"
+                  src="../../../media/dis8636-elisa-errazuriz.jpg"
                   alt="clase 1"
                 />
                 <img
-                  src="../../media/dis8636-sofia-etchepare.jpg"
+                  src="../../../media/dis8636-sofia-etchepare.jpg"
                   alt="clase 2"
                 />
                 <img
-                  src="../../media/dis8636-sofia-sandoval.jpg"
+                  src="../../../media/dis8636-sofia-sandoval.jpg"
                   alt="clase 3"
                 />
                 <img
-                  src="../../media/dis8636-theo-rios.jpg"
+                  src="../../../media/dis8636-theo-rios.jpg"
                   alt="clase 4"
                 />
               </div>
@@ -125,7 +133,7 @@
       </div>
     </div>
 
-    <script src="../../nav.js"></script>
-    <script src="../../script.js"></script>
+    <script src="../../../nav.js"></script>
+    <script src="../../../script.js"></script>
   </body>
 </html>
