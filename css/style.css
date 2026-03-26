@@ -48,6 +48,28 @@ body {
   transform: translateX(260px);
 }
 
+.dropdown-trigger {
+  color: blue;
+  text-decoration: underline;
+  margin: 15px 0 5px 0;
+  font-size: 12pt;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.dropdown-content h5 {
+  margin: 10px 0 5px 0;
+  font-size: 9pt;
+  font-family: monospace;
+  text-transform: uppercase;
+  color: #666;
+}
+
 .contenedor-producto {
   display: flex;
   align-items: flex-start;

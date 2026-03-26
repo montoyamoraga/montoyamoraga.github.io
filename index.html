@@ -1,24 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="/assets/favicon.ico" />
     <title>montoyamoraga</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
   </head>
   <body>
-    <button
-      id="menu-btn"
-      class="boton-piruetas"
-      onclick="
-        document
-          .getElementById('divLeftMenu')
-          .classList.toggle('active')
-      "
+    <button 
+      id="menu-btn" 
+      class="boton-piruetas" 
+      onclick="document.getElementById('divLeftMenu').classList.toggle('active')"
     >
       menú
     </button>
@@ -27,158 +20,29 @@
       <nav id="divLeftMenu" class="left"></nav>
 
       <main class="right">
-        <h1 class="cajita" data-i18n="projects">proyectos</h1>
+        <h1 class="cajita">
+          <span class="es">info</span>
+          <span class="en">about</span>
+        </h1>
 
-        <div class="proyectos-grid">
-          <article class="proyecto-item">
-            <div class="proyecto-header">
-              <span class="proyecto-meta">año</span>
-              <span class="proyecto-tag">pregrado - Universidad Diego Portales</span>
-            </div>
-            <a href="/projects/pregrado-udp/dis8636/index.html">
-              <img src="/media/placeholder.png" alt="parla" />
-            </a>
-            <h2 class="proyecto-titulo">dis8636</h2>
-            <p class="proyecto-sub">taller de interfaz de usuario</p>
-          </article>
-
-          <article class="proyecto-item">
-            <div class="proyecto-header">
-              <span class="proyecto-meta">año</span>
-              <span class="proyecto-tag">pregrado - Universidad Diego Portales</span>
-            </div>
-            <a href="/projects/pregrado-udp/dis8637/index.html">
-              <img src="/media/placeholder.png" alt="parla" />
-            </a>
-            <h2 class="proyecto-titulo">dis8637</h2>
-            <p class="proyecto-sub">taller de experiencia de usuario</p>
-          </article>
-
-          <article class="proyecto-item">
-            <div class="proyecto-header">
-              <span class="proyecto-meta">año</span>
-              <span class="proyecto-tag">pregrado - Universidad Diego Portales</span>
-            </div>
-            <a href="/projects/pregrado-udp/dis8644/index.html">
-              <img src="/media/placeholder.png" alt="parla" />
-            </a>
-            <h2 class="proyecto-titulo">dis8644</h2>
-            <p class="proyecto-sub">taller de diseño de máquinas electrónicas</p>
-          </article>
-
-          <article class="proyecto-item">
-            <div class="proyecto-header">
-              <span class="proyecto-meta">año</span>
-              <span class="proyecto-tag">pregrado - Universidad Diego Portales</span>
-            </div>
-            <a href="/projects/pregrado-udp/dis8645/index.html">
-              <img src="/media/placeholder.png" alt="parla" />
-            </a>
-            <h2 class="proyecto-titulo">dis8645</h2>
-            <p class="proyecto-sub">taller de diseño de máquinas computacionales</p>
-          </article>
-
-          <article class="proyecto-item">
-            <div class="proyecto-header">
-              <span class="proyecto-meta">año</span>
-              <span class="proyecto-tag">pregrado - Universidad Diego Portales</span>
-            </div>
-            <a href="/projects/pregrado-udp/dis9005/index.html">
-              <img src="/media/placeholder.png" alt="parla" />
-            </a>
-            <h2 class="proyecto-titulo">dis9005</h2>
-            <p class="proyecto-sub">diseño de página web</p>
-          </article>
-
-          <article class="proyecto-item">
-            <div class="proyecto-header">
-              <span class="proyecto-meta">año</span>
-              <span class="proyecto-tag">pregrado - Universidad Diego Portales</span>
-            </div>
-            <a href="/projects/pregrado-udp/dis9034/index.html">
-              <img src="/media/placeholder.png" alt="parla" />
-            </a>
-            <h2 class="proyecto-titulo">dis9034</h2>
-            <p class="proyecto-sub">programación creativa multimedia</p>
-          </article>
-
-          <article class="proyecto-item">
-            <div class="proyecto-header">
-              <span class="proyecto-meta">año</span>
-              <span class="proyecto-tag">pregrado - Universidad de Chile</span>
-            </div>
-            <a href="/projects/pregrado-uchile/aud10004/index.html">
-              <img src="/media/placeholder.png" alt="parla" />
-            </a>
-            <h2 class="proyecto-titulo">aud10004</h2>
-            <p class="proyecto-sub">matemáticas aplicadas al diseño</p>
-          </article>
-
-          <article class="proyecto-item">
-            <div class="proyecto-header">
-              <span class="proyecto-meta">año</span>
-              <span class="proyecto-tag">pregrado - Universidad de Chile</span>
-            </div>
-            <a href="/projects/pregrado-uchile/aud20004/index.html">
-              <img src="/media/placeholder.png" alt="parla" />
-            </a>
-            <h2 class="proyecto-titulo">aud20004</h2>
-            <p class="proyecto-sub">física aplicada al diseño</p>
-          </article>
-
-          <article class="proyecto-item">
-            <div class="proyecto-header">
-              <span class="proyecto-meta">año</span>
-              <span class="proyecto-tag">pregrado - Universidad de Chile</span>
-            </div>
-            <a href="/projects/pregrado-uchile/aud5i022/index.html">
-              <img src="/media/placeholder.png" alt="parla" />
-            </a>
-            <h2 class="proyecto-titulo">aud5i022</h2>
-            <p class="proyecto-sub">diseño de interfaces electrónicas</p>
-          </article>
-
-          <article class="proyecto-item">
-            <div class="proyecto-header">
-              <span class="proyecto-meta">año</span>
-              <span class="proyecto-tag">pregrado - Universidad de Chile</span>
-            </div>
-            <a href="/projects/pregrado-uchile/audiv020/index.html">
-              <img src="/media/placeholder.png" alt="parla" />
-            </a>
-            <h2 class="proyecto-titulo">audiv020</h2>
-            <p class="proyecto-sub">diseño de instrumentos musicales digitales</p>
-          </article>
-
-          <article class="proyecto-item">
-            <div class="proyecto-header">
-              <span class="proyecto-meta">año</span>
-              <span class="proyecto-tag">pregrado - Universidad de Chile</span>
-            </div>
-            <a href="/projects/pregrado-uchile/audiv027/index.html">
-              <img src="/media/placeholder.png" alt="parla" />
-            </a>
-            <h2 class="proyecto-titulo">audiv027</h2>
-            <p class="proyecto-sub">inteligencia artificial</p>
-          </article>
-
-          <article class="proyecto-item">
-            <div class="proyecto-header">
-              <span class="proyecto-meta">año</span>
-              <span class="proyecto-tag">pregrado - Universidad Adolfo Ibáñez</span>
-            </div>
-            <a href="/projects/pregrado-uai/dis145/index.html">
-              <img src="/media/placeholder.png" alt="parla" />
-            </a>
-            <h2 class="proyecto-titulo">dis145</h2>
-            <p class="proyecto-sub">diseño y construcción de interfaces</p>
-          </article>
+        <div class="persona-card">
+          <div class="persona-info">
+            <h2 class="nombre-destacado">aarón montoya moraga</h2>
+            <p class="rol">investigadore y artista medial</p>
+            <p class="es">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <p class="en">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+          </div>
         </div>
       </main>
     </div>
 
     <footer class="colophon-banner">
-      <span data-i18n="colophon"></span>
+      <span class="es">montoyamoraga © 2026</span>
+      <span class="en">montoyamoraga © 2026</span>
     </footer>
 
     <script src="/nav.js"></script>
