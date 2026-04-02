@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8" />
@@ -8,54 +8,64 @@
     <link rel="stylesheet" type="text/css" href="../../css/style.css" />
   </head>
   <body>
-    <button id="menu-btn" class="boton-piruetas" onclick="document.getElementById('divLeftMenu').classList.toggle('active')">menú</button>
+    <button
+      id="menu-btn"
+      class="boton-piruetas"
+      onclick="document.getElementById('divLeftMenu').classList.toggle('active')"
+    >
+      menú
+    </button>
 
     <div class="flex-container">
       <div class="left" id="divLeftMenu"></div>
-      
-      <div class="right">
-        <div class="contenedor-producto">
-          
-          <div class="carousel-container">
-            <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
-            <button class="carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
 
-            <div class="carousel-track" id="track">
-              <img data-image="teaching-dis8637-student-work-0-image" alt="trabajo 0" />
-              <img data-image="teaching-dis8637-student-work-1-image" alt="trabajo 1" />
-              <img data-image="teaching-dis8637-student-work-2-image" alt="trabajo 2" />
+      <div class="right" style="padding: 0;">
+        <div class="split-layout">
+
+          <div class="split-left">
+            <button class="img-nav-btn prev" onclick="moveImg(-1)">&#10094;</button>
+            <button class="img-nav-btn next" onclick="moveImg(1)">&#10095;</button>
+            <div class="img-track" id="img-track">
+              <img src="images/dis8637-catalina-alvarez-javiera-astudillo-aylen-bassaletti-giuliana-pimentel.jpg" alt="trabajo 0" />
+              <img src="images/dis8637-valentina-cooper-aranza-frias-sofia-huerta.jpg" alt="trabajo 1" />
+              <img src="images/dis8637-valentina-montecinos-sofia-sandoval-janis-sepulveda.jpg" alt="trabajo 2" />
             </div>
-            
-            <div class="carousel-nav-hint" data-i18n="teaching-student-work"></div>
           </div>
 
-          <div class="contenido-texto">
+          <div class="split-right">
             <h1 class="cajita" data-i18n="teaching-dis8637"></h1>
 
             <h2 class="cajita" data-i18n="teaching-institution"></h2>
             <p>
-              <span data-i18n="teaching-dis8637-institution-0"></span><br>
-              <span data-i18n="teaching-dis8637-institution-1"></span><br>
+              <span data-i18n="teaching-dis8637-institution-0"></span><br />
+              <span data-i18n="teaching-dis8637-institution-1"></span><br />
               <span data-i18n="teaching-dis8637-institution-2"></span>
             </p>
 
             <h2 class="cajita" data-i18n="teaching-dates"></h2>
             <p>
-              <a data-i18n="teaching-dis8637-dates-0" data-link="teaching-dis8637-dates-0-link" style="color: blue; text-decoration: underline;"></a>
+              <a
+                data-i18n="teaching-dis8637-dates-0"
+                data-link="teaching-dis8637-dates-0-link"
+                style="color: blue; text-decoration: underline"
+              ></a>
             </p>
 
             <h2 class="cajita" data-i18n="teaching-course-description"></h2>
             <p>
-              <span data-i18n="teaching-dis8637-course-description-0"></span><br><br>
-              <span data-i18n="teaching-dis8637-course-description-1"></span><br><br>
+              <span data-i18n="teaching-dis8637-course-description-0"></span><br /><br />
+              <span data-i18n="teaching-dis8637-course-description-1"></span><br /><br />
               <span data-i18n="teaching-dis8637-course-description-2"></span>
             </p>
 
             <h2 class="cajita" data-i18n="teaching-team"></h2>
-            <p style="font-family: monospace; font-size: 9pt;">
-              <span data-i18n="teaching-dis8637-sergio-majluf-name"></span>: <span data-i18n="teaching-dis8637-sergio-majluf-role"></span><br>
-              <span data-i18n="myself-professional-name"></span>: <span data-i18n="teaching-dis8637-my-role"></span><br>
-              <span data-i18n="teaching-dis8637-andres-martin-name"></span>: <span data-i18n="teaching-dis8637-andres-martin-role"></span>
+            <p style="font-family: monospace; font-size: 9pt">
+              <span data-i18n="teaching-dis8637-sergio-majluf-name"></span>:
+              <span data-i18n="teaching-dis8637-sergio-majluf-role"></span><br />
+              <span data-i18n="myself-professional-name"></span>:
+              <span data-i18n="teaching-dis8637-my-role"></span><br />
+              <span data-i18n="teaching-dis8637-andres-martin-name"></span>:
+              <span data-i18n="teaching-dis8637-andres-martin-role"></span>
             </p>
           </div>
 
@@ -70,16 +80,11 @@
 
     <script src="../../nav.js"></script>
     <script src="../../script.js"></script>
-    
     <script>
-      function moveCarousel(direction) {
-        const track = document.getElementById('track');
+      function moveImg(direction) {
+        const track = document.getElementById('img-track');
         if (track) {
-          const scrollAmount = track.clientWidth;
-          track.scrollBy({
-            left: direction * scrollAmount,
-            behavior: 'smooth',
-          });
+          track.scrollBy({ left: direction * track.clientWidth, behavior: 'smooth' });
         }
       }
     </script>
