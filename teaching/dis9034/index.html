@@ -1,64 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
   <head>
-    <!-- character encoding -->
     <meta charset="utf-8" />
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="/assets/favicon.ico" />
-    <!-- title -->
-    <title>montoyamoraga</title>
-    <!-- full width on device -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../assets/favicon.ico"
+    />
+    <title>dis9034 - montoyamoraga</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <!-- external css file -->
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../css/style.css"
+    />
   </head>
   <body>
+    <button
+      id="menu-btn"
+      class="boton-piruetas"
+      onclick="
+        document
+          .getElementById('divLeftMenu')
+          .classList.toggle('active')
+      "
+    >
+      menú
+    </button>
+
     <div class="flex-container">
       <div class="left" id="divLeftMenu"></div>
+
       <div class="right">
-        <h1 class="cajita" data-i18n="teaching-dis9034"></h1>
-        <h2 data-i18n="teaching-institution"></h2>
-        <p data-i18n="teaching-dis9034-institution-0"></p>
-        <p data-i18n="teaching-dis9034-institution-1"></p>
-        <p data-i18n="teaching-dis9034-institution-2"></p>
-        <h2 data-i18n="teaching-dates"></h2>
-        <p>
-          <a
-            data-i18n="teaching-dis9034-dates-0"
-            data-link="teaching-dis9034-dates-0-link"
-          ></a>
-        </p>
-        <h2 data-i18n="teaching-course-description"></h2>
-        <p data-i18n="teaching-dis9034-course-description-0"></p>
-        <p data-i18n="teaching-dis9034-course-description-1"></p>
-        <p data-i18n="teaching-dis9034-course-description-2"></p>
-        <h2 data-i18n="teaching-team"></h2>
-        <p>
-          <span data-i18n="myself-professional-name"></span>:
-          <span data-i18n="teaching-dis9034-my-role"></span>
-        </p>
-        <p>
-          <span
-            data-i18n="teaching-dis9034-janis-sepulveda-name"
-          ></span
-          >:
-          <span
-            data-i18n="teaching-dis9034-janis-sepulveda-role"
-          ></span>
-        </p>
-        <h2 data-i18n="teaching-student-work"></h2>
-        <img data-image="teaching-dis9034-student-work-0-image" />
-        <p data-i18n="teaching-dis9034-student-work-0-name"></p>
-        <img data-image="teaching-dis9034-student-work-1-image" />
-        <p data-i18n="teaching-dis9034-student-work-1-name"></p>
-        <img data-image="teaching-dis9034-student-work-2-image" />
-        <p data-i18n="teaching-dis9034-student-work-2-name"></p>
+        <div class="contenedor-producto">
+          <div class="carousel-container">
+            <button
+              class="carousel-btn prev"
+              onclick="moveCarousel(-1)"
+            >
+              &#10094;
+            </button>
+            <button
+              class="carousel-btn next"
+              onclick="moveCarousel(1)"
+            >
+              &#10095;
+            </button>
+
+            <div class="carousel-track" id="track">
+              <img
+                data-image="teaching-dis9034-student-work-0-image"
+                alt="trabajo 0"
+              />
+              <img
+                data-image="teaching-dis9034-student-work-1-image"
+                alt="trabajo 1"
+              />
+              <img
+                data-image="teaching-dis9034-student-work-2-image"
+                alt="trabajo 2"
+              />
+            </div>
+
+            <div
+              class="carousel-nav-hint"
+              data-i18n="teaching-student-work"
+            ></div>
+          </div>
+
+          <div class="contenido-texto">
+            <h1 class="cajita" data-i18n="teaching-dis9034"></h1>
+
+            <h2 class="cajita" data-i18n="teaching-institution"></h2>
+            <p>
+              <span data-i18n="teaching-dis9034-institution-0"></span
+              ><br />
+              <span data-i18n="teaching-dis9034-institution-1"></span
+              ><br />
+              <span data-i18n="teaching-dis9034-institution-2"></span>
+            </p>
+
+            <h2 class="cajita" data-i18n="teaching-dates"></h2>
+            <p>
+              <a
+                data-i18n="teaching-dis9034-dates-0"
+                data-link="teaching-dis9034-dates-0-link"
+                style="color: blue; text-decoration: underline"
+              ></a>
+            </p>
+
+            <h2
+              class="cajita"
+              data-i18n="teaching-course-description"
+            ></h2>
+            <p>
+              <span
+                data-i18n="teaching-dis9034-course-description-0"
+              ></span
+              ><br /><br />
+              <span
+                data-i18n="teaching-dis9034-course-description-1"
+              ></span
+              ><br /><br />
+              <span
+                data-i18n="teaching-dis9034-course-description-2"
+              ></span>
+            </p>
+
+            <h2 class="cajita" data-i18n="teaching-team"></h2>
+            <p style="font-family: monospace; font-size: 9pt">
+              <span data-i18n="myself-professional-name"></span>:
+              <span data-i18n="teaching-dis9034-my-role"></span><br />
+              <span
+                data-i18n="teaching-dis9034-janis-sepulveda-name"
+              ></span
+              >:
+              <span
+                data-i18n="teaching-dis9034-janis-sepulveda-role"
+              ></span>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="/nav.js"></script>
-    <script src="/script.js"></script>
+
+    <footer class="colophon-banner">
+      <span class="es">montoyamoraga © 2026</span>
+      <span class="en">montoyamoraga © 2026</span>
+    </footer>
+
+    <script src="../../nav.js"></script>
+    <script src="../../script.js"></script>
+
+    <script>
+      function moveCarousel(direction) {
+        const track = document.getElementById('track');
+        if (track) {
+          const scrollAmount = track.clientWidth;
+          track.scrollBy({
+            left: direction * scrollAmount,
+            behavior: 'smooth',
+          });
+        }
+      }
+    </script>
   </body>
 </html>
