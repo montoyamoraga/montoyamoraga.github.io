@@ -6,7 +6,7 @@ fetch('./data/bio.yaml')
 
     // document.body.innerHTML += `<h1>${data.title}</h1>`;
 
-    data.items.forEach((item) => {
+    data.bio.forEach((item) => {
       //   document.body.innerHTML += `<p>${item.name} (${item.type})</p>`;
     });
   });
