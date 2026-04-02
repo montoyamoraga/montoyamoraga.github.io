@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/favicon.ico"
+    />
+    <title>nombre-curso - montoyamoraga</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../css/style.css"
+    />
+
+  </head>
+  <body>
+    <button
+      id="menu-btn"
+      class="boton-piruetas"
+      onclick="
+        document
+          .getElementById('divLeftMenu')
+          .classList.toggle('active')
+      "
+    >
+      menú
+    </button>
+
+    <div class="flex-container">
+      <div class="left" id="divLeftMenu"></div>
+
+      <div class="right" style="padding: 0;">
+        <div class="split-layout">
+
+          <div class="split-left">
+            <button
+              class="img-nav-btn prev"
+              onclick="moveImg(-1)"
+            >&#10094;</button>
+            <button
+              class="img-nav-btn next"
+              onclick="moveImg(1)"
+            >&#10095;</button>
+
+            <div class="img-track" id="img-track">
+              <img
+                src="https://placehold.co/1200x800/d0d0d0/555555?text=horizontal+0"
+                alt="trabajo 0"
+              />
+              <img
+                src="https://placehold.co/1200x800/c0c0c0/555555?text=horizontal+1"
+                alt="trabajo 1"
+              />
+              <img
+                src="https://placehold.co/800x1200/b0b0b0/555555?text=vertical+2"
+                alt="trabajo 2"
+              />
+            </div>
+          </div>
+
+          <div class="split-right">
+            <h1 class="cajita">Nombre del curso</h1>
+
+            <h2 class="cajita" data-i18n="teaching-institution"></h2>
+            <p>
+              Nombre de la institución<br />
+              Facultad o departamento<br />
+              Ciudad, País
+            </p>
+
+            <h2 class="cajita" data-i18n="teaching-dates"></h2>
+            <p>
+              <a
+                href="#"
+                style="color: blue; text-decoration: underline"
+              >Semestre Año</a>
+            </p>
+
+            <h2
+              class="cajita"
+              data-i18n="teaching-course-description"
+            ></h2>
+            <p>
+              Descripción del curso, primer párrafo. Explicar de qué
+              trata el curso y cuáles son sus objetivos principales.<br /><br />
+              Descripción del curso, segundo párrafo. Detallar los
+              contenidos, metodología o enfoque pedagógico.<br /><br />
+              Descripción del curso, tercer párrafo. Mencionar
+              resultados esperados o habilidades que desarrollan los
+              estudiantes.
+            </p>
+
+            <h2 class="cajita" data-i18n="teaching-team"></h2>
+            <p style="font-family: monospace; font-size: 9pt">
+              <span data-i18n="myself-professional-name"></span>:
+              Rol propio en el curso<br />
+              Nombre Colaborador: Rol del colaborador
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="colophon-banner">
+      <span class="es">montoyamoraga © 2026</span>
+      <span class="en">montoyamoraga © 2026</span>
+    </footer>
+
+    <script src="../nav.js"></script>
+    <script src="../script.js"></script>
+
+    <script>
+      function moveImg(direction) {
+        const track = document.getElementById('img-track');
+        if (track) {
+          track.scrollBy({
+            left: direction * track.clientWidth,
+            behavior: 'smooth',
+          });
+        }
+      }
+    </script>
+  </body>
+</html>
