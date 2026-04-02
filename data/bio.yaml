@@ -1,31 +1,36 @@
-
 # como regla
-# todos los valore son arrrays
+# los valores son arrrays
 ## 0: en
 ## 1: es
 
 bio:
-  - nombre: aarón montoya-moraga
-    estudios:
-      - titulo: [
-        'phd in arts and humanities',
-        'doctorado en artes y humanidades']
+  nombre: 'aarón montoya-moraga'
+  estudios:
+    - titulo:
+        nombre:
+          [
+            'phd in arts and humanities',
+            'doctorado en artes y humanidades',
+          ]
         escuela: instituto de estudios avanzados
         universidad: universidad de santiago de chile
         inicio: 2025
         fin: false
-      - titulo: ['magíster en arte electrónico']
-        escuela: 'tisch school of the arts'
-        universidad: 'new york university'
-        inicio: 2015
-        fin: 2017
-      - titulo: ['magíster en arte electrónico']
-        escuela: 'tisch school of the arts'
-        universidad: 'new york university'
-        inicio: 2015
-        fin: 2017
-      - titulo: ['ingeniería civil electricista']
-        escuela: escuela de ingeniería
-        universidad: pontificia universidad católica de chile
-        inicio: 2008
-        fin: 2013
+    - titulo:
+        nombre: ['magíster en ciencias y artes mediales']
+      escuela: 'media lab'
+      universidad: 'massachusetts institute of technology'
+      inicio: 2015
+      fin: 2017
+    - titulo:
+        nombre: ['magíster en arte electrónico']
+      escuela: 'tisch school of the arts'
+      universidad: 'new york university'
+      inicio: 2015
+      fin: 2017
+    - titulo:
+        nombre: ['ingeniería civil electricista']
+      escuela: escuela de ingeniería
+      universidad: pontificia universidad católica de chile
+      inicio: 2008
+      fin: 2013
