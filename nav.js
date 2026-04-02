@@ -10,16 +10,29 @@ let navbar = `
     <div class="nav-section">
         <h3 class="dropdown-trigger" style="cursor:pointer; text-decoration:underline;">enseñanza</h3>
         <div class="dropdown-content" style="display:none; padding-left:15px;">
+            
             <h5 data-i18n="undergraduate-udp"></h5>
             <ol>
                 <li><a data-i18n="teaching-dis8645" href="/teaching/dis8645/"></a></li>
                 <li><a data-i18n="teaching-dis8644" href="/teaching/dis8644/"></a></li>
+                <li><a data-i18n="teaching-dis8637" href="/teaching/dis8637/"></a></li>
                 <li><a data-i18n="teaching-dis8636" href="/teaching/dis8636/"></a></li>
-                <li><a data-i18n="teaching-dis8637" href="/teaching/dis8637"></a></li>
+                <li><a data-i18n="teaching-dis9005" href="/teaching/dis9005/"></a></li>
+                <li><a data-i18n="teaching-dis9034" href="/teaching/dis9034/"></a></li>
             </ol>
+
             <h5 data-i18n="undergraduate-uchile"></h5>
             <ol>
-                <li><a data-i18n="teaching-audiv020" href="/teaching/audiv020"></a></li>
+                <li><a data-i18n="teaching-audiv027" href="/teaching/audiv027/"></a></li>
+                <li><a data-i18n="teaching-audiv020" href="/teaching/audiv020/"></a></li>
+                <li><a data-i18n="teaching-aud5i022" href="/teaching/aud5i022/"></a></li>
+                <li><a data-i18n="teaching-aud10004" href="/teaching/aud10004/"></a></li>
+                <li><a data-i18n="teaching-aud20004" href="/teaching/aud20004/"></a></li>
+            </ol>
+
+            <h5 data-i18n="undergraduate-uai"></h5>
+            <ol>
+                <li><a data-i18n="teaching-dis145" href="/teaching/dis145/"></a></li>
             </ol>
         </div>
     </div>
