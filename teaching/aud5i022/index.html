@@ -1,70 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
   <head>
-    <!-- character encoding -->
     <meta charset="utf-8" />
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="/assets/favicon.ico" />
-    <!-- title -->
-    <title>montoyamoraga</title>
-    <!-- full width on device -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../assets/favicon.ico"
+    />
+    <title>aud5i022 - montoyamoraga</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <!-- external css file -->
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../css/style.css"
+    />
   </head>
   <body>
+    <button
+      id="menu-btn"
+      class="boton-piruetas"
+      onclick="
+        document
+          .getElementById('divLeftMenu')
+          .classList.toggle('active')
+      "
+    >
+      menú
+    </button>
+
     <div class="flex-container">
       <div class="left" id="divLeftMenu"></div>
+
       <div class="right">
-        <h1 class="cajita" data-i18n="teaching-aud5i022"></h1>
-        <h2 data-i18n="teaching-institution"></h2>
-        <p data-i18n="teaching-aud5i022-institution-0"></p>
-        <p data-i18n="teaching-aud5i022-institution-1"></p>
-        <p data-i18n="teaching-aud5i022-institution-2"></p>
-        <h2 data-i18n="teaching-dates"></h2>
-        <p>
-          <a
-            data-i18n="teaching-aud5i022-dates-0"
-            data-link="teaching-aud5i022-dates-0-link"
-          ></a>
-        </p>
-        <p>
-          <a
-            data-i18n="teaching-aud5i022-dates-1"
-            data-link="teaching-aud5i022-dates-1-link"
-          ></a>
-        </p>
-        <h2 data-i18n="teaching-course-description"></h2>
-        <p data-i18n="teaching-aud5i022-course-description-0"></p>
-        <p data-i18n="teaching-aud5i022-course-description-1"></p>
-        <p data-i18n="teaching-aud5i022-course-description-2"></p>
-        <h2 data-i18n="teaching-team"></h2>
-        <p>
-          <span data-i18n="myself-professional-name"></span>:
-          <span data-i18n="teaching-aud5i022-my-role"></span>
-        </p>
-        <p>
-          <span
-            data-i18n="teaching-aud5i022-ignacio-passalacqua-name"
-          ></span
-          >:
-          <span
-            data-i18n="teaching-aud5i022-ignacio-passalacqua-role"
-          ></span>
-        </p>
-        <h2 data-i18n="teaching-student-work"></h2>
-        <img data-image="teaching-aud5i022-student-work-0-image" />
-        <p data-i18n="teaching-aud5i022-student-work-0-name"></p>
-        <img data-image="teaching-aud5i022-student-work-1-image" />
-        <p data-i18n="teaching-aud5i022-student-work-1-name"></p>
-        <img data-image="teaching-aud5i022-student-work-2-image" />
-        <p data-i18n="teaching-aud5i022-student-work-2-name"></p>
+        <div class="contenedor-producto">
+          <div class="proyecto-item">
+            <h2 class="cajita" data-i18n="teaching-student-work"></h2>
+            <img
+              data-image="teaching-aud5i022-student-work-0-image"
+              style="margin-bottom: 10px"
+            />
+            <p
+              data-i18n="teaching-aud5i022-student-work-0-name"
+              style="font-size: 8.5pt; margin-bottom: 20px"
+            ></p>
+
+            <img
+              data-image="teaching-aud5i022-student-work-1-image"
+              style="margin-bottom: 10px"
+            />
+            <p
+              data-i18n="teaching-aud5i022-student-work-1-name"
+              style="font-size: 8.5pt; margin-bottom: 20px"
+            ></p>
+          </div>
+
+          <div class="contenido-texto">
+            <h1 class="cajita" data-i18n="teaching-aud5i022"></h1>
+
+            <h2 class="cajita" data-i18n="teaching-institution"></h2>
+            <p>
+              <span data-i18n="teaching-aud5i022-institution-0"></span
+              ><br />
+              <span data-i18n="teaching-aud5i022-institution-1"></span
+              ><br />
+              <span
+                data-i18n="teaching-aud5i022-institution-2"
+              ></span>
+            </p>
+
+            <h2 class="cajita" data-i18n="teaching-dates"></h2>
+            <p>
+              <a
+                data-i18n="teaching-aud5i022-dates-0"
+                data-link="teaching-aud5i022-dates-0-link"
+                style="color: blue; text-decoration: underline"
+              ></a
+              ><br />
+              <a
+                data-i18n="teaching-aud5i022-dates-1"
+                data-link="teaching-aud5i022-dates-1-link"
+                style="color: blue; text-decoration: underline"
+              ></a>
+            </p>
+
+            <h2
+              class="cajita"
+              data-i18n="teaching-course-description"
+            ></h2>
+            <p>
+              <span
+                data-i18n="teaching-aud5i022-course-description-0"
+              ></span
+              ><br /><br />
+              <span
+                data-i18n="teaching-aud5i022-course-description-1"
+              ></span
+              ><br /><br />
+              <span
+                data-i18n="teaching-aud5i022-course-description-2"
+              ></span>
+            </p>
+
+            <h2 class="cajita" data-i18n="teaching-team"></h2>
+            <p style="font-family: monospace; font-size: 9pt">
+              <span data-i18n="myself-professional-name"></span>:
+              <span data-i18n="teaching-aud5i022-my-role"></span
+              ><br />
+              <span
+                data-i18n="teaching-aud5i022-ignacio-passalacqua-name"
+              ></span
+              >:
+              <span
+                data-i18n="teaching-aud5i022-ignacio-passalacqua-role"
+              ></span>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="/nav.js"></script>
-    <script src="/script.js"></script>
+
+    <footer class="colophon-banner">
+      <span class="es">montoyamoraga © 2026 </span>
+      <span class="en">montoyamoraga © 2026 </span>
+    </footer>
+
+    <script src="../../nav.js"></script>
+    <script src="../../script.js"></script>
   </body>
 </html>

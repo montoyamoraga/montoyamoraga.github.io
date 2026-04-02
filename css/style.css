@@ -77,14 +77,20 @@ body {
   margin-bottom: 80px;
 }
 
-.contenedor-producto .proyecto-item {
+.carousel-container {
   flex: 0 0 45%;
   max-width: 600px;
+  position: relative;
+  overflow: hidden;
+  background: white;
+  border: 1px solid black;
+  box-shadow: 8px 8px 0px pink;
+  padding: 15px;
 }
 
-.contenedor-producto .proyecto-item img {
-  aspect-ratio: auto;
-  object-fit: contain;
+.carousel-container.vertical {
+  flex: 0 0 35%;
+  max-width: 500px;
 }
 
 .contenido-texto {
@@ -157,9 +163,10 @@ body {
   border: 1px solid black;
   box-shadow: 5px 10px pink;
   padding: 5px 15px;
-  display: inline-block;
+  display: table;
   background-color: white;
   margin-bottom: 20px;
+  clear: both;
 }
 
 .boton-piruetas {
@@ -240,12 +247,6 @@ body {
   flex-wrap: wrap;
 }
 
-.carousel-container {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
 .carousel-track {
   display: flex;
   overflow-x: auto;
@@ -263,10 +264,16 @@ body {
 .carousel-track img {
   flex: 0 0 100% !important;
   width: 100% !important;
-  height: auto !important;
+  height: 400px !important;
+  object-fit: cover !important;
   scroll-snap-align: center;
-  border: none !important;
+  border: 1px solid black !important;
+}
+
+.carousel-container.vertical .carousel-track img {
+  height: 700px !important;
   object-fit: contain !important;
+  background-color: #f9f9f9;
 }
 
 .carousel-btn {
@@ -310,7 +317,7 @@ body {
 
 .colophon-banner {
   position: fixed;
-  bottom: 0;
+  bottom: -60px;
   left: 0;
   width: 100%;
   background-color: white;
@@ -319,6 +326,11 @@ body {
   font-size: 9pt;
   z-index: 2500;
   text-align: center;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.colophon-banner.visible {
+  bottom: 0;
 }
 
 html[lang="en"] .es {
@@ -340,16 +352,13 @@ html[lang="es"] .en {
     flex-direction: column;
     gap: 20px;
   }
-
-  .contenedor-producto .proyecto-item {
+  .carousel-container, .carousel-container.vertical {
     flex: 0 0 100%;
     max-width: 100%;
   }
-
   .persona-card {
     flex-direction: column;
   }
-
   .persona-foto {
     flex: 0 0 auto;
     width: 100%;
@@ -358,34 +367,34 @@ html[lang="es"] .en {
     aspect-ratio: 1 / 1;
     max-height: 400px;
   }
+  .carousel-track img {
+    height: 300px !important;
+  }
+  .carousel-container.vertical .carousel-track img {
+    height: 500px !important;
+  }
 }
 
 @media (max-width: 800px) {
   .proyectos-grid {
     grid-template-columns: 1fr;
   }
-
   .right {
     padding: 80px 20px 120px 20px;
   }
-
-  .left.active~.right {
-    transform: translateX(0);
-  }
-
   .left {
     width: 80%;
     left: -85%;
   }
-
   .left.active {
     left: 0;
   }
-
+  .left.active~.right {
+    transform: translateX(0);
+  }
   .persona-card {
     box-shadow: 6px 6px 0px pink;
   }
-
   .persona-info {
     padding: 15px;
   }

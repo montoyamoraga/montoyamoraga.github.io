@@ -53,17 +53,26 @@ let navbar = `
 `;
 
 let divLeftMenu = document.getElementById('divLeftMenu');
-divLeftMenu.innerHTML = navbar;
+if (divLeftMenu) {
+    divLeftMenu.innerHTML = navbar;
+}
 
-// Lógica para abrir/cerrar desplegables
 document.querySelectorAll('.dropdown-trigger').forEach(trigger => {
     trigger.addEventListener('click', () => {
         const content = trigger.nextElementSibling;
         const isOpen = content.style.display === 'block';
-        
-        // Opcional: cierra otros antes de abrir este
         document.querySelectorAll('.dropdown-content').forEach(el => el.style.display = 'none');
-        
         content.style.display = isOpen ? 'none' : 'block';
     });
+});
+
+window.addEventListener('scroll', function() {
+    const footer = document.querySelector('.colophon-banner');
+    if (footer) {
+        if (window.scrollY > 50) {
+            footer.classList.add('visible');
+        } else {
+            footer.classList.remove('visible');
+        }
+    }
 });
