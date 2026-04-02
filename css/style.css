@@ -496,6 +496,21 @@ html[lang="es"] .en {
   display: block;
 }
 
+.img-slide-single-horizontal {
+  flex: 0 0 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.img-slide-single-horizontal img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .img-slide-pair {
   flex: 0 0 100%;
   display: flex;

@@ -113,6 +113,12 @@ function detectImageOrientation() {
                 pair.appendChild(nextImg);
                 track.appendChild(pair);
                 i += 2;
+            } else if (isHorizontal) {
+                const slide = document.createElement('div');
+                slide.className = 'img-slide-single-horizontal';
+                slide.appendChild(img);
+                track.appendChild(slide);
+                i += 1;
             } else {
                 const slide = document.createElement('div');
                 slide.className = 'img-slide-single';

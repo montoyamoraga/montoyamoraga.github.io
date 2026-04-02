@@ -2,31 +2,16 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="../../assets/favicon.ico"
-    />
+    <link rel="icon" type="image/png" href="../../assets/favicon.ico" />
     <title>aud5i022 - montoyamoraga</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../../css/style.css"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
   </head>
   <body>
     <button
       id="menu-btn"
       class="boton-piruetas"
-      onclick="
-        document
-          .getElementById('divLeftMenu')
-          .classList.toggle('active')
-      "
+      onclick="document.getElementById('divLeftMenu').classList.toggle('active')"
     >
       menú
     </button>
@@ -34,41 +19,27 @@
     <div class="flex-container">
       <div class="left" id="divLeftMenu"></div>
 
-      <div class="right">
-        <div class="contenedor-producto">
-          <div class="proyecto-item">
-            <h2 class="cajita" data-i18n="teaching-student-work"></h2>
-            <img
-              data-image="teaching-aud5i022-student-work-0-image"
-              style="margin-bottom: 10px"
-            />
-            <p
-              data-i18n="teaching-aud5i022-student-work-0-name"
-              style="font-size: 8.5pt; margin-bottom: 20px"
-            ></p>
+      <div class="right" style="padding: 0;">
+        <div class="split-layout">
 
-            <img
-              data-image="teaching-aud5i022-student-work-1-image"
-              style="margin-bottom: 10px"
-            />
-            <p
-              data-i18n="teaching-aud5i022-student-work-1-name"
-              style="font-size: 8.5pt; margin-bottom: 20px"
-            ></p>
+          <div class="split-left">
+            <button class="img-nav-btn prev" onclick="moveImg(-1)">&#10094;</button>
+            <button class="img-nav-btn next" onclick="moveImg(1)">&#10095;</button>
+            <div class="img-track" id="img-track">
+              <img src="images/aud5i022-francisco-cabrera-vanesa-angulo.jpg" alt="trabajo 0" />
+              <img src="images/aud5i022-pilar-vergara-valentina-fuentes-silvana-olivares.jpg" alt="trabajo 1" />
+              <img src="images/aud5i022-sofia-chavez-maria-diaz.jpg" alt="trabajo 2" />
+            </div>
           </div>
 
-          <div class="contenido-texto">
+          <div class="split-right">
             <h1 class="cajita" data-i18n="teaching-aud5i022"></h1>
 
             <h2 class="cajita" data-i18n="teaching-institution"></h2>
             <p>
-              <span data-i18n="teaching-aud5i022-institution-0"></span
-              ><br />
-              <span data-i18n="teaching-aud5i022-institution-1"></span
-              ><br />
-              <span
-                data-i18n="teaching-aud5i022-institution-2"
-              ></span>
+              <span data-i18n="teaching-aud5i022-institution-0"></span><br />
+              <span data-i18n="teaching-aud5i022-institution-1"></span><br />
+              <span data-i18n="teaching-aud5i022-institution-2"></span>
             </p>
 
             <h2 class="cajita" data-i18n="teaching-dates"></h2>
@@ -77,8 +48,7 @@
                 data-i18n="teaching-aud5i022-dates-0"
                 data-link="teaching-aud5i022-dates-0-link"
                 style="color: blue; text-decoration: underline"
-              ></a
-              ><br />
+              ></a><br />
               <a
                 data-i18n="teaching-aud5i022-dates-1"
                 data-link="teaching-aud5i022-dates-1-link"
@@ -86,48 +56,40 @@
               ></a>
             </p>
 
-            <h2
-              class="cajita"
-              data-i18n="teaching-course-description"
-            ></h2>
+            <h2 class="cajita" data-i18n="teaching-course-description"></h2>
             <p>
-              <span
-                data-i18n="teaching-aud5i022-course-description-0"
-              ></span
-              ><br /><br />
-              <span
-                data-i18n="teaching-aud5i022-course-description-1"
-              ></span
-              ><br /><br />
-              <span
-                data-i18n="teaching-aud5i022-course-description-2"
-              ></span>
+              <span data-i18n="teaching-aud5i022-course-description-0"></span><br /><br />
+              <span data-i18n="teaching-aud5i022-course-description-1"></span><br /><br />
+              <span data-i18n="teaching-aud5i022-course-description-2"></span>
             </p>
 
             <h2 class="cajita" data-i18n="teaching-team"></h2>
             <p style="font-family: monospace; font-size: 9pt">
               <span data-i18n="myself-professional-name"></span>:
-              <span data-i18n="teaching-aud5i022-my-role"></span
-              ><br />
-              <span
-                data-i18n="teaching-aud5i022-ignacio-passalacqua-name"
-              ></span
-              >:
-              <span
-                data-i18n="teaching-aud5i022-ignacio-passalacqua-role"
-              ></span>
+              <span data-i18n="teaching-aud5i022-my-role"></span><br />
+              <span data-i18n="teaching-aud5i022-ignacio-passalacqua-name"></span>:
+              <span data-i18n="teaching-aud5i022-ignacio-passalacqua-role"></span>
             </p>
           </div>
+
         </div>
       </div>
     </div>
 
     <footer class="colophon-banner">
-      <span class="es">montoyamoraga © 2026 </span>
-      <span class="en">montoyamoraga © 2026 </span>
+      <span class="es">montoyamoraga © 2026</span>
+      <span class="en">montoyamoraga © 2026</span>
     </footer>
 
     <script src="../../nav.js"></script>
     <script src="../../script.js"></script>
+    <script>
+      function moveImg(direction) {
+        const track = document.getElementById('img-track');
+        if (track) {
+          track.scrollBy({ left: direction * track.clientWidth, behavior: 'smooth' });
+        }
+      }
+    </script>
   </body>
 </html>
