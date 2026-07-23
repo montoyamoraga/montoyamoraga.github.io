@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="es">
   <head>
+    <script src="./../lib/js-yaml.min.js"></script>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="/assets/favicon.ico" />
+    <link rel="icon" type="image/png" href="./../assets/favicon.ico" />
     <title>montoyamoraga - contacto</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/style.css" />
   </head>
   <body>
     <button
@@ -27,23 +28,13 @@
       <nav id="divLeftMenu" class="left"></nav>
 
       <main class="right">
-        <h1 class="cajita">
-          <span class="es">contacto</span>
-          <span class="en">contact</span>
-        </h1>
+        <h1 class="cajita" data-i18n="contact"></h1>
 
         <div class="persona-card">
           <div class="persona-info">
             <h2 class="nombre-destacado">montoyamoraga</h2>
             
-            <p class="es">
-              para contactarme por favor escribir al correo
-              piruetas.xyz en gmail.com
-            </p>
-            <p class="en">
-              to contact me please write to the email piruetas.xyz at
-              gmail.com
-            </p>
+            <p data-i18n="contact-message"></p>
           </div>
         </div>
       </main>
