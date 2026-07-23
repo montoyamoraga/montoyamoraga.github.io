@@ -1,0 +1,65 @@
+cv:
+  educacion-universitaria:
+    postgrado:
+      doctorado-usach:
+        institucion:
+          en: universidad de santiago de chile
+          es: universidad de santiago de chile
+        grado:
+          en: phd in arts and humanities
+          es: doctorado en artes y humanidades
+        fecha-anho-inicio: 2025
+        fecha-anho-fin: false
+      magister-mit:
+        institucion:
+          en: massachusets institute of technology
+          es: massachusets institute of technology
+        grado:
+          en: master of science in media arts and sciences
+          es: magíster en artes mediales y ciencias
+        fecha-anho-inicio: 2019
+        fecha-anho-fin: 2021
+      magister-nyu:
+        institucion:
+          en: new york university
+          es: new york university
+        grado:
+          en: master of professional studies
+          es: magíster en estudios profesionales
+        fecha-anho-inicio: 2015
+        fecha-anho-fin: 2017
+    pregrado:
+      licenciatura:
+        institucion:
+          en: pontificia universidad católica de chile
+          es: pontificia universidad católica de chile
+        grado:
+          en: electrical engineering professional degree
+          es: título profesional en ingeniería civil electricista
+        fecha-anho-inicio: 2008
+        fecha-anho-fin: 2014
+      titulo-profesional:
+        institucion:
+          en: pontificia universidad católica de chile
+          es: pontificia universidad católica de chile
+        grado:
+          en: bachelor of electrical engineering
+          es: licenciatura en ingeniería civil electricista
+        fecha-anho-inicio: 2008
+        fecha-anho-fin: 2012
+  glosario:
+    educacion-universitaria:
+      en: university education 
+      es: educación universitaria
+    grado:
+      en: degree
+      es: grado
+    institucion:
+      en: institucion
+      es: institution
+    postgrado:
+      en: graduate
+      es: postgrado
+    pregrado:
+      en: undergraduate
+      es: pregrado
