@@ -712,6 +712,22 @@ contact:
 contact-message:
   en: to contact me please write to the email piruetas.xyz at gmail.com
   es: para contactarme por favor escribir al correo piruetas.xyz en gmail.com
+enlaces-list:
+  en: |
+    <li><a href="https://montoyamoraga.io">https://montoyamoraga.io</a></li>
+    <li><a href="https://github.com/montoyamoraga">https://github.com/montoyamoraga</a></li>
+    <li><a href="https://instagram.com/montoyamoraga">https://instagram.com/montoyamoraga</a></li>
+    <li><a href="https://orcid.org/0000-0001-9901-8224">https://orcid.org/0000-0001-9901-8224</a></li>
+    <li><a href="https://bandurria.io">https://bandurria.io</a></li>
+    <li><a href="https://faad.udp.cl/persona/aaron-montoya-moraga/">https://faad.udp.cl/persona/aaron-montoya-moraga/</a></li>
+  es: |
+    <li><a href="https://montoyamoraga.io">https://montoyamoraga.io</a></li>
+    <li><a href="https://github.com/montoyamoraga">https://github.com/montoyamoraga</a></li>
+    <li><a href="https://instagram.com/montoyamoraga">https://instagram.com/montoyamoraga</a></li>
+    <li><a href="https://orcid.org/0000-0001-9901-8224">https://orcid.org/0000-0001-9901-8224</a></li>
+    <li><a href="https://bandurria.io">https://bandurria.io</a></li>
+    <li><a href="https://faad.udp.cl/persona/aaron-montoya-moraga/">https://faad.udp.cl/persona/aaron-montoya-moraga/</a></li>
+
 enlaces:
   en: links
   es: enlaces
