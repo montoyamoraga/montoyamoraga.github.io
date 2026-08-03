@@ -388,6 +388,28 @@ cv:
         - anho-desde: 2022
           anho-hasta: 2022
           cantidad: 1
+  otros-cursos-dictados-en-pre-y-postgrado:
+    - nombre:
+        en: false
+        es: Programación colaborativa en GitHub
+      institucion:
+        en: universidad del desarrollo
+        es: universidad del desarrollo
+      pais:
+        en: chile
+        es: chile
+      nivel:
+        en: false
+        es: pregrado
+      anho:
+        en: false
+        es: 2025
+      semanas-efectivas-al-ano:
+        en: false
+        es: 1
+      archivo:
+        en: false
+        es: 2025-programacion-colaborativa-github.jpg
   ayudantias-profesor-auxiliar:
   - nombre:
       en: false
