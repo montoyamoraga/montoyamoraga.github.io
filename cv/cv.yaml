@@ -62,9 +62,9 @@ cv:
         institucion:
           en: school of machines, make and make-believe, berlin
           es: school of machines, make and make-believe, berlín
-        grado:
-          en: autonomous generative spirit: interactive machine learning for artists
-          es: autonomous generative spirit: interactive machine learning for artists
+          grado:
+            en: autonomous generative spirit: interactive machine learning for artists
+            es: autonomous generative spirit: interactive machine learning for artists
         detalle:
           en: taught by Andreas Refsgaard and Gene Kogan in august 2018
           es: impartido por Andreas Refsgaard y Gene Kogan en agosto de 2018
@@ -89,6 +89,25 @@ cv:
       El año 2024 recibe el Premio a la Innovación y Liderazgo Docente UDP a nivel
       FAAD, y el año 2026 el premio de Mejor Encuesta Docente de cursos teóricos de
       la Escuela de Diseño UDP.
+  actividad-perfeccionamiento:
+  - tipo-de-actividad:
+      en: false
+      es: curso de perfeccionamiento/especialización
+    nombre-institucion:
+      en: false
+      es: universidad de chile
+    pais:
+      en: chile
+      es: chile
+    anho-inicio:
+      en: false
+      es: 2022
+    anho-termino:
+      en: false
+      es: 2022
+    archivo:
+      en: false
+      es: "Certificado Montoya, Aaron.pdf"
   docencia-universitaria:
     cursos:
       dis8644:
