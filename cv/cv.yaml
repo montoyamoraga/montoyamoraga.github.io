@@ -100,12 +100,12 @@ cv:
           en: chile
           es: chile
         frecuencia:
-        - anho-desde: 2025
-          anho-hasta: 2025
-          cantidad: 1
-        rol: 
+          - anho-desde: 2025
+            anho-hasta: 2025
+            cantidad: 1
+        rol:
           en: false
-          es: profesore titular
+          es: profesore
       aud20004:
         nombre:
           en: false
@@ -123,21 +123,21 @@ cv:
           en: chile
           es: chile
         frecuencia:
-        - anho-desde: 2022
-          anho-hasta: 2022
-          cantidad: 1
-        - anho-desde: 2023
-          anho-hasta: 2023
-          cantidad: 1
-        - anho-desde: 2024
-          anho-hasta: 2024
-          cantidad: 2
-        - anho-desde: 2025
-          anho-hasta: 2025
-          cantidad: 1
-        rol: 
+          - anho-desde: 2022
+            anho-hasta: 2022
+            cantidad: 1
+          - anho-desde: 2023
+            anho-hasta: 2023
+            cantidad: 1
+          - anho-desde: 2024
+            anho-hasta: 2024
+            cantidad: 2
+          - anho-desde: 2025
+            anho-hasta: 2025
+            cantidad: 1
+        rol:
           en: false
-          es: profesore titular
+          es: profesore
       audiv027:
         nombre:
           en: false
@@ -155,18 +155,18 @@ cv:
           en: chile
           es: chile
         frecuencia:
-        - anho-desde: 2023
-          anho-hasta: 2023
-          cantidad: 1
-        - anho-desde: 2024
-          anho-hasta: 2024
-          cantidad: 2
-        - anho-desde: 2025
-          anho-hasta: 2025
-          cantidad: 1
-        rol: 
+          - anho-desde: 2023
+            anho-hasta: 2023
+            cantidad: 1
+          - anho-desde: 2024
+            anho-hasta: 2024
+            cantidad: 2
+          - anho-desde: 2025
+            anho-hasta: 2025
+            cantidad: 1
+        rol:
           en: false
-          es: profesore titular
+          es: profesore
       aua70092:
         nombre:
           en: false
@@ -184,18 +184,18 @@ cv:
           en: chile
           es: chile
         frecuencia:
-        - anho-desde: 2023
-          anho-hasta: 2023
-          cantidad: 1
-        - anho-desde: 2024
-          anho-hasta: 2024
-          cantidad: 1
-        - anho-desde: 2025
-          anho-hasta: 2025
-          cantidad: 1
-        rol: 
+          - anho-desde: 2023
+            anho-hasta: 2023
+            cantidad: 1
+          - anho-desde: 2024
+            anho-hasta: 2024
+            cantidad: 1
+          - anho-desde: 2025
+            anho-hasta: 2025
+            cantidad: 1
+        rol:
           en: false
-          es: profesore titular
+          es: profesore
       dis145:
         nombre:
           en: false
@@ -213,12 +213,12 @@ cv:
           en: chile
           es: chile
         frecuencia:
-        - anho-desde: 2024
-          anho-hasta: 2024
-          cantidad: 1
-        rol: 
+          - anho-desde: 2024
+            anho-hasta: 2024
+            cantidad: 1
+        rol:
           en: false
-          es: profesore titular
+          es: profesore
       aug10002:
         nombre:
           en: false
@@ -236,12 +236,12 @@ cv:
           en: chile
           es: chile
         frecuencia:
-        - anho-desde: 2024
-          anho-hasta: 2024
-          cantidad: 1
-        rol: 
+          - anho-desde: 2024
+            anho-hasta: 2024
+            cantidad: 1
+        rol:
           en: false
-          es: profesore titular
+          es: profesore
       sw2433:
         nombre:
           en: false
@@ -264,12 +264,12 @@ cv:
           en: chile
           es: chile
         frecuencia:
-        - anho-desde: 2024
-          anho-hasta: 2024
-          cantidad: 1
-        rol: 
+          - anho-desde: 2024
+            anho-hasta: 2024
+            cantidad: 1
+        rol:
           en: false
-          es: profesore titular
+          es: profesore
       dis9034:
         nombre:
           en: false
@@ -287,12 +287,12 @@ cv:
           en: chile
           es: chile
         frecuencia:
-        - anho-desde: 2024
-          anho-hasta: 2024
-          cantidad: 1
-        rol: 
+          - anho-desde: 2024
+            anho-hasta: 2024
+            cantidad: 1
+        rol:
           en: false
-          es: profesore titular
+          es: profesore
       aud10004:
         nombre:
           en: false
@@ -310,12 +310,12 @@ cv:
           en: chile
           es: chile
         frecuencia:
-        - anho-desde: 2023
-          anho-hasta: 2023
-          cantidad: 1
-        rol: 
+          - anho-desde: 2023
+            anho-hasta: 2023
+            cantidad: 1
+        rol:
           en: false
-          es: profesore titular
+          es: profesore
       dis9005:
         nombre:
           en: false
@@ -333,12 +333,12 @@ cv:
           en: chile
           es: chile
         frecuencia:
-        - anho-desde: 2023
-          anho-hasta: 2023
-          cantidad: 1
-        rol: 
+          - anho-desde: 2023
+            anho-hasta: 2023
+            cantidad: 1
+        rol:
           en: false
-          es: profesore titular
+          es: profesore
       aud5i022:
         nombre:
           en: false
@@ -358,15 +358,15 @@ cv:
           en: chile
           es: chile
         frecuencia:
-        - anho-desde: 2022
-          anho-hasta: 2022
-          cantidad: 1
-        - anho-desde: 2023
-          anho-hasta: 2023
-          cantidad: 1
-        rol: 
+          - anho-desde: 2022
+            anho-hasta: 2022
+            cantidad: 1
+          - anho-desde: 2023
+            anho-hasta: 2023
+            cantidad: 1
+        rol:
           en: false
-          es: profesore titular
+          es: profesore
       audiv020:
         nombre:
           en: false
@@ -386,16 +386,17 @@ cv:
           en: chile
           es: chile
         frecuencia:
-        - anho-desde: 2022
-          anho-hasta: 2022
-          cantidad: 1
-        rol: 
+          - anho-desde: 2022
+            anho-hasta: 2022
+            cantidad: 1
+        rol:
           en: false
-          es: profesore titular
+          es: profesore
       dis8636-2024:
         nombre:
           en: false
-          es: DIS8636 - taller de interfaz de usuario ui, dictado por profesor sergio
+          es:
+            DIS8636 - taller de interfaz de usuario ui, dictado por profesor sergio
             majluf
         nivel:
           en: false
@@ -410,20 +411,21 @@ cv:
           en: chile
           es: chile
         frecuencia:
-        - anho-desde:
-            en: false
-            es: '2024'
-          anho-hasta:
-            en: false
-            es: '2024'
-          cantidad: 1
-        rol: 
+          - anho-desde:
+              en: false
+              es: '2024'
+            anho-hasta:
+              en: false
+              es: '2024'
+            cantidad: 1
+        rol:
           en: false
           es: profesore auxiliar
       dis8637-2024:
         nombre:
           en: false
-          es: DIS8637 - taller de experiencia de usuario ux, dictado por profesor
+          es:
+            DIS8637 - taller de experiencia de usuario ux, dictado por profesor
             sergio majluf
         nivel:
           en: false
@@ -438,20 +440,21 @@ cv:
           en: chile
           es: chile
         frecuencia:
-        - anho-desde:
-            en: false
-            es: '2024'
-          anho-hasta:
-            en: false
-            es: '2024'
-          cantidad: 1
+          - anho-desde:
+              en: false
+              es: '2024'
+            anho-hasta:
+              en: false
+              es: '2024'
+            cantidad: 1
         rol:
           en: false
           es: profesore auxiliar
       dis8636-2023:
         nombre:
           en: false
-          es: DIS8636 - taller de interfaz de usuario ui, dictado por profesor sergio
+          es:
+            DIS8636 - taller de interfaz de usuario ui, dictado por profesor sergio
             majluf
         nivel:
           en: false
@@ -466,20 +469,21 @@ cv:
           en: chile
           es: chile
         frecuencia:
-        - anho-desde:
-            en: false
-            es: '2023'
-          anho-hasta:
-            en: false
-            es: '2023'
-          cantidad: 1
+          - anho-desde:
+              en: false
+              es: '2023'
+            anho-hasta:
+              en: false
+              es: '2023'
+            cantidad: 1
         rol:
           en: false
           es: profesore auxiliar
       dis8637-2023:
         nombre:
           en: false
-          es: DIS8637 - taller de experiencia de usuario ux, dictado por profesor
+          es:
+            DIS8637 - taller de experiencia de usuario ux, dictado por profesor
             sergio majluf
         nivel:
           en: false
@@ -494,13 +498,13 @@ cv:
           en: chile
           es: chile
         frecuencia:
-        - anho-desde:
-            en: false
-            es: '2023'
-          anho-hasta:
-            en: false
-            es: '2023'
-          cantidad: 1
+          - anho-desde:
+              en: false
+              es: '2023'
+            anho-hasta:
+              en: false
+              es: '2023'
+            cantidad: 1
         rol:
           en: false
           es: profesore auxiliar
@@ -508,92 +512,92 @@ cv:
       en: false
       es: curso dictado por profesor sergio majluf y aaron montoya profe auxiliar
   otros-cursos-dictados-en-pre-y-postgrado:
-  - nombre:
-      en: false
-      es: Programación colaborativa en GitHub
-    institucion:
-      en: universidad del desarrollo
-      es: universidad del desarrollo
-    pais:
-      en: chile
-      es: chile
-    nivel:
-      en: false
-      es: pregrado
-    anho:
-      en: false
-      es: 2025
-    semanas-efectivas-al-ano:
-      en: false
-      es: 1
-    archivo:
-      en: false
-      es: 2025-programacion-colaborativa-github.jpg
+    - nombre:
+        en: false
+        es: Programación colaborativa en GitHub
+      institucion:
+        en: universidad del desarrollo
+        es: universidad del desarrollo
+      pais:
+        en: chile
+        es: chile
+      nivel:
+        en: false
+        es: pregrado
+      anho:
+        en: false
+        es: 2025
+      semanas-efectivas-al-ano:
+        en: false
+        es: 1
+      archivo:
+        en: false
+        es: 2025-programacion-colaborativa-github.jpg
   becas:
-  - nombre:
-      en: false
-      es: Exención de arancel, programa Doctorado de artes y humanidades USACH
-    tipo:
-      en: false
-      es: nacional/internacional
-    institucion:
-      en: República de Chile, Universidad de Santiago de Chile, Vicerrectoría de postgrado
-      es: República de Chile, Universidad de Santiago de Chile, Vicerrectoría de postgrado
-    proposito:
-      en: false
-      es: estudio de doctorado
-    anho:
-      en: false
-      es: 2025
-    archivo:
-      en: false
-      es: 2025-beca-arancel-usach.pdf
-  - nombre:
-      en: false
-      es: Research Assistantship
-    tipo:
-      en: false
-      es: nacional/internacional
-    institucion:
-      en: MIT Media Lab
-      es: MIT Media Lab
-    proposito:
-      en: false
-      es: estudio de magíster
-    anho:
-      en: false
-      es: 2019
-  - nombre:
-      en: false
-      es: Becas Chile Conicyt, estudio de magíster en el extranjero
-    tipo:
-      en: false
-      es: nacional/internacional
-    institucion:
-      en: Conicyt
-      es: Conicyt
-    proposito:
-      en: false
-      es: estudio de magíster
-    anho:
-      en: false
-      es: 2015
+    - nombre:
+        en: false
+        es: Exención de arancel, programa Doctorado de artes y humanidades USACH
+      tipo:
+        en: false
+        es: nacional/internacional
+      institucion:
+        en: República de Chile, Universidad de Santiago de Chile, Vicerrectoría de postgrado
+        es: República de Chile, Universidad de Santiago de Chile, Vicerrectoría de postgrado
+      proposito:
+        en: false
+        es: estudio de doctorado
+      anho:
+        en: false
+        es: 2025
+      archivo:
+        en: false
+        es: 2025-beca-arancel-usach.pdf
+    - nombre:
+        en: false
+        es: Research Assistantship
+      tipo:
+        en: false
+        es: nacional/internacional
+      institucion:
+        en: MIT Media Lab
+        es: MIT Media Lab
+      proposito:
+        en: false
+        es: estudio de magíster
+      anho:
+        en: false
+        es: 2019
+    - nombre:
+        en: false
+        es: Becas Chile Conicyt, estudio de magíster en el extranjero
+      tipo:
+        en: false
+        es: nacional/internacional
+      institucion:
+        en: Conicyt
+        es: Conicyt
+      proposito:
+        en: false
+        es: estudio de magíster
+      anho:
+        en: false
+        es: 2015
   premios-distinciones:
-  - nombre:
-      en: false
-      es: Premio a la Innovación y Liderazgo Docente
-    tipo:
-      en: false
-      es: premio o distinción
-    institucion:
-      en: Universidad Diego Portales
-      es: Universidad Diego Portales
-    anho:
-      en: false
-      es: 2024
-    archivo:
-      en: false
-      es: 2024-premio.png
+    - nombre:
+        en: false
+        es: Premio a la Innovación y Liderazgo Docente
+      tipo:
+        en: false
+        es: premio o distinción
+      institucion:
+        en: Universidad Diego Portales
+        es: Universidad Diego Portales
+      anho:
+        en: false
+        es: 2024
+      archivo:
+        en: false
+        es: 2024-premio.png
   glosario:
     educacion-universitaria:
       en: university education
@@ -641,147 +645,147 @@ cv:
       en: frequency
       es: frecuencia
   ayudantias:
-  - nombre:
-      en: false
-      es: drawing plus plus, dictado por profesor zach lieberman
-    rol:
-      en: false
-      es: ayudante de postgrado
-    institucion:
-      en: massachusetts institute of technology (mit)
-      es: massachusetts institute of technology (mit)
-    pais:
-      en: united states
-      es: estados unidos
-    nivel:
-      en: false
-      es: postgrado
-    anho:
-      en: false
-      es: 2020
-  - nombre:
-      en: false
-      es: recreating the past, dictado por profesor zach lieberman
-    rol:
-      en: false
-      es: ayudante de postgrado
-    institucion:
-      en: massachusetts institute of technology (mit)
-      es: massachusetts institute of technology (mit)
-    pais:
-      en: united states
-      es: estados unidos
-    nivel:
-      en: false
-      es: postgrado
-    anho:
-      en: false
-      es: 2020
-  - nombre:
-      en: false
-      es: tesis, curso semestral de tesis dictado por profesora kat sullivan
-    rol:
-      en: false
-      es: ayudante de postgrado
-    institucion:
-      en: new york university
-      es: new york university
-    pais:
-      en: united states
-      es: estados unidos
-    nivel:
-      en: false
-      es: postgrado
-    anho:
-      en: false
-      es: 2018
-  - nombre:
-      en: false
-      es: new interfaces for musical expression, dictado por profesor greg shakar
-    rol:
-      en: false
-      es: ayudante de postgrado
-    institucion:
-      en: new york university
-      es: new york university
-    pais:
-      en: united states
-      es: estados unidos
-    nivel:
-      en: false
-      es: postgrado
-    anho:
-      en: false
-      es: 2018
-  - nombre:
-      en: false
-      es: 'communication lab: video and sound, dictado por profesora marina zurkow'
-    rol:
-      en: false
-      es: ayudante de postgrado
-    institucion:
-      en: new york university
-      es: new york university
-    pais:
-      en: united states
-      es: estados unidos
-    nivel:
-      en: false
-      es: postgrado
-    anho:
-      en: false
-      es: 2017
-  - nombre:
-      en: false
-      es: psicoacústica, dictado por profesor rodrigo cádiz
-    rol:
-      en: false
-      es: ayudante de pregrado
-    institucion:
-      en: pontificia universidad católica de chile
-      es: pontificia universidad católica de chile
-    pais:
-      en: chile
-      es: chile
-    nivel:
-      en: false
-      es: pregrado
-    anho:
-      en: false
-      es: 2014
-  - nombre:
-      en: false
-      es: psicoacústica, dictado por profesor rodrigo cádiz
-    rol:
-      en: false
-      es: ayudante
-    institucion:
-      en: pontificia universidad católica de chile
-      es: pontificia universidad católica de chile
-    pais:
-      en: chile
-      es: chile
-    nivel:
-      en: false
-      es: pregrado
-    anho:
-      en: false
-      es: 2013
-  - nombre:
-      en: false
-      es: sistemas digitales, dictado por profesor cristián tejos
-    rol:
-      en: false
-      es: ayudante de pregrado
-    institucion:
-      en: pontificia universidad católica de chile
-      es: pontificia universidad católica de chile
-    pais:
-      en: chile
-      es: chile
-    nivel:
-      en: false
-      es: pregrado
-    anho:
-      en: false
-      es: 2012
+    - nombre:
+        en: false
+        es: drawing plus plus, dictado por profesor zach lieberman
+      rol:
+        en: false
+        es: ayudante de postgrado
+      institucion:
+        en: massachusetts institute of technology (mit)
+        es: massachusetts institute of technology (mit)
+      pais:
+        en: united states
+        es: estados unidos
+      nivel:
+        en: false
+        es: postgrado
+      anho:
+        en: false
+        es: 2020
+    - nombre:
+        en: false
+        es: recreating the past, dictado por profesor zach lieberman
+      rol:
+        en: false
+        es: ayudante de postgrado
+      institucion:
+        en: massachusetts institute of technology (mit)
+        es: massachusetts institute of technology (mit)
+      pais:
+        en: united states
+        es: estados unidos
+      nivel:
+        en: false
+        es: postgrado
+      anho:
+        en: false
+        es: 2020
+    - nombre:
+        en: false
+        es: tesis, curso semestral de tesis dictado por profesora kat sullivan
+      rol:
+        en: false
+        es: ayudante de postgrado
+      institucion:
+        en: new york university
+        es: new york university
+      pais:
+        en: united states
+        es: estados unidos
+      nivel:
+        en: false
+        es: postgrado
+      anho:
+        en: false
+        es: 2018
+    - nombre:
+        en: false
+        es: new interfaces for musical expression, dictado por profesor greg shakar
+      rol:
+        en: false
+        es: ayudante de postgrado
+      institucion:
+        en: new york university
+        es: new york university
+      pais:
+        en: united states
+        es: estados unidos
+      nivel:
+        en: false
+        es: postgrado
+      anho:
+        en: false
+        es: 2018
+    - nombre:
+        en: false
+        es: 'communication lab: video and sound, dictado por profesora marina zurkow'
+      rol:
+        en: false
+        es: ayudante de postgrado
+      institucion:
+        en: new york university
+        es: new york university
+      pais:
+        en: united states
+        es: estados unidos
+      nivel:
+        en: false
+        es: postgrado
+      anho:
+        en: false
+        es: 2017
+    - nombre:
+        en: false
+        es: psicoacústica, dictado por profesor rodrigo cádiz
+      rol:
+        en: false
+        es: ayudante de pregrado
+      institucion:
+        en: pontificia universidad católica de chile
+        es: pontificia universidad católica de chile
+      pais:
+        en: chile
+        es: chile
+      nivel:
+        en: false
+        es: pregrado
+      anho:
+        en: false
+        es: 2014
+    - nombre:
+        en: false
+        es: psicoacústica, dictado por profesor rodrigo cádiz
+      rol:
+        en: false
+        es: ayudante
+      institucion:
+        en: pontificia universidad católica de chile
+        es: pontificia universidad católica de chile
+      pais:
+        en: chile
+        es: chile
+      nivel:
+        en: false
+        es: pregrado
+      anho:
+        en: false
+        es: 2013
+    - nombre:
+        en: false
+        es: sistemas digitales, dictado por profesor cristián tejos
+      rol:
+        en: false
+        es: ayudante de pregrado
+      institucion:
+        en: pontificia universidad católica de chile
+        es: pontificia universidad católica de chile
+      pais:
+        en: chile
+        es: chile
+      nivel:
+        en: false
+        es: pregrado
+      anho:
+        en: false
+        es: 2012
