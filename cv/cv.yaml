@@ -72,7 +72,8 @@ cv:
         fecha-anho-fin: 2018
   breve-resumen-trayectoria-academica:
     en: false
-    es: Licenciatura y título profesional en ingeniería civil electricista de la Pontificia
+    es:
+      Licenciatura y título profesional en ingeniería civil electricista de la Pontificia
       Universidad Católica de Chile (2008 - 2014). Máster MPS en arte electrónico
       de New York University, Tisch School of the Arts, Interactive Telecommunications
       Program (2015 - 2017), financiado por Becas Chile, tanto arancel como manutención.
@@ -262,7 +263,8 @@ cv:
           es: pregrado
         programa:
           en: false
-          es: Workshop FAAD UCT 2024, 6 clases en una semana intensiva, para estudiantes
+          es:
+            Workshop FAAD UCT 2024, 6 clases en una semana intensiva, para estudiantes
             de Arquitectura, Artes, Diseño y Oficios Creativos
         institucion:
           en: universidad católica de temuco
@@ -349,7 +351,8 @@ cv:
       aud5i022:
         nombre:
           en: false
-          es: 'AUD5I022 Electivo Mención I y S: Diseño de interfaz electrónica mediante
+          es:
+            'AUD5I022 Electivo Mención I y S: Diseño de interfaz electrónica mediante
             Arduino'
         nivel:
           en: false
@@ -376,7 +379,8 @@ cv:
       audiv020:
         nombre:
           en: false
-          es: 'AUDIV020 Electivo Ambas Menciones: Diseño de instrumentos musicales
+          es:
+            'AUDIV020 Electivo Ambas Menciones: Diseño de instrumentos musicales
             digitales'
         nivel:
           en: false
