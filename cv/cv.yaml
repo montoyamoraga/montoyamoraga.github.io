@@ -63,8 +63,8 @@ cv:
           en: school of machines, make and make-believe, berlin
           es: school of machines, make and make-believe, berlín
         grado:
-          en: 'autonomous generative spirit: interactive machine learning for artists'
-          es: 'autonomous generative spirit: interactive machine learning for artists'
+          en: autonomous generative spirit: interactive machine learning for artists
+          es: autonomous generative spirit: interactive machine learning for artists
         detalle:
           en: taught by Andreas Refsgaard and Gene Kogan in august 2018
           es: impartido por Andreas Refsgaard y Gene Kogan en agosto de 2018
@@ -72,8 +72,7 @@ cv:
         fecha-anho-fin: 2018
   breve-resumen-trayectoria-academica:
     en: false
-    es:
-      Licenciatura y título profesional en ingeniería civil electricista de la Pontificia
+    es: Licenciatura y título profesional en ingeniería civil electricista de la Pontificia
       Universidad Católica de Chile (2008 - 2014). Máster MPS en arte electrónico
       de New York University, Tisch School of the Arts, Interactive Telecommunications
       Program (2015 - 2017), financiado por Becas Chile, tanto arancel como manutención.
@@ -95,7 +94,7 @@ cv:
       dis8644:
         nombre:
           en: false
-          es: DIS8644 Taller de diseño de máquinas electrónicas
+          es: DIS8644 taller de diseño de máquinas electrónicas
         nivel:
           en: false
           es: pregrado
@@ -109,16 +108,16 @@ cv:
           en: chile
           es: chile
         frecuencia:
-          - anho-desde: 2025
-            anho-hasta: 2025
-            cantidad: 1
+        - anho-desde: 2025
+          anho-hasta: 2025
+          cantidad: 1
         rol:
           en: false
           es: profesore
       aud20004:
         nombre:
           en: false
-          es: AUD20004 Física aplicada al Diseño
+          es: AUD20004 física aplicada al diseño
         nivel:
           en: false
           es: pregrado
@@ -132,25 +131,25 @@ cv:
           en: chile
           es: chile
         frecuencia:
-          - anho-desde: 2022
-            anho-hasta: 2022
-            cantidad: 1
-          - anho-desde: 2023
-            anho-hasta: 2023
-            cantidad: 1
-          - anho-desde: 2024
-            anho-hasta: 2024
-            cantidad: 2
-          - anho-desde: 2025
-            anho-hasta: 2025
-            cantidad: 1
+        - anho-desde: 2022
+          anho-hasta: 2022
+          cantidad: 1
+        - anho-desde: 2023
+          anho-hasta: 2023
+          cantidad: 1
+        - anho-desde: 2024
+          anho-hasta: 2024
+          cantidad: 2
+        - anho-desde: 2025
+          anho-hasta: 2025
+          cantidad: 1
         rol:
           en: false
           es: profesore
       audiv027:
         nombre:
           en: false
-          es: 'AUDIV027 Electivo ambas menciones: Inteligencia artificial'
+          es: AUDIV027 electivo ambas menciones: inteligencia artificial
         nivel:
           en: false
           es: pregrado
@@ -164,22 +163,22 @@ cv:
           en: chile
           es: chile
         frecuencia:
-          - anho-desde: 2023
-            anho-hasta: 2023
-            cantidad: 1
-          - anho-desde: 2024
-            anho-hasta: 2024
-            cantidad: 2
-          - anho-desde: 2025
-            anho-hasta: 2025
-            cantidad: 1
+        - anho-desde: 2023
+          anho-hasta: 2023
+          cantidad: 1
+        - anho-desde: 2024
+          anho-hasta: 2024
+          cantidad: 2
+        - anho-desde: 2025
+          anho-hasta: 2025
+          cantidad: 1
         rol:
           en: false
           es: profesore
       aua70092:
         nombre:
           en: false
-          es: 'AUA70092 Electivo de especialización: Inteligencia artificial'
+          es: AUA70092 electivo de especialización: inteligencia artificial
         nivel:
           en: false
           es: pregrado
@@ -193,22 +192,22 @@ cv:
           en: chile
           es: chile
         frecuencia:
-          - anho-desde: 2023
-            anho-hasta: 2023
-            cantidad: 1
-          - anho-desde: 2024
-            anho-hasta: 2024
-            cantidad: 1
-          - anho-desde: 2025
-            anho-hasta: 2025
-            cantidad: 1
+        - anho-desde: 2023
+          anho-hasta: 2023
+          cantidad: 1
+        - anho-desde: 2024
+          anho-hasta: 2024
+          cantidad: 1
+        - anho-desde: 2025
+          anho-hasta: 2025
+          cantidad: 1
         rol:
           en: false
           es: profesore
       dis145:
         nombre:
           en: false
-          es: DIS145 Diseño y construcción de interfaces
+          es: DIS145 diseño y construcción de interfaces
         nivel:
           en: false
           es: pregrado
@@ -222,16 +221,16 @@ cv:
           en: chile
           es: chile
         frecuencia:
-          - anho-desde: 2024
-            anho-hasta: 2024
-            cantidad: 1
+        - anho-desde: 2024
+          anho-hasta: 2024
+          cantidad: 1
         rol:
           en: false
           es: profesore
       aug10002:
         nombre:
           en: false
-          es: AUG10002 Física
+          es: AUG10002 física
         nivel:
           en: false
           es: pregrado
@@ -245,16 +244,16 @@ cv:
           en: chile
           es: chile
         frecuencia:
-          - anho-desde: 2024
-            anho-hasta: 2024
-            cantidad: 1
+        - anho-desde: 2024
+          anho-hasta: 2024
+          cantidad: 1
         rol:
           en: false
           es: profesore
       sw2433:
         nombre:
           en: false
-          es: SW2433 Inteligencia artificial artesanal
+          es: SW2433 inteligencia artificial artesanal
         otro-regimen:
           en: false
           es: workshop
@@ -263,9 +262,8 @@ cv:
           es: pregrado
         programa:
           en: false
-          es:
-            Workshop FAAD UCT 2024, 6 clases en una semana intensiva, para estudiantes
-            de Arquitectura, Artes, Diseño y Oficios Creativos
+          es: workshop FAAD UCT 2024, 6 clases en una semana intensiva, para estudiantes
+            de arquitectura, artes, diseño y oficios creativos
         institucion:
           en: universidad católica de temuco
           es: universidad católica de temuco
@@ -273,16 +271,16 @@ cv:
           en: chile
           es: chile
         frecuencia:
-          - anho-desde: 2024
-            anho-hasta: 2024
-            cantidad: 1
+        - anho-desde: 2024
+          anho-hasta: 2024
+          cantidad: 1
         rol:
           en: false
           es: profesore
       dis9034:
         nombre:
           en: false
-          es: DIS9034 Programación creativa multimedia
+          es: DIS9034 programación creativa multimedia
         nivel:
           en: false
           es: pregrado
@@ -296,16 +294,16 @@ cv:
           en: chile
           es: chile
         frecuencia:
-          - anho-desde: 2024
-            anho-hasta: 2024
-            cantidad: 1
+        - anho-desde: 2024
+          anho-hasta: 2024
+          cantidad: 1
         rol:
           en: false
           es: profesore
       aud10004:
         nombre:
           en: false
-          es: AUD10004 Matemáticas aplicadas al Diseño
+          es: AUD10004 matemáticas aplicadas al diseño
         nivel:
           en: false
           es: pregrado
@@ -319,16 +317,16 @@ cv:
           en: chile
           es: chile
         frecuencia:
-          - anho-desde: 2023
-            anho-hasta: 2023
-            cantidad: 1
+        - anho-desde: 2023
+          anho-hasta: 2023
+          cantidad: 1
         rol:
           en: false
           es: profesore
       dis9005:
         nombre:
           en: false
-          es: DIS9005 Diseño Página Web
+          es: DIS9005 diseño página web
         nivel:
           en: false
           es: pregrado
@@ -342,18 +340,17 @@ cv:
           en: chile
           es: chile
         frecuencia:
-          - anho-desde: 2023
-            anho-hasta: 2023
-            cantidad: 1
+        - anho-desde: 2023
+          anho-hasta: 2023
+          cantidad: 1
         rol:
           en: false
           es: profesore
       aud5i022:
         nombre:
           en: false
-          es:
-            'AUD5I022 Electivo Mención I y S: Diseño de interfaz electrónica mediante
-            Arduino'
+          es: AUD5I022 electivo mención i y s: diseño de interfaz electrónica mediante
+            arduino
         nivel:
           en: false
           es: pregrado
@@ -367,21 +364,20 @@ cv:
           en: chile
           es: chile
         frecuencia:
-          - anho-desde: 2022
-            anho-hasta: 2022
-            cantidad: 1
-          - anho-desde: 2023
-            anho-hasta: 2023
-            cantidad: 1
+        - anho-desde: 2022
+          anho-hasta: 2022
+          cantidad: 1
+        - anho-desde: 2023
+          anho-hasta: 2023
+          cantidad: 1
         rol:
           en: false
           es: profesore
       audiv020:
         nombre:
           en: false
-          es:
-            'AUDIV020 Electivo Ambas Menciones: Diseño de instrumentos musicales
-            digitales'
+          es: AUDIV020 electivo ambas menciones: diseño de instrumentos musicales
+            digitales
         nivel:
           en: false
           es: pregrado
@@ -395,17 +391,16 @@ cv:
           en: chile
           es: chile
         frecuencia:
-          - anho-desde: 2022
-            anho-hasta: 2022
-            cantidad: 1
+        - anho-desde: 2022
+          anho-hasta: 2022
+          cantidad: 1
         rol:
           en: false
           es: profesore
       dis8636-2024:
         nombre:
           en: false
-          es:
-            DIS8636 - taller de interfaz de usuario ui, dictado por profesor sergio
+          es: DIS8636 - taller de interfaz de usuario ui, dictado por profesor sergio
             majluf
         nivel:
           en: false
@@ -420,21 +415,20 @@ cv:
           en: chile
           es: chile
         frecuencia:
-          - anho-desde:
-              en: false
-              es: '2024'
-            anho-hasta:
-              en: false
-              es: '2024'
-            cantidad: 1
+        - anho-desde:
+            en: false
+            es: 2024
+          anho-hasta:
+            en: false
+            es: 2024
+          cantidad: 1
         rol:
           en: false
           es: profesore auxiliar
       dis8637-2024:
         nombre:
           en: false
-          es:
-            DIS8637 - taller de experiencia de usuario ux, dictado por profesor
+          es: DIS8637 - taller de experiencia de usuario ux, dictado por profesor
             sergio majluf
         nivel:
           en: false
@@ -449,21 +443,20 @@ cv:
           en: chile
           es: chile
         frecuencia:
-          - anho-desde:
-              en: false
-              es: '2024'
-            anho-hasta:
-              en: false
-              es: '2024'
-            cantidad: 1
+        - anho-desde:
+            en: false
+            es: 2024
+          anho-hasta:
+            en: false
+            es: 2024
+          cantidad: 1
         rol:
           en: false
           es: profesore auxiliar
       dis8636-2023:
         nombre:
           en: false
-          es:
-            DIS8636 - taller de interfaz de usuario ui, dictado por profesor sergio
+          es: DIS8636 - taller de interfaz de usuario ui, dictado por profesor sergio
             majluf
         nivel:
           en: false
@@ -478,21 +471,20 @@ cv:
           en: chile
           es: chile
         frecuencia:
-          - anho-desde:
-              en: false
-              es: '2023'
-            anho-hasta:
-              en: false
-              es: '2023'
-            cantidad: 1
+        - anho-desde:
+            en: false
+            es: 2023
+          anho-hasta:
+            en: false
+            es: 2023
+          cantidad: 1
         rol:
           en: false
           es: profesore auxiliar
       dis8637-2023:
         nombre:
           en: false
-          es:
-            DIS8637 - taller de experiencia de usuario ux, dictado por profesor
+          es: DIS8637 - taller de experiencia de usuario ux, dictado por profesor
             sergio majluf
         nivel:
           en: false
@@ -507,13 +499,13 @@ cv:
           en: chile
           es: chile
         frecuencia:
-          - anho-desde:
-              en: false
-              es: '2023'
-            anho-hasta:
-              en: false
-              es: '2023'
-            cantidad: 1
+        - anho-desde:
+            en: false
+            es: 2023
+          anho-hasta:
+            en: false
+            es: 2023
+          cantidad: 1
         rol:
           en: false
           es: profesore auxiliar
@@ -521,92 +513,148 @@ cv:
       en: false
       es: curso dictado por profesor sergio majluf y aaron montoya profe auxiliar
   otros-cursos-dictados-en-pre-y-postgrado:
-    - nombre:
-        en: false
-        es: Programación colaborativa en GitHub
-      institucion:
-        en: universidad del desarrollo
-        es: universidad del desarrollo
-      pais:
-        en: chile
-        es: chile
-      nivel:
-        en: false
-        es: pregrado
-      anho:
-        en: false
-        es: 2025
-      semanas-efectivas-al-ano:
-        en: false
-        es: 1
-      archivo:
-        en: false
-        es: 2025-programacion-colaborativa-github.jpg
+  - nombre:
+      en: false
+      es: programación colaborativa en github
+    institucion:
+      en: universidad del desarrollo
+      es: universidad del desarrollo
+    pais:
+      en: chile
+      es: chile
+    nivel:
+      en: false
+      es: pregrado
+    anho:
+      en: false
+      es: 2025
+    semanas-efectivas-al-ano:
+      en: false
+      es: 1
+    archivo:
+      en: false
+      es: 2025-programacion-colaborativa-github.jpg
+  otras-actividades-docentes-destacables:
+  - nombre:
+      en: randomness is all around: an online multimedia arts class
+      es: randomness is all around: curso online de artes multimedia
+    institucion:
+      en: school of machines, make and make-believe
+      es: school of machines, make and make-believe
+    pais:
+      en: germany
+      es: alemania
+    anho:
+      en: 2019
+      es: 2019
+    detalle:
+      en: online mathematics and randomness class for school of machines, making &
+        make believe, berlin
+      es: curso online de matemáticas y aleatoriedad dictado para school of machines,
+        making & make believe en berlín, alemania, en el año 2019.
+  - nombre:
+      en: program design for new digital interaction mention
+      es: encargade de diseño de programa de estudio de nueva mención de interacción
+        digital
+    institucion:
+      en: universidad diego portales
+      es: universidad diego portales
+    pais:
+      en: chile
+      es: chile
+    anho:
+      en: 2023
+      es: 2023
+    detalle:
+      en: led curriculum design for a new digital interaction mention as part of the
+        2023 curricular innovation process
+      es: encargade de diseño de programa de estudio de nueva mención de interacción
+        digital en la escuela de diseño en el marco del proceso de innovación curricular
+        2023
+  - nombre:
+      en: student assistant training: andrés amilcar martín mena
+      es: formación de alumno ayudante andrés amilcar martín mena
+    institucion:
+      en: universidad diego portales
+      es: universidad diego portales
+    pais:
+      en: chile
+      es: chile
+    anho:
+      en: 2022
+      es: 2022
+    detalle:
+      en: trained and supervised student assistant andrés amilcar martín mena, who
+        later joined the undergraduate assistant team and supported courses at universidad
+        de chile and UDP (2022-2023)
+      es: andrés martín se graduó con nota 7.0 en dos de mis cursos de diseño de interacción
+        (2022). en 2023 se integró a mi equipo de ayudantes de pregrado y colaboró
+        en cursos de la universidad de chile y la universidad diego portales.
   becas:
-    - nombre:
-        en: false
-        es: Exención de arancel, programa Doctorado de artes y humanidades USACH
-      tipo:
-        en: false
-        es: nacional/internacional
-      institucion:
-        en: República de Chile, Universidad de Santiago de Chile, Vicerrectoría de postgrado
-        es: República de Chile, Universidad de Santiago de Chile, Vicerrectoría de postgrado
-      proposito:
-        en: false
-        es: estudio de doctorado
-      anho:
-        en: false
-        es: 2025
-      archivo:
-        en: false
-        es: 2025-beca-arancel-usach.pdf
-    - nombre:
-        en: false
-        es: Research Assistantship
-      tipo:
-        en: false
-        es: nacional/internacional
-      institucion:
-        en: MIT Media Lab
-        es: MIT Media Lab
-      proposito:
-        en: false
-        es: estudio de magíster
-      anho:
-        en: false
-        es: 2019
-    - nombre:
-        en: false
-        es: Becas Chile Conicyt, estudio de magíster en el extranjero
-      tipo:
-        en: false
-        es: nacional/internacional
-      institucion:
-        en: Conicyt
-        es: Conicyt
-      proposito:
-        en: false
-        es: estudio de magíster
-      anho:
-        en: false
-        es: 2015
+  - nombre:
+      en: false
+      es: Exención de arancel, programa Doctorado de artes y humanidades USACH
+    tipo:
+      en: false
+      es: nacional/internacional
+    institucion:
+      en: República de Chile, Universidad de Santiago de Chile, Vicerrectoría de postgrado
+      es: República de Chile, Universidad de Santiago de Chile, Vicerrectoría de postgrado
+    proposito:
+      en: false
+      es: estudio de doctorado
+    anho:
+      en: false
+      es: 2025
+    archivo:
+      en: false
+      es: 2025-beca-arancel-usach.pdf
+  - nombre:
+      en: false
+      es: Research Assistantship
+    tipo:
+      en: false
+      es: nacional/internacional
+    institucion:
+      en: MIT Media Lab
+      es: MIT Media Lab
+    proposito:
+      en: false
+      es: estudio de magíster
+    anho:
+      en: false
+      es: 2019
+  - nombre:
+      en: false
+      es: Becas Chile Conicyt, estudio de magíster en el extranjero
+    tipo:
+      en: false
+      es: nacional/internacional
+    institucion:
+      en: Conicyt
+      es: Conicyt
+    proposito:
+      en: false
+      es: estudio de magíster
+    anho:
+      en: false
+      es: 2015
   premios-distinciones:
-    - nombre:
-        en: false
-        es: Premio a la Innovación y Liderazgo Docente
-      tipo:
-        en: false
-        es: premio o distinción
-      institucion:
-        en: Universidad Diego Portales
-        es: Universidad Diego Portales
-      anho:
-        en: false
-        es: 2024
-      archivo:
-        en: false
-        es: 2024-premio.png
+  - nombre:
+      en: false
+      es: Premio a la Innovación y Liderazgo Docente
+    tipo:
+      en: false
+      es: premio o distinción
+    institucion:
+      en: Universidad Diego Portales
+      es: Universidad Diego Portales
+    anho:
+      en: false
+      es: 2024
+    archivo:
+      en: false
+      es: 2024-premio.png
   glosario:
     educacion-universitaria:
       en: university education
@@ -654,147 +702,147 @@ cv:
       en: frequency
       es: frecuencia
   ayudantias:
-    - nombre:
-        en: false
-        es: drawing plus plus, dictado por profesor zach lieberman
-      rol:
-        en: false
-        es: ayudante de postgrado
-      institucion:
-        en: massachusetts institute of technology (mit)
-        es: massachusetts institute of technology (mit)
-      pais:
-        en: united states
-        es: estados unidos
-      nivel:
-        en: false
-        es: postgrado
-      anho:
-        en: false
-        es: 2020
-    - nombre:
-        en: false
-        es: recreating the past, dictado por profesor zach lieberman
-      rol:
-        en: false
-        es: ayudante de postgrado
-      institucion:
-        en: massachusetts institute of technology (mit)
-        es: massachusetts institute of technology (mit)
-      pais:
-        en: united states
-        es: estados unidos
-      nivel:
-        en: false
-        es: postgrado
-      anho:
-        en: false
-        es: 2020
-    - nombre:
-        en: false
-        es: tesis, curso semestral de tesis dictado por profesora kat sullivan
-      rol:
-        en: false
-        es: ayudante de postgrado
-      institucion:
-        en: new york university
-        es: new york university
-      pais:
-        en: united states
-        es: estados unidos
-      nivel:
-        en: false
-        es: postgrado
-      anho:
-        en: false
-        es: 2018
-    - nombre:
-        en: false
-        es: new interfaces for musical expression, dictado por profesor greg shakar
-      rol:
-        en: false
-        es: ayudante de postgrado
-      institucion:
-        en: new york university
-        es: new york university
-      pais:
-        en: united states
-        es: estados unidos
-      nivel:
-        en: false
-        es: postgrado
-      anho:
-        en: false
-        es: 2018
-    - nombre:
-        en: false
-        es: 'communication lab: video and sound, dictado por profesora marina zurkow'
-      rol:
-        en: false
-        es: ayudante de postgrado
-      institucion:
-        en: new york university
-        es: new york university
-      pais:
-        en: united states
-        es: estados unidos
-      nivel:
-        en: false
-        es: postgrado
-      anho:
-        en: false
-        es: 2017
-    - nombre:
-        en: false
-        es: psicoacústica, dictado por profesor rodrigo cádiz
-      rol:
-        en: false
-        es: ayudante de pregrado
-      institucion:
-        en: pontificia universidad católica de chile
-        es: pontificia universidad católica de chile
-      pais:
-        en: chile
-        es: chile
-      nivel:
-        en: false
-        es: pregrado
-      anho:
-        en: false
-        es: 2014
-    - nombre:
-        en: false
-        es: psicoacústica, dictado por profesor rodrigo cádiz
-      rol:
-        en: false
-        es: ayudante
-      institucion:
-        en: pontificia universidad católica de chile
-        es: pontificia universidad católica de chile
-      pais:
-        en: chile
-        es: chile
-      nivel:
-        en: false
-        es: pregrado
-      anho:
-        en: false
-        es: 2013
-    - nombre:
-        en: false
-        es: sistemas digitales, dictado por profesor cristián tejos
-      rol:
-        en: false
-        es: ayudante de pregrado
-      institucion:
-        en: pontificia universidad católica de chile
-        es: pontificia universidad católica de chile
-      pais:
-        en: chile
-        es: chile
-      nivel:
-        en: false
-        es: pregrado
-      anho:
-        en: false
-        es: 2012
+  - nombre:
+      en: false
+      es: drawing plus plus, dictado por profesor zach lieberman
+    rol:
+      en: false
+      es: ayudante de postgrado
+    institucion:
+      en: massachusetts institute of technology (mit)
+      es: massachusetts institute of technology (mit)
+    pais:
+      en: united states
+      es: estados unidos
+    nivel:
+      en: false
+      es: postgrado
+    anho:
+      en: false
+      es: 2020
+  - nombre:
+      en: false
+      es: recreating the past, dictado por profesor zach lieberman
+    rol:
+      en: false
+      es: ayudante de postgrado
+    institucion:
+      en: massachusetts institute of technology (mit)
+      es: massachusetts institute of technology (mit)
+    pais:
+      en: united states
+      es: estados unidos
+    nivel:
+      en: false
+      es: postgrado
+    anho:
+      en: false
+      es: 2020
+  - nombre:
+      en: false
+      es: tesis, curso semestral de tesis dictado por profesora kat sullivan
+    rol:
+      en: false
+      es: ayudante de postgrado
+    institucion:
+      en: new york university
+      es: new york university
+    pais:
+      en: united states
+      es: estados unidos
+    nivel:
+      en: false
+      es: postgrado
+    anho:
+      en: false
+      es: 2018
+  - nombre:
+      en: false
+      es: new interfaces for musical expression, dictado por profesor greg shakar
+    rol:
+      en: false
+      es: ayudante de postgrado
+    institucion:
+      en: new york university
+      es: new york university
+    pais:
+      en: united states
+      es: estados unidos
+    nivel:
+      en: false
+      es: postgrado
+    anho:
+      en: false
+      es: 2018
+  - nombre:
+      en: false
+      es: communication lab: video and sound, dictado por profesora marina zurkow
+    rol:
+      en: false
+      es: ayudante de postgrado
+    institucion:
+      en: new york university
+      es: new york university
+    pais:
+      en: united states
+      es: estados unidos
+    nivel:
+      en: false
+      es: postgrado
+    anho:
+      en: false
+      es: 2017
+  - nombre:
+      en: false
+      es: psicoacústica, dictado por profesor rodrigo cádiz
+    rol:
+      en: false
+      es: ayudante de pregrado
+    institucion:
+      en: pontificia universidad católica de chile
+      es: pontificia universidad católica de chile
+    pais:
+      en: chile
+      es: chile
+    nivel:
+      en: false
+      es: pregrado
+    anho:
+      en: false
+      es: 2014
+  - nombre:
+      en: false
+      es: psicoacústica, dictado por profesor rodrigo cádiz
+    rol:
+      en: false
+      es: ayudante
+    institucion:
+      en: pontificia universidad católica de chile
+      es: pontificia universidad católica de chile
+    pais:
+      en: chile
+      es: chile
+    nivel:
+      en: false
+      es: pregrado
+    anho:
+      en: false
+      es: 2013
+  - nombre:
+      en: false
+      es: sistemas digitales, dictado por profesor cristián tejos
+    rol:
+      en: false
+      es: ayudante de pregrado
+    institucion:
+      en: pontificia universidad católica de chile
+      es: pontificia universidad católica de chile
+    pais:
+      en: chile
+      es: chile
+    nivel:
+      en: false
+      es: pregrado
+    anho:
+      en: false
+      es: 2012
