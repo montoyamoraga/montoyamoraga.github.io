@@ -47,6 +47,19 @@ cv:
           es: licenciatura en ingeniería civil electricista
         fecha-anho-inicio: 2008
         fecha-anho-fin: 2012
+    otros-estudios-de-perfeccionamiento:
+      autonomous-generative-spirit:
+        institucion:
+          en: school of machines, make and make-believe, berlin
+          es: school of machines, make and make-believe, berlín
+        grado:
+          en: autonomous generative spirit: interactive machine learning for artists
+          es: autonomous generative spirit: interactive machine learning for artists
+        detalle:
+          en: taught by Andreas Refsgaard and Gene Kogan in august 2018
+          es: impartido por Andreas Refsgaard y Gene Kogan en agosto de 2018
+        fecha-anho-inicio: 2018
+        fecha-anho-fin: 2018
   glosario:
     educacion-universitaria:
       en: university education 
@@ -57,6 +70,9 @@ cv:
     institucion:
       en: institucion
       es: institution
+    otros-estudios-de-perfeccionamiento:
+      en: other continuing education studies
+      es: otros estudios de perfeccionamiento
     postgrado:
       en: graduate
       es: postgrado
