@@ -53,13 +53,318 @@ cv:
           en: school of machines, make and make-believe, berlin
           es: school of machines, make and make-believe, berlín
         grado:
-          en: autonomous generative spirit: interactive machine learning for artists
-          es: autonomous generative spirit: interactive machine learning for artists
+          en: "autonomous generative spirit: interactive machine learning for artists"
+          es: "autonomous generative spirit: interactive machine learning for artists"
         detalle:
           en: taught by Andreas Refsgaard and Gene Kogan in august 2018
           es: impartido por Andreas Refsgaard y Gene Kogan en agosto de 2018
         fecha-anho-inicio: 2018
         fecha-anho-fin: 2018
+  docencia-universitaria:
+    cursos:
+      aud5i022:
+        nombre:
+          en: AUD5I022 Electivo Mención I y S: Diseño de interfaz electrónica mediante Arduino
+          es: AUD5I022 Electivo Mención I y S: Diseño de interfaz electrónica mediante Arduino
+        regimen:
+          en: semestral
+          es: semestral
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
+          en: design
+          es: diseño
+        institucion:
+          en: universidad de chile
+          es: universidad de chile
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+          - anho-desde: 2022
+            anho-hasta: 2022
+            cantidad: 1
+          - anho-desde: 2023
+            anho-hasta: 2023
+            cantidad: 1
+      aud20004:
+        nombre:
+          en: AUD20004 Física aplicada al Diseño
+          es: AUD20004 Física aplicada al Diseño
+        regimen:
+          en: semestral
+          es: semestral
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
+          en: design
+          es: diseño
+        institucion:
+          en: universidad de chile
+          es: universidad de chile
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+          - anho-desde: 2022
+            anho-hasta: 2022
+            cantidad: 1
+          - anho-desde: 2023
+            anho-hasta: 2023
+            cantidad: 1
+          - anho-desde: 2024
+            anho-hasta: 2024
+            cantidad: 2
+          - anho-desde: 2025
+            anho-hasta: 2025
+            cantidad: 1
+      audiv020:
+        nombre:
+          en: AUDIV020 Electivo Ambas Menciones: Diseño de instrumentos musicales digitales
+          es: AUDIV020 Electivo Ambas Menciones: Diseño de instrumentos musicales digitales
+        regimen:
+          en: semestral
+          es: semestral
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
+          en: design
+          es: diseño
+        institucion:
+          en: universidad de chile
+          es: universidad de chile
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+          - anho-desde: 2022
+            anho-hasta: 2022
+            cantidad: 1
+      aud10004:
+        nombre:
+          en: AUD10004 Matemáticas aplicadas al Diseño
+          es: AUD10004 Matemáticas aplicadas al Diseño
+        regimen:
+          en: semestral
+          es: semestral
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
+          en: design
+          es: diseño
+        institucion:
+          en: universidad de chile
+          es: universidad de chile
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+          - anho-desde: 2023
+            anho-hasta: 2023
+            cantidad: 1
+      dis9005:
+        nombre:
+          en: DIS9005 Diseño Página Web
+          es: DIS9005 Diseño Página Web
+        regimen:
+          en: semestral
+          es: semestral
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
+          en: design
+          es: diseño
+        institucion:
+          en: universidad diego portales
+          es: universidad diego portales
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+          - anho-desde: 2023
+            anho-hasta: 2023
+            cantidad: 1
+      dis9034:
+        nombre:
+          en: DIS9034 Programación creativa multimedia
+          es: DIS9034 Programación creativa multimedia
+        regimen:
+          en: semestral
+          es: semestral
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
+          en: design
+          es: diseño
+        institucion:
+          en: universidad diego portales
+          es: universidad diego portales
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+          - anho-desde: 2024
+            anho-hasta: 2024
+            cantidad: 1
+      dis145:
+        nombre:
+          en: DIS145 Diseño y construcción de interfaces
+          es: DIS145 Diseño y construcción de interfaces
+        regimen:
+          en: semestral
+          es: semestral
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
+          en: engineering design
+          es: ingeniería en diseño
+        institucion:
+          en: universidad adolfo ibañez
+          es: universidad adolfo ibáñez
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+          - anho-desde: 2024
+            anho-hasta: 2024
+            cantidad: 1
+      audiv027:
+        nombre:
+          en: AUDIV027 Electivo ambas menciones: Inteligencia artificial
+          es: AUDIV027 Electivo ambas menciones: Inteligencia artificial
+        regimen:
+          en: semestral
+          es: semestral
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
+          en: design
+          es: diseño
+        institucion:
+          en: universidad de chile
+          es: universidad de chile
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+          - anho-desde: 2023
+            anho-hasta: 2023
+            cantidad: 1
+          - anho-desde: 2024
+            anho-hasta: 2024
+            cantidad: 2
+          - anho-desde: 2025
+            anho-hasta: 2025
+            cantidad: 1
+      aua70092:
+        nombre:
+          en: AUA70092 Electivo de especialización: Inteligencia artificial
+          es: AUA70092 Electivo de especialización: Inteligencia artificial
+        regimen:
+          en: semestral
+          es: semestral
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
+          en: architecture
+          es: arquitectura
+        institucion:
+          en: universidad de chile
+          es: universidad de chile
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+          - anho-desde: 2023
+            anho-hasta: 2023
+            cantidad: 1
+          - anho-desde: 2024
+            anho-hasta: 2024
+            cantidad: 1
+          - anho-desde: 2025
+            anho-hasta: 2025
+            cantidad: 1
+      aug10002:
+        nombre:
+          en: AUG10002 Physics
+          es: AUG10002 Física
+        regimen:
+          en: semestral
+          es: semestral
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
+          en: geography
+          es: geografía
+        institucion:
+          en: universidad de chile
+          es: universidad de chile
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+          - anho-desde: 2024
+            anho-hasta: 2024
+            cantidad: 1
+      sw2433:
+        nombre:
+          en: SW2433 Inteligencia artificial artesanal
+          es: SW2433 Inteligencia artificial artesanal
+        regimen:
+          en: other
+          es: otro
+        otro-regimen:
+          en: workshop
+          es: workshop
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
+          en: Workshop FAAD UCT 2024, 6 classes in one intensive week, for students of Architecture, Arts, Design and Creative Crafts
+          es: Workshop FAAD UCT 2024, 6 clases en una semana intensiva, para estudiantes de Arquitectura, Artes, Diseño y Oficios Creativos
+        institucion:
+          en: universidad católica de temuco
+          es: universidad católica de temuco
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+          - anho-desde: 2024
+            anho-hasta: 2024
+            cantidad: 1
+      dis8644:
+        nombre:
+          en: DIS8644 Taller de diseño de máquinas electrónicas
+          es: DIS8644 Taller de diseño de máquinas electrónicas
+        regimen:
+          en: semestral
+          es: semestral
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
+          en: design
+          es: diseño
+        institucion:
+          en: universidad diego portales
+          es: universidad diego portales
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+          - anho-desde: 2025
+            anho-hasta: 2025
+            cantidad: 1
   glosario:
     educacion-universitaria:
       en: university education 
@@ -79,3 +384,24 @@ cv:
     pregrado:
       en: undergraduate
       es: pregrado
+    docencia-universitaria:
+      en: university teaching
+      es: docencia universitaria
+    cursos:
+      en: courses
+      es: cursos
+    regimen:
+      en: regime
+      es: régimen
+    nivel:
+      en: level
+      es: nivel
+    programa:
+      en: program or career
+      es: programa o carrera
+    pais:
+      en: country
+      es: país
+    frecuencia:
+      en: frequency
+      es: frecuencia
