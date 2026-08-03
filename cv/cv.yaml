@@ -62,10 +62,10 @@ cv:
         fecha-anho-fin: 2018
   docencia-universitaria:
     cursos:
-      aud5i022:
+      dis8644:
         nombre:
-          en: AUD5I022 Electivo Mención I y S: Diseño de interfaz electrónica mediante Arduino
-          es: AUD5I022 Electivo Mención I y S: Diseño de interfaz electrónica mediante Arduino
+          en: DIS8644 Taller de diseño de máquinas electrónicas
+          es: DIS8644 Taller de diseño de máquinas electrónicas
         regimen:
           en: semestral
           es: semestral
@@ -76,17 +76,14 @@ cv:
           en: design
           es: diseño
         institucion:
-          en: universidad de chile
-          es: universidad de chile
+          en: universidad diego portales
+          es: universidad diego portales
         pais:
           en: chile
           es: chile
         frecuencia:
-          - anho-desde: 2022
-            anho-hasta: 2022
-            cantidad: 1
-          - anho-desde: 2023
-            anho-hasta: 2023
+          - anho-desde: 2025
+            anho-hasta: 2025
             cantidad: 1
       aud20004:
         nombre:
@@ -119,121 +116,6 @@ cv:
             cantidad: 2
           - anho-desde: 2025
             anho-hasta: 2025
-            cantidad: 1
-      audiv020:
-        nombre:
-          en: AUDIV020 Electivo Ambas Menciones: Diseño de instrumentos musicales digitales
-          es: AUDIV020 Electivo Ambas Menciones: Diseño de instrumentos musicales digitales
-        regimen:
-          en: semestral
-          es: semestral
-        nivel:
-          en: undergraduate
-          es: pregrado
-        programa:
-          en: design
-          es: diseño
-        institucion:
-          en: universidad de chile
-          es: universidad de chile
-        pais:
-          en: chile
-          es: chile
-        frecuencia:
-          - anho-desde: 2022
-            anho-hasta: 2022
-            cantidad: 1
-      aud10004:
-        nombre:
-          en: AUD10004 Matemáticas aplicadas al Diseño
-          es: AUD10004 Matemáticas aplicadas al Diseño
-        regimen:
-          en: semestral
-          es: semestral
-        nivel:
-          en: undergraduate
-          es: pregrado
-        programa:
-          en: design
-          es: diseño
-        institucion:
-          en: universidad de chile
-          es: universidad de chile
-        pais:
-          en: chile
-          es: chile
-        frecuencia:
-          - anho-desde: 2023
-            anho-hasta: 2023
-            cantidad: 1
-      dis9005:
-        nombre:
-          en: DIS9005 Diseño Página Web
-          es: DIS9005 Diseño Página Web
-        regimen:
-          en: semestral
-          es: semestral
-        nivel:
-          en: undergraduate
-          es: pregrado
-        programa:
-          en: design
-          es: diseño
-        institucion:
-          en: universidad diego portales
-          es: universidad diego portales
-        pais:
-          en: chile
-          es: chile
-        frecuencia:
-          - anho-desde: 2023
-            anho-hasta: 2023
-            cantidad: 1
-      dis9034:
-        nombre:
-          en: DIS9034 Programación creativa multimedia
-          es: DIS9034 Programación creativa multimedia
-        regimen:
-          en: semestral
-          es: semestral
-        nivel:
-          en: undergraduate
-          es: pregrado
-        programa:
-          en: design
-          es: diseño
-        institucion:
-          en: universidad diego portales
-          es: universidad diego portales
-        pais:
-          en: chile
-          es: chile
-        frecuencia:
-          - anho-desde: 2024
-            anho-hasta: 2024
-            cantidad: 1
-      dis145:
-        nombre:
-          en: DIS145 Diseño y construcción de interfaces
-          es: DIS145 Diseño y construcción de interfaces
-        regimen:
-          en: semestral
-          es: semestral
-        nivel:
-          en: undergraduate
-          es: pregrado
-        programa:
-          en: engineering design
-          es: ingeniería en diseño
-        institucion:
-          en: universidad adolfo ibañez
-          es: universidad adolfo ibáñez
-        pais:
-          en: chile
-          es: chile
-        frecuencia:
-          - anho-desde: 2024
-            anho-hasta: 2024
             cantidad: 1
       audiv027:
         nombre:
@@ -293,6 +175,29 @@ cv:
           - anho-desde: 2025
             anho-hasta: 2025
             cantidad: 1
+      dis145:
+        nombre:
+          en: DIS145 Diseño y construcción de interfaces
+          es: DIS145 Diseño y construcción de interfaces
+        regimen:
+          en: semestral
+          es: semestral
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
+          en: engineering design
+          es: ingeniería en diseño
+        institucion:
+          en: universidad adolfo ibañez
+          es: universidad adolfo ibáñez
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+          - anho-desde: 2024
+            anho-hasta: 2024
+            cantidad: 1
       aug10002:
         nombre:
           en: AUG10002 Physics
@@ -342,10 +247,10 @@ cv:
           - anho-desde: 2024
             anho-hasta: 2024
             cantidad: 1
-      dis8644:
+      dis9034:
         nombre:
-          en: DIS8644 Taller de diseño de máquinas electrónicas
-          es: DIS8644 Taller de diseño de máquinas electrónicas
+          en: DIS9034 Programación creativa multimedia
+          es: DIS9034 Programación creativa multimedia
         regimen:
           en: semestral
           es: semestral
@@ -362,10 +267,123 @@ cv:
           en: chile
           es: chile
         frecuencia:
-          - anho-desde: 2025
-            anho-hasta: 2025
+          - anho-desde: 2024
+            anho-hasta: 2024
+            cantidad: 1
+      aud10004:
+        nombre:
+          en: AUD10004 Matemáticas aplicadas al Diseño
+          es: AUD10004 Matemáticas aplicadas al Diseño
+        regimen:
+          en: semestral
+          es: semestral
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
+          en: design
+          es: diseño
+        institucion:
+          en: universidad de chile
+          es: universidad de chile
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+          - anho-desde: 2023
+            anho-hasta: 2023
+            cantidad: 1
+      dis9005:
+        nombre:
+          en: DIS9005 Diseño Página Web
+          es: DIS9005 Diseño Página Web
+        regimen:
+          en: semestral
+          es: semestral
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
+          en: design
+          es: diseño
+        institucion:
+          en: universidad diego portales
+          es: universidad diego portales
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+          - anho-desde: 2023
+            anho-hasta: 2023
+            cantidad: 1
+      aud5i022:
+        nombre:
+          en: AUD5I022 Electivo Mención I y S: Diseño de interfaz electrónica mediante Arduino
+          es: AUD5I022 Electivo Mención I y S: Diseño de interfaz electrónica mediante Arduino
+        regimen:
+          en: semestral
+          es: semestral
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
+          en: design
+          es: diseño
+        institucion:
+          en: universidad de chile
+          es: universidad de chile
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+          - anho-desde: 2022
+            anho-hasta: 2022
+            cantidad: 1
+          - anho-desde: 2023
+            anho-hasta: 2023
+            cantidad: 1
+      audiv020:
+        nombre:
+          en: AUDIV020 Electivo Ambas Menciones: Diseño de instrumentos musicales digitales
+          es: AUDIV020 Electivo Ambas Menciones: Diseño de instrumentos musicales digitales
+        regimen:
+          en: semestral
+          es: semestral
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
+          en: design
+          es: diseño
+        institucion:
+          en: universidad de chile
+          es: universidad de chile
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+          - anho-desde: 2022
+            anho-hasta: 2022
             cantidad: 1
   becas:
+    - nombre:
+        en: Exención de arancel, programa Doctorado de artes y humanidades USACH
+        es: Exención de arancel, programa Doctorado de artes y humanidades USACH
+      tipo:
+        en: national/international
+        es: nacional/internacional
+      institucion:
+        en: República de Chile, Universidad de Santiago de Chile, Vicerrectoría de postgrado
+        es: República de Chile, Universidad de Santiago de Chile, Vicerrectoría de postgrado
+      proposito:
+        en: doctoral studies
+        es: estudio de doctorado
+      anho:
+        en: 2025
+        es: 2025
+      archivo:
+        en: 2025-beca-arancel-usach.pdf
+        es: 2025-beca-arancel-usach.pdf
     - nombre:
         en: Research Assistantship
         es: Research Assistantship
