@@ -30,24 +30,33 @@ cv:
         fecha-anho-inicio: 2015
         fecha-anho-fin: 2017
     pregrado:
-      licenciatura:
-        institucion:
-          en: pontificia universidad católica de chile
-          es: pontificia universidad católica de chile
-        grado:
-          en: electrical engineering professional degree
-          es: título profesional en ingeniería civil electricista
-        fecha-anho-inicio: 2008
-        fecha-anho-fin: 2014
       titulo-profesional:
         institucion:
           en: pontificia universidad católica de chile
           es: pontificia universidad católica de chile
         grado:
-          en: bachelor of electrical engineering
-          es: licenciatura en ingeniería civil electricista
+          en: professional degree in electrical engineering
+          es: título profesional en ingeniería civil electricista
         fecha-anho-inicio: 2008
-        fecha-anho-fin: 2012
+        fecha-anho-fin: 2014
+      licenciatura:
+        institucion:
+          en: pontificia universidad católica de chile
+          es: pontificia universidad católica de chile
+        grado:
+          en: licentiate in engineering sciences
+          es: licenciado en ciencias de la ingeniería
+        fecha-anho-inicio: 2008
+        fecha-anho-fin: 2013
+      bachiller:
+        institucion:
+          en: pontificia universidad católica de chile
+          es: pontificia universidad católica de chile
+        grado:
+          en: bachiller
+          es: bachiller
+        fecha-anho-inicio: 2008
+        fecha-anho-fin: 2013
     otros-estudios-de-perfeccionamiento:
       autonomous-generative-spirit:
         institucion:
