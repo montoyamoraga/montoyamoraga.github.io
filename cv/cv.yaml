@@ -365,6 +365,53 @@ cv:
           - anho-desde: 2025
             anho-hasta: 2025
             cantidad: 1
+  becas:
+    - nombre:
+        en: Research Assistantship
+        es: Research Assistantship
+      tipo:
+        en: national/international
+        es: nacional/internacional
+      institucion:
+        en: MIT Media Lab
+        es: MIT Media Lab
+      proposito:
+        en: master studies
+        es: estudio de magíster
+      anho:
+        en: 2019
+        es: 2019
+    - nombre:
+        en: Becas Chile Conicyt, study of master abroad
+        es: Becas Chile Conicyt, estudio de magíster en el extranjero
+      tipo:
+        en: national/international
+        es: nacional/internacional
+      institucion:
+        en: Conicyt
+        es: Conicyt
+      proposito:
+        en: master studies
+        es: estudio de magíster
+      anho:
+        en: 2015
+        es: 2015
+  premios-distinciones:
+    - nombre:
+        en: Premio a la Innovación y Liderazgo Docente
+        es: Premio a la Innovación y Liderazgo Docente
+      tipo:
+        en: award/distinction
+        es: premio o distinción
+      institucion:
+        en: Universidad Diego Portales
+        es: Universidad Diego Portales
+      anho:
+        en: 2024
+        es: 2024
+      archivo:
+        en: 2024-premio.png
+        es: 2024-premio.png
   glosario:
     educacion-universitaria:
       en: university education 
@@ -387,6 +434,12 @@ cv:
     docencia-universitaria:
       en: university teaching
       es: docencia universitaria
+    becas:
+      en: scholarships
+      es: becas
+    premios-distinciones:
+      en: awards and distinctions
+      es: premios y distinciones
     cursos:
       en: courses
       es: cursos
