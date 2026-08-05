@@ -632,62 +632,93 @@ cv:
     archivo:
       en: false
       es: 2025-programacion-colaborativa-github.jpg
+  # curriculum-udp-36
   otras-actividades-docentes-destacables:
-  - nombre:
-      en: randomness is all around: an online multimedia arts class
-      es: randomness is all around: curso online de artes multimedia
-    institucion:
-      en: school of machines, make and make-believe
-      es: school of machines, make and make-believe
-    pais:
-      en: germany
-      es: alemania
-    anho:
-      en: 2019
-      es: 2019
-    detalle:
-      en: online mathematics and randomness class for school of machines, making &
-        make believe, berlin
-      es: curso online de matemáticas y aleatoriedad dictado para school of machines,
-        making & make believe en berlín, alemania, en el año 2019.
-  - nombre:
-      en: program design for new digital interaction mention
-      es: encargade de diseño de programa de estudio de nueva mención de interacción
-        digital
-    institucion:
-      en: universidad diego portales
-      es: universidad diego portales
-    pais:
-      en: chile
-      es: chile
-    anho:
-      en: 2023
-      es: 2023
-    detalle:
-      en: led curriculum design for a new digital interaction mention as part of the
-        2023 curricular innovation process
-      es: encargade de diseño de programa de estudio de nueva mención de interacción
-        digital en la escuela de diseño en el marco del proceso de innovación curricular
-        2023
-  - nombre:
-      en: student assistant training: andrés amilcar martín mena
-      es: formación de alumno ayudante andrés amilcar martín mena
-    institucion:
-      en: universidad diego portales
-      es: universidad diego portales
-    pais:
-      en: chile
-      es: chile
-    anho:
-      en: 2022
-      es: 2022
-    detalle:
-      en: trained and supervised student assistant andrés amilcar martín mena, who
-        later joined the undergraduate assistant team and supported courses at universidad
-        de chile and UDP (2022-2023)
-      es: andrés martín se graduó con nota 7.0 en dos de mis cursos de diseño de interacción
-        (2022). en 2023 se integró a mi equipo de ayudantes de pregrado y colaboró
-        en cursos de la universidad de chile y la universidad diego portales.
+    - nombre:
+        en: training of student and teaching assistant, mateo ignacio arce moore
+        es: formación de alumno y ayudante, mateo ignacio arce moore
+      institucion:
+        en: universidad diego portales
+        es: universidad diego portales
+      pais:
+        en: chile
+        es: chile
+      anho:
+        en: 2023
+        es: 2023
+      detalle:
+        en: false
+        es: Mateo Arce se graduó con nota 6.7 distinción máxima en Diseño UDP en diciembre 2025, con mención en Diseño gráfico, tras haber sido estudiante destacado de mis cursos de profundización de interacción digital en 2024, y haber trabajado como ayudante en mis talleres y cursos nuevos en 2025 y 2026, y en cursos del profesor Manuel Córdova. En el año 2026 ingresa al Magíster de Artes Mediales de la Universidad de Chile, y desde el 2025 trabaja como freelancer en mi microempresa Piruetas Spa, en proyectos de programación y diseño de identidades gráficas para sintetizadores.
+    - nombre:
+        en: training of student and teaching assistant and professor, janis valentina sepúlveda vera
+        es: formación de alumna ayudante académica janis valentina sepúlveda vera
+      institucion:
+        en: universidad diego portales
+        es: universidad diego portales
+      pais:
+        en: chile
+        es: chile
+      anho:
+        en: 2023
+        es: 2023
+      detalle:
+        en: false
+        es: Janis Sepúlveda se graduó con nota 7.0 distinción máxima en Diseño UDP en diciembre 2025, con mención en Diseño industrial, tras haber sido estudiante destacada de los talleres que dicté con Sergio Majluf en 2023, y trabajar desde 2024 como la primera ayudante de varios de mis cursos nuevos de la mención de interacción digital. En el año 2026 ingresa becada al Magíster de Diseño Avanzado en la Pontificia Universidad Católica de Chile, dicta su primer curso como profesora responsable en la Universidad de O'Higgins y se convierte en la primera empleada a mi microempresa Piruetas SpA, con el rol de administradora de proyectos y programadora.
+    - nombre:
+        en: randomness is all around -  an online multimedia arts class
+        es: randomness is all around - curso online de artes multimedia
+      institucion:
+        en: school of machines, make and make-believe
+        es: school of machines, make and make-believe
+      pais:
+        en: germany
+        es: alemania
+      anho:
+        en: 2019
+        es: 2019
+      detalle:
+        en: online mathematics and randomness class for school of machines, making &
+          make believe, berlin
+        es: curso online de matemáticas y aleatoriedad dictado para school of machines,
+          making & make believe en berlín, alemania, en el año 2019.
+    - nombre:
+        en: program design for new digital interaction mention
+        es: encargade de diseño de programa de estudio de nueva mención de interacción
+          digital
+      institucion:
+        en: universidad diego portales
+        es: universidad diego portales
+      pais:
+        en: chile
+        es: chile
+      anho:
+        en: 2023
+        es: 2023
+      detalle:
+        en: led curriculum design for a new digital interaction mention as part of the
+          2023 curricular innovation process
+        es: encargade de diseño de programa de estudio de nueva mención de interacción
+          digital en la escuela de diseño en el marco del proceso de innovación curricular
+          2023
+    - nombre:
+        en: student assistant training, andrés amilcar martín mena
+        es: formación de alumno ayudante andrés amilcar martín mena
+      institucion:
+        en: universidad diego portales
+        es: universidad diego portales
+      pais:
+        en: chile
+        es: chile
+      anho:
+        en: 2022
+        es: 2022
+      detalle:
+        en: trained and supervised student assistant andrés amilcar martín mena, who
+          later joined the undergraduate assistant team and supported courses at universidad
+          de chile and UDP (2022-2023)
+        es: andrés martín se graduó con nota 7.0 en dos de mis cursos de diseño de interacción
+          (2022). en 2023 se integró a mi equipo de ayudantes de pregrado y colaboró
+          en cursos de la universidad de chile y la universidad diego portales.
   becas:
   - nombre:
       en: false
