@@ -111,14 +111,61 @@ cv:
     nombre:
       en: University teaching with a gender equality and non-discrimination perspective
       es: Docencia universitaria con perspectiva de igualdad de género y no discriminación
+  # curriculum-udp-31
   docencia-universitaria:
     cursos:
-      dis8644:
+      dis9079:
         nombre:
-          en: false
-          es: DIS8644 taller de diseño de máquinas electrónicas
+          en: DIS9079 Wireless interaction design
+          es: DIS9079 Interacciones inalámbricas
         nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
           en: false
+          es: diseño
+        institucion:
+          en: universidad diego portales
+          es: universidad diego portales
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+        - anho-desde: 2026
+          anho-hasta: 2026
+          cantidad: 1
+        rol:
+          en: lead professor
+          es: profesore responsable
+      dis09214:
+        nombre:
+          en: DIS09214 Computational thinking
+          es: DIS09214 Pensamiento computacional
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
+          en: false
+          es: diseño
+        institucion:
+          en: universidad diego portales
+          es: universidad diego portales
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+        - anho-desde: 2026
+          anho-hasta: 2026
+          cantidad: 1
+        rol:
+          en: lead professor
+          es: profesore responsable
+      dis8645:
+        nombre:
+          en: DIS8645 computational machine design studio
+          es: DIS8644 taller de diseño de máquinas computacionales
+        nivel:
+          en: undergraduate
           es: pregrado
         programa:
           en: false
@@ -133,9 +180,38 @@ cv:
         - anho-desde: 2025
           anho-hasta: 2025
           cantidad: 1
+        - anho-desde: 2026
+          anho-hasta: 2026
+          cantidad: 1
         rol:
+          en: lead professor
+          es: profesore responsable
+      dis8644:
+        nombre:
+          en: DIS8644 electronic machine design studio
+          es: DIS8644 taller de diseño de máquinas electrónicas
+        nivel:
+          en: undergraduate
+          es: pregrado
+        programa:
           en: false
-          es: profesore
+          es: diseño
+        institucion:
+          en: universidad diego portales
+          es: universidad diego portales
+        pais:
+          en: chile
+          es: chile
+        frecuencia:
+        - anho-desde: 2025
+          anho-hasta: 2025
+          cantidad: 1
+        - anho-desde: 2026
+          anho-hasta: 2026
+          cantidad: 1
+        rol:
+          en: lead professor
+          es: profesore responsable
       aud20004:
         nombre:
           en: false
