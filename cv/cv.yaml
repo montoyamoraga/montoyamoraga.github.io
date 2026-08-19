@@ -626,7 +626,7 @@ cv:
     anho:
       en: false
       es: 2025
-    semanas-efectivas-al-ano:
+    semanas-efectivas-al-anho:
       en: false
       es: 1
     archivo:
@@ -719,6 +719,43 @@ cv:
         es: andrés martín se graduó con nota 7.0 en dos de mis cursos de diseño de interacción
           (2022). en 2023 se integró a mi equipo de ayudantes de pregrado y colaboró
           en cursos de la universidad de chile y la universidad diego portales.
+  trayectoria-profesional:
+  - cargo:
+      en: "Founder and Director"
+      es: "Fundador y director"
+    periodo-laboral:
+      en: "2 years"
+      es: "2 años"
+    nombre-institucion:
+      en: "Piruetas SpA"
+      es: "piruetas SpA"
+    antecedentes-adicionales:
+      en: "Piruetas is a joint-stock company (SpA) founded in Santiago in 2022 by Aarón Montoy Moraga. Piruetas develops software and hardware for creative purposes; projects include handcrafted musical synthesizers and MIDI controllers, robot-assisted drawing software, and AI devices using microcontrollers. Piruetas is also the official distributor in Latin America of the musical instruments BASTL, designed and built in the Czech Republic."
+      es: "piruetas es una sociedad por acciones (SpA) fundada en Santiago el año 2022 por Aarón Montoy Moraga. piruetas se dedica al desarrollo de software y hardware para fines creativos, entre sus proyectos incluyen la construcción artesanal de sintetizadores musicales y controladores MIDI, el desarrollo de software para dibujo asistido por robots, y dispositivos de inteligencia artificial con microcontroladores. piruetas también es el único distribuidor oficial en Latinoamérica de los instrumentos musicales BASTL, diseñados y construidos en República Checa."
+    pais:
+      en: "Chile"
+      es: "Chile"
+    detalle:
+      en: false
+      es: false
+  - cliente:
+      en: "Biblioteca Cuir"
+      es: "Biblioteca Cuir"
+    empresa:
+      en: "Piruetas SpA"
+      es: "Piruetas SpA"
+    servicio:
+      en: "Website development and launch"
+      es: "Desarrollo web y lanzamiento"
+    lanzamiento:
+      en: "24 August 2026, 19:00"
+      es: "24 agosto 2026, 19:00"
+    pais:
+      en: "Chile"
+      es: "Chile"
+    detalle:
+      en: false
+      es: false
   becas:
   - nombre:
       en: false
@@ -975,3 +1012,27 @@ cv:
     anho:
       en: false
       es: 2012
+  
+ponencias-en-congresos-y-seminarios:
+  - nombre:
+      en: false
+      es: "1er Simposio de Literatura Comparada"
+    rol:
+      en: "Speaker/Participant"
+      es: "Ponente/Participante"
+    institucion:
+      en: "Letras UC, USACH, IDEA"
+      es: "Letras UC, USACH, IDEA"
+    pais:
+      en: "Chile"
+      es: "Chile"
+    fecha:
+      en: "19–21 August 2026"
+      es: "19–21 agosto 2026"
+    anho:
+      en: 2026
+      es: 2026
+    detalle:
+      en: false
+      es: false
+
