@@ -821,52 +821,7 @@ cv:
     archivo:
       en: false
       es: 2024-premio.png
-  glosario:
-    educacion-universitaria:
-      en: university education
-      es: educación universitaria
-    grado:
-      en: degree
-      es: grado
-    institucion:
-      en: institucion
-      es: institution
-    otros-estudios-de-perfeccionamiento:
-      en: other continuing education studies
-      es: otros estudios de perfeccionamiento
-    postgrado:
-      en: graduate
-      es: postgrado
-    pregrado:
-      en: undergraduate
-      es: pregrado
-    docencia-universitaria:
-      en: university teaching
-      es: docencia universitaria
-    becas:
-      en: scholarships
-      es: becas
-    premios-distinciones:
-      en: awards and distinctions
-      es: premios y distinciones
-    cursos:
-      en: courses
-      es: cursos
-    regimen:
-      en: regime
-      es: régimen
-    nivel:
-      en: level
-      es: nivel
-    programa:
-      en: program or career
-      es: programa o carrera
-    pais:
-      en: country
-      es: país
-    frecuencia:
-      en: frequency
-      es: frecuencia
+  
   ayudantias:
   - nombre:
       en: false
@@ -1035,4 +990,49 @@ ponencias-en-congresos-y-seminarios:
     detalle:
       en: false
       es: false
-
+glosario:
+  educacion-universitaria:
+    en: university education
+    es: educación universitaria
+  grado:
+    en: degree
+    es: grado
+  institucion:
+    en: institucion
+    es: institution
+  otros-estudios-de-perfeccionamiento:
+    en: other continuing education studies
+    es: otros estudios de perfeccionamiento
+  postgrado:
+    en: graduate
+    es: postgrado
+  pregrado:
+    en: undergraduate
+    es: pregrado
+  docencia-universitaria:
+    en: university teaching
+    es: docencia universitaria
+  becas:
+    en: scholarships
+    es: becas
+  premios-distinciones:
+    en: awards and distinctions
+    es: premios y distinciones
+  cursos:
+    en: courses
+    es: cursos
+  regimen:
+    en: regime
+    es: régimen
+  nivel:
+    en: level
+    es: nivel
+  programa:
+    en: program or career
+    es: programa o carrera
+  pais:
+    en: country
+    es: país
+  frecuencia:
+    en: frequency
+    es: frecuencia
