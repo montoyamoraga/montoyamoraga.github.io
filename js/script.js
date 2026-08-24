@@ -2,13 +2,15 @@ let english = document.getElementById('english');
 let espanol = document.getElementById('espanol');
 
 if (english) {
-  english.addEventListener('click', () => {
+  english.addEventListener('click', (event) => {
+    event.preventDefault();
     changeLanguage('en');
   });
 }
 
 if (espanol) {
-  espanol.addEventListener('click', () => {
+  espanol.addEventListener('click', (event) => {
+    event.preventDefault();
     changeLanguage('es');
   });
 }

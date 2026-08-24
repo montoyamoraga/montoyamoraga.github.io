@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <script src="/lib/js-yaml.min.js"></script>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/assets/favicon.ico" />
+    <title>montoyamoraga - cv</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
+  <body>
+    <button
+      id="menu-btn"
+      class="boton-piruetas"
+      onclick="document.getElementById('divLeftMenu').classList.toggle('active')"
+    >
+      menú
+    </button>
+
+    <div class="flex-container">
+      <nav id="divLeftMenu" class="left"></nav>
+      <main class="right">
+        <div class="cv-panel">
+          <h1 class="cajita">cv</h1>
+          <div class="cv-intro">
+            <p>currículum vitae</p>
+          </div>
+          <div id="cv-content" aria-live="polite"></div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="colophon-banner">
+      <span class="es">montoyamoraga © 2026</span>
+      <span class="en">montoyamoraga © 2026</span>
+    </footer>
+
+    <script src="/js/nav.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/yaml-parser.js"></script>
+  </body>
+</html>

@@ -41,7 +41,7 @@ let navbar = `
         <h3 class="dropdown-trigger" style="cursor:pointer; text-decoration:underline;">investigación</h3>
         <div class="dropdown-content" style="display:none; padding-left:15px;">
             <ol>
-                <li><a href="#">proyecto 1</a></li>
+                <li>sin proyectos publicados</li>
             </ol>
         </div>
     </div>
@@ -50,17 +50,35 @@ let navbar = `
         <h3 class="dropdown-trigger" style="cursor:pointer; text-decoration:underline;">performance</h3>
         <div class="dropdown-content" style="display:none; padding-left:15px;">
             <ol>
-                <li><a href="#">obra 1</a></li>
+                <li>sin obras publicadas</li>
             </ol>
         </div>
     </div>
 
     <div class="nav-section">
-        <h3><a href="/enlaces">enlaces</a></h3>
+        <h3 class="dropdown-trigger" style="cursor:pointer; text-decoration:underline;">cv</h3>
+        <div class="dropdown-content cv-menu" style="display:none; padding-left:15px;">
+            <ol>
+                <li><a href="/cv/#educacion-universitaria">educacion-universitaria</a></li>
+                <li><a href="/cv/#breve-resumen-trayectoria-academica">breve-resumen-trayectoria-academica</a></li>
+                <li><a href="/cv/#actividad-perfeccionamiento">actividad-perfeccionamiento</a></li>
+                <li><a href="/cv/#docencia-universitaria">docencia-universitaria</a></li>
+                <li><a href="/cv/#otros-cursos-dictados-en-pre-y-postgrado">otros-cursos-dictados-en-pre-y-postgrado</a></li>
+                <li><a href="/cv/#otras-actividades-docentes-destacables">otras-actividades-docentes-destacables</a></li>
+                <li><a href="/cv/#trayectoria-profesional">trayectoria-profesional</a></li>
+                <li><a href="/cv/#becas">becas</a></li>
+                <li><a href="/cv/#premios-distinciones">premios-distinciones</a></li>
+                <li><a href="/cv/#ayudantias">ayudantias</a></li>
+            </ol>
+        </div>
     </div>
 
     <div class="nav-section">
-        <h3><a href="/contacto">contacto</a></h3>
+        <h3><a href="/enlaces/">enlaces</a></h3>
+    </div>
+
+    <div class="nav-section">
+        <h3><a href="/contacto/">contacto</a></h3>
     </div>
 </nav>
 `;
