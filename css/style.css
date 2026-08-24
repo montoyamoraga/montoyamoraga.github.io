@@ -10,6 +10,107 @@ body {
   overflow-x: hidden;
 }
 
+.cv-intro {
+  margin-bottom: 35px;
+}
+
+.cv-panel {
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 14px 14px pink;
+  min-height: calc(100vh - 120px);
+  padding: 35px;
+  text-align: left;
+}
+
+.cv-panel > .cajita {
+  margin-top: 0;
+}
+
+#cv-content {
+  max-width: 1000px;
+}
+
+.cv-category {
+  margin: 0 0 45px 0;
+  scroll-margin-top: 30px;
+}
+
+.cv-category > h2 {
+  color: blue;
+  font-size: 16pt;
+  margin: 0 0 20px 0;
+  text-transform: lowercase;
+}
+
+.cv-section {
+  margin: 0 0 25px 0;
+  padding-left: 0;
+}
+
+.cv-section h3 {
+  border-bottom: 1px solid black;
+  font-size: 13pt;
+  margin: 0 0 12px 0;
+  padding-bottom: 5px;
+  text-transform: lowercase;
+}
+
+.cv-section h4 {
+  color: blue;
+  font-family: monospace;
+  font-size: 8.5pt;
+  margin: 18px 0 10px 0;
+  text-transform: uppercase;
+}
+
+.cv-item {
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 5px 5px pink;
+  margin: 0 0 20px 0;
+  padding: 12px 15px;
+}
+
+.cv-frequency-item {
+  margin: 0 0 20px 0;
+  padding: 12px 0;
+}
+
+.cv-row {
+  line-height: 1.45;
+  margin: 0 0 8px 0;
+}
+
+.cv-year-row {
+  align-items: baseline;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.cv-year-row strong {
+  flex: 0 0 auto;
+}
+
+.cv-row strong {
+  color: blue;
+  font-family: monospace;
+  font-size: 8.5pt;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .cv-panel {
+    padding: 20px;
+  }
+
+  .cv-section {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
 #menu-btn {
   position: fixed;
   top: 15px;

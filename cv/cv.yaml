@@ -63,8 +63,8 @@ cv:
           en: school of machines, make and make-believe, berlin
           es: school of machines, make and make-believe, berlín
           grado:
-            en: autonomous generative spirit: interactive machine learning for artists
-            es: autonomous generative spirit: interactive machine learning for artists
+            en: "autonomous generative spirit: interactive machine learning for artists"
+            es: "autonomous generative spirit: interactive machine learning for artists"
         detalle:
           en: taught by Andreas Refsgaard and Gene Kogan in august 2018
           es: impartido por Andreas Refsgaard y Gene Kogan en agosto de 2018
@@ -247,7 +247,7 @@ cv:
       audiv027:
         nombre:
           en: false
-          es: AUDIV027 electivo ambas menciones: inteligencia artificial
+          es: "AUDIV027 electivo ambas menciones: inteligencia artificial"
         nivel:
           en: false
           es: pregrado
@@ -276,7 +276,7 @@ cv:
       aua70092:
         nombre:
           en: false
-          es: AUA70092 electivo de especialización: inteligencia artificial
+          es: "AUA70092 electivo de especialización: inteligencia artificial"
         nivel:
           en: false
           es: pregrado
@@ -447,8 +447,8 @@ cv:
       aud5i022:
         nombre:
           en: false
-          es: AUD5I022 electivo mención i y s: diseño de interfaz electrónica mediante
-            arduino
+          es: "AUD5I022 electivo mención i y s: diseño de interfaz electrónica mediante
+            arduino"
         nivel:
           en: false
           es: pregrado
@@ -474,8 +474,8 @@ cv:
       audiv020:
         nombre:
           en: false
-          es: AUDIV020 electivo ambas menciones: diseño de instrumentos musicales
-            digitales
+          es: "AUDIV020 electivo ambas menciones: diseño de instrumentos musicales
+            digitales"
         nivel:
           en: false
           es: pregrado
@@ -897,7 +897,7 @@ cv:
       es: 2018
   - nombre:
       en: false
-      es: communication lab: video and sound, dictado por profesora marina zurkow
+      es: "communication lab: video and sound, dictado por profesora marina zurkow"
     rol:
       en: false
       es: ayudante de postgrado
