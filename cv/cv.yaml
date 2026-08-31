@@ -990,6 +990,82 @@ ponencias-en-congresos-y-seminarios:
     detalle:
       en: false
       es: false
+otros-escritos:
+  - autor:
+      en: Casey Reas, Lauren McCarthy, traducción al español de Aarón Montoya Moraga
+      es: Casey Reas, Lauren McCarthy, traducción al español de Aarón Montoya Moraga
+    titulo:
+      en: Introduction to p5.js
+      es: Introducción a p5.js
+    tipo:
+      en: TEACHING MATERIAL
+      es: MATERIAL DOCENTE
+    año:
+      en: 2018
+      es: 2018
+    medio:
+      en: BOOK
+      es: LIBRO
+    programa-doctorado:
+      en: false
+      es: false
+  - autor:
+      en: Aarón Montoya Moraga
+      es: Aarón Montoya Moraga
+    titulo:
+      en: Tiny Trainable Instruments
+      es: Tiny Trainable Instruments
+    tipo:
+      en: THESIS
+      es: TESIS
+    año:
+      en: 2021
+      es: 2021
+    medio:
+      en: PDF available online
+      es: PDF disponible en web
+    programa-doctorado:
+      en: false
+      es: false
+  - autor:
+      en: Carolina Espinoza, Claudio Adasme, Aarón Montoya, José Báeza
+      es: Carolina Espinoza, Claudio Adasme, Aarón Montoya, José Báeza
+    titulo:
+      en: Guitarra impresa en 3D: entre luthería tradicional y fabricación digital
+      es: Guitarra impresa en 3D: entre luthería tradicional y fabricación digital
+    tipo:
+      en: JOURNAL ARTICLE
+      es: ARTÍCULO DE REVISTA
+    año:
+      en: 2025
+      es: 2025
+    revista:
+      en: OPUS
+      es: OPUS
+    volumen:
+      en: 31
+      es: 31
+    paginas:
+      en: 1-21
+      es: 1-21
+    medio:
+      en: PDF available online
+      es: PDF disponible en web
+  - autor:
+      en: Sebastián Labraha, Víctor Correa, Aarón Montoya, Carolina Espinoza
+      es: Sebastián Labraha, Víctor Correa, Aarón Montoya, Carolina Espinoza
+    titulo:
+      en: Reproducibility in the construction of traditional wooden and 3D-printed plastic soundboards for string instruments
+      es: Reproducibility in the construction of traditional wooden and 3D-printed plastic soundboards for string instruments
+    tipo:
+      en: JOURNAL ARTICLE
+      es: ARTÍCULO DE REVISTA
+    año:
+      en: 2025
+      es: 2025
+    medio:
+      en: PDF available online
+      es: PDF disponible en web
 glosario:
   educacion-universitaria:
     en: university education
