@@ -39,7 +39,7 @@ if (container) {
   loader.setDRACOLoader(dracoLoader);
 
   loader.load(
-    '/assets/3d/montoyamoraga.glb',
+    '/assets/3d/montoyamoraga-2026-08.glb',
     (gltf) => {
       const model = gltf.scene;
 
