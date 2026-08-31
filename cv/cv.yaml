@@ -756,6 +756,24 @@ cv:
     detalle:
       en: false
       es: false
+  - cliente:
+      en: "sokio"
+      es: "sokio"
+    empresa:
+      en: "Piruetas SpA"
+      es: "Piruetas SpA"
+    servicio:
+      en: "Commissioned artwork"
+      es: "Obra comisionada"
+    lanzamiento:
+      en: "2025"
+      es: "2025"
+    pais:
+      en: "Chile"
+      es: "Chile"
+    detalle:
+      en: false
+      es: "Obra comisionada por @sokio. Entrada: notas MIDI / Salida: solenoide basada en obra anterior de @misaa.cc. Proyecto realizado por @misaa.cc en colaboración con @piruetas.xyz, bernardita y francisco stephens, con el apoyo de @lid.udp"
   becas:
   - nombre:
       en: false
