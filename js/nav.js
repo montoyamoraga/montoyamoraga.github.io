@@ -13,28 +13,28 @@ let navbar = `
 
             <h5 data-i18n="undergraduate-udp"></h5>
             <ol>
-                <li><a data-i18n="teaching-dis9079" href="/teaching/dis9079/"></a></li>
-                <li><a data-i18n="teaching-dis09214" href="/teaching/dis09214/"></a></li>
-                <li><a data-i18n="teaching-dis8645" href="/teaching/dis8645/"></a></li>
-                <li><a data-i18n="teaching-dis8644" href="/teaching/dis8644/"></a></li>
-                <li><a data-i18n="teaching-dis8637" href="/teaching/dis8637/"></a></li>
-                <li><a data-i18n="teaching-dis8636" href="/teaching/dis8636/"></a></li>
-                <li><a data-i18n="teaching-dis9005" href="/teaching/dis9005/"></a></li>
-                <li><a data-i18n="teaching-dis9034" href="/teaching/dis9034/"></a></li>
+                <li><a data-i18n="teaching-dis9079" href="/ensenanza/dis9079/"></a></li>
+                <li><a data-i18n="teaching-dis09214" href="/ensenanza/dis09214/"></a></li>
+                <li><a data-i18n="teaching-dis8645" href="/ensenanza/dis8645/"></a></li>
+                <li><a data-i18n="teaching-dis8644" href="/ensenanza/dis8644/"></a></li>
+                <li><a data-i18n="teaching-dis8637" href="/ensenanza/dis8637/"></a></li>
+                <li><a data-i18n="teaching-dis8636" href="/ensenanza/dis8636/"></a></li>
+                <li><a data-i18n="teaching-dis9005" href="/ensenanza/dis9005/"></a></li>
+                <li><a data-i18n="teaching-dis9034" href="/ensenanza/dis9034/"></a></li>
             </ol>
 
             <h5 data-i18n="undergraduate-uchile"></h5>
             <ol>
-                <li><a data-i18n="teaching-audiv027" href="/teaching/audiv027/"></a></li>
-                <li><a data-i18n="teaching-audiv020" href="/teaching/audiv020/"></a></li>
-                <li><a data-i18n="teaching-aud5i022" href="/teaching/aud5i022/"></a></li>
-                <li><a data-i18n="teaching-aud10004" href="/teaching/aud10004/"></a></li>
-                <li><a data-i18n="teaching-aud20004" href="/teaching/aud20004/"></a></li>
+                <li><a data-i18n="teaching-audiv027" href="/ensenanza/audiv027/"></a></li>
+                <li><a data-i18n="teaching-audiv020" href="/ensenanza/audiv020/"></a></li>
+                <li><a data-i18n="teaching-aud5i022" href="/ensenanza/aud5i022/"></a></li>
+                <li><a data-i18n="teaching-aud10004" href="/ensenanza/aud10004/"></a></li>
+                <li><a data-i18n="teaching-aud20004" href="/ensenanza/aud20004/"></a></li>
             </ol>
 
             <h5 data-i18n="undergraduate-uai"></h5>
             <ol>
-                <li><a data-i18n="teaching-dis145" href="/teaching/dis145/"></a></li>
+                <li><a data-i18n="teaching-dis145" href="/ensenanza/dis145/"></a></li>
             </ol>
         </div>
     </div>
