@@ -9,8 +9,8 @@ let navbar = `
 
     <div class="nav-section">
         <h3 class="dropdown-trigger">enseñanza</h3>
-        <div class="dropdown-content" style="display:none; padding-left:15px;">
-            
+        <div class="dropdown-content" style="padding-left:15px;">
+
             <h5 data-i18n="undergraduate-udp"></h5>
             <ol>
                 <li><a data-i18n="teaching-dis9079" href="/teaching/dis9079/"></a></li>
@@ -41,7 +41,7 @@ let navbar = `
 
     <div class="nav-section">
         <h3 class="dropdown-trigger">investigación</h3>
-        <div class="dropdown-content" style="display:none; padding-left:15px;">
+        <div class="dropdown-content" style="padding-left:15px;">
             <ol>
                 <li>sin proyectos publicados</li>
             </ol>
@@ -50,7 +50,7 @@ let navbar = `
 
     <div class="nav-section">
         <h3 class="dropdown-trigger">performance</h3>
-        <div class="dropdown-content" style="display:none; padding-left:15px;">
+        <div class="dropdown-content" style="padding-left:15px;">
             <ol>
                 <li>sin obras publicadas</li>
             </ol>
@@ -59,7 +59,7 @@ let navbar = `
 
     <div class="nav-section">
         <h3 class="dropdown-trigger">cv</h3>
-        <div class="dropdown-content cv-menu" style="display:none; padding-left:15px;">
+        <div class="dropdown-content cv-menu" style="padding-left:15px;">
             <ol>
                 <li><a href="/cv/#educacion-universitaria">educacion-universitaria</a></li>
                 <li><a href="/cv/#breve-resumen-trayectoria-academica">breve-resumen-trayectoria-academica</a></li>
@@ -90,6 +90,17 @@ if (divLeftMenu) {
     divLeftMenu.innerHTML = navbar;
 }
 
+let colophonYear = new Date().getFullYear();
+let colophon = `
+<span class="es">montoyamoraga © ${colophonYear}</span>
+<span class="en">montoyamoraga © ${colophonYear}</span>
+`;
+
+let footerEl = document.querySelector('.colophon-banner');
+if (footerEl) {
+    footerEl.innerHTML = colophon;
+}
+
 function normalizePath(path) {
     if (!path) return window.location.pathname;
     return path.replace(/index\.html$/, '').replace(/\/+$/, '/') || '/';
@@ -113,22 +124,12 @@ document.querySelectorAll('#divLeftMenu a[href]').forEach(link => {
     if (samePage) {
         const dropdownContent = link.closest('.dropdown-content');
         if (dropdownContent) {
-            dropdownContent.style.display = 'block';
             const trigger = dropdownContent.previousElementSibling;
             if (trigger && trigger.classList.contains('dropdown-trigger')) {
                 trigger.classList.add('nav-active');
             }
         }
     }
-});
-
-document.querySelectorAll('.dropdown-trigger').forEach(trigger => {
-    trigger.addEventListener('click', () => {
-        const content = trigger.nextElementSibling;
-        const isOpen = content.style.display === 'block';
-        document.querySelectorAll('.dropdown-content').forEach(el => el.style.display = 'none');
-        content.style.display = isOpen ? 'none' : 'block';
-    });
 });
 
 window.addEventListener('scroll', function() {
