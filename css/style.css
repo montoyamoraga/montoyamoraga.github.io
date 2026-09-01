@@ -112,6 +112,7 @@ body {
 }
 
 #menu-btn {
+  display: none;
   position: fixed;
   top: 15px;
   left: 15px;
@@ -123,7 +124,7 @@ body {
   background-color: pink;
   position: fixed;
   top: 0;
-  left: -260px;
+  left: 0;
   width: 260px;
   height: 100vh;
   padding: 80px 20px 20px 20px;
@@ -134,22 +135,12 @@ body {
   overflow-y: auto;
 }
 
-.left.active {
-  left: 0;
-}
-
 .right {
   background-color: greenyellow;
   min-height: 100vh;
-  width: 100%;
-  margin-left: 0;
-  padding: 80px 40px 120px 40px;
-  transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
-}
-
-.left.active~.right {
-  margin-left: 260px;
   width: calc(100% - 260px);
+  margin-left: 260px;
+  padding: 80px 40px 120px 40px;
 }
 
 .dropdown-trigger {
@@ -510,7 +501,12 @@ html[lang="es"] .en {
   .proyectos-grid {
     grid-template-columns: 1fr;
   }
+  #menu-btn {
+    display: block;
+  }
   .right {
+    margin-left: 0;
+    width: 100%;
     padding: 80px 20px 120px 20px;
   }
   .left {
@@ -519,10 +515,6 @@ html[lang="es"] .en {
   }
   .left.active {
     left: 0;
-  }
-  .left.active~.right {
-    margin-left: 0;
-    width: 100%;
   }
   .persona-card {
     box-shadow: 6px 6px 0px pink;
