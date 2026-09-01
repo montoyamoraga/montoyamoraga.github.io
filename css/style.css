@@ -141,12 +141,15 @@ body {
 .right {
   background-color: greenyellow;
   min-height: 100vh;
+  width: 100%;
+  margin-left: 0;
   padding: 80px 40px 120px 40px;
-  transition: transform 0.3s ease-in-out;
+  transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
 }
 
 .left.active~.right {
-  transform: translateX(260px);
+  margin-left: 260px;
+  width: calc(100% - 260px);
 }
 
 .dropdown-trigger {
@@ -167,7 +170,7 @@ body {
   margin: 10px 0 5px 0;
   font-size: 9pt;
   font-family: monospace;
-  text-transform: uppercase;
+  text-transform: lowercase;
   color: #666;
 }
 
@@ -518,7 +521,8 @@ html[lang="es"] .en {
     left: 0;
   }
   .left.active~.right {
-    transform: translateX(0);
+    margin-left: 0;
+    width: 100%;
   }
   .persona-card {
     box-shadow: 6px 6px 0px pink;
@@ -542,6 +546,22 @@ html[lang="es"] .en {
 #divLeftMenu a {
   color: blue;
   text-decoration: underline;
+}
+
+#divLeftMenu a.nav-active,
+#divLeftMenu h3.dropdown-trigger.nav-active {
+  display: inline-block;
+  border: 1px solid black;
+  box-shadow: 3px 5px 0px black;
+  padding: 2px 8px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+#divLeftMenu ol a.nav-active {
+  padding: 1px 6px;
+  box-shadow: 2px 3px 0px black;
 }
 
 /* split layout - proyectoBase */

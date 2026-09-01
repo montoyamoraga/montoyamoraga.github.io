@@ -8,11 +8,13 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger" style="cursor:pointer; text-decoration:underline;">enseñanza</h3>
+        <h3 class="dropdown-trigger">enseñanza</h3>
         <div class="dropdown-content" style="display:none; padding-left:15px;">
             
             <h5 data-i18n="undergraduate-udp"></h5>
             <ol>
+                <li><a data-i18n="teaching-dis9079" href="/teaching/dis9079/"></a></li>
+                <li><a data-i18n="teaching-dis09214" href="/teaching/dis09214/"></a></li>
                 <li><a data-i18n="teaching-dis8645" href="/teaching/dis8645/"></a></li>
                 <li><a data-i18n="teaching-dis8644" href="/teaching/dis8644/"></a></li>
                 <li><a data-i18n="teaching-dis8637" href="/teaching/dis8637/"></a></li>
@@ -38,7 +40,7 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger" style="cursor:pointer; text-decoration:underline;">investigación</h3>
+        <h3 class="dropdown-trigger">investigación</h3>
         <div class="dropdown-content" style="display:none; padding-left:15px;">
             <ol>
                 <li>sin proyectos publicados</li>
@@ -47,7 +49,7 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger" style="cursor:pointer; text-decoration:underline;">performance</h3>
+        <h3 class="dropdown-trigger">performance</h3>
         <div class="dropdown-content" style="display:none; padding-left:15px;">
             <ol>
                 <li>sin obras publicadas</li>
@@ -56,7 +58,7 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger" style="cursor:pointer; text-decoration:underline;">cv</h3>
+        <h3 class="dropdown-trigger">cv</h3>
         <div class="dropdown-content cv-menu" style="display:none; padding-left:15px;">
             <ol>
                 <li><a href="/cv/#educacion-universitaria">educacion-universitaria</a></li>
@@ -87,6 +89,38 @@ let divLeftMenu = document.getElementById('divLeftMenu');
 if (divLeftMenu) {
     divLeftMenu.innerHTML = navbar;
 }
+
+function normalizePath(path) {
+    if (!path) return window.location.pathname;
+    return path.replace(/index\.html$/, '').replace(/\/+$/, '/') || '/';
+}
+
+const currentPath = normalizePath(window.location.pathname);
+
+document.querySelectorAll('#divLeftMenu a[href]').forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href || href === '#') return;
+
+    const [hrefPath, hrefHash] = href.split('#');
+    const linkPath = normalizePath(hrefPath);
+    const samePage = linkPath === currentPath;
+    const sameHash = !hrefHash || `#${hrefHash}` === window.location.hash;
+
+    if (samePage && sameHash) {
+        link.classList.add('nav-active');
+    }
+
+    if (samePage) {
+        const dropdownContent = link.closest('.dropdown-content');
+        if (dropdownContent) {
+            dropdownContent.style.display = 'block';
+            const trigger = dropdownContent.previousElementSibling;
+            if (trigger && trigger.classList.contains('dropdown-trigger')) {
+                trigger.classList.add('nav-active');
+            }
+        }
+    }
+});
 
 document.querySelectorAll('.dropdown-trigger').forEach(trigger => {
     trigger.addEventListener('click', () => {
