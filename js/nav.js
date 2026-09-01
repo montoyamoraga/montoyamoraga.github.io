@@ -10,32 +10,33 @@ let navbar = `
     <div class="nav-section">
         <h3 class="dropdown-trigger">enseñanza</h3>
         <div class="dropdown-content" style="padding-left:15px;">
-
-            <h5 data-i18n="undergraduate-udp"></h5>
+            <!-- ENSEÑANZA:GENERADO:INICIO (no editar a mano — ver scripts/generar-ensenanza.js y datos/ensenanza.yaml) -->
+            <h5><span class="es">pregrado - universidad diego portales</span><span class="en">undergraduate - universidad diego portales</span></h5>
             <ol>
-                <li><a data-i18n="teaching-dis9079" href="/ensenanza/dis9079/"></a></li>
-                <li><a data-i18n="teaching-dis09214" href="/ensenanza/dis09214/"></a></li>
-                <li><a data-i18n="teaching-dis8645" href="/ensenanza/dis8645/"></a></li>
-                <li><a data-i18n="teaching-dis8644" href="/ensenanza/dis8644/"></a></li>
-                <li><a data-i18n="teaching-dis8637" href="/ensenanza/dis8637/"></a></li>
-                <li><a data-i18n="teaching-dis8636" href="/ensenanza/dis8636/"></a></li>
-                <li><a data-i18n="teaching-dis9005" href="/ensenanza/dis9005/"></a></li>
-                <li><a data-i18n="teaching-dis9034" href="/ensenanza/dis9034/"></a></li>
+                <li><a href="/ensenanza/dis9079/"><span class="es">dis9079 - interacciones inalámbricas</span><span class="en">dis9079 - wireless interaction design</span></a></li>
+                <li><a href="/ensenanza/dis09214/"><span class="es">dis09214 - pensamiento computacional</span><span class="en">dis09214 - computational thinking</span></a></li>
+                <li><a href="/ensenanza/dis8645/"><span class="es">dis8645 - taller de diseño de máquinas computacionales</span><span class="en">dis8645 - studio of computational machines design</span></a></li>
+                <li><a href="/ensenanza/dis8644/"><span class="es">dis8644 - taller de diseño de máquinas electrónicas</span><span class="en">dis8644 - studio of electronic machines design</span></a></li>
+                <li><a href="/ensenanza/dis8637/"><span class="es">dis8637 - taller de experiencia de usuario</span><span class="en">dis8637 - studio of user experience</span></a></li>
+                <li><a href="/ensenanza/dis8636/"><span class="es">dis8636 - taller de interfaz de usuario</span><span class="en">dis8636 - studio of user interfaces</span></a></li>
+                <li><a href="/ensenanza/dis9005/"><span class="es">dis9005 - diseño de página web</span><span class="en">dis9005 - web design</span></a></li>
+                <li><a href="/ensenanza/dis9034/"><span class="es">dis9034 - programación creativa multimedia</span><span class="en">dis9034 - creative multimedia programming</span></a></li>
             </ol>
 
-            <h5 data-i18n="undergraduate-uchile"></h5>
+            <h5><span class="es">pregrado - universidad de chile</span><span class="en">undergraduate - universidad de chile</span></h5>
             <ol>
-                <li><a data-i18n="teaching-audiv027" href="/ensenanza/audiv027/"></a></li>
-                <li><a data-i18n="teaching-audiv020" href="/ensenanza/audiv020/"></a></li>
-                <li><a data-i18n="teaching-aud5i022" href="/ensenanza/aud5i022/"></a></li>
-                <li><a data-i18n="teaching-aud10004" href="/ensenanza/aud10004/"></a></li>
-                <li><a data-i18n="teaching-aud20004" href="/ensenanza/aud20004/"></a></li>
+                <li><a href="/ensenanza/audiv027/"><span class="es">audiv027 - inteligencia artificial</span><span class="en">audiv027 - artificial intelligence</span></a></li>
+                <li><a href="/ensenanza/audiv020/"><span class="es">audiv020 - diseño de instrumentos musicales digitales</span><span class="en">audiv020 - design of digital musical instruments</span></a></li>
+                <li><a href="/ensenanza/aud5i022/"><span class="es">aud5i022 - diseño de interfaces electrónicas</span><span class="en">aud5i022 - design of electronic interfaces</span></a></li>
+                <li><a href="/ensenanza/aud10004/"><span class="es">aud10004 - matemáticas aplicadas al diseño</span><span class="en">aud10004 - math for designers</span></a></li>
+                <li><a href="/ensenanza/aud20004/"><span class="es">aud20004 - física aplicada al diseño</span><span class="en">aud20004 - physics for designers</span></a></li>
             </ol>
 
-            <h5 data-i18n="undergraduate-uai"></h5>
+            <h5><span class="es">pregrado - universidad adolfo ibáñez</span><span class="en">undergraduate - universidad adolfo ibáñez</span></h5>
             <ol>
-                <li><a data-i18n="teaching-dis145" href="/ensenanza/dis145/"></a></li>
+                <li><a href="/ensenanza/dis145/"><span class="es">dis145 - diseño y construcción de interfaces</span><span class="en">dis145 - design and construction of interfaces</span></a></li>
             </ol>
+            <!-- ENSEÑANZA:GENERADO:FIN -->
         </div>
     </div>
 

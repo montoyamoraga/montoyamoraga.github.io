@@ -1,0 +1,568 @@
+# datos de los cursos de enseñanza, usados por scripts/generar-ensenanza.js
+# para generar ensenanza/<slug>/index.html y el menú de enseñanza en js/nav.js.
+#
+# el orden de esta lista define el orden dentro de cada grupo del menú.
+#
+# schema por curso:
+#   slug:        string, nombre de la carpeta en ensenanza/<slug>/
+#   universidad: udp | uchile | uai — agrupa el menú
+#   titulo:      { es, en }
+#   institucion: lista de { es, en } (una línea por ítem)
+#   fechas:      lista de { texto: { es, en }, url (opcional) }
+#                sin url se renderiza como texto plano, con url como link
+#   descripcion: lista de { es, en } (un párrafo por ítem)
+#   equipo:      lista de { nombre, rol: { es, en } } (nombre no se traduce)
+#   imagenes:    lista de nombres de archivo (se resuelven a images/<archivo>
+#                dentro de la carpeta del curso) o URLs absolutas (se usan tal cual)
+#
+# para agregar un curso nuevo: agregar una entrada acá (+ opcionalmente
+# ensenanza/<slug>/images/ con las fotos), hacer push a main. el GitHub Action
+# regenera ensenanza/<slug>/index.html y el menú automáticamente.
+
+- slug: dis9079
+  universidad: udp
+  titulo:
+    en: dis9079 - wireless interaction design
+    es: dis9079 - interacciones inalámbricas
+  institucion:
+    - en: universidad diego portales
+      es: universidad diego portales
+    - en: faculty of architecture, arts, and design
+      es: facultad de arquitectura, arte y diseño
+    - en: design school
+      es: escuela de diseño
+  fechas:
+    - texto:
+        en: first term 2026 (march - july)
+        es: primer semestre 2026 (marzo - julio)
+  descripcion:
+    - en: a theoretical and practical course oriented toward the study and development of interaction design projects using wireless tools. the course explores the possibilities offered by the responsible implementation of small- and medium-scale wireless interactive systems.
+      es: curso de carácter teórico-práctico orientado al estudio y desarrollo de proyectos de creación de diseño de interacción a través de herramientas inalámbricas. la asignatura explora las posibilidades que ofrece la articulación responsable de la implementación de sistemas interactivos inalámbricos a pequeña y mediana escala.
+    - en: the course covers three thematic units - design and use of protocols and microcontrollers for wireless communications, analysis and writing of software and microcontroller code for wireless communications, and design of interactive experiences with wireless technologies.
+      es: el curso contempla tres unidades temáticas - diseño y uso de protocolos y microcontroladores para comunicaciones inalámbricas, análisis y escritura de software y microcontroladores para comunicaciones inalámbricas y diseño de experiencias interactivas con tecnologías inalámbricas.
+  equipo:
+    - nombre: aarón montoya-moraga
+      rol:
+        en: professor
+        es: profesore
+    - nombre: mateo arce
+      rol:
+        en: teaching assistant
+        es: ayudante
+  imagenes: []
+- slug: dis09214
+  universidad: udp
+  titulo:
+    en: dis09214 - computational thinking
+    es: dis09214 - pensamiento computacional
+  institucion:
+    - en: universidad diego portales
+      es: universidad diego portales
+    - en: faculty of architecture, arts, and design
+      es: facultad de arquitectura, arte y diseño
+    - en: design school
+      es: escuela de diseño
+  fechas:
+    - texto:
+        en: first term 2026 (march - july)
+        es: primer semestre 2026 (marzo - julio)
+  descripcion:
+    - en: the computational thinking course introduces design students to the logical, structured and creative reasoning of computing as a tool to analyze and create systems, flows and behaviors. through visual, logical and experiential exercises, students explore how to think with input-process-output structures, recognizing patterns, sequences and algorithms as expressive languages within contemporary design.
+      es: el curso pensamiento computacional introduce a los estudiantes de diseño al uso del razonamiento lógico, estructurado y creativo propio de la computación como herramienta para analizar y crear sistemas, flujos y comportamientos. a través de ejercicios visuales, lógicos y experienciales, se explora cómo pensar con estructuras de entrada, proceso y salida, reconociendo patrones, secuencias y algoritmos como lenguajes expresivos en el contexto del diseño contemporáneo.
+    - en: this course is based on experimentation with visual tools and accessible platforms to build simple interactive experiences, generative systems, visualizations and behavior flows. it prioritizes an understandable, creative and applied approach to computing, focused on understanding logic rather than syntax, promoting conceptual autonomy for future courses in programming, data or advanced digital interaction.
+      es: este curso se basa en la experimentación con herramientas visuales y plataformas accesibles para construir experiencias interactivas simples, sistemas generativos, visualizaciones y flujos de comportamiento. se prioriza una aproximación comprensible, creativa y aplicada a lo computacional, enfocada en comprender la lógica, más que la sintaxis, promoviendo autonomía conceptual para cursos futuros de programación, datos o interacción digital avanzada.
+    - en: additionally, the course establishes the conceptual foundations needed to later access more advanced environments such as physical computing, IoT, sensors, actuators or peripheral devices.
+      es: adicionalmente, el curso establece las bases conceptuales necesarias para acceder posteriormente a entornos más avanzados como computación física, IoT, sensores, actuadores o dispositivos periféricos.
+  equipo:
+    - nombre: aarón montoya-moraga
+      rol:
+        en: professor
+        es: profesore
+    - nombre: vania paredes
+      rol:
+        en: teaching assistant
+        es: ayudante
+  imagenes: []
+- slug: dis8645
+  universidad: udp
+  titulo:
+    en: dis8645 - studio of computational machines design
+    es: dis8645 - taller de diseño de máquinas computacionales
+  institucion:
+    - en: universidad diego portales
+      es: universidad diego portales
+    - en: facultad de arquitectura, arte y diseño
+      es: facultad de arquitectura, arte y diseño
+    - en: escuela de diseño
+      es: escuela de diseño
+  fechas:
+    - texto:
+        en: segundo semestre 2025 (agosto - diciembre)
+        es: segundo semestre 2025 (agosto - diciembre)
+      url: https://github.com/disenoUDP/dis8645-2025-1
+  descripcion:
+    - en: este taller es un curso práctico y teórico, donde abordamos investigación y metodología de diseño y construcción de circuitos y máquinas electrónicas, con énfasis en tecnologías análogas, circuitos integrados, sensores y actuadores.
+      es: este taller es un curso práctico y teórico, donde abordamos investigación y metodología de diseño y construcción de circuitos y máquinas electrónicas, con énfasis en tecnologías análogas, circuitos integrados, sensores y actuadores.
+    - en: desarrollamos proyectos aplicados para la creación de máquinas que satisfagan necesidades de diseño y artísticas, aplicando la teoría de la interacción humano-computador (HCI), y así lograr máquinas electrónicas útiles.
+      es: desarrollamos proyectos aplicados para la creación de máquinas que satisfagan necesidades de diseño y artísticas, aplicando la teoría de la interacción humano-computador (HCI), y así lograr máquinas electrónicas útiles.
+    - en: los productos de este curso son conducentes tanto a generar publicaciones académicas como también la experimentación lúdica y creación de proyectos para el mundo profesional.
+      es: los productos de este curso son conducentes tanto a generar publicaciones académicas como también la experimentación lúdica y creación de proyectos para el mundo profesional.
+  equipo:
+    - nombre: aarón montoya-moraga
+      rol:
+        en: profesore principal
+        es: profesore principal
+    - nombre: matías serrano
+      rol:
+        en: profesor
+        es: profesor
+  imagenes: []
+- slug: dis8644
+  universidad: udp
+  titulo:
+    en: dis8644 - studio of electronic machines design
+    es: dis8644 - taller de diseño de máquinas electrónicas
+  institucion:
+    - en: universidad diego portales
+      es: universidad diego portales
+    - en: faculty of architecture, arts, and design
+      es: facultad de arquitectura, arte y diseño
+    - en: design school
+      es: escuela de diseño
+  fechas:
+    - texto:
+        en: segundo semestre 2025 (marzo - julio)
+        es: segundo semestre 2025 (marzo - julio)
+      url: https://github.com/disenoUDP/dis8644-2025-1
+  descripcion:
+    - en: este taller es un curso práctico y teórico, donde abordamos investigación y metodología de diseño y construcción de circuitos y máquinas electrónicas, con énfasis en tecnologías análogas, circuitos integrados, sensores y actuadores.
+      es: este taller es un curso práctico y teórico, donde abordamos investigación y metodología de diseño y construcción de circuitos y máquinas electrónicas, con énfasis en tecnologías análogas, circuitos integrados, sensores y actuadores.
+    - en: desarrollamos proyectos aplicados para la creación de máquinas que satisfagan necesidades de diseño y artísticas, aplicando la teoría de la interacción humano-computador (HCI), y así lograr máquinas electrónicas útiles.
+      es: desarrollamos proyectos aplicados para la creación de máquinas que satisfagan necesidades de diseño y artísticas, aplicando la teoría de la interacción humano-computador (HCI), y así lograr máquinas electrónicas útiles.
+    - en: los productos de este curso son conducentes tanto a generar publicaciones académicas como también la experimentación lúdica y creación de proyectos para el mundo profesional.
+      es: los productos de este curso son conducentes tanto a generar publicaciones académicas como también la experimentación lúdica y creación de proyectos para el mundo profesional.
+  equipo:
+    - nombre: aarón montoya-moraga
+      rol:
+        en: lead professor
+        es: profesore principal
+    - nombre: matías serrano
+      rol:
+        en: professor
+        es: profesor
+  imagenes: []
+- slug: dis8637
+  universidad: udp
+  titulo:
+    en: dis8637 - studio of user experience
+    es: dis8637 - taller de experiencia de usuario
+  institucion:
+    - en: universidad diego portales
+      es: universidad diego portales
+    - en: faculty of architecture, arts, and design
+      es: facultad de arquitectura, arte y diseño
+    - en: design school
+      es: escuela de diseño
+  fechas:
+    - texto:
+        en: segundo semestre 2023 (marzo - julio)
+        es: segundo semestre 2023 (marzo - julio)
+      url: https://github.com/disenoUDP/dis8637-2023-2
+  descripcion:
+    - en: in this practical and theoretical studio class we will learn how to perform user research, and creative use of digital prototyping tools, web and microcontroller programming languages, and use of analog and digital sensors and actuators.
+      es: este taller es un curso práctico y teórico, donde abordamos investigación y metodología de trabajo con usuarios, uso creativo de herramientas de prototipado digital, lenguajes de programación web y de microcontroladores y uso de sensores y actuadores análogos y digitales.
+    - en: we will develop applied projects in order to understand users' needs, create digital devices and instruments for human-computer interaction (HCI), in order to create innovative user experiences.
+      es: desarrollamos proyectos aplicados para comprender las necesidades de los usuarios, implementar dispositivos e instrumentos digitales para interacción humano-computador (HCI), y así lograr experiencias de usuario innovadoras.
+    - en: the outcomes of this studio class will be both foundations for academic research and playful experimentation applied to professional projects.
+      es: los productos de este curso son conducentes tanto a generar publicaciones académicas como también la experimentación lúdica y creación de proyectos para el mundo profesional.
+  equipo:
+    - nombre: sergio majluf
+      rol:
+        en: lead professor
+        es: profesor principal
+    - nombre: aarón montoya-moraga
+      rol:
+        en: professor
+        es: profesore
+    - nombre: andrés martin
+      rol:
+        en: teaching assistant
+        es: ayudante
+  imagenes:
+    - dis8637-catalina-alvarez-javiera-astudillo-aylen-bassaletti-giuliana-pimentel.jpg
+    - dis8637-valentina-cooper-aranza-frias-sofia-huerta.jpg
+    - dis8637-valentina-montecinos-sofia-sandoval-janis-sepulveda.jpg
+- slug: dis8636
+  universidad: udp
+  titulo:
+    en: dis8636 - studio of user interfaces
+    es: dis8636 - taller de interfaz de usuario
+  institucion:
+    - en: universidad diego portales
+      es: universidad diego portales
+    - en: faculty of architecture, arts, and design
+      es: facultad de arquitectura, arte y diseño
+    - en: design school
+      es: escuela de diseño
+  fechas:
+    - texto:
+        en: first term 2023 (march - july)
+        es: primer semestre 2023 (marzo - julio)
+    - texto:
+        en: first term 2024 (march - july)
+        es: primer semestre 2024 (marzo - julio)
+  descripcion:
+    - en: our daily life is strongly mediated by interfaces in a wide array of platforms, which in turn configure the key elements of user experiencies, in the analog and digital realms.
+      es: nuestra vida cotidiana está fuertemente intermediada por interfaces en diversas plataformas y soportes, que configuran a su vez uno de los elementos clave en experiencias de usuario análogas y digitales.
+    - en: this is a practical and theoretical course, where we will learn strategies for research and methodological work with users, and we will explore prospective and creative interfaces with prototyping digital tools including Figma and p5.js.
+      es: este es un curso práctico y conceptual, donde abordaremos desde la investigación y metodología de trabajo con usuarios, exploración de interfaces como instrumento de prospección y uso creativo de herramientas de prototipado digital como Figma y la plataforma de programación p5.js.
+    - en: by developing applied projects during the semester, we will understand the users' needs and the design opportunities that arise. we will build innovative interfaces for both academic research of human-computer interaction (HCI), as well as playful experimentation and applications in professional contexts.
+      es: con proyectos aplicados durante el semestre trabajaremos desde comprender las necesidades de los usuarios y las oportunidades que surgen en sus contextos, hasta la creación de interfaces innovadoras, conducentes tanto a generar publicaciones académicas del ámbito de interacción humano computador (HCI) como también la experimentación lúdica y creación de proyectos colaborativos con el mundo profesional.
+  equipo:
+    - nombre: sergio majluf
+      rol:
+        en: lead professor
+        es: profesor principal
+    - nombre: aarón montoya-moraga
+      rol:
+        en: professor
+        es: profesore
+    - nombre: andrés martin
+      rol:
+        en: teaching assistant (2024)
+        es: ayudante (2024)
+    - nombre: sebastián cistenas
+      rol:
+        en: teaching assistant (2023)
+        es: ayudante (2023)
+  imagenes:
+    - dis8636-elisa-errazuriz.jpg
+    - dis8636-sofia-etchepare.jpg
+    - dis8636-sofia-sandoval.jpg
+    - dis8636-theo-rios.jpg
+- slug: dis9005
+  universidad: udp
+  titulo:
+    en: dis9005 - web design
+    es: dis9005 - diseño de página web
+  institucion:
+    - en: universidad diego portales
+      es: universidad diego portales
+    - en: faculty of architecture, arts, and design
+      es: facultad de arquitectura, arte y diseño
+    - en: design school
+      es: escuela de diseño
+  fechas:
+    - texto:
+        en: first semester 2023 (march - july)
+        es: primer semestre 2023 (marzo - julio)
+      url: https://github.com/disenoUDP/dis9005-2023-1
+  descripcion:
+    - en: theoretical and practical course, oriented to the design and development of responsive, interactive and dynamic websites,  using the HTML, CSS and JavaScript languages.
+      es: curso teórico-práctico, orientada al diseño y desarrollo de sitios web responsivos, interactivos y dinámicos usando lenguajes HTML, CSS y JavaScript.
+    - en: we will perform user analysis, design of screens, and implementation with modern web programming languages.
+      es: se llevarán cabo análisis de usuarios y necesidades, diseño de pantallas, e implementación con lenguajes de programación web.
+    - en: all the work will be done in public, collaboratively, and with a strong emphasis on open source, free and multiplatform tools.
+      es: el trabajo se hace de forma pública, compartida, y con un fuerte énfasis en herramientas de fuente abierta, libres y multi plataforma.
+  equipo:
+    - nombre: aarón montoya-moraga
+      rol:
+        en: professor
+        es: profesore
+    - nombre: francisca wright
+      rol:
+        en: teaching assistant
+        es: ayudante
+  imagenes:
+    - dis9005-simon-lira.jpg
+    - dis9005-sofia-sandoval.jpg
+    - dis9005-valentina-montecinos.jpg
+- slug: dis9034
+  universidad: udp
+  titulo:
+    en: dis9034 - creative multimedia programming
+    es: dis9034 - programación creativa multimedia
+  institucion:
+    - en: universidad diego portales
+      es: universidad diego portales
+    - en: faculty of architecture, arts, and design
+      es: facultad de arquitectura, arte y diseño
+    - en: design school
+      es: escuela de diseño
+  fechas:
+    - texto:
+        en: first term 2024 (march - july)
+        es: primer semestre 2024 (marzo - julio)
+      url: https://github.com/disenoUDP/dis9034-2024-1
+  descripcion:
+    - en: theoretical and practical course, centered in the use and creation of software as a plastic medium for design.
+      es: curso teórico-práctico, centrado en el uso y creación de software como un medio plástico para el diseño.
+    - en: we will learn the fundamental programming blocks (variables, functions, iterations, conditions) and we will apply them to the foundations of audiovisual creation, including color, video and audio, in order to create static and dynamic works.
+      es: aprenderemos los bloques fundamentales de la programación (variables, funciones, iteraciones, condicionales) y los aplicaremos a los elementos fundamentales de creación audiovisual, incluyendo color, video y audio, para componer obras tanto estáticas como dinámicas.
+    - en: all the work will be done in public, collaboratively, and with a strong emphasis on open source, free and multiplatform tools.
+      es: el trabajo se hace de forma pública, compartida, y con un fuerte énfasis en herramientas de fuente abierta, libres y multi plataforma.
+  equipo:
+    - nombre: aarón montoya-moraga
+      rol:
+        en: professor, course creator
+        es: profesore, creadora del curso
+    - nombre: janis sepúlveda
+      rol:
+        en: teaching assistant
+        es: ayudante
+  imagenes:
+    - dis9034-macarena-parrao.jpg
+    - dis9034-mateo-arce.jpg
+    - dis9034-sofia-huerta.jpg
+- slug: audiv027
+  universidad: uchile
+  titulo:
+    en: audiv027 - artificial intelligence
+    es: audiv027 - inteligencia artificial
+  institucion:
+    - en: universidad de chile
+      es: universidad de chile
+    - en: faculty of architecture and urbanism
+      es: facultad de arquitectura y urbanismo
+    - en: design school
+      es: escuela de diseño
+  fechas:
+    - texto:
+        en: second semester 2023 (august - december)
+        es: segundo semestre 2023 (agosto - diciembre)
+      url: https://github.com/FAU-UChile/audiv027-2023-2
+    - texto:
+        en: first semester 2024 (march - july)
+        es: primer semestre 2024 (marzo - julio)
+      url: https://github.com/FAU-UChile/audiv027-2024-1
+    - texto:
+        en: second semester 2024 (august - december)
+        es: segundo semestre 2024 (agosto - diciembre)
+      url: https://github.com/FAU-UChile/audiv027-2024-2
+  descripcion:
+    - en: elective course of design, where we study the foundations of artificial intelligence, from creating our own databases to training our own generative algorithms.
+      es: curso electivo de diseño, donde estudiamos los fundamentos de inteligencia artificial, desde crear nuestras propias bases de datos, hasta entrenar nuestros propios algoritmos generativos.
+    - en: we will learn how to build our own image, sound and human pose databases, in order to create interactive installations. we will use Wekinator and ml5.js for privacy-first and browser-based work.
+      es: aprenderemos a construir nuestras propias bases de datos de imágenes, sonido y poses humanas, para crear nuestras propias instalaciones interactivas. usaremos las herramientas Wekinator y  ml5-ks para privilegiar el trabajo en navegdaores web y de uso privado.
+    - en: all the work will be done in public, collaboratively, with the students sharing their notes and applied research.
+      es: el trabajo se hace de forma pública y compartida, con les estudiantes compartiendo sus apuntes y realizando trabajos grupales de investigación aplicada.
+  equipo:
+    - nombre: aarón montoya-moraga
+      rol:
+        en: professor, creator of the course
+        es: profesore, creador del curso
+    - nombre: ignacio passalacqua
+      rol:
+        en: teaching assistant (2023-2)
+        es: ayudante (2023-2)
+    - nombre: joaquín pérez
+      rol:
+        en: undergraduate assistant (2023-2)
+        es: ayudante de pregrado (2023-2)
+    - nombre: ricardo ramírez
+      rol:
+        en: undergraduate assistant (2024-1)
+        es: ayudante de pregrado (2024-1)
+    - nombre: vick clavería
+      rol:
+        en: undergraduate assistant (2024-2)
+        es: ayudante de pregrado (2024-2)
+  imagenes:
+    - audiv027-diego-lopez.jpg
+    - audiv027-javier-burgos-nicolas-lagos-valentina-soto.jpg
+    - audiv027-natalie-astudillo-valentina-ochoa.jpg
+- slug: audiv020
+  universidad: uchile
+  titulo:
+    en: audiv020 - design of digital musical instruments
+    es: audiv020 - diseño de instrumentos musicales digitales
+  institucion:
+    - en: universidad de chile
+      es: universidad de chile
+    - en: faculty of architecture and urbanism
+      es: facultad de arquitectura y urbanismo
+    - en: design school
+      es: escuela de diseño
+  fechas:
+    - texto:
+        en: second semester 2022 (august - december)
+        es: segundo semestre 2022 (agosto - diciembre)
+      url: https://github.com/FAU-UChile/audiv020-2022-2
+  descripcion:
+    - en: elective course of design, where we study the foundations of electronic music interfaces, applied to programming of musical instruments with microcontrollers and computer music programming languages.
+      es: curso electivo de diseño, donde estudiamos los fundamentos de interfaces para música electrónica, aplicada a la programación de instrumentso musicales hechos con microcontroladores y lenguajes de programación orientados a música.
+    - en: we will learn how to design tactile interfaces, finite state machines and multimedia feedback for live music performance. we will use microcontrollers running CircuitPython and the Chuck and Pure Data programming languages.
+      es: aprenderemos a diseñar interfaces táctiles, máquinas de estado finitas, y retroalimentación multimedia para presentaciones de música en vivo. usaremos microcontroladores corriendo CircuitPython y programaremos software con los lenguajes ChucK y Pure Data.
+    - en: all the work will be done in public, collaboratively, with the students sharing their notes and applied research.
+      es: el trabajo se hace de forma pública y compartida, con les estudiantes compartiendo sus apuntes y realizando trabajos grupales de investigación aplicada.
+  equipo:
+    - nombre: aarón montoya-moraga
+      rol:
+        en: professor, creator of the course
+        es: profesore, creadora del curso
+    - nombre: ignacio passalacqua
+      rol:
+        en: teaching assistant
+        es: ayudante
+  imagenes:
+    - audiv020-andres-martin-valentina-quilodran.jpg
+    - audiv020-javier-burgos-anais-donoso-shania-pasten.jpg
+    - audiv020-valentina-matthey-carolina-toledo.jpg
+- slug: aud5i022
+  universidad: uchile
+  titulo:
+    en: aud5i022 - design of electronic interfaces
+    es: aud5i022 - diseño de interfaces electrónicas
+  institucion:
+    - en: universidad de chile
+      es: universidad de chile
+    - en: faculty of architecture and urbanism
+      es: facultad de arquitectura y urbanismo
+    - en: design school
+      es: escuela de diseño
+  fechas:
+    - texto:
+        en: first semester 2022 (march - july)
+        es: primer semestre 2022 (marzo - julio)
+      url: https://github.com/FAU-UChile/aud5i022-2022-1
+    - texto:
+        en: first semester 2023 (march - july)
+        es: primer semestre 2023 (marzo - julio)
+      url: https://github.com/FAU-UChile/aud5i022-2023-1
+  descripcion:
+    - en: elective course of design, where we study the foundations of electronics and physical computing applied, including programming applied to microcontrollers.
+      es: curso electivo de diseño, donde estudiamos los fundamentos de electrónica y computación física, incluyendo el estudio de código aplicado a microcontroladores.
+    - en: we will learn how to use and connect sensors and actuators, including potentiometers, buzzers, pushbuttons, and their conection to Arduino boards, and the serial, MIDI, and OSC protocols.
+      es: aprenderemos a usar sensores y actuadores, incluyendo potenciómetros, zumbadores, pulsadores, y su conexión a placas Arduino, además de protocolos como serial, MIDI y OSC.
+    - en: all the work will be done in public, collaboratively, with the students sharing their notes and doing group projects of applied research.
+      es: el trabajo se hace de forma pública y compartida, con les estudiantes compartiendo sus apuntes y realizando trabajos grupales de investigación aplicada.
+  equipo:
+    - nombre: aarón montoya-moraga
+      rol:
+        en: professor, creator of the course
+        es: profesore, creadora del curso
+    - nombre: ignacio passalacqua
+      rol:
+        en: ayudante (2023)
+        es: ayudante (2023)
+  imagenes:
+    - aud5i022-francisco-cabrera-vanesa-angulo.jpg
+    - aud5i022-pilar-vergara-valentina-fuentes-silvana-olivares.jpg
+    - aud5i022-sofia-chavez-maria-diaz.jpg
+- slug: aud10004
+  universidad: uchile
+  titulo:
+    en: aud10004 - math for designers
+    es: aud10004 - matemáticas aplicadas al diseño
+  institucion:
+    - en: universidad de chile
+      es: universidad de chile
+    - en: faculty of architecture and urbanism
+      es: facultad de arquitectura y urbanismo
+    - en: design school
+      es: escuela de diseño
+  fechas:
+    - texto:
+        en: first semester 2023 (march - july)
+        es: segundo semestre 2023 (marzo - julio)
+      url: https://github.com/FAU-UChile/aud10004-2023-1
+  descripcion:
+    - en: theoretical course for first year students, where we review the foundations of mathematical thought applied to design, including algebra, geometry, trigonometry, and logic.
+      es: curso teórico de primer año, para sentar las bases del pensamiento matemático a estudiantes de diseño, incluyendo álgebra, geometría, trigonometría y lógica.
+    - en: we will learn to model problems in a parametric way, and taking into account the math behind computation and human perception of the physical reality.
+      es: aprenderemos a modelar problemas de forma paramétrica, y tomando en cuenta la matemática detrás de la computación y la percepción humana de la realidad física.
+    - en: all the work will be done in public, collaboratively, with the students sharing their notes and applied research.
+      es: el trabajo se hace de forma pública y compartida, con les estudiantes compartiendo sus apuntes y realizando trabajos de investigación aplicada.
+  equipo:
+    - nombre: aarón montoya-moraga
+      rol:
+        en: professor
+        es: profesore
+    - nombre: ignacio passalacqua
+      rol:
+        en: teaching assistant
+        es: ayudante
+  imagenes:
+    - aud10004-natalie-alegria.jpg
+    - aud10004-paloma-vargas.jpg
+    - aud10004-paulette-duran.jpg
+- slug: aud20004
+  universidad: uchile
+  titulo:
+    en: aud20004 - physics for designers
+    es: aud20004 - física aplicada al diseño
+  institucion:
+    - en: universidad de chile
+      es: universidad de chile
+    - en: faculty of architecture and urbanism
+      es: facultad de arquitectura y urbanismo
+    - en: design school
+      es: escuela de diseño
+  fechas:
+    - texto:
+        en: second semester 2022 (august - december)
+        es: segundo semestre 2022 (agosto - diciembre)
+      url: https://github.com/FAU-UChile/aud20004-2022-2
+    - texto:
+        en: second semester 2023 (august - december)
+        es: segundo semestre 2023 (agosto - diciembre)
+      url: https://github.com/FAU-UChile/aud20004-2023-2
+    - texto:
+        en: first semester 2024 (march - july)
+        es: primer semestre 2024 (marzo - julio)
+      url: https://github.com/FAU-UChile/aud20004-2024-1
+    - texto:
+        en: second semester 2024 (august - december)
+        es: segundo semestre 2024 (agosto - diciembre)
+      url: https://github.com/FAU-UChile/aud20004-2024-2
+  descripcion:
+    - en: theoretical course for first year students, where we review the foundations of physics applied to design, including mechanics, light, electricity, and free-body diagrams.
+      es: curso teórico de primer año, para sentar las bases del pensamiento físico a estudiantes de diseño, incluyendo mecánica, luz, electricidad y diagrama de cuerpo libre.
+    - en: we will learn to model problems in a parametric way, and taking into account the physics behind computation and human perception, along with ethical applications.
+      es: aprenderemos a modelar problemas de forma paramétrica, y tomando en cuenta la física detrás de la computación y la percepción humana, además de aplicaciones éticas.
+    - en: all the work will be done in public, collaboratively, with the students sharing their notes and applied research.
+      es: el trabajo se hace de forma pública y compartida, con les estudiantes compartiendo sus apuntes y realizando trabajos de investigación aplicada.
+  equipo:
+    - nombre: aarón montoya-moraga
+      rol:
+        en: professor
+        es: profesore
+    - nombre: andrés martin
+      rol:
+        en: teaching assistant (2024)
+        es: ayudante (2024)
+    - nombre: ignacio passalacqua
+      rol:
+        en: teaching assistant (2023)
+        es: ayudante (2023)
+  imagenes:
+    - aud20004-camila-vargas.jpg
+    - aud20004-sophia-bahamonde.jpg
+    - aud20004-valentina-cristi.jpg
+- slug: dis145
+  universidad: uai
+  titulo:
+    en: dis145 - design and construction of interfaces
+    es: dis145 - diseño y construcción de interfaces
+  institucion:
+    - es: universidad adolfo ibáñez
+      en: universidad adolfo ibáñez
+    - es: design lab
+      en: design lab
+  fechas:
+    - texto:
+        es: primer semestre 2024 (marzo - julio)
+        en: first term 2024 (march - july)
+  descripcion:
+    - es: el curso se enfoca en diseñar y construir interfaces interactivas, conectando el lado conceptual y de experiencia de usuario del diseño de interacción con la construcción técnica práctica de sistemas interactivos.
+      en: focuses on designing and building interactive interfaces — bridging the conceptual/UX side of interaction design with the hands-on technical construction of interactive systems.
+  equipo:
+    - nombre: aarón montoya-moraga
+      rol:
+        es: profesore
+        en: professor
+    - nombre: janis sepúlveda
+      rol:
+        es: ayudante
+        en: teaching assistant
+  imagenes: []
