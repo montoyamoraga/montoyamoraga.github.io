@@ -1,0 +1,55 @@
+now:
+  en: i am aarón montoya-moraga. this is my website. this year 2025 i am an assistant professor at Universidad Diego Portales, and a PhD student at the Universidad de Santiago de Chile.
+  es: soy aarón montoya-moraga. este es mi sitio web. este 2025 soy profesore asistente en la Universidad Diego Portales, y soy estudiante del Doctorado en Artes y Humanidades la Universidad de Santiago de Chile.
+colophon:
+  en: this website was manually written using HTML, CSS, and JS. it doesn't rely on external libraries, nor use any tracking system or cookies, nor collect data about you when you visit. it is hosted on GitHub Pages.
+  es: este sitio web está escrito de forma manual usando HTML, CSS, JS. no depende de bibliotecas externas, ni usa trackeo ni cookies, ni recoleta datos sobre ti ni tu visita. está alojado en GitHub Pages.
+archive:
+  en: archive
+  es: archivo
+archive-power-supply:
+  en: power supply
+  es: fuente de poder
+home:
+  en: home
+  es: inicio
+info:
+  en: info
+  es: info
+info-acerca:
+  en: i am aar&oacute;n montoya-moraga <a href='https://pronoun.is/they/.../themselves' >(they/them)</a >. i go by aya, which is short for ayayay and my artist name.
+  es: soy aar&oacute;n montoya-moraga <a href='https://pronoun.is/they/.../themselves' >(they/them)</a >. también aya, que es la versión corta de mi seudónimo en artes, ayayay.
+projects:
+  en: projects
+  es: proyectos
+projects-playa-fome-llamadas-telefonicas:
+  en: playa fome - llamadas telefónicas
+  es: playa fome - llamadas telefónicas
+teaching:
+  en: teaching
+  es: docencia
+contact:
+  en: contact
+  es: contacto
+contact-message:
+  en: to contact me please write to the email piruetas.xyz at gmail.com
+  es: para contactarme por favor escribir al correo piruetas.xyz en gmail.com
+enlaces-list:
+  en: |
+    <li><a href="https://montoyamoraga.io">https://montoyamoraga.io</a></li>
+    <li><a href="https://github.com/montoyamoraga">https://github.com/montoyamoraga</a></li>
+    <li><a href="https://instagram.com/montoyamoraga">https://instagram.com/montoyamoraga</a></li>
+    <li><a href="https://orcid.org/0000-0001-9901-8224">https://orcid.org/0000-0001-9901-8224</a></li>
+    <li><a href="https://bandurria.io">https://bandurria.io</a></li>
+    <li><a href="https://faad.udp.cl/persona/aaron-montoya-moraga/">https://faad.udp.cl/persona/aaron-montoya-moraga/</a></li>
+  es: |
+    <li><a href="https://montoyamoraga.io">https://montoyamoraga.io</a></li>
+    <li><a href="https://github.com/montoyamoraga">https://github.com/montoyamoraga</a></li>
+    <li><a href="https://instagram.com/montoyamoraga">https://instagram.com/montoyamoraga</a></li>
+    <li><a href="https://orcid.org/0000-0001-9901-8224">https://orcid.org/0000-0001-9901-8224</a></li>
+    <li><a href="https://bandurria.io">https://bandurria.io</a></li>
+    <li><a href="https://faad.udp.cl/persona/aaron-montoya-moraga/">https://faad.udp.cl/persona/aaron-montoya-moraga/</a></li>
+
+enlaces:
+  en: links
+  es: enlaces

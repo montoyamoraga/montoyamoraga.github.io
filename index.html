@@ -11,6 +11,13 @@
       content="width=device-width, initial-scale=1.0"
     />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "/lib/three/three.module.min.js"
+        }
+      }
+    </script>
   </head>
   <body>
     <button
@@ -40,33 +47,42 @@
             <p class="es">
               aarón montoya-moraga (elle) es una persona chilena.
               desde 2023 es profesore asistente en la escuela de
-              diseño de la escuela de diseño de la universidad diego
-              portales, donde lidera los talleres de máquinas
+              diseño de de la universidad diego
+              portales, donde enseña los talleres de máquinas
               electrónicas y computacionales. desde 2025 es estudiante
               de doctorado en el instituto de estudios avanzados de la
               universidad de santiago de chile, donde investiga sobre
-              diseño de instrumentos sonoros desde latinoamérica.
+              diseño de instrumentos sonoros modulares de fuente
+              abierta.
             </p>
             <p class="en">
-              Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
-              Sed ut perspiciatis unde omnis iste natus error sit
-              voluptatem accusantium doloremque laudantium, totam rem
-              aperiam, eaque ipsa quae ab illo inventore veritatis et
-              quasi architecto beatae vitae dicta sunt explicabo.
+              aarón montoya-moraga (they/them) is a chilean person.
+              since 2023 aarón is an assistant professor at the design
+              school at universidad diego portales, teaching the
+              electronic machines and the computational machines
+              studio courses. since 2025 aarón is a phd student at
+              universidad de santiago de chile, researching about
+              design of open source modular sound instruments.
             </p>
           </div>
+        </div>
+
+        <div class="visor-3d-card">
+          <div
+            id="bust-viewer"
+            class="bust-viewer"
+            role="img"
+            aria-label="escaneo 3d de aarón, girando"
+          ></div>
         </div>
       </main>
     </div>
 
-    <footer class="colophon-banner">
-      <span class="es">montoyamoraga © 2026</span>
-      <span class="en">montoyamoraga © 2026</span>
-    </footer>
+    <footer class="colophon-banner"></footer>
 
     <script src="/js/nav.js"></script>
     <script src="/js/script.js"></script>
     <script src="/js/yaml-parser.js"></script>
+    <script type="module" src="/js/visor-3d.js"></script>
   </body>
 </html>

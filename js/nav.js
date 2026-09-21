@@ -8,38 +8,41 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger" style="cursor:pointer; text-decoration:underline;">enseñanza</h3>
-        <div class="dropdown-content" style="display:none; padding-left:15px;">
-            
-            <h5 data-i18n="undergraduate-udp"></h5>
+        <h3 class="dropdown-trigger">enseñanza</h3>
+        <div class="dropdown-content" style="padding-left:15px;">
+            <!-- ENSEÑANZA:GENERADO:INICIO (no editar a mano — ver scripts/generar-ensenanza.js y datos/ensenanza.yaml) -->
+            <h5><span class="es">pregrado - universidad diego portales</span><span class="en">undergraduate - universidad diego portales</span></h5>
             <ol>
-                <li><a data-i18n="teaching-dis8645" href="/teaching/dis8645/"></a></li>
-                <li><a data-i18n="teaching-dis8644" href="/teaching/dis8644/"></a></li>
-                <li><a data-i18n="teaching-dis8637" href="/teaching/dis8637/"></a></li>
-                <li><a data-i18n="teaching-dis8636" href="/teaching/dis8636/"></a></li>
-                <li><a data-i18n="teaching-dis9005" href="/teaching/dis9005/"></a></li>
-                <li><a data-i18n="teaching-dis9034" href="/teaching/dis9034/"></a></li>
+                <li><a href="/ensenanza/dis9079/"><span class="es">dis9079 - interacciones inalámbricas</span><span class="en">dis9079 - wireless interaction design</span></a></li>
+                <li><a href="/ensenanza/dis09214/"><span class="es">dis09214 - pensamiento computacional</span><span class="en">dis09214 - computational thinking</span></a></li>
+                <li><a href="/ensenanza/dis8645/"><span class="es">dis8645 - taller de diseño de máquinas computacionales</span><span class="en">dis8645 - studio of computational machines design</span></a></li>
+                <li><a href="/ensenanza/dis8644/"><span class="es">dis8644 - taller de diseño de máquinas electrónicas</span><span class="en">dis8644 - studio of electronic machines design</span></a></li>
+                <li><a href="/ensenanza/dis8637/"><span class="es">dis8637 - taller de experiencia de usuario</span><span class="en">dis8637 - studio of user experience</span></a></li>
+                <li><a href="/ensenanza/dis8636/"><span class="es">dis8636 - taller de interfaz de usuario</span><span class="en">dis8636 - studio of user interfaces</span></a></li>
+                <li><a href="/ensenanza/dis9005/"><span class="es">dis9005 - diseño de página web</span><span class="en">dis9005 - web design</span></a></li>
+                <li><a href="/ensenanza/dis9034/"><span class="es">dis9034 - programación creativa multimedia</span><span class="en">dis9034 - creative multimedia programming</span></a></li>
             </ol>
 
-            <h5 data-i18n="undergraduate-uchile"></h5>
+            <h5><span class="es">pregrado - universidad de chile</span><span class="en">undergraduate - universidad de chile</span></h5>
             <ol>
-                <li><a data-i18n="teaching-audiv027" href="/teaching/audiv027/"></a></li>
-                <li><a data-i18n="teaching-audiv020" href="/teaching/audiv020/"></a></li>
-                <li><a data-i18n="teaching-aud5i022" href="/teaching/aud5i022/"></a></li>
-                <li><a data-i18n="teaching-aud10004" href="/teaching/aud10004/"></a></li>
-                <li><a data-i18n="teaching-aud20004" href="/teaching/aud20004/"></a></li>
+                <li><a href="/ensenanza/audiv027/"><span class="es">audiv027 - inteligencia artificial</span><span class="en">audiv027 - artificial intelligence</span></a></li>
+                <li><a href="/ensenanza/audiv020/"><span class="es">audiv020 - diseño de instrumentos musicales digitales</span><span class="en">audiv020 - design of digital musical instruments</span></a></li>
+                <li><a href="/ensenanza/aud5i022/"><span class="es">aud5i022 - diseño de interfaces electrónicas</span><span class="en">aud5i022 - design of electronic interfaces</span></a></li>
+                <li><a href="/ensenanza/aud10004/"><span class="es">aud10004 - matemáticas aplicadas al diseño</span><span class="en">aud10004 - math for designers</span></a></li>
+                <li><a href="/ensenanza/aud20004/"><span class="es">aud20004 - física aplicada al diseño</span><span class="en">aud20004 - physics for designers</span></a></li>
             </ol>
 
-            <h5 data-i18n="undergraduate-uai"></h5>
+            <h5><span class="es">pregrado - universidad adolfo ibáñez</span><span class="en">undergraduate - universidad adolfo ibáñez</span></h5>
             <ol>
-                <li><a data-i18n="teaching-dis145" href="/teaching/dis145/"></a></li>
+                <li><a href="/ensenanza/dis145/"><span class="es">dis145 - diseño y construcción de interfaces</span><span class="en">dis145 - design and construction of interfaces</span></a></li>
             </ol>
+            <!-- ENSEÑANZA:GENERADO:FIN -->
         </div>
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger" style="cursor:pointer; text-decoration:underline;">investigación</h3>
-        <div class="dropdown-content" style="display:none; padding-left:15px;">
+        <h3 class="dropdown-trigger">investigación</h3>
+        <div class="dropdown-content" style="padding-left:15px;">
             <ol>
                 <li>sin proyectos publicados</li>
             </ol>
@@ -47,8 +50,8 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger" style="cursor:pointer; text-decoration:underline;">performance</h3>
-        <div class="dropdown-content" style="display:none; padding-left:15px;">
+        <h3 class="dropdown-trigger">performance</h3>
+        <div class="dropdown-content" style="padding-left:15px;">
             <ol>
                 <li>sin obras publicadas</li>
             </ol>
@@ -56,8 +59,8 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger" style="cursor:pointer; text-decoration:underline;">cv</h3>
-        <div class="dropdown-content cv-menu" style="display:none; padding-left:15px;">
+        <h3 class="dropdown-trigger">cv</h3>
+        <div class="dropdown-content cv-menu" style="padding-left:15px;">
             <ol>
                 <li><a href="/cv/#educacion-universitaria">educacion-universitaria</a></li>
                 <li><a href="/cv/#breve-resumen-trayectoria-academica">breve-resumen-trayectoria-academica</a></li>
@@ -88,13 +91,46 @@ if (divLeftMenu) {
     divLeftMenu.innerHTML = navbar;
 }
 
-document.querySelectorAll('.dropdown-trigger').forEach(trigger => {
-    trigger.addEventListener('click', () => {
-        const content = trigger.nextElementSibling;
-        const isOpen = content.style.display === 'block';
-        document.querySelectorAll('.dropdown-content').forEach(el => el.style.display = 'none');
-        content.style.display = isOpen ? 'none' : 'block';
-    });
+let colophonYear = new Date().getFullYear();
+let colophon = `
+<span class="es">montoyamoraga © ${colophonYear}</span>
+<span class="en">montoyamoraga © ${colophonYear}</span>
+`;
+
+let footerEl = document.querySelector('.colophon-banner');
+if (footerEl) {
+    footerEl.innerHTML = colophon;
+}
+
+function normalizePath(path) {
+    if (!path) return window.location.pathname;
+    return path.replace(/index\.html$/, '').replace(/\/+$/, '/') || '/';
+}
+
+const currentPath = normalizePath(window.location.pathname);
+
+document.querySelectorAll('#divLeftMenu a[href]').forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href || href === '#') return;
+
+    const [hrefPath, hrefHash] = href.split('#');
+    const linkPath = normalizePath(hrefPath);
+    const samePage = linkPath === currentPath;
+    const sameHash = !hrefHash || `#${hrefHash}` === window.location.hash;
+
+    if (samePage && sameHash) {
+        link.classList.add('nav-active');
+    }
+
+    if (samePage) {
+        const dropdownContent = link.closest('.dropdown-content');
+        if (dropdownContent) {
+            const trigger = dropdownContent.previousElementSibling;
+            if (trigger && trigger.classList.contains('dropdown-trigger')) {
+                trigger.classList.add('nav-active');
+            }
+        }
+    }
 });
 
 window.addEventListener('scroll', function() {

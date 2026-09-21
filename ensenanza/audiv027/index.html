@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <script src="../../lib/js-yaml.min.js"></script>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="../../assets/favicon.ico" />
+    <title>audiv027 - montoyamoraga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  </head>
+  <body>
+    <button
+      id="menu-btn"
+      class="boton-piruetas"
+      onclick="document.getElementById('divLeftMenu').classList.toggle('active')"
+    >
+      menú
+    </button>
+
+    <div class="flex-container">
+      <div class="left" id="divLeftMenu"></div>
+
+      <div class="right" style="padding: 0;">
+        <div class="split-layout">
+
+          <div class="split-left">
+            <button class="img-nav-btn prev" onclick="moveImg(-1)">&#10094;</button>
+            <button class="img-nav-btn next" onclick="moveImg(1)">&#10095;</button>
+            <div class="img-track" id="img-track">
+              <img src="images/audiv027-diego-lopez.jpg" alt="trabajo 0" />
+              <img src="images/audiv027-javier-burgos-nicolas-lagos-valentina-soto.jpg" alt="trabajo 1" />
+              <img src="images/audiv027-natalie-astudillo-valentina-ochoa.jpg" alt="trabajo 2" />
+            </div>
+          </div>
+
+          <div class="split-right">
+            <h1 class="cajita"><span class="es">audiv027 - inteligencia artificial</span><span class="en">audiv027 - artificial intelligence</span></h1>
+
+            <h2 class="cajita"><span class="es">institución</span><span class="en">institution</span></h2>
+            <p>
+              <span class="es">universidad de chile</span><span class="en">universidad de chile</span><br />
+              <span class="es">facultad de arquitectura y urbanismo</span><span class="en">faculty of architecture and urbanism</span><br />
+              <span class="es">escuela de diseño</span><span class="en">design school</span>
+            </p>
+
+            <h2 class="cajita"><span class="es">fechas</span><span class="en">dates</span></h2>
+            <p>
+              <a href="https://github.com/FAU-UChile/audiv027-2023-2" style="color: blue; text-decoration: underline"><span class="es">segundo semestre 2023 (agosto - diciembre)</span><span class="en">second semester 2023 (august - december)</span></a><br />
+              <a href="https://github.com/FAU-UChile/audiv027-2024-1" style="color: blue; text-decoration: underline"><span class="es">primer semestre 2024 (marzo - julio)</span><span class="en">first semester 2024 (march - july)</span></a><br />
+              <a href="https://github.com/FAU-UChile/audiv027-2024-2" style="color: blue; text-decoration: underline"><span class="es">segundo semestre 2024 (agosto - diciembre)</span><span class="en">second semester 2024 (august - december)</span></a>
+            </p>
+
+            <h2 class="cajita"><span class="es">descripción del curso</span><span class="en">course description</span></h2>
+            <p>
+              <span class="es">curso electivo de diseño, donde estudiamos los fundamentos de inteligencia artificial, desde crear nuestras propias bases de datos, hasta entrenar nuestros propios algoritmos generativos.</span><span class="en">elective course of design, where we study the foundations of artificial intelligence, from creating our own databases to training our own generative algorithms.</span><br /><br />
+              <span class="es">aprenderemos a construir nuestras propias bases de datos de imágenes, sonido y poses humanas, para crear nuestras propias instalaciones interactivas. usaremos las herramientas Wekinator y  ml5-ks para privilegiar el trabajo en navegdaores web y de uso privado.</span><span class="en">we will learn how to build our own image, sound and human pose databases, in order to create interactive installations. we will use Wekinator and ml5.js for privacy-first and browser-based work.</span><br /><br />
+              <span class="es">el trabajo se hace de forma pública y compartida, con les estudiantes compartiendo sus apuntes y realizando trabajos grupales de investigación aplicada.</span><span class="en">all the work will be done in public, collaboratively, with the students sharing their notes and applied research.</span>
+            </p>
+
+            <h2 class="cajita"><span class="es">equipo docente</span><span class="en">teaching team</span></h2>
+            <p style="font-family: monospace; font-size: 9pt">
+              aarón montoya-moraga: <span class="es">profesore, creador del curso</span><span class="en">professor, creator of the course</span><br />
+              ignacio passalacqua: <span class="es">ayudante (2023-2)</span><span class="en">teaching assistant (2023-2)</span><br />
+              joaquín pérez: <span class="es">ayudante de pregrado (2023-2)</span><span class="en">undergraduate assistant (2023-2)</span><br />
+              ricardo ramírez: <span class="es">ayudante de pregrado (2024-1)</span><span class="en">undergraduate assistant (2024-1)</span><br />
+              vick clavería: <span class="es">ayudante de pregrado (2024-2)</span><span class="en">undergraduate assistant (2024-2)</span>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="colophon-banner"></footer>
+
+    <script src="../../js/nav.js"></script>
+    <script src="../../js/script.js"></script>
+    <script>
+      function moveImg(direction) {
+        const track = document.getElementById('img-track');
+        if (track) {
+          track.scrollBy({ left: direction * track.clientWidth, behavior: 'smooth' });
+        }
+      }
+    </script>
+  </body>
+</html>

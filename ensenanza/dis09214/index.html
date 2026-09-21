@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <script src="../../lib/js-yaml.min.js"></script>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="../../assets/favicon.ico" />
+    <title>dis09214 - montoyamoraga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  </head>
+  <body>
+    <button
+      id="menu-btn"
+      class="boton-piruetas"
+      onclick="document.getElementById('divLeftMenu').classList.toggle('active')"
+    >
+      menú
+    </button>
+
+    <div class="flex-container">
+      <div class="left" id="divLeftMenu"></div>
+
+      <div class="right" style="padding: 0;">
+        <div class="split-layout">
+
+          <div class="split-left">
+            <button class="img-nav-btn prev" onclick="moveImg(-1)">&#10094;</button>
+            <button class="img-nav-btn next" onclick="moveImg(1)">&#10095;</button>
+            <div class="img-track" id="img-track">
+
+            </div>
+          </div>
+
+          <div class="split-right">
+            <h1 class="cajita"><span class="es">dis09214 - pensamiento computacional</span><span class="en">dis09214 - computational thinking</span></h1>
+
+            <h2 class="cajita"><span class="es">institución</span><span class="en">institution</span></h2>
+            <p>
+              <span class="es">universidad diego portales</span><span class="en">universidad diego portales</span><br />
+              <span class="es">facultad de arquitectura, arte y diseño</span><span class="en">faculty of architecture, arts, and design</span><br />
+              <span class="es">escuela de diseño</span><span class="en">design school</span>
+            </p>
+
+            <h2 class="cajita"><span class="es">fechas</span><span class="en">dates</span></h2>
+            <p>
+              <span class="es">primer semestre 2026 (marzo - julio)</span><span class="en">first term 2026 (march - july)</span>
+            </p>
+
+            <h2 class="cajita"><span class="es">descripción del curso</span><span class="en">course description</span></h2>
+            <p>
+              <span class="es">el curso pensamiento computacional introduce a los estudiantes de diseño al uso del razonamiento lógico, estructurado y creativo propio de la computación como herramienta para analizar y crear sistemas, flujos y comportamientos. a través de ejercicios visuales, lógicos y experienciales, se explora cómo pensar con estructuras de entrada, proceso y salida, reconociendo patrones, secuencias y algoritmos como lenguajes expresivos en el contexto del diseño contemporáneo.</span><span class="en">the computational thinking course introduces design students to the logical, structured and creative reasoning of computing as a tool to analyze and create systems, flows and behaviors. through visual, logical and experiential exercises, students explore how to think with input-process-output structures, recognizing patterns, sequences and algorithms as expressive languages within contemporary design.</span><br /><br />
+              <span class="es">este curso se basa en la experimentación con herramientas visuales y plataformas accesibles para construir experiencias interactivas simples, sistemas generativos, visualizaciones y flujos de comportamiento. se prioriza una aproximación comprensible, creativa y aplicada a lo computacional, enfocada en comprender la lógica, más que la sintaxis, promoviendo autonomía conceptual para cursos futuros de programación, datos o interacción digital avanzada.</span><span class="en">this course is based on experimentation with visual tools and accessible platforms to build simple interactive experiences, generative systems, visualizations and behavior flows. it prioritizes an understandable, creative and applied approach to computing, focused on understanding logic rather than syntax, promoting conceptual autonomy for future courses in programming, data or advanced digital interaction.</span><br /><br />
+              <span class="es">adicionalmente, el curso establece las bases conceptuales necesarias para acceder posteriormente a entornos más avanzados como computación física, IoT, sensores, actuadores o dispositivos periféricos.</span><span class="en">additionally, the course establishes the conceptual foundations needed to later access more advanced environments such as physical computing, IoT, sensors, actuators or peripheral devices.</span>
+            </p>
+
+            <h2 class="cajita"><span class="es">equipo docente</span><span class="en">teaching team</span></h2>
+            <p style="font-family: monospace; font-size: 9pt">
+              aarón montoya-moraga: <span class="es">profesore</span><span class="en">professor</span><br />
+              vania paredes: <span class="es">ayudante</span><span class="en">teaching assistant</span>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="colophon-banner"></footer>
+
+    <script src="../../js/nav.js"></script>
+    <script src="../../js/script.js"></script>
+    <script>
+      function moveImg(direction) {
+        const track = document.getElementById('img-track');
+        if (track) {
+          track.scrollBy({ left: direction * track.clientWidth, behavior: 'smooth' });
+        }
+      }
+    </script>
+  </body>
+</html>

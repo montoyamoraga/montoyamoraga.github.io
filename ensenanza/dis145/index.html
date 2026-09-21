@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <script src="../../lib/js-yaml.min.js"></script>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="../../assets/favicon.ico" />
+    <title>dis145 - montoyamoraga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  </head>
+  <body>
+    <button
+      id="menu-btn"
+      class="boton-piruetas"
+      onclick="document.getElementById('divLeftMenu').classList.toggle('active')"
+    >
+      menú
+    </button>
+
+    <div class="flex-container">
+      <div class="left" id="divLeftMenu"></div>
+
+      <div class="right" style="padding: 0;">
+        <div class="split-layout">
+
+          <div class="split-left">
+            <button class="img-nav-btn prev" onclick="moveImg(-1)">&#10094;</button>
+            <button class="img-nav-btn next" onclick="moveImg(1)">&#10095;</button>
+            <div class="img-track" id="img-track">
+
+            </div>
+          </div>
+
+          <div class="split-right">
+            <h1 class="cajita"><span class="es">dis145 - diseño y construcción de interfaces</span><span class="en">dis145 - design and construction of interfaces</span></h1>
+
+            <h2 class="cajita"><span class="es">institución</span><span class="en">institution</span></h2>
+            <p>
+              <span class="es">universidad adolfo ibáñez</span><span class="en">universidad adolfo ibáñez</span><br />
+              <span class="es">design lab</span><span class="en">design lab</span>
+            </p>
+
+            <h2 class="cajita"><span class="es">fechas</span><span class="en">dates</span></h2>
+            <p>
+              <span class="es">primer semestre 2024 (marzo - julio)</span><span class="en">first term 2024 (march - july)</span>
+            </p>
+
+            <h2 class="cajita"><span class="es">descripción del curso</span><span class="en">course description</span></h2>
+            <p>
+              <span class="es">el curso se enfoca en diseñar y construir interfaces interactivas, conectando el lado conceptual y de experiencia de usuario del diseño de interacción con la construcción técnica práctica de sistemas interactivos.</span><span class="en">focuses on designing and building interactive interfaces — bridging the conceptual/UX side of interaction design with the hands-on technical construction of interactive systems.</span>
+            </p>
+
+            <h2 class="cajita"><span class="es">equipo docente</span><span class="en">teaching team</span></h2>
+            <p style="font-family: monospace; font-size: 9pt">
+              aarón montoya-moraga: <span class="es">profesore</span><span class="en">professor</span><br />
+              janis sepúlveda: <span class="es">ayudante</span><span class="en">teaching assistant</span>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="colophon-banner"></footer>
+
+    <script src="../../js/nav.js"></script>
+    <script src="../../js/script.js"></script>
+    <script>
+      function moveImg(direction) {
+        const track = document.getElementById('img-track');
+        if (track) {
+          track.scrollBy({ left: direction * track.clientWidth, behavior: 'smooth' });
+        }
+      }
+    </script>
+  </body>
+</html>
