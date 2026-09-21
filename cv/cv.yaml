@@ -71,12 +71,12 @@ cv:
         fecha-anho-inicio: 2018
         fecha-anho-fin: 2018
   breve-resumen-trayectoria-academica:
-    en: false
+    en: Bachelor's and professional degree in electrical engineering from Pontificia Universidad Católica de Chile (2008 - 2014). Master of Professional Studies in electronic arts from New York University, Tisch School of the Arts, Interactive Telecommunications Program (2015 - 2017), funded by Becas Chile, covering both tuition and living expenses. Postdoctoral research resident at New York University, Tisch School of the Arts (2017 - 2018). Master of Science in media arts and sciences from Massachusetts Institute of Technology Media Lab (2019-2021), funded by an MIT Media Lab research assistantship. Second-year PhD student in Arts and Humanities at Universidad de Santiago de Chile (2025 - 2029), with a tuition exemption scholarship granted by the USACH Graduate Studies Office. Previously a professor of basic sciences at the Faculty of Architecture and Urbanism, Universidad de Chile (2022 - 2025). Part-time assistant professor at Diseño UDP since 2023, director of the Digital Interaction Laboratory (LID UDP) since 2024, and coordinator of the advanced and specialization course tracks at the Faculty of Architecture, Arts, and Design, Universidad Diego Portales (2023 - 2025). In 2024 received the UDP Teaching Innovation and Leadership Award at the FAAD level, and in 2026 the Best Teaching Survey Diploma for theoretical courses at the UDP Design School for the 2025 period.
     es: Licenciatura y título profesional en ingeniería civil electricista de la Pontificia Universidad Católica de Chile (2008 - 2014). Máster MPS en arte electrónico de New York University, Tisch School of the Arts, Interactive Telecommunications Program (2015 - 2017), financiado  por Becas Chile, tanto arancel como manutención. Residente postdoctoral de investigación en New York University, Tisch School of the Arts (2017 - 2018). Máster MAS en artes mediales y ciencias de Massachusetts Institute of Technology Media Lab. (2019-2021), financiado por beca de asistente de investigación de MIT Media Lab. Estudiante de segundo año del Doctorado en Artes y Humanidades de la Universidad de Santiago de Chile, (2025 - 2029) con beca de exención de arancel otorgada por la Vicerrectoría de postgrado USACH.  Previamente fue profesore de ciencias básicas en Facultad de Arquitectura y Urbanismo de la Universidad de Chile (2022 - 2025). Profesore asistente media jornada de Diseño UDP desde 2023, directore del Laboratorio de Interacción Digital (LID UDP) desde 2024, coordinadore de la líneas de cursos de profundización y de especialización en Facultad de Arquitectura, Arte y Diseño de la Universidad Diego Portales (2023 - 2025). El año 2024 recibe el Premio a la Innovación y Liderazgo Docente UDP a nivel FAAD, y el año 2026 el Diploma de Mejor Encuesta Docente de cursos teóricos de la Escuela de Diseño UDP por el periodo 2025.
   # curriculum-udp-22
   actividad-perfeccionamiento:
   - tipo-de-actividad:
-      en: false
+      en: continuing education/specialization course
       es: curso de perfeccionamiento/especialización
     nombre-institucion:
       en: New york university
@@ -94,7 +94,7 @@ cv:
       en: Postdoctoral fellowship
       es: Postdoctorado
   - tipo-de-actividad:
-      en: false
+      en: Continuing education/specialization course
       es: Curso de perfeccionamiento/especialización
     nombre-institucion:
       en: Universidad de chile
@@ -122,7 +122,7 @@ cv:
           en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: design
           es: diseño
         institucion:
           en: universidad diego portales
@@ -145,7 +145,7 @@ cv:
           en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: design
           es: diseño
         institucion:
           en: universidad diego portales
@@ -168,7 +168,7 @@ cv:
           en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: design
           es: diseño
         institucion:
           en: universidad diego portales
@@ -194,7 +194,7 @@ cv:
           en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: design
           es: diseño
         institucion:
           en: universidad diego portales
@@ -214,13 +214,13 @@ cv:
           es: profesore responsable
       aud20004:
         nombre:
-          en: false
+          en: AUD20004 physics for designers
           es: AUD20004 física aplicada al diseño
         nivel:
-          en: false
+          en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: design
           es: diseño
         institucion:
           en: universidad de chile
@@ -242,17 +242,17 @@ cv:
           anho-hasta: 2025
           cantidad: 1
         rol:
-          en: false
+          en: professor
           es: profesore
       audiv027:
         nombre:
-          en: false
+          en: "AUDIV027 elective for both mentions: artificial intelligence"
           es: "AUDIV027 electivo ambas menciones: inteligencia artificial"
         nivel:
-          en: false
+          en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: design
           es: diseño
         institucion:
           en: universidad de chile
@@ -271,17 +271,17 @@ cv:
           anho-hasta: 2025
           cantidad: 1
         rol:
-          en: false
+          en: professor
           es: profesore
       aua70092:
         nombre:
-          en: false
+          en: "AUA70092 specialization elective: artificial intelligence"
           es: "AUA70092 electivo de especialización: inteligencia artificial"
         nivel:
-          en: false
+          en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: architecture
           es: arquitectura
         institucion:
           en: universidad de chile
@@ -300,17 +300,17 @@ cv:
           anho-hasta: 2025
           cantidad: 1
         rol:
-          en: false
+          en: professor
           es: profesore
       dis145:
         nombre:
-          en: false
+          en: DIS145 design and construction of interfaces
           es: DIS145 diseño y construcción de interfaces
         nivel:
-          en: false
+          en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: design engineering
           es: ingeniería en diseño
         institucion:
           en: universidad adolfo ibáñez
@@ -323,17 +323,17 @@ cv:
           anho-hasta: 2024
           cantidad: 1
         rol:
-          en: false
+          en: professor
           es: profesore
       aug10002:
         nombre:
-          en: false
+          en: AUG10002 physics
           es: AUG10002 física
         nivel:
-          en: false
+          en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: geography
           es: geografía
         institucion:
           en: universidad de chile
@@ -346,20 +346,21 @@ cv:
           anho-hasta: 2024
           cantidad: 1
         rol:
-          en: false
+          en: professor
           es: profesore
       sw2433:
         nombre:
-          en: false
+          en: SW2433 handcrafted artificial intelligence
           es: SW2433 inteligencia artificial artesanal
         otro-regimen:
-          en: false
+          en: workshop
           es: workshop
         nivel:
-          en: false
+          en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: FAAD UCT 2024 workshop, 6 classes in one intensive week, for architecture,
+            arts, design, and creative trades students
           es: workshop FAAD UCT 2024, 6 clases en una semana intensiva, para estudiantes
             de arquitectura, artes, diseño y oficios creativos
         institucion:
@@ -373,17 +374,17 @@ cv:
           anho-hasta: 2024
           cantidad: 1
         rol:
-          en: false
+          en: professor
           es: profesore
       dis9034:
         nombre:
-          en: false
+          en: DIS9034 creative multimedia programming
           es: DIS9034 programación creativa multimedia
         nivel:
-          en: false
+          en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: design
           es: diseño
         institucion:
           en: universidad diego portales
@@ -396,17 +397,17 @@ cv:
           anho-hasta: 2024
           cantidad: 1
         rol:
-          en: false
+          en: professor
           es: profesore
       aud10004:
         nombre:
-          en: false
+          en: AUD10004 math for designers
           es: AUD10004 matemáticas aplicadas al diseño
         nivel:
-          en: false
+          en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: design
           es: diseño
         institucion:
           en: universidad de chile
@@ -419,17 +420,17 @@ cv:
           anho-hasta: 2023
           cantidad: 1
         rol:
-          en: false
+          en: professor
           es: profesore
       dis9005:
         nombre:
-          en: false
+          en: DIS9005 web design
           es: DIS9005 diseño página web
         nivel:
-          en: false
+          en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: design
           es: diseño
         institucion:
           en: universidad diego portales
@@ -442,18 +443,19 @@ cv:
           anho-hasta: 2023
           cantidad: 1
         rol:
-          en: false
+          en: professor
           es: profesore
       aud5i022:
         nombre:
-          en: false
+          en: "AUD5I022 elective for I&S mention: electronic interface design using
+            arduino"
           es: "AUD5I022 electivo mención i y s: diseño de interfaz electrónica mediante
             arduino"
         nivel:
-          en: false
+          en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: design
           es: diseño
         institucion:
           en: universidad de chile
@@ -469,18 +471,18 @@ cv:
           anho-hasta: 2023
           cantidad: 1
         rol:
-          en: false
+          en: professor
           es: profesore
       audiv020:
         nombre:
-          en: false
+          en: "AUDIV020 elective for both mentions: design of digital musical instruments"
           es: "AUDIV020 electivo ambas menciones: diseño de instrumentos musicales
             digitales"
         nivel:
-          en: false
+          en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: design
           es: diseño
         institucion:
           en: universidad de chile
@@ -493,18 +495,18 @@ cv:
           anho-hasta: 2022
           cantidad: 1
         rol:
-          en: false
+          en: professor
           es: profesore
       dis8636-2024:
         nombre:
-          en: false
+          en: DIS8636 - user interface (UI) studio, taught by professor sergio majluf
           es: DIS8636 - taller de interfaz de usuario ui, dictado por profesor sergio
             majluf
         nivel:
-          en: false
+          en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: design
           es: design
         institucion:
           en: universidad diego portales
@@ -514,25 +516,25 @@ cv:
           es: chile
         frecuencia:
         - anho-desde:
-            en: false
+            en: 2024
             es: 2024
           anho-hasta:
-            en: false
+            en: 2024
             es: 2024
           cantidad: 1
         rol:
-          en: false
+          en: assistant professor
           es: profesore auxiliar
       dis8637-2024:
         nombre:
-          en: false
+          en: DIS8637 - user experience (UX) studio, taught by professor sergio majluf
           es: DIS8637 - taller de experiencia de usuario ux, dictado por profesor
             sergio majluf
         nivel:
-          en: false
+          en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: design
           es: design
         institucion:
           en: universidad diego portales
@@ -542,25 +544,25 @@ cv:
           es: chile
         frecuencia:
         - anho-desde:
-            en: false
+            en: 2024
             es: 2024
           anho-hasta:
-            en: false
+            en: 2024
             es: 2024
           cantidad: 1
         rol:
-          en: false
+          en: assistant professor
           es: profesore auxiliar
       dis8636-2023:
         nombre:
-          en: false
+          en: DIS8636 - user interface (UI) studio, taught by professor sergio majluf
           es: DIS8636 - taller de interfaz de usuario ui, dictado por profesor sergio
             majluf
         nivel:
-          en: false
+          en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: design
           es: design
         institucion:
           en: universidad diego portales
@@ -570,25 +572,25 @@ cv:
           es: chile
         frecuencia:
         - anho-desde:
-            en: false
+            en: 2023
             es: 2023
           anho-hasta:
-            en: false
+            en: 2023
             es: 2023
           cantidad: 1
         rol:
-          en: false
+          en: assistant professor
           es: profesore auxiliar
       dis8637-2023:
         nombre:
-          en: false
+          en: DIS8637 - user experience (UX) studio, taught by professor sergio majluf
           es: DIS8637 - taller de experiencia de usuario ux, dictado por profesor
             sergio majluf
         nivel:
-          en: false
+          en: undergraduate
           es: pregrado
         programa:
-          en: false
+          en: design
           es: design
         institucion:
           en: universidad diego portales
@@ -598,21 +600,22 @@ cv:
           es: chile
         frecuencia:
         - anho-desde:
-            en: false
+            en: 2023
             es: 2023
           anho-hasta:
-            en: false
+            en: 2023
             es: 2023
           cantidad: 1
         rol:
-          en: false
+          en: assistant professor
           es: profesore auxiliar
     pie:
-      en: false
+      en: course taught by professor sergio majluf, with aaron montoya as assistant
+        professor
       es: curso dictado por profesor sergio majluf y aaron montoya profe auxiliar
   otros-cursos-dictados-en-pre-y-postgrado:
   - nombre:
-      en: false
+      en: collaborative programming on github
       es: programación colaborativa en github
     institucion:
       en: universidad del desarrollo
@@ -621,16 +624,16 @@ cv:
       en: chile
       es: chile
     nivel:
-      en: false
+      en: undergraduate
       es: pregrado
     anho:
-      en: false
+      en: 2025
       es: 2025
     semanas-efectivas-al-anho:
-      en: false
+      en: 1
       es: 1
     archivo:
-      en: false
+      en: 2025-programacion-colaborativa-github.jpg
       es: 2025-programacion-colaborativa-github.jpg
   # curriculum-udp-36
   otras-actividades-docentes-destacables:
@@ -647,7 +650,7 @@ cv:
         en: 2023
         es: 2023
       detalle:
-        en: false
+        en: Mateo Arce graduated with highest honors (6.7) from Diseño UDP in December 2025, with a mention in Graphic Design, after being an outstanding student in my digital interaction advanced courses in 2024, and working as a teaching assistant in my studios and new courses in 2025 and 2026, as well as in professor Manuel Córdova's courses. In 2026 he joined the Master's in Media Arts program at Universidad de Chile, and since 2025 has worked as a freelancer at my microenterprise Piruetas SpA, on programming projects and graphic identity design for synthesizers.
         es: Mateo Arce se graduó con nota 6.7 distinción máxima en Diseño UDP en diciembre 2025, con mención en Diseño gráfico, tras haber sido estudiante destacado de mis cursos de profundización de interacción digital en 2024, y haber trabajado como ayudante en mis talleres y cursos nuevos en 2025 y 2026, y en cursos del profesor Manuel Córdova. En el año 2026 ingresa al Magíster de Artes Mediales de la Universidad de Chile, y desde el 2025 trabaja como freelancer en mi microempresa Piruetas Spa, en proyectos de programación y diseño de identidades gráficas para sintetizadores.
     - nombre:
         en: training of student and teaching assistant and professor, janis valentina sepúlveda vera
@@ -662,7 +665,7 @@ cv:
         en: 2023
         es: 2023
       detalle:
-        en: false
+        en: Janis Sepúlveda graduated with highest honors (7.0) from Diseño UDP in December 2025, with a mention in Industrial Design, after being an outstanding student in the studios I taught with Sergio Majluf in 2023, and working since 2024 as the first teaching assistant for several of my new digital interaction courses. In 2026 she joined the Master's in Advanced Design program at Pontificia Universidad Católica de Chile on a scholarship, taught her first course as lead professor at Universidad de O'Higgins, and became the first employee at my microenterprise Piruetas SpA, in the role of project administrator and programmer.
         es: Janis Sepúlveda se graduó con nota 7.0 distinción máxima en Diseño UDP en diciembre 2025, con mención en Diseño industrial, tras haber sido estudiante destacada de los talleres que dicté con Sergio Majluf en 2023, y trabajar desde 2024 como la primera ayudante de varios de mis cursos nuevos de la mención de interacción digital. En el año 2026 ingresa becada al Magíster de Diseño Avanzado en la Pontificia Universidad Católica de Chile, dicta su primer curso como profesora responsable en la Universidad de O'Higgins y se convierte en la primera empleada a mi microempresa Piruetas SpA, con el rol de administradora de proyectos y programadora.
     - nombre:
         en: randomness is all around -  an online multimedia arts class
@@ -772,7 +775,7 @@ cv:
       en: "Chile"
       es: "Chile"
     detalle:
-      en: false
+      en: "Artwork commissioned by @sokio. Input: MIDI notes / Output: solenoid, based on a previous work by @misaa.cc. Project developed by @misaa.cc in collaboration with @piruetas.xyz, bernardita and francisco stephens, with support from @lid.udp"
       es: "Obra comisionada por @sokio. Entrada: notas MIDI / Salida: solenoide basada en obra anterior de @misaa.cc. Proyecto realizado por @misaa.cc en colaboración con @piruetas.xyz, bernardita y francisco stephens, con el apoyo de @lid.udp"
   - cliente:
       en: "Claudia González Godoy"
@@ -794,76 +797,76 @@ cv:
       es: "Mateo Arce Moore diseñó las placas en KiCad, y con piruetas las mandamos a fabricar a China."
   becas:
   - nombre:
-      en: false
+      en: Tuition exemption, Doctoral program in Arts and Humanities, USACH
       es: Exención de arancel, programa Doctorado de artes y humanidades USACH
     tipo:
-      en: false
+      en: national/international
       es: nacional/internacional
     institucion:
       en: República de Chile, Universidad de Santiago de Chile, Vicerrectoría de postgrado
       es: República de Chile, Universidad de Santiago de Chile, Vicerrectoría de postgrado
     proposito:
-      en: false
+      en: doctoral studies
       es: estudio de doctorado
     anho:
-      en: false
+      en: 2025
       es: 2025
     archivo:
-      en: false
+      en: 2025-beca-arancel-usach.pdf
       es: 2025-beca-arancel-usach.pdf
   - nombre:
-      en: false
+      en: Research Assistantship
       es: Research Assistantship
     tipo:
-      en: false
+      en: national/international
       es: nacional/internacional
     institucion:
       en: MIT Media Lab
       es: MIT Media Lab
     proposito:
-      en: false
+      en: master's studies
       es: estudio de magíster
     anho:
-      en: false
+      en: 2019
       es: 2019
   - nombre:
-      en: false
+      en: Becas Chile Conicyt, master's studies abroad
       es: Becas Chile Conicyt, estudio de magíster en el extranjero
     tipo:
-      en: false
+      en: national/international
       es: nacional/internacional
     institucion:
       en: Conicyt
       es: Conicyt
     proposito:
-      en: false
+      en: master's studies
       es: estudio de magíster
     anho:
-      en: false
+      en: 2015
       es: 2015
   premios-distinciones:
   - nombre:
-      en: false
+      en: Teaching Innovation and Leadership Award
       es: Premio a la Innovación y Liderazgo Docente
     tipo:
-      en: false
+      en: award or distinction
       es: premio o distinción
     institucion:
       en: Universidad Diego Portales
       es: Universidad Diego Portales
     anho:
-      en: false
+      en: 2024
       es: 2024
     archivo:
-      en: false
+      en: 2024-premio.png
       es: 2024-premio.png
   
   ayudantias:
   - nombre:
-      en: false
+      en: drawing plus plus, taught by professor zach lieberman
       es: drawing plus plus, dictado por profesor zach lieberman
     rol:
-      en: false
+      en: graduate teaching assistant
       es: ayudante de postgrado
     institucion:
       en: massachusetts institute of technology (mit)
@@ -872,16 +875,16 @@ cv:
       en: united states
       es: estados unidos
     nivel:
-      en: false
+      en: graduate
       es: postgrado
     anho:
-      en: false
+      en: 2020
       es: 2020
   - nombre:
-      en: false
+      en: recreating the past, taught by professor zach lieberman
       es: recreating the past, dictado por profesor zach lieberman
     rol:
-      en: false
+      en: graduate teaching assistant
       es: ayudante de postgrado
     institucion:
       en: massachusetts institute of technology (mit)
@@ -890,16 +893,16 @@ cv:
       en: united states
       es: estados unidos
     nivel:
-      en: false
+      en: graduate
       es: postgrado
     anho:
-      en: false
+      en: 2020
       es: 2020
   - nombre:
-      en: false
+      en: thesis, semester-long thesis course taught by professor kat sullivan
       es: tesis, curso semestral de tesis dictado por profesora kat sullivan
     rol:
-      en: false
+      en: graduate teaching assistant
       es: ayudante de postgrado
     institucion:
       en: new york university
@@ -908,16 +911,16 @@ cv:
       en: united states
       es: estados unidos
     nivel:
-      en: false
+      en: graduate
       es: postgrado
     anho:
-      en: false
+      en: 2018
       es: 2018
   - nombre:
-      en: false
+      en: new interfaces for musical expression, taught by professor greg shakar
       es: new interfaces for musical expression, dictado por profesor greg shakar
     rol:
-      en: false
+      en: graduate teaching assistant
       es: ayudante de postgrado
     institucion:
       en: new york university
@@ -926,16 +929,16 @@ cv:
       en: united states
       es: estados unidos
     nivel:
-      en: false
+      en: graduate
       es: postgrado
     anho:
-      en: false
+      en: 2018
       es: 2018
   - nombre:
-      en: false
+      en: "communication lab: video and sound, taught by professor marina zurkow"
       es: "communication lab: video and sound, dictado por profesora marina zurkow"
     rol:
-      en: false
+      en: graduate teaching assistant
       es: ayudante de postgrado
     institucion:
       en: new york university
@@ -944,16 +947,16 @@ cv:
       en: united states
       es: estados unidos
     nivel:
-      en: false
+      en: graduate
       es: postgrado
     anho:
-      en: false
+      en: 2017
       es: 2017
   - nombre:
-      en: false
+      en: psychoacoustics, taught by professor rodrigo cádiz
       es: psicoacústica, dictado por profesor rodrigo cádiz
     rol:
-      en: false
+      en: undergraduate teaching assistant
       es: ayudante de pregrado
     institucion:
       en: pontificia universidad católica de chile
@@ -962,16 +965,16 @@ cv:
       en: chile
       es: chile
     nivel:
-      en: false
+      en: undergraduate
       es: pregrado
     anho:
-      en: false
+      en: 2014
       es: 2014
   - nombre:
-      en: false
+      en: psychoacoustics, taught by professor rodrigo cádiz
       es: psicoacústica, dictado por profesor rodrigo cádiz
     rol:
-      en: false
+      en: teaching assistant
       es: ayudante
     institucion:
       en: pontificia universidad católica de chile
@@ -980,16 +983,16 @@ cv:
       en: chile
       es: chile
     nivel:
-      en: false
+      en: undergraduate
       es: pregrado
     anho:
-      en: false
+      en: 2013
       es: 2013
   - nombre:
-      en: false
+      en: digital systems, taught by professor cristián tejos
       es: sistemas digitales, dictado por profesor cristián tejos
     rol:
-      en: false
+      en: undergraduate teaching assistant
       es: ayudante de pregrado
     institucion:
       en: pontificia universidad católica de chile
@@ -998,15 +1001,15 @@ cv:
       en: chile
       es: chile
     nivel:
-      en: false
+      en: undergraduate
       es: pregrado
     anho:
-      en: false
+      en: 2012
       es: 2012
   
 ponencias-en-congresos-y-seminarios:
   - nombre:
-      en: false
+      en: "1st Symposium on Comparative Literature"
       es: "1er Simposio de Literatura Comparada"
     rol:
       en: "Speaker/Participant"
@@ -1067,8 +1070,8 @@ otros-escritos:
       en: Carolina Espinoza, Claudio Adasme, Aarón Montoya, José Báeza
       es: Carolina Espinoza, Claudio Adasme, Aarón Montoya, José Báeza
     titulo:
-      en: Guitarra impresa en 3D: entre luthería tradicional y fabricación digital
-      es: Guitarra impresa en 3D: entre luthería tradicional y fabricación digital
+      en: "Guitarra impresa en 3D: entre luthería tradicional y fabricación digital"
+      es: "Guitarra impresa en 3D: entre luthería tradicional y fabricación digital"
     tipo:
       en: JOURNAL ARTICLE
       es: ARTÍCULO DE REVISTA

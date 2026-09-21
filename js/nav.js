@@ -8,7 +8,7 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger">enseñanza</h3>
+        <h3 class="dropdown-trigger" tabindex="0" role="button" aria-expanded="false">enseñanza</h3>
         <div class="dropdown-content" style="padding-left:15px;">
             <!-- ENSEÑANZA:GENERADO:INICIO (no editar a mano — ver scripts/generar-ensenanza.js y datos/ensenanza.yaml) -->
             <h5><span class="es">pregrado - universidad diego portales</span><span class="en">undergraduate - universidad diego portales</span></h5>
@@ -41,7 +41,7 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger">investigación</h3>
+        <h3 class="dropdown-trigger" tabindex="0" role="button" aria-expanded="false">investigación</h3>
         <div class="dropdown-content" style="padding-left:15px;">
             <ol>
                 <li>sin proyectos publicados</li>
@@ -50,7 +50,7 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger">performance</h3>
+        <h3 class="dropdown-trigger" tabindex="0" role="button" aria-expanded="false">performance</h3>
         <div class="dropdown-content" style="padding-left:15px;">
             <ol>
                 <li>sin obras publicadas</li>
@@ -59,7 +59,7 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger">cv</h3>
+        <h3 class="dropdown-trigger" tabindex="0" role="button" aria-expanded="false">cv</h3>
         <div class="dropdown-content cv-menu" style="padding-left:15px;">
             <ol>
                 <li><a href="/cv/#educacion-universitaria">educacion-universitaria</a></li>
@@ -128,9 +128,30 @@ document.querySelectorAll('#divLeftMenu a[href]').forEach(link => {
             const trigger = dropdownContent.previousElementSibling;
             if (trigger && trigger.classList.contains('dropdown-trigger')) {
                 trigger.classList.add('nav-active');
+                trigger.classList.add('open');
+                trigger.setAttribute('aria-expanded', 'true');
+                dropdownContent.classList.add('open');
             }
         }
     }
+});
+
+document.querySelectorAll('.dropdown-trigger').forEach(trigger => {
+    function toggleDropdown() {
+        const content = trigger.nextElementSibling;
+        if (!content || !content.classList.contains('dropdown-content')) return;
+        const isOpen = trigger.classList.toggle('open');
+        content.classList.toggle('open', isOpen);
+        trigger.setAttribute('aria-expanded', String(isOpen));
+    }
+
+    trigger.addEventListener('click', toggleDropdown);
+    trigger.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            toggleDropdown();
+        }
+    });
 });
 
 window.addEventListener('scroll', function() {

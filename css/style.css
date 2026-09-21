@@ -10,6 +10,11 @@ body {
   overflow-x: hidden;
 }
 
+.flex-container {
+  display: flex;
+  min-height: 100vh;
+}
+
 .cv-intro {
   margin-bottom: 35px;
 }
@@ -112,7 +117,7 @@ body {
 }
 
 #menu-btn {
-  display: none;
+  display: block;
   position: fixed;
   top: 15px;
   left: 15px;
@@ -141,6 +146,22 @@ body {
   width: calc(100% - 260px);
   margin-left: 260px;
   padding: 80px 40px 120px 40px;
+  transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+@media (min-width: 801px) {
+  .left.active {
+    left: -260px;
+  }
+
+  .left.active ~ .right {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.right--flush {
+  padding: 0;
 }
 
 .dropdown-trigger {
@@ -149,11 +170,31 @@ body {
   margin: 15px 0 5px 0;
   font-size: 12pt;
   text-transform: lowercase;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dropdown-trigger::before {
+  content: "▸";
+  display: inline-block;
+  width: 0.8em;
+  margin-right: 2px;
+  text-decoration: none;
+  transition: transform 0.15s ease;
+}
+
+.dropdown-trigger.open::before {
+  transform: rotate(90deg);
 }
 
 .dropdown-content {
+  display: none;
   padding-left: 20px;
   margin-bottom: 15px;
+}
+
+.dropdown-content.open {
+  display: block;
 }
 
 .dropdown-content h5 {
@@ -162,6 +203,23 @@ body {
   font-family: monospace;
   text-transform: lowercase;
   color: #666;
+}
+
+.nota-tecnica {
+  background: white;
+  border: 1px solid black;
+  padding: 10px;
+  box-shadow: 5px 5px 0px pink;
+}
+
+.enlace-curso {
+  color: blue;
+  text-decoration: underline;
+}
+
+.credito-docente {
+  font-family: monospace;
+  font-size: 9pt;
 }
 
 .contenedor-producto {
@@ -316,6 +374,49 @@ body {
   display: block;
   width: 100% !important;
   height: 100% !important;
+}
+
+.visor-estado {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 7.5pt;
+  text-transform: lowercase;
+}
+
+.visor-cargando {
+  color: #666;
+  background: #eee;
+  animation: visor-pulso 1.4s ease-in-out infinite;
+}
+
+.visor-3d-card.is-loaded .visor-cargando,
+.visor-3d-card.has-error .visor-cargando {
+  display: none;
+}
+
+.visor-error {
+  display: none;
+  color: black;
+  background: white;
+}
+
+.visor-3d-card.has-error .visor-error {
+  display: flex;
+}
+
+@keyframes visor-pulso {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 700px) {
