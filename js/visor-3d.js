@@ -5,6 +5,20 @@ import { DRACOLoader } from '/lib/three/jsm/loaders/DRACOLoader.js';
 const container = document.getElementById('bust-viewer');
 
 if (container) {
+  const card = container.closest('.visor-3d-card') || container;
+
+  const estadoCargando = document.createElement('div');
+  estadoCargando.className = 'visor-estado visor-cargando';
+  estadoCargando.innerHTML =
+    '<span class="es">cargando escaneo 3d...</span><span class="en">loading 3d scan...</span>';
+  card.appendChild(estadoCargando);
+
+  const estadoError = document.createElement('div');
+  estadoError.className = 'visor-estado visor-error';
+  estadoError.innerHTML =
+    '<span class="es">no se pudo cargar el escaneo 3d</span><span class="en">could not load the 3d scan</span>';
+  card.appendChild(estadoError);
+
   const scene = new THREE.Scene();
 
   const camera = new THREE.PerspectiveCamera(
@@ -72,12 +86,12 @@ if (container) {
       model.position.sub(center);
 
       rotationGroup.add(model);
-      container.classList.add('is-loaded');
+      card.classList.add('is-loaded');
     },
     undefined,
     (error) => {
       console.error('no se pudo cargar el modelo 3D:', error);
-      container.classList.add('has-error');
+      card.classList.add('has-error');
     }
   );
 

@@ -47,7 +47,7 @@ function renderCv(cv, language) {
 }
 
 function renderValue(value, container, language, label) {
-  if (value === null || value === undefined) return;
+  if (value === null || value === undefined || value === false) return;
 
   if (isLocalizedValue(value)) {
     renderText(value[language] ?? value.es ?? value.en, container, label);
@@ -126,7 +126,7 @@ function isLocalizedValue(value) {
 }
 
 function renderText(value, container, label) {
-  if (value !== null && value !== undefined) {
+  if (value !== null && value !== undefined && value !== false) {
     const paragraph = document.createElement('p');
     paragraph.className = isYearLabel(label) ? 'cv-row cv-year-row' : 'cv-row';
     if (label) {
