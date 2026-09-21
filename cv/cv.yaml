@@ -774,6 +774,24 @@ cv:
     detalle:
       en: false
       es: "Obra comisionada por @sokio. Entrada: notas MIDI / Salida: solenoide basada en obra anterior de @misaa.cc. Proyecto realizado por @misaa.cc en colaboración con @piruetas.xyz, bernardita y francisco stephens, con el apoyo de @lid.udp"
+  - cliente:
+      en: "Claudia González Godoy"
+      es: "Claudia González Godoy"
+    empresa:
+      en: "Piruetas SpA"
+      es: "Piruetas SpA"
+    servicio:
+      en: "PCB design and manufacturing for the Master's in Media Arts program at Universidad de Chile"
+      es: "Diseño y fabricación de placas PCB para el Magíster en Artes Mediales de la Universidad de Chile"
+    comisionado:
+      en: "21 September 2026"
+      es: "21 septiembre 2026"
+    pais:
+      en: "Chile"
+      es: "Chile"
+    detalle:
+      en: "Mateo Arce Moore designed the boards in KiCad, and with Piruetas we had them manufactured in China."
+      es: "Mateo Arce Moore diseñó las placas en KiCad, y con piruetas las mandamos a fabricar a China."
   becas:
   - nombre:
       en: false
