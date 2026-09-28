@@ -8,6 +8,16 @@ página web creada por @montoyamoraga y desde 2026 mantenida por @janisepulveda.
 
 cada push a `main` que cambie un archivo `datos/*.yaml` o `scripts/*.js` corre el GitHub Action `.github/workflows/generar-sitio.yml`. este corre `node scripts/generar-sitio.js`, que ejecuta todos los generadores (`generar-inicio.js`, `generar-enlaces.js`, `generar-ensenanza.js`, `generar-obras.js`) y commitea los cambios automáticamente. el HTML entre marcadores `GENERADO:INICIO` / `GENERADO:FIN` no se edita a mano: se edita el YAML o la plantilla del script. para agregar una sección nueva generada, crear su script con una función `generar()` exportada y sumarlo a `scripts/generar-sitio.js`.
 
+### hook de pre-commit (recomendado)
+
+para no tener que hacer `git pull` después de cada push, activar una vez por clon el hook que regenera el sitio antes de cada commit que toque `datos/*.yaml` o `scripts/*.js`, y agrega el HTML generado al mismo commit:
+
+```sh
+git config core.hooksPath .githooks
+```
+
+requiere node. si node no está disponible, el commit sigue igual y el GitHub Action regenera el sitio.
+
 ## cómo editar la página de inicio
 
 el título y la biografía de `index.html` se generan a partir de `datos/inicio.yaml`. para editarlos, editar ese archivo (el schema está documentado en un comentario al inicio) y hacer push a `main`.

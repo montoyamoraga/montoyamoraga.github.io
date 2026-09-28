@@ -1,0 +1,23 @@
+#!/bin/sh
+# regenera el sitio antes de cada commit que toque datos/*.yaml o scripts/*.js,
+# y agrega el HTML generado al mismo commit. así el GitHub Action no tiene nada
+# nuevo que commitear y no hace falta hacer pull después de cada push.
+#
+# para activarlo (una vez por clon del repositorio):
+#   git config core.hooksPath .githooks
+
+if ! git diff --cached --name-only | grep -qE '^(datos/.*\.yaml|scripts/.*\.js)$'; then
+  exit 0
+fi
+
+if ! node --version >/dev/null 2>&1; then
+  echo "pre-commit: node no funciona, no se regeneró el sitio (lo hará el GitHub Action)." >&2
+  exit 0
+fi
+
+node scripts/generar-sitio.js || {
+  echo "pre-commit: falló scripts/generar-sitio.js, commit cancelado." >&2
+  exit 1
+}
+
+git add index.html enlaces ensenanza proyectos js/nav.js
