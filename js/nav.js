@@ -77,6 +77,10 @@ let navbar = `
     </div>
 
     <div class="nav-section">
+        <h3><a href="/proyectos/">proyectos</a></h3>
+    </div>
+
+    <div class="nav-section">
         <h3><a href="/enlaces/">enlaces</a></h3>
     </div>
 
