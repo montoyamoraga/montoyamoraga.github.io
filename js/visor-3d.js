@@ -53,7 +53,7 @@ if (container) {
   loader.setDRACOLoader(dracoLoader);
 
   loader.load(
-    '/assets/3d/montoyamoraga-2026-08.glb',
+    'https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-escaneo-3d/glb/montoyamoraga-2026-08.glb',
     (gltf) => {
       const model = gltf.scene;
 
