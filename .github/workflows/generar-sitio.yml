@@ -28,14 +28,14 @@ jobs:
         with:
           node-version: 20
 
-      - name: Generar index.html, ensenanza/, proyectos/ y el menú de js/nav.js desde datos/*.yaml
+      - name: Generar index.html, enlaces/, ensenanza/, proyectos/ y el menú de js/nav.js desde datos/*.yaml
         run: node scripts/generar-sitio.js
 
       - name: Commitear páginas generadas
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html ensenanza proyectos js/nav.js
+          git add index.html enlaces ensenanza proyectos js/nav.js
           if git diff --cached --quiet; then
             echo "Sin cambios que commitear."
           else

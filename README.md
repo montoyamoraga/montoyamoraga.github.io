@@ -6,11 +6,15 @@ página web creada por @montoyamoraga y desde 2026 mantenida por @janisepulveda.
 
 ## cómo se genera el sitio
 
-cada push a `main` que cambie un archivo `datos/*.yaml` o `scripts/*.js` corre el GitHub Action `.github/workflows/generar-sitio.yml`. este corre `node scripts/generar-sitio.js`, que ejecuta todos los generadores (`generar-inicio.js`, `generar-ensenanza.js`, `generar-obras.js`) y commitea los cambios automáticamente. el HTML entre marcadores `GENERADO:INICIO` / `GENERADO:FIN` no se edita a mano: se edita el YAML o la plantilla del script. para agregar una sección nueva generada, crear su script con una función `generar()` exportada y sumarlo a `scripts/generar-sitio.js`.
+cada push a `main` que cambie un archivo `datos/*.yaml` o `scripts/*.js` corre el GitHub Action `.github/workflows/generar-sitio.yml`. este corre `node scripts/generar-sitio.js`, que ejecuta todos los generadores (`generar-inicio.js`, `generar-enlaces.js`, `generar-ensenanza.js`, `generar-obras.js`) y commitea los cambios automáticamente. el HTML entre marcadores `GENERADO:INICIO` / `GENERADO:FIN` no se edita a mano: se edita el YAML o la plantilla del script. para agregar una sección nueva generada, crear su script con una función `generar()` exportada y sumarlo a `scripts/generar-sitio.js`.
 
 ## cómo editar la página de inicio
 
 el título y la biografía de `index.html` se generan a partir de `datos/inicio.yaml`. para editarlos, editar ese archivo (el schema está documentado en un comentario al inicio) y hacer push a `main`.
+
+## cómo agregar un enlace
+
+la página `enlaces/index.html` se genera completa a partir de `datos/enlaces.yaml`. para agregar, quitar o reordenar enlaces, editar ese archivo (el schema está documentado en un comentario al inicio) y hacer push a `main`.
 
 ## cómo agregar un curso de enseñanza
 

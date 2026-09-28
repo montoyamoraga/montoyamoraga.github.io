@@ -1,0 +1,29 @@
+# datos de la página de enlaces, usados por scripts/generar-enlaces.js para
+# generar enlaces/index.html.
+#
+# el orden de la lista define el orden en la página.
+#
+# schema:
+#   titulo:   { es, en }
+#   nombre:   string
+#   enlaces:  lista de enlaces, cada uno con:
+#     url:    string
+#     texto:  string, o { es, en } si se traduce (opcional, si no está se
+#             muestra la url)
+#
+# para agregar un enlace: agregar una entrada acá y hacer push a main.
+# el GitHub Action regenera la página automáticamente.
+
+titulo:
+  es: enlaces
+  en: links
+
+nombre: montoyamoraga
+
+enlaces:
+  - url: https://montoyamoraga.io
+  - url: https://github.com/montoyamoraga
+  - url: https://instagram.com/montoyamoraga
+  - url: https://orcid.org/0000-0001-9901-8224
+  - url: https://bandurria.io
+  - url: https://faad.udp.cl/persona/aaron-montoya-moraga/
