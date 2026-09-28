@@ -8,13 +8,48 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
   </head>
   <body>
-    <div class="contenedor">
-      <p class="obra-meta">serie tamiz</p>
-      <h1 class="cajita">bajos de mena</h1>
+    <button
+      id="menu-btn"
+      class="boton-piruetas"
+      onclick="document.getElementById('divLeftMenu').classList.toggle('active')"
+    ><span class="es">menú</span><span class="en">menu</span></button>
 
-      <video controls playsinline src="/assets/bajos-de-mena.mp4"></video>
+    <div class="flex-container">
+      <div class="left" id="divLeftMenu"></div>
 
-      <p><a href="/proyectos/">volver a proyectos</a></p>
+      <div class="right" style="padding: 0;">
+        <div class="split-layout">
+
+          <div class="split-left">
+            <div class="img-track" id="img-track">
+              <video controls playsinline src="/assets/bajos-de-mena.mp4"></video>
+            </div>
+          </div>
+
+          <div class="split-right">
+            <p class="obra-meta"><span class="es">serie tamiz</span><span class="en">tamiz series</span></p>
+
+            <h1 class="cajita">bajos de mena</h1>
+
+            <p><a href="/proyectos/"><span class="es">volver a proyectos</span><span class="en">back to projects</span></a></p>
+          </div>
+
+        </div>
+      </div>
     </div>
+
+    <footer class="colophon-banner"></footer>
+
+    <script src="/lib/js-yaml.min.js"></script>
+    <script src="/js/nav.js"></script>
+    <script src="/js/script.js"></script>
+    <script>
+      function moveImg(direction) {
+        const track = document.getElementById('img-track');
+        if (track) {
+          track.scrollBy({ left: direction * track.clientWidth, behavior: 'smooth' });
+        }
+      }
+    </script>
   </body>
 </html>

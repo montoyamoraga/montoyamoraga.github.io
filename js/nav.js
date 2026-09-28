@@ -83,12 +83,14 @@ let navbar = `
     <div class="nav-section">
         <h3 class="dropdown-trigger" tabindex="0" role="button" aria-expanded="false"><span class="es">proyectos</span><span class="en">projects</span></h3>
         <div class="dropdown-content" style="padding-left:15px;">
+            <!-- OBRAS:GENERADO:INICIO (no editar a mano — ver scripts/generar-obras.js y datos/obras.yaml) -->
             <h5><span class="es">serie tamiz</span><span class="en">tamiz series</span></h5>
             <ol>
                 <li><a href="/proyectos/tamiz/bajos-de-mena/">bajos de mena</a></li>
                 <li><a href="/proyectos/tamiz/alturas-de-macchu-picchu/">alturas de macchu picchu</a></li>
                 <li><a href="/proyectos/tamiz/menatron/">menatron</a></li>
             </ol>
+            <!-- OBRAS:GENERADO:FIN -->
         </div>
     </div>
 

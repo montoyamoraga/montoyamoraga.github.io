@@ -14,6 +14,16 @@ las páginas de `ensenanza/` y el menú de enseñanza en `js/nav.js` se generan 
 
 el GitHub Action `.github/workflows/generar-ensenanza.yml` corre `node scripts/generar-ensenanza.js`, que regenera `ensenanza/<slug>/index.html` y el menú de enseñanza, y commitea los cambios automáticamente. también se puede correr el script a mano en local para previsualizar el resultado antes de hacer push.
 
+## cómo agregar una obra
+
+las páginas de obras en `proyectos/<serie>/<obra>/`, la lista de series en `proyectos/index.html` y el menú de proyectos en `js/nav.js` se generan automáticamente a partir de `datos/obras.yaml`. para agregar o editar una obra:
+
+1. editar `datos/obras.yaml` (el schema está documentado en un comentario al inicio del archivo).
+2. subir las fotos al repositorio [montoyamoraga-web-media](https://github.com/montoyamoraga/montoyamoraga-web-media) y enlazarlas desde `medios`, o usar archivos de `assets/`.
+3. hacer push a `main`.
+
+el GitHub Action `.github/workflows/generar-obras.yml` corre `node scripts/generar-obras.js`, que regenera esas páginas y commitea los cambios automáticamente. también se puede correr el script a mano en local para previsualizar el resultado antes de hacer push.
+
 ## bibliografía
 
 - <https://medium.com/@nohanabil/building-a-multilingual-static-website-a-step-by-step-guide-7af238cc8505>

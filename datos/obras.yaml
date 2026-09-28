@@ -1,0 +1,44 @@
+# datos de las obras, usados por scripts/generar-obras.js para generar
+# proyectos/<serie>/<obra>/index.html, la lista de series en
+# proyectos/index.html y el menú de proyectos en js/nav.js.
+#
+# el orden de las listas define el orden en la página y en el menú.
+#
+# schema por serie:
+#   slug:    string, nombre de la carpeta en proyectos/<slug>/
+#   titulo:  { es, en }
+#   obras:   lista de obras
+#
+# schema por obra:
+#   slug:        string, nombre de la carpeta en proyectos/<serie>/<slug>/
+#   titulo:      string, o { es, en } si se traduce
+#   anho:        número (opcional)
+#   descripcion: lista de { es, en } (un párrafo por ítem, opcional)
+#   ficha:       lista de { rotulo: { es, en }, valor: string o { es, en } }
+#                (opcional, ej. materiales, duración, técnica)
+#   medios:      lista de archivos (opcional). los .mp4/.webm/.mov se
+#                muestran como video, el resto como imagen. se aceptan
+#                rutas absolutas del sitio (/assets/...) o URLs, por
+#                ejemplo del repositorio montoyamoraga-web-media:
+#                https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/<carpeta>/webp/00.webp
+#
+# una obra sin descripción ni medios se muestra como "próximamente".
+#
+# para agregar una obra nueva: agregar una entrada acá y hacer push a main.
+# el GitHub Action regenera las páginas y el menú automáticamente.
+
+- slug: tamiz
+  titulo:
+    es: serie tamiz
+    en: tamiz series
+  obras:
+    - slug: bajos-de-mena
+      titulo: bajos de mena
+      medios:
+        - /assets/bajos-de-mena.mp4
+    - slug: alturas-de-macchu-picchu
+      titulo: alturas de macchu picchu
+      medios:
+        - /assets/alturas-machu-picchu.mp4
+    - slug: menatron
+      titulo: menatron
