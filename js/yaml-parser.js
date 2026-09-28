@@ -39,7 +39,7 @@ function renderCv(cv, language) {
     category.id = key;
 
     const heading = document.createElement('h2');
-    heading.textContent = formatLabel(key);
+    heading.textContent = formatLabel(key, language);
     category.appendChild(heading);
     renderValue(value, category, language);
     cvContent.appendChild(category);
@@ -50,7 +50,7 @@ function renderValue(value, container, language, label) {
   if (value === null || value === undefined || value === false) return;
 
   if (isLocalizedValue(value)) {
-    renderText(value[language] ?? value.es ?? value.en, container, label);
+    renderText(value[language] ?? value.es ?? value.en, container, label, language);
     return;
   }
 
@@ -72,7 +72,7 @@ function renderValue(value, container, language, label) {
 
     if (label) {
       const heading = document.createElement('h3');
-      heading.textContent = formatLabel(label);
+      heading.textContent = formatLabel(label, language);
       section.appendChild(heading);
     }
 
@@ -112,7 +112,7 @@ function renderValue(value, container, language, label) {
   row.className = isYearLabel(label) ? 'cv-row cv-year-row' : 'cv-row';
   if (label) {
     const name = document.createElement('strong');
-    name.textContent = `${formatLabel(label)}: `;
+    name.textContent = `${formatLabel(label, language)}: `;
     row.appendChild(name);
   }
   row.appendChild(document.createTextNode(String(value)));
@@ -125,13 +125,13 @@ function isLocalizedValue(value) {
     !Array.isArray(value) && ('en' in value || 'es' in value);
 }
 
-function renderText(value, container, label) {
+function renderText(value, container, label, language) {
   if (value !== null && value !== undefined && value !== false) {
     const paragraph = document.createElement('p');
     paragraph.className = isYearLabel(label) ? 'cv-row cv-year-row' : 'cv-row';
     if (label) {
       const name = document.createElement('strong');
-      name.textContent = `${formatLabel(label)}: `;
+      name.textContent = `${formatLabel(label, language)}: `;
       paragraph.appendChild(name);
     }
     paragraph.appendChild(document.createTextNode(String(value)));
@@ -144,48 +144,48 @@ function isYearLabel(label) {
     (label.includes('anho') || label.includes('fecha-anho'));
 }
 
-function formatLabel(label) {
+function formatLabel(label, language) {
   const labels = {
-    'educacion-universitaria': 'educación universitaria',
-    'breve-resumen-trayectoria-academica': 'breve resumen de trayectoria académica',
-    'actividad-perfeccionamiento': 'actividad de perfeccionamiento',
-    'docencia-universitaria': 'docencia universitaria',
-    'otros-cursos-dictados-en-pre-y-postgrado': 'otros cursos dictados en pregrado y posgrado',
-    'otras-actividades-docentes-destacables': 'otras actividades docentes destacables',
-    'trayectoria-profesional': 'trayectoria profesional',
-    'becas': 'becas',
-    'premios-distinciones': 'premios y distinciones',
-    'ayudantias': 'ayudantías',
-    'postgrado': 'posgrado',
-    'pregrado': 'pregrado',
-    'magister-mit': 'magíster MIT',
-    'magister-nyu': 'magíster NYU',
-    'doctorado-usach': 'doctorado USACH',
-    'titulo-profesional': 'título profesional',
-    'otros-estudios-de-perfeccionamiento': 'otros estudios de perfeccionamiento',
-    'fecha-anho-inicio': 'año de inicio',
-    'fecha-anho-fin': 'año de término',
-    'anho-inicio': 'año de inicio',
-    'anho-termino': 'año de término',
-    'anho-desde': 'año desde',
-    'anho-hasta': 'año hasta',
-    'nombre-institucion': 'institución',
-    'institucion': 'institución',
-    'pais': 'país',
-    'grado': 'grado académico',
-    'detalle': 'detalle',
-    'rol': 'rol',
-    'nombre': 'nombre',
-    'frecuencia': 'frecuencia',
-    'cantidad': 'cantidad',
-    'nivel': 'nivel',
-    'programa': 'programa',
-    'regimen': 'régimen'
+    'educacion-universitaria': { es: 'educación universitaria', en: 'university education' },
+    'breve-resumen-trayectoria-academica': { es: 'breve resumen de trayectoria académica', en: 'brief summary of academic career' },
+    'actividad-perfeccionamiento': { es: 'actividad de perfeccionamiento', en: 'professional development activity' },
+    'docencia-universitaria': { es: 'docencia universitaria', en: 'university teaching' },
+    'otros-cursos-dictados-en-pre-y-postgrado': { es: 'otros cursos dictados en pregrado y posgrado', en: 'other courses taught in undergraduate and graduate programs' },
+    'otras-actividades-docentes-destacables': { es: 'otras actividades docentes destacables', en: 'other notable teaching activities' },
+    'trayectoria-profesional': { es: 'trayectoria profesional', en: 'professional experience' },
+    'becas': { es: 'becas', en: 'scholarships' },
+    'premios-distinciones': { es: 'premios y distinciones', en: 'awards and honors' },
+    'ayudantias': { es: 'ayudantías', en: 'teaching assistantships' },
+    'postgrado': { es: 'posgrado', en: 'graduate' },
+    'pregrado': { es: 'pregrado', en: 'undergraduate' },
+    'magister-mit': { es: 'magíster MIT', en: 'MIT master’s' },
+    'magister-nyu': { es: 'magíster NYU', en: 'NYU master’s' },
+    'doctorado-usach': { es: 'doctorado USACH', en: 'USACH doctorate' },
+    'titulo-profesional': { es: 'título profesional', en: 'professional degree' },
+    'otros-estudios-de-perfeccionamiento': { es: 'otros estudios de perfeccionamiento', en: 'other professional development studies' },
+    'fecha-anho-inicio': { es: 'año de inicio', en: 'start year' },
+    'fecha-anho-fin': { es: 'año de término', en: 'end year' },
+    'anho-inicio': { es: 'año de inicio', en: 'start year' },
+    'anho-termino': { es: 'año de término', en: 'end year' },
+    'anho-desde': { es: 'año desde', en: 'year from' },
+    'anho-hasta': { es: 'año hasta', en: 'year to' },
+    'nombre-institucion': { es: 'institución', en: 'institution' },
+    'institucion': { es: 'institución', en: 'institution' },
+    'pais': { es: 'país', en: 'country' },
+    'grado': { es: 'grado académico', en: 'academic degree' },
+    'detalle': { es: 'detalle', en: 'detail' },
+    'rol': { es: 'rol', en: 'role' },
+    'nombre': { es: 'nombre', en: 'name' },
+    'frecuencia': { es: 'frecuencia', en: 'frequency' },
+    'cantidad': { es: 'cantidad', en: 'amount' },
+    'nivel': { es: 'nivel', en: 'level' },
+    'programa': { es: 'programa', en: 'program' },
+    'regimen': { es: 'régimen', en: 'program type' }
   };
 
-  if (labels[label]) return labels[label];
+  if (labels[label]) return labels[label][language] ?? labels[label].es;
 
-  return label
+  const fallback = label
     .replace(/-/g, ' ')
     .replace(/\banho\b/g, 'año')
     .replace(/\bano\b/g, 'año')
@@ -197,4 +197,6 @@ function formatLabel(label) {
     .replace(/\bacademica\b/g, 'académica')
     .replace(/\bacademico\b/g, 'académico')
     .replace(/\bayudantias\b/g, 'ayudantías');
+
+  return fallback;
 }

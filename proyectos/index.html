@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="/lib/js-yaml.min.js"></script>
     <!-- character encoding -->
     <meta charset="utf-8" />
     <!-- favicon -->
@@ -16,10 +17,37 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
   </head>
   <body>
+    <button
+      id="menu-btn"
+      class="boton-piruetas"
+      onclick="
+        document
+          .getElementById('divLeftMenu')
+          .classList.toggle('active')
+      "
+    ><span class="es">menú</span><span class="en">menu</span></button>
+
     <div class="flex-container">
       <div class="left" id="divLeftMenu"></div>
       <div class="right">
         <h1 class="cajita" data-i18n="projects"></h1>
+
+        <section class="serie">
+          <h2 class="serie-titulo">
+            <span class="es">serie tamiz</span><span class="en">tamiz series</span>
+          </h2>
+          <ol class="obra-lista">
+            <li class="obra-item">
+              <a class="obra-link" href="/proyectos/tamiz/bajos-de-mena/">bajos de mena</a>
+            </li>
+            <li class="obra-item">
+              <a class="obra-link" href="/proyectos/tamiz/alturas-de-macchu-picchu/">alturas de macchu picchu</a>
+            </li>
+            <li class="obra-item">
+              <a class="obra-link" href="/proyectos/tamiz/menatron/">menatron</a>
+            </li>
+          </ol>
+        </section>
       </div>
     </div>
     <footer class="colophon-banner"></footer>

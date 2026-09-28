@@ -16,7 +16,7 @@ if (espanol) {
 }
 
 window.addEventListener('DOMContentLoaded', async () => {
-  const lang = localStorage.getItem('language') || 'en';
+  const lang = localStorage.getItem('language') || 'es';
   const textData = await fetchTextData();
   updateContent(textData, lang);
 });
