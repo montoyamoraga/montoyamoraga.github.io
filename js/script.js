@@ -50,7 +50,7 @@ function setLanguagePreference(lang) {
 }
 
 async function fetchTextData() {
-  const response = await fetch('/texto/text.yml');
+  const response = await fetch('/datos/texto.yaml');
   const yamlText = await response.text();
   return jsyaml.load(yamlText);
 }
