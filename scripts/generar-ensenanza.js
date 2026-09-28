@@ -52,7 +52,7 @@ function paginaCurso(curso) {
   const fechasHtml = curso.fechas
     .map((fecha) =>
       fecha.url
-        ? `<a href="${escaparHTML(fecha.url)}" style="color: blue; text-decoration: underline">${dualSpan(fecha.texto)}</a>`
+        ? `<a href="${escaparHTML(fecha.url)}" class="enlace-curso">${dualSpan(fecha.texto)}</a>`
         : dualSpan(fecha.texto)
     )
     .join("<br />\n              ");
@@ -78,14 +78,12 @@ function paginaCurso(curso) {
       id="menu-btn"
       class="boton-piruetas"
       onclick="document.getElementById('divLeftMenu').classList.toggle('active')"
-    >
-      menú
-    </button>
+    ><span class="es">menú</span><span class="en">menu</span></button>
 
     <div class="flex-container">
       <div class="left" id="divLeftMenu"></div>
 
-      <div class="right" style="padding: 0;">
+      <div class="right right--flush">
         <div class="split-layout">
 
           <div class="split-left">
@@ -115,7 +113,7 @@ ${imagenesHtml}
             </p>
 
             <h2 class="cajita">${rotulo("equipo")}</h2>
-            <p style="font-family: monospace; font-size: 9pt">
+            <p class="credito-docente">
               ${equipoHtml}
             </p>
           </div>

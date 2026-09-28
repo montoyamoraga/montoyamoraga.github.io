@@ -4,6 +4,14 @@
 
 página web creada por @montoyamoraga y desde 2026 mantenida por @janisepulveda.
 
+## cómo se genera el sitio
+
+cada push a `main` que cambie un archivo `datos/*.yaml` o `scripts/*.js` corre el GitHub Action `.github/workflows/generar-sitio.yml`. este corre `node scripts/generar-sitio.js`, que ejecuta todos los generadores (`generar-inicio.js`, `generar-ensenanza.js`, `generar-obras.js`) y commitea los cambios automáticamente. el HTML entre marcadores `GENERADO:INICIO` / `GENERADO:FIN` no se edita a mano: se edita el YAML o la plantilla del script. para agregar una sección nueva generada, crear su script con una función `generar()` exportada y sumarlo a `scripts/generar-sitio.js`.
+
+## cómo editar la página de inicio
+
+el título y la biografía de `index.html` se generan a partir de `datos/inicio.yaml`. para editarlos, editar ese archivo (el schema está documentado en un comentario al inicio) y hacer push a `main`.
+
 ## cómo agregar un curso de enseñanza
 
 las páginas de `ensenanza/` y el menú de enseñanza en `js/nav.js` se generan automáticamente a partir de `datos/ensenanza.yaml`. para agregar o editar un curso:
@@ -12,7 +20,7 @@ las páginas de `ensenanza/` y el menú de enseñanza en `js/nav.js` se generan 
 2. opcionalmente agregar las fotos del curso en `ensenanza/<slug>/images/`.
 3. hacer push a `main`.
 
-el GitHub Action `.github/workflows/generar-ensenanza.yml` corre `node scripts/generar-ensenanza.js`, que regenera `ensenanza/<slug>/index.html` y el menú de enseñanza, y commitea los cambios automáticamente. también se puede correr el script a mano en local para previsualizar el resultado antes de hacer push.
+el GitHub Action `.github/workflows/generar-sitio.yml` corre `node scripts/generar-sitio.js`, que regenera `ensenanza/<slug>/index.html` y el menú de enseñanza, y commitea los cambios automáticamente. también se puede correr el script a mano en local para previsualizar el resultado antes de hacer push.
 
 ## cómo agregar una obra
 
@@ -22,7 +30,7 @@ las páginas de obras en `proyectos/<serie>/<obra>/`, la lista de series en `pro
 2. subir las fotos al repositorio [montoyamoraga-web-media](https://github.com/montoyamoraga/montoyamoraga-web-media) y enlazarlas desde `medios`, o usar archivos de `assets/`.
 3. hacer push a `main`.
 
-el GitHub Action `.github/workflows/generar-obras.yml` corre `node scripts/generar-obras.js`, que regenera esas páginas y commitea los cambios automáticamente. también se puede correr el script a mano en local para previsualizar el resultado antes de hacer push.
+el GitHub Action `.github/workflows/generar-sitio.yml` corre `node scripts/generar-sitio.js`, que regenera esas páginas y commitea los cambios automáticamente. también se puede correr el script a mano en local para previsualizar el resultado antes de hacer push.
 
 ## bibliografía
 

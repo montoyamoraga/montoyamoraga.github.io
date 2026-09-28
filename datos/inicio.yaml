@@ -1,0 +1,55 @@
+# datos de la página de inicio, usados por scripts/generar-inicio.js para
+# generar el título y la biografía de index.html.
+#
+# schema:
+#   titulo:     { es, en }
+#   nombre:     string
+#   biografia:  lista de { es, en } (un párrafo por ítem). se acepta HTML
+#               dentro del texto, por ejemplo <a href="...">enlaces</a>.
+#
+# para editar la biografía: editar este archivo y hacer push a main.
+# el GitHub Action regenera index.html automáticamente.
+
+titulo:
+  es: info
+  en: about
+
+nombre: montoyamoraga
+
+biografia:
+  - es: >-
+      aarón montoya-moraga (elle) es una persona chilena.
+      desde 2023 es profesore asistente en la escuela de
+      diseño de la universidad diego
+      portales, donde enseña los talleres de máquinas
+      electrónicas y computacionales. desde 2025 es estudiante
+      de doctorado en el instituto de estudios avanzados de la
+      universidad de santiago de chile, donde investiga sobre
+      diseño de instrumentos sonoros modulares de fuente
+      abierta.
+    en: >-
+      aarón montoya-moraga (they/them) is a chilean person.
+      since 2023 aarón is an assistant professor at the design
+      school at universidad diego portales, teaching the
+      electronic machines and the computational machines
+      studio courses. since 2025 aarón is a phd student at
+      universidad de santiago de chile, researching about
+      design of open source modular sound instruments.
+
+  - es: >-
+      vive en <a href="https://es.wikipedia.org/wiki/Santiago_de_Chile">santiago</a>
+      y también le dicen aya, versión corta de ayayay, su
+      seudónimo en artes. además es profesore en la escuela de
+      diseño de la <a href="https://www.uchile.cl/">universidad de chile</a>,
+      y tiene su propio pequeño emprendimiento y estudio de
+      arte <a href="https://piruetas.xyz">piruetas</a>, y el
+      netlabel <a href="https://bandurria.io/">bandurria</a>.
+    en: >-
+      aarón is based in
+      <a href="https://en.wikipedia.org/wiki/Santiago">santiago</a>
+      and goes by aya, short for ayayay, their artist name.
+      aarón is also a professor at the school of design at
+      <a href="https://www.uchile.cl/">universidad de chile</a>,
+      and runs their own small business and art studio
+      <a href="https://piruetas.xyz">piruetas</a>, and the
+      netlabel <a href="https://bandurria.io/">bandurria</a>.
