@@ -1,6 +1,10 @@
 let navbar = `
 <nav class="navegacion">
     <div class="nav-section">
+        <h3 class="nav-brand"><a href="/">montoyamoraga</a></h3>
+    </div>
+
+    <div class="nav-section">
         <h3>
             <a href="#" id="english">en</a> /
             <a href="#" id="espanol">es</a>
@@ -8,7 +12,7 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger" tabindex="0" role="button" aria-expanded="false">enseñanza</h3>
+        <h3 class="dropdown-trigger" tabindex="0" role="button" aria-expanded="false"><span class="es">enseñanza</span><span class="en">teaching</span></h3>
         <div class="dropdown-content" style="padding-left:15px;">
             <!-- ENSEÑANZA:GENERADO:INICIO (no editar a mano — ver scripts/generar-ensenanza.js y datos/ensenanza.yaml) -->
             <h5><span class="es">pregrado - universidad diego portales</span><span class="en">undergraduate - universidad diego portales</span></h5>
@@ -41,10 +45,10 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger" tabindex="0" role="button" aria-expanded="false">investigación</h3>
+        <h3 class="dropdown-trigger" tabindex="0" role="button" aria-expanded="false"><span class="es">investigación</span><span class="en">research</span></h3>
         <div class="dropdown-content" style="padding-left:15px;">
             <ol>
-                <li>sin proyectos publicados</li>
+                <li><span class="es">sin proyectos publicados</span><span class="en">no published projects</span></li>
             </ol>
         </div>
     </div>
@@ -53,7 +57,7 @@ let navbar = `
         <h3 class="dropdown-trigger" tabindex="0" role="button" aria-expanded="false">performance</h3>
         <div class="dropdown-content" style="padding-left:15px;">
             <ol>
-                <li>sin obras publicadas</li>
+                <li><span class="es">sin obras publicadas</span><span class="en">no published works</span></li>
             </ol>
         </div>
     </div>
@@ -62,30 +66,38 @@ let navbar = `
         <h3 class="dropdown-trigger" tabindex="0" role="button" aria-expanded="false">cv</h3>
         <div class="dropdown-content cv-menu" style="padding-left:15px;">
             <ol>
-                <li><a href="/cv/#educacion-universitaria">educacion-universitaria</a></li>
-                <li><a href="/cv/#breve-resumen-trayectoria-academica">breve-resumen-trayectoria-academica</a></li>
-                <li><a href="/cv/#actividad-perfeccionamiento">actividad-perfeccionamiento</a></li>
-                <li><a href="/cv/#docencia-universitaria">docencia-universitaria</a></li>
-                <li><a href="/cv/#otros-cursos-dictados-en-pre-y-postgrado">otros-cursos-dictados-en-pre-y-postgrado</a></li>
-                <li><a href="/cv/#otras-actividades-docentes-destacables">otras-actividades-docentes-destacables</a></li>
-                <li><a href="/cv/#trayectoria-profesional">trayectoria-profesional</a></li>
-                <li><a href="/cv/#becas">becas</a></li>
-                <li><a href="/cv/#premios-distinciones">premios-distinciones</a></li>
-                <li><a href="/cv/#ayudantias">ayudantias</a></li>
+                <li><a href="/cv/#educacion-universitaria"><span class="es">educación universitaria</span><span class="en">university education</span></a></li>
+                <li><a href="/cv/#breve-resumen-trayectoria-academica"><span class="es">breve resumen de trayectoria académica</span><span class="en">brief summary of academic career</span></a></li>
+                <li><a href="/cv/#actividad-perfeccionamiento"><span class="es">actividad de perfeccionamiento</span><span class="en">professional development activity</span></a></li>
+                <li><a href="/cv/#docencia-universitaria"><span class="es">docencia universitaria</span><span class="en">university teaching</span></a></li>
+                <li><a href="/cv/#otros-cursos-dictados-en-pre-y-postgrado"><span class="es">otros cursos dictados en pregrado y posgrado</span><span class="en">other courses taught in undergraduate and graduate programs</span></a></li>
+                <li><a href="/cv/#otras-actividades-docentes-destacables"><span class="es">otras actividades docentes destacables</span><span class="en">other notable teaching activities</span></a></li>
+                <li><a href="/cv/#trayectoria-profesional"><span class="es">trayectoria profesional</span><span class="en">professional experience</span></a></li>
+                <li><a href="/cv/#becas"><span class="es">becas</span><span class="en">scholarships</span></a></li>
+                <li><a href="/cv/#premios-distinciones"><span class="es">premios y distinciones</span><span class="en">awards and honors</span></a></li>
+                <li><a href="/cv/#ayudantias"><span class="es">ayudantías</span><span class="en">teaching assistantships</span></a></li>
             </ol>
         </div>
     </div>
 
     <div class="nav-section">
-        <h3><a href="/proyectos/">proyectos</a></h3>
+        <h3 class="dropdown-trigger" tabindex="0" role="button" aria-expanded="false"><span class="es">proyectos</span><span class="en">projects</span></h3>
+        <div class="dropdown-content" style="padding-left:15px;">
+            <h5><span class="es">serie tamiz</span><span class="en">tamiz series</span></h5>
+            <ol>
+                <li><a href="/proyectos/tamiz/bajos-de-mena/">bajos de mena</a></li>
+                <li><a href="/proyectos/tamiz/alturas-de-macchu-picchu/">alturas de macchu picchu</a></li>
+                <li><a href="/proyectos/tamiz/menatron/">menatron</a></li>
+            </ol>
+        </div>
     </div>
 
     <div class="nav-section">
-        <h3><a href="/enlaces/">enlaces</a></h3>
+        <h3><a href="/enlaces/"><span class="es">enlaces</span><span class="en">links</span></a></h3>
     </div>
 
     <div class="nav-section">
-        <h3><a href="/contacto/">contacto</a></h3>
+        <h3><a href="/contacto/"><span class="es">contacto</span><span class="en">contact</span></a></h3>
     </div>
 </nav>
 `;
@@ -111,34 +123,46 @@ function normalizePath(path) {
     return path.replace(/index\.html$/, '').replace(/\/+$/, '/') || '/';
 }
 
-const currentPath = normalizePath(window.location.pathname);
+function markActiveLinks() {
+    const currentPath = normalizePath(window.location.pathname);
 
-document.querySelectorAll('#divLeftMenu a[href]').forEach(link => {
-    const href = link.getAttribute('href');
-    if (!href || href === '#') return;
+    document.querySelectorAll('#divLeftMenu a.nav-active').forEach(link => {
+        link.classList.remove('nav-active');
+    });
+    document.querySelectorAll('#divLeftMenu h3.dropdown-trigger.nav-active').forEach(trigger => {
+        trigger.classList.remove('nav-active');
+    });
 
-    const [hrefPath, hrefHash] = href.split('#');
-    const linkPath = normalizePath(hrefPath);
-    const samePage = linkPath === currentPath;
-    const sameHash = !hrefHash || `#${hrefHash}` === window.location.hash;
+    document.querySelectorAll('#divLeftMenu a[href]').forEach(link => {
+        const href = link.getAttribute('href');
+        if (!href || href === '#') return;
 
-    if (samePage && sameHash) {
-        link.classList.add('nav-active');
-    }
+        const [hrefPath, hrefHash] = href.split('#');
+        const linkPath = normalizePath(hrefPath);
+        const samePage = linkPath === currentPath;
+        const sameHash = !hrefHash || `#${hrefHash}` === window.location.hash;
 
-    if (samePage) {
-        const dropdownContent = link.closest('.dropdown-content');
-        if (dropdownContent) {
-            const trigger = dropdownContent.previousElementSibling;
-            if (trigger && trigger.classList.contains('dropdown-trigger')) {
-                trigger.classList.add('nav-active');
-                trigger.classList.add('open');
-                trigger.setAttribute('aria-expanded', 'true');
-                dropdownContent.classList.add('open');
+        if (samePage && sameHash) {
+            link.classList.add('nav-active');
+        }
+
+        if (samePage) {
+            const dropdownContent = link.closest('.dropdown-content');
+            if (dropdownContent) {
+                const trigger = dropdownContent.previousElementSibling;
+                if (trigger && trigger.classList.contains('dropdown-trigger')) {
+                    trigger.classList.add('nav-active');
+                    trigger.classList.add('open');
+                    trigger.setAttribute('aria-expanded', 'true');
+                    dropdownContent.classList.add('open');
+                }
             }
         }
-    }
-});
+    });
+}
+
+markActiveLinks();
+window.addEventListener('hashchange', markActiveLinks);
 
 document.querySelectorAll('.dropdown-trigger').forEach(trigger => {
     function toggleDropdown() {

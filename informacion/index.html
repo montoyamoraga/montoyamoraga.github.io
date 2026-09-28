@@ -17,6 +17,16 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
   </head>
   <body>
+    <button
+      id="menu-btn"
+      class="boton-piruetas"
+      onclick="
+        document
+          .getElementById('divLeftMenu')
+          .classList.toggle('active')
+      "
+    ><span class="es">menú</span><span class="en">menu</span></button>
+
     <div class="flex-container">
       <div class="left" id="divLeftMenu"></div>
       <div class="right">
@@ -24,7 +34,18 @@
 
         <p data-i18n="info-acerca"></p>
 
-        <p>
+        <p class="es">
+          vivo en
+          <a href="https://en.wikipedia.org/wiki/Santiago">Santiago</a
+          >, soy profesore asistente en la escuela de diseño de la
+          <a href="https://www.udp.cl/">Universidad Diego Portales</a
+          >, y profesore en la escuela de diseño de la
+          <a href="https://www.uchile.cl/">Universidad de Chile</a>. tengo
+          mi propio pequeño emprendimiento y estudio de arte
+          <a href="https://piruetas.xyz">piruetas</a>, y el
+          netlabel <a href="https://bandurria.io/">bandurria</a>.
+        </p>
+        <p class="en">
           i am based in
           <a href="https://en.wikipedia.org/wiki/Santiago">Santiago</a
           >, i am an assistant professor at the school of design of

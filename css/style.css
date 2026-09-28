@@ -73,11 +73,12 @@ a:hover {
 
 .cv-category > h2 {
   color: var(--ink);
-  font-family: var(--font-body);
-  font-weight: 600;
-  font-size: 16pt;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 15pt;
+  letter-spacing: 0.03em;
   margin: 0 0 20px 0;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 
 .cv-section {
@@ -87,11 +88,13 @@ a:hover {
 
 .cv-section h3 {
   border-bottom: 1px solid var(--ink);
-  font-weight: 600;
-  font-size: 13pt;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 11pt;
+  letter-spacing: 0.03em;
   margin: 0 0 12px 0;
   padding-bottom: 5px;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 
 .cv-section h4 {
@@ -296,12 +299,14 @@ a:hover {
 }
 
 .serie-titulo {
-  font-weight: 600;
-  font-size: 14pt;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 12pt;
+  letter-spacing: 0.03em;
   border-bottom: 1px solid var(--ink);
   padding-bottom: 6px;
   margin: 0 0 14px 0;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 
 .obra-lista {
@@ -407,9 +412,10 @@ video {
   background-color: transparent;
   margin: 0 0 24px 0;
   clear: both;
-  font-family: var(--font-body);
-  font-weight: 600;
-  text-transform: lowercase;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .boton-piruetas {
@@ -741,6 +747,15 @@ html[lang="es"] .en {
 #divLeftMenu h3 {
   margin: 15px 0 5px 0;
   font-size: 12pt;
+}
+
+#divLeftMenu h3.nav-brand {
+  font-size: 13pt;
+  font-weight: 700;
+  text-transform: lowercase;
+  margin: 0 0 18px 0;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--rule);
 }
 
 #divLeftMenu ol {
