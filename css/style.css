@@ -171,48 +171,51 @@ a:hover {
   padding: 0;
 }
 
-/* páginas de cursos: primero la info y después cada imagen en su propia
-   fila de ancho completo. el fondo de las filas rota entre 5 variantes del
-   color de acento, mezclado con blanco o negro (como en bibliotecacuir). */
-.curso-fila {
+/* páginas de cursos y obras: primero la info y después cada imagen o video
+   en su propia fila de ancho completo. el fondo de las filas rota entre 5
+   variantes del color de acento, mezclado con blanco o negro (como en
+   bibliotecacuir). */
+.fila {
   padding: clamp(40px, 6vw, 80px) clamp(20px, 4vw, 44px);
 }
 
-.curso-fila-interior {
+.fila-interior {
   width: min(100%, 920px);
   margin: 0 auto;
 }
 
-.curso-fila:nth-of-type(5n + 1) {
+.fila:nth-of-type(5n + 1) {
   color: var(--ink);
   background: color-mix(in srgb, var(--accent) 15%, white);
 }
 
-.curso-fila:nth-of-type(5n + 2) {
+.fila:nth-of-type(5n + 2) {
   color: var(--paper);
   background: color-mix(in srgb, var(--accent) 80%, black);
 }
 
-.curso-fila:nth-of-type(5n + 3) {
+.fila:nth-of-type(5n + 3) {
   color: var(--ink);
   background: var(--accent);
 }
 
-.curso-fila:nth-of-type(5n + 4) {
+.fila:nth-of-type(5n + 4) {
   color: var(--ink);
   background: color-mix(in srgb, var(--accent) 45%, white);
 }
 
-.curso-fila:nth-of-type(5n) {
+.fila:nth-of-type(5n) {
   color: var(--paper);
   background: color-mix(in srgb, var(--accent) 60%, black);
 }
 
-.curso-fila-texto .cajita:first-child {
+.fila-texto .cajita:first-child,
+.fila-texto .obra-meta:first-child {
   margin-top: 0;
 }
 
-.curso-fila-imagen img {
+.fila-medio img,
+.fila-medio video {
   display: block;
   width: 100%;
   height: clamp(320px, 48vw, 680px);

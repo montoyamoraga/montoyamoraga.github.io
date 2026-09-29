@@ -11,19 +11,19 @@
     <div class="flex-container">
       <div class="left" id="divLeftMenu"></div>
 
-      <div class="right" style="padding: 0;">
-        <div class="split-layout">
+      <div class="right right--flush">
+        <div class="filas">
+          <section class="fila fila-texto">
+            <div class="fila-interior">
+              <p class="obra-meta"><span class="es">serie tamiz</span><span class="en">tamiz series</span></p>
 
-          <div class="split-right" style="flex: 1;">
-            <p class="obra-meta"><span class="es">serie tamiz</span><span class="en">tamiz series</span></p>
+              <h1 class="cajita">menatron</h1>
 
-            <h1 class="cajita">menatron</h1>
+              <p><span class="es">próximamente.</span><span class="en">coming soon.</span></p>
 
-            <p><span class="es">próximamente.</span><span class="en">coming soon.</span></p>
-
-            <p><a href="/proyectos/"><span class="es">volver a proyectos</span><span class="en">back to projects</span></a></p>
-          </div>
-
+              <p><a href="/proyectos/"><span class="es">volver a proyectos</span><span class="en">back to projects</span></a></p>
+            </div>
+          </section>
         </div>
       </div>
     </div>
@@ -33,13 +33,5 @@
     <script src="/lib/js-yaml.min.js"></script>
     <script src="/js/nav.js"></script>
     <script src="/js/script.js"></script>
-    <script>
-      function moveImg(direction) {
-        const track = document.getElementById('img-track');
-        if (track) {
-          track.scrollBy({ left: direction * track.clientWidth, behavior: 'smooth' });
-        }
-      }
-    </script>
   </body>
 </html>

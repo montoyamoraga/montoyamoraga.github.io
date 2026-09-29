@@ -45,8 +45,8 @@ function filasImagenes(curso) {
   return curso.imagenes
     .map(
       (archivo, i) => `
-          <section class="curso-fila curso-fila-imagen">
-            <div class="curso-fila-interior">
+          <section class="fila fila-medio">
+            <div class="fila-interior">
               <img src="${escaparHTML(resolverImagen(curso.slug, archivo))}" alt="trabajo ${i}" loading="lazy" decoding="async" />
             </div>
           </section>
@@ -89,9 +89,9 @@ function paginaCurso(curso) {
       <div class="left" id="divLeftMenu"></div>
 
       <div class="right right--flush">
-        <div class="curso-filas">
-          <section class="curso-fila curso-fila-texto">
-            <div class="curso-fila-interior">
+        <div class="filas">
+          <section class="fila fila-texto">
+            <div class="fila-interior">
               <h1 class="cajita">${dualSpan(curso.titulo)}</h1>
 
               <h2 class="cajita">${rotulo("institucion")}</h2>

@@ -38,58 +38,53 @@ function textoPlano(valor) {
 function medioHtml(archivo, alt) {
   const src = escaparHTML(archivo);
   return EXTENSIONES_VIDEO.test(archivo)
-    ? `              <video controls playsinline src="${src}"></video>`
-    : `              <img src="${src}" alt="${escaparHTML(alt)}" />`;
+    ? `<video controls playsinline preload="metadata" src="${src}"></video>`
+    : `<img src="${src}" alt="${escaparHTML(alt)}" loading="lazy" decoding="async" />`;
 }
 
-function columnaMedios(obra) {
-  const medios = obra.medios || [];
-  if (medios.length === 0) return "";
-
-  const botones =
-    medios.length > 1
-      ? `            <button class="img-nav-btn prev" onclick="moveImg(-1)">&#10094;</button>
-            <button class="img-nav-btn next" onclick="moveImg(1)">&#10095;</button>
-`
-      : "";
-
-  return `          <div class="split-left">
-${botones}            <div class="img-track" id="img-track">
-${medios.map((archivo, i) => medioHtml(archivo, `${textoPlano(obra.titulo)} ${i}`)).join("\n")}
+// cada imagen o video va en su propia fila de ancho completo, después de la info
+function filasMedios(obra) {
+  return (obra.medios || [])
+    .map(
+      (archivo, i) => `
+          <section class="fila fila-medio">
+            <div class="fila-interior">
+              ${medioHtml(archivo, `${textoPlano(obra.titulo)} ${i}`)}
             </div>
-          </div>
-
-`;
+          </section>
+`
+    )
+    .join("");
 }
 
-function columnaTexto(serie, obra) {
+function filaTexto(serie, obra) {
   const bloques = [];
 
-  bloques.push(`            <p class="obra-meta">${dualSpan(serie.titulo)}${obra.anho ? ` · ${escaparHTML(obra.anho)}` : ""}</p>`);
-  bloques.push(`            <h1 class="cajita">${dualSpan(obra.titulo)}</h1>`);
+  bloques.push(`              <p class="obra-meta">${dualSpan(serie.titulo)}${obra.anho ? ` · ${escaparHTML(obra.anho)}` : ""}</p>`);
+  bloques.push(`              <h1 class="cajita">${dualSpan(obra.titulo)}</h1>`);
 
   const descripcion = obra.descripcion || [];
   if (descripcion.length > 0) {
-    bloques.push(`            <p>
-              ${descripcion.map((parrafo) => dualSpan(parrafo)).join("<br /><br />\n              ")}
-            </p>`);
+    bloques.push(`              <p>
+                ${descripcion.map((parrafo) => dualSpan(parrafo)).join("<br /><br />\n                ")}
+              </p>`);
   } else if (!(obra.medios || []).length) {
-    bloques.push(`            <p>${dualSpan(PROXIMAMENTE)}</p>`);
+    bloques.push(`              <p>${dualSpan(PROXIMAMENTE)}</p>`);
   }
 
   (obra.ficha || []).forEach((fila) => {
-    bloques.push(`            <h2 class="cajita">${dualSpan(fila.rotulo)}</h2>
-            <p>${dualSpan(fila.valor)}</p>`);
+    bloques.push(`              <h2 class="cajita">${dualSpan(fila.rotulo)}</h2>
+              <p>${dualSpan(fila.valor)}</p>`);
   });
 
-  bloques.push(`            <p><a href="/proyectos/">${dualSpan(VOLVER)}</a></p>`);
+  bloques.push(`              <p><a href="/proyectos/">${dualSpan(VOLVER)}</a></p>`);
 
-  // sin medios no hay columna izquierda, así que el texto ocupa todo el ancho
-  const estilo = (obra.medios || []).length ? "" : ' style="flex: 1;"';
-
-  return `          <div class="split-right"${estilo}>
+  return `          <section class="fila fila-texto">
+            <div class="fila-interior">
 ${bloques.join("\n\n")}
-          </div>`;
+            </div>
+          </section>
+`;
 }
 
 function paginaObra(serie, obra) {
@@ -106,12 +101,9 @@ function paginaObra(serie, obra) {
     <div class="flex-container">
       <div class="left" id="divLeftMenu"></div>
 
-      <div class="right" style="padding: 0;">
-        <div class="split-layout">
-
-${columnaMedios(obra)}${columnaTexto(serie, obra)}
-
-        </div>
+      <div class="right right--flush">
+        <div class="filas">
+${filaTexto(serie, obra)}${filasMedios(obra)}        </div>
       </div>
     </div>
 
@@ -120,14 +112,6 @@ ${columnaMedios(obra)}${columnaTexto(serie, obra)}
     <script src="/lib/js-yaml.min.js"></script>
     <script src="/js/nav.js"></script>
     <script src="/js/script.js"></script>
-    <script>
-      function moveImg(direction) {
-        const track = document.getElementById('img-track');
-        if (track) {
-          track.scrollBy({ left: direction * track.clientWidth, behavior: 'smooth' });
-        }
-      }
-    </script>
   </body>
 </html>
 `;
