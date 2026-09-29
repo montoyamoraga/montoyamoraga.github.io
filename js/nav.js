@@ -64,21 +64,7 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="nav-titulo">cv</h3>
-        <div class="nav-contenido cv-menu">
-            <ol>
-                <li><a href="/cv/#educacion-universitaria"><span class="es">educación universitaria</span><span class="en">university education</span></a></li>
-                <li><a href="/cv/#breve-resumen-trayectoria-academica"><span class="es">breve resumen de trayectoria académica</span><span class="en">brief summary of academic career</span></a></li>
-                <li><a href="/cv/#actividad-perfeccionamiento"><span class="es">actividad de perfeccionamiento</span><span class="en">professional development activity</span></a></li>
-                <li><a href="/cv/#docencia-universitaria"><span class="es">docencia universitaria</span><span class="en">university teaching</span></a></li>
-                <li><a href="/cv/#otros-cursos-dictados-en-pre-y-postgrado"><span class="es">otros cursos dictados en pregrado y posgrado</span><span class="en">other courses taught in undergraduate and graduate programs</span></a></li>
-                <li><a href="/cv/#otras-actividades-docentes-destacables"><span class="es">otras actividades docentes destacables</span><span class="en">other notable teaching activities</span></a></li>
-                <li><a href="/cv/#trayectoria-profesional"><span class="es">trayectoria profesional</span><span class="en">professional experience</span></a></li>
-                <li><a href="/cv/#becas"><span class="es">becas</span><span class="en">scholarships</span></a></li>
-                <li><a href="/cv/#premios-distinciones"><span class="es">premios y distinciones</span><span class="en">awards and honors</span></a></li>
-                <li><a href="/cv/#ayudantias"><span class="es">ayudantías</span><span class="en">teaching assistantships</span></a></li>
-            </ol>
-        </div>
+        <h3><a href="/cv/">cv</a></h3>
     </div>
 
     <div class="nav-section">
