@@ -379,6 +379,27 @@ video {
   content: " ]";
 }
 
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .nav-idioma {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .nav-toggle {
+    display: inline-block;
+  }
+
+  /* menú cerrado: solo se ven el nombre, el idioma y el botón */
+  #divLeftMenu:not(.abierto) .nav-section:nth-child(n + 3) {
+    display: none;
+  }
+}
+
 .persona-card {
   display: flex;
   background-color: transparent;

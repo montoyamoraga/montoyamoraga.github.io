@@ -4,11 +4,12 @@ let navbar = `
         <h3 class="nav-brand"><a href="/">montoyamoraga</a></h3>
     </div>
 
-    <div class="nav-section">
+    <div class="nav-section nav-idioma">
         <h3>
             <a href="#" id="english">en</a> /
             <a href="#" id="espanol">es</a>
         </h3>
+        <button class="boton-piruetas nav-toggle" aria-expanded="false" aria-controls="divLeftMenu"><span class="es">menú</span><span class="en">menu</span></button>
     </div>
 
     <div class="nav-section">
@@ -107,6 +108,13 @@ let navbar = `
 let divLeftMenu = document.getElementById('divLeftMenu');
 if (divLeftMenu) {
     divLeftMenu.innerHTML = navbar;
+
+    // en pantallas angostas el menú parte cerrado y se abre con este botón
+    const navToggle = divLeftMenu.querySelector('.nav-toggle');
+    navToggle.addEventListener('click', () => {
+        const abierto = divLeftMenu.classList.toggle('abierto');
+        navToggle.setAttribute('aria-expanded', String(abierto));
+    });
 }
 
 let colophonYear = new Date().getFullYear();
