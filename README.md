@@ -18,6 +18,10 @@ git config core.hooksPath .githooks
 
 requiere node. si node no está disponible, el commit sigue igual y el GitHub Action regenera el sitio.
 
+## previsualización al compartir enlaces
+
+las páginas generadas incluyen etiquetas open graph (ver `scripts/compartir.js`), para que whatsapp, telegram y redes sociales muestren título, descripción e imagen. esa imagen se llama prevista, y vive en la carpeta `previstas/` del repositorio [montoyamoraga-web-media](https://github.com/montoyamoraga/montoyamoraga-web-media). cada curso u obra puede indicar la suya con el campo `prevista` en su YAML; si no, se usa `previstas/sitio.jpg`.
+
 ## cómo editar la página de inicio
 
 el título y la biografía de `index.html` se generan a partir de `datos/inicio.yaml`. para editarlos, editar ese archivo (el schema está documentado en un comentario al inicio) y hacer push a `main`.
@@ -31,7 +35,7 @@ la página `enlaces/index.html` se genera completa a partir de `datos/enlaces.ya
 las páginas de `ensenanza/` y el menú de enseñanza en `js/nav.js` se generan automáticamente a partir de `datos/ensenanza.yaml`. para agregar o editar un curso:
 
 1. editar `datos/ensenanza.yaml` (el schema está documentado en un comentario al inicio del archivo).
-2. opcionalmente agregar las fotos del curso en `ensenanza/<slug>/images/`.
+2. opcionalmente subir las fotos del curso al repositorio [montoyamoraga-web-media](https://github.com/montoyamoraga/montoyamoraga-web-media), en `ensenanza-<slug>/jpg/`, y listar sus nombres de archivo en `imagenes`.
 3. hacer push a `main`.
 
 el GitHub Action `.github/workflows/generar-sitio.yml` corre `node scripts/generar-sitio.js`, que regenera `ensenanza/<slug>/index.html` y el menú de enseñanza, y commitea los cambios automáticamente. también se puede correr el script a mano en local para previsualizar el resultado antes de hacer push.

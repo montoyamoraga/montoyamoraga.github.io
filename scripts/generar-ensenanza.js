@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const yaml = require("../lib/js-yaml.min.js");
+const { metaCompartir } = require("./compartir.js");
 
 const ROOT = path.join(__dirname, "..");
 const YAML_PATH = path.join(ROOT, "datos", "ensenanza.yaml");
@@ -36,8 +37,14 @@ function rotulo(clave) {
   return dualSpan(ROTULOS[clave]);
 }
 
+// las fotos viven en el repositorio montoyamoraga-web-media, en
+// ensenanza-<slug>/jpg/, y se muestran desde su versión liviana en webp/
+const WEB_MEDIA = "https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main";
+
 function resolverImagen(slug, archivo) {
-  return /^https?:\/\//.test(archivo) ? archivo : `images/${archivo}`;
+  if (/^https?:\/\//.test(archivo)) return archivo;
+  const webp = archivo.replace(/\.(jpe?g)$/i, ".webp");
+  return `${WEB_MEDIA}/ensenanza-${slug}/webp/${webp}`;
 }
 
 // cada imagen va en su propia fila de ancho completo, después de la info del curso
@@ -83,6 +90,12 @@ function paginaCurso(curso) {
     <title>${escaparHTML(curso.slug)} - montoyamoraga</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+${metaCompartir({
+  titulo: curso.titulo.es,
+  descripcion: curso.descripcion.length ? curso.descripcion[0].es : curso.institucion.map((linea) => linea.es).join(", "),
+  ruta: `/ensenanza/${curso.slug}/`,
+  prevista: curso.prevista,
+})}
   </head>
   <body>
     <div class="flex-container">

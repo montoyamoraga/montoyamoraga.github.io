@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const yaml = require("../lib/js-yaml.min.js");
+const { metaCompartir } = require("./compartir.js");
 
 const ROOT = path.join(__dirname, "..");
 const YAML_PATH = path.join(ROOT, "datos", "enlaces.yaml");
@@ -37,6 +38,11 @@ function paginaEnlaces(datos) {
     <title>montoyamoraga - ${escaparHTML(datos.titulo.es)}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
+${metaCompartir({
+  titulo: `montoyamoraga - ${datos.titulo.es}`,
+  descripcion: datos.enlaces.map((enlace) => enlace.url.replace(/^https?:\/\//, "").replace(/\/$/, "")).join(" · "),
+  ruta: "/enlaces/",
+})}
   </head>
   <body>
     <!-- generado por scripts/generar-enlaces.js desde datos/enlaces.yaml, no editar a mano -->

@@ -21,6 +21,10 @@
 #                rutas absolutas del sitio (/assets/...) o URLs, por
 #                ejemplo del repositorio montoyamoraga-web-media:
 #                https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/<carpeta>/webp/00.webp
+#   prevista:    opcional, imagen que se muestra al compartir el enlace (whatsapp,
+#                redes sociales): nombre de archivo en la carpeta previstas/ del
+#                repositorio montoyamoraga-web-media, o URL completa. sin prevista
+#                se usa previstas/sitio.jpg
 #
 # una obra sin descripción ni medios se muestra como "próximamente".
 #

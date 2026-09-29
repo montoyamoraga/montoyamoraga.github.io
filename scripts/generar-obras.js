@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const yaml = require("../lib/js-yaml.min.js");
+const { metaCompartir } = require("./compartir.js");
 
 const ROOT = path.join(__dirname, "..");
 const YAML_PATH = path.join(ROOT, "datos", "obras.yaml");
@@ -96,6 +97,14 @@ function paginaObra(serie, obra) {
     <title>montoyamoraga - ${escaparHTML(textoPlano(obra.titulo))}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
+${metaCompartir({
+  titulo: textoPlano(obra.titulo),
+  descripcion: (obra.descripcion || []).length
+    ? textoPlano(obra.descripcion[0])
+    : `${textoPlano(serie.titulo)}${obra.anho ? ` · ${obra.anho}` : ""}`,
+  ruta: `/proyectos/${serie.slug}/${obra.slug}/`,
+  prevista: obra.prevista,
+})}
   </head>
   <body>
     <div class="flex-container">

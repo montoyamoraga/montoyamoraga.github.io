@@ -12,11 +12,16 @@
 #                sin url se renderiza como texto plano, con url como link
 #   descripcion: lista de { es, en } (un párrafo por ítem)
 #   equipo:      lista de { nombre, rol: { es, en } } (nombre no se traduce)
-#   imagenes:    lista de nombres de archivo (se resuelven a images/<archivo>
-#                dentro de la carpeta del curso) o URLs absolutas (se usan tal cual)
+#   imagenes:    lista de nombres de archivo de fotos en ensenanza-<slug>/jpg/ del
+#                repositorio montoyamoraga-web-media (se muestran desde su versión
+#                webp/), o URLs absolutas (se usan tal cual)
+#   prevista:    opcional, imagen que se muestra al compartir el enlace (whatsapp,
+#                redes sociales): nombre de archivo en la carpeta previstas/ del
+#                repositorio montoyamoraga-web-media, o URL completa. sin prevista
+#                se usa previstas/sitio.jpg
 #
 # para agregar un curso nuevo: agregar una entrada acá (+ opcionalmente
-# ensenanza/<slug>/images/ con las fotos), hacer push a main. el GitHub Action
+# las fotos en ensenanza-<slug>/jpg/ de montoyamoraga-web-media), hacer push a main. el GitHub Action
 # regenera ensenanza/<slug>/index.html y el menú automáticamente.
 
 - slug: dis9079
@@ -153,6 +158,7 @@
   imagenes: []
 - slug: dis8637
   universidad: udp
+  prevista: ensenanza-dis8637.jpg
   titulo:
     en: dis8637 - studio of user experience
     es: dis8637 - taller de experiencia de usuario
@@ -194,6 +200,7 @@
     - dis8637-valentina-montecinos-sofia-sandoval-janis-sepulveda.jpg
 - slug: dis8636
   universidad: udp
+  prevista: ensenanza-dis8636.jpg
   titulo:
     en: dis8636 - studio of user interfaces
     es: dis8636 - taller de interfaz de usuario
@@ -242,6 +249,7 @@
     - dis8636-theo-rios.jpg
 - slug: dis9005
   universidad: udp
+  prevista: ensenanza-dis9005.jpg
   titulo:
     en: dis9005 - web design
     es: dis9005 - diseño de página web
@@ -279,6 +287,7 @@
     - dis9005-valentina-montecinos.jpg
 - slug: dis9034
   universidad: udp
+  prevista: ensenanza-dis9034.jpg
   titulo:
     en: dis9034 - creative multimedia programming
     es: dis9034 - programación creativa multimedia
@@ -316,6 +325,7 @@
     - dis9034-sofia-huerta.jpg
 - slug: audiv027
   universidad: uchile
+  prevista: ensenanza-audiv027.jpg
   titulo:
     en: audiv027 - artificial intelligence
     es: audiv027 - inteligencia artificial
@@ -373,6 +383,7 @@
     - audiv027-natalie-astudillo-valentina-ochoa.jpg
 - slug: audiv020
   universidad: uchile
+  prevista: ensenanza-audiv020.jpg
   titulo:
     en: audiv020 - design of digital musical instruments
     es: audiv020 - diseño de instrumentos musicales digitales
@@ -410,6 +421,7 @@
     - audiv020-valentina-matthey-carolina-toledo.jpg
 - slug: aud5i022
   universidad: uchile
+  prevista: ensenanza-aud5i022.jpg
   titulo:
     en: aud5i022 - design of electronic interfaces
     es: aud5i022 - diseño de interfaces electrónicas
@@ -451,6 +463,7 @@
     - aud5i022-sofia-chavez-maria-diaz.jpg
 - slug: aud10004
   universidad: uchile
+  prevista: ensenanza-aud10004.jpg
   titulo:
     en: aud10004 - math for designers
     es: aud10004 - matemáticas aplicadas al diseño
@@ -488,6 +501,7 @@
     - aud10004-paulette-duran.jpg
 - slug: aud20004
   universidad: uchile
+  prevista: ensenanza-aud20004.jpg
   titulo:
     en: aud20004 - physics for designers
     es: aud20004 - física aplicada al diseño

@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const yaml = require("../lib/js-yaml.min.js");
+const { metaCompartir } = require("./compartir.js");
 
 const ROOT = path.join(__dirname, "..");
 const YAML_PATH = path.join(ROOT, "datos", "inicio.yaml");
@@ -66,6 +67,14 @@ function generar() {
     "<!-- INICIO:GENERADO:FIN -->",
     fragmentoInicio(datos),
     "        "
+  );
+
+  reemplazarEntreMarcadores(
+    INDEX_PATH,
+    "<!-- COMPARTIR:GENERADO:INICIO (no editar a mano — ver scripts/generar-inicio.js y scripts/compartir.js) -->",
+    "<!-- COMPARTIR:GENERADO:FIN -->",
+    metaCompartir({ titulo: datos.nombre, descripcion: datos.biografia[0].es, ruta: "/" }),
+    "    "
   );
 }
 
