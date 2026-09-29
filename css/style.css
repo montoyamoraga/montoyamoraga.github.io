@@ -111,11 +111,6 @@ a:hover {
   padding: 0;
 }
 
-.cv-frequency-item {
-  margin: 0 0 20px 0;
-  padding: 12px 0;
-}
-
 .cv-row {
   line-height: 1.45;
   margin: 0 0 8px 0;
@@ -125,7 +120,6 @@ a:hover {
   align-items: baseline;
   display: flex;
   gap: 8px;
-  margin-bottom: 22px;
 }
 
 .cv-year-row strong {
@@ -150,15 +144,6 @@ a:hover {
   }
 }
 
-#menu-btn {
-  display: block;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 3000;
-  cursor: pointer;
-}
-
 .left {
   background-color: var(--paper);
   position: fixed;
@@ -166,9 +151,8 @@ a:hover {
   left: 0;
   width: 260px;
   height: 100vh;
-  padding: 80px 24px 20px 24px;
+  padding: 40px 24px 40px 24px;
   z-index: 2000;
-  transition: left 0.3s ease-in-out;
   border: none;
   border-right: 1px solid var(--rule);
   box-shadow: none;
@@ -180,64 +164,27 @@ a:hover {
   min-height: 100vh;
   width: calc(100% - 260px);
   margin-left: 260px;
-  padding: 80px 44px 120px 44px;
-  transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
-}
-
-@media (min-width: 801px) {
-  .left.active {
-    left: -260px;
-  }
-
-  .left.active ~ .right {
-    margin-left: 0;
-    width: 100%;
-  }
+  padding: 40px 44px 120px 44px;
 }
 
 .right--flush {
   padding: 0;
 }
 
-.dropdown-trigger {
+.nav-titulo {
   color: var(--ink-dim);
-  text-decoration: none;
   margin: 15px 0 5px 0;
   font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: 0.08em;
-  cursor: pointer;
-  user-select: none;
 }
 
-.dropdown-trigger:hover {
-  color: var(--accent);
-}
-
-.dropdown-trigger::before {
-  content: "▸";
-  display: inline-block;
-  width: 0.8em;
-  margin-right: 2px;
-  text-decoration: none;
-  transition: transform 0.15s ease;
-}
-
-.dropdown-trigger.open::before {
-  transform: rotate(90deg);
-}
-
-.dropdown-content {
-  display: none;
-  padding-left: 20px;
+.nav-contenido {
+  padding-left: 15px;
   margin-bottom: 15px;
 }
 
-.dropdown-content.open {
-  display: block;
-}
-
-.dropdown-content h5 {
+.nav-contenido h5 {
   margin: 10px 0 5px 0;
   font-size: 9pt;
   font-family: var(--font-mono);
@@ -708,20 +655,22 @@ html[lang="es"] .en {
   .proyectos-grid {
     grid-template-columns: 1fr;
   }
-  #menu-btn {
-    display: block;
+  .flex-container {
+    flex-direction: column;
   }
   .right {
     margin-left: 0;
     width: 100%;
-    padding: 80px 20px 120px 20px;
+    padding: 24px 20px 120px 20px;
   }
   .left {
-    width: 80%;
-    left: -85%;
-  }
-  .left.active {
-    left: 0;
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 24px 20px;
+    border-right: none;
+    border-bottom: 1px solid var(--rule);
+    overflow-y: visible;
   }
   .persona-info {
     padding: 0;
@@ -759,7 +708,7 @@ html[lang="es"] .en {
 }
 
 #divLeftMenu a.nav-active,
-#divLeftMenu h3.dropdown-trigger.nav-active {
+#divLeftMenu h3.nav-titulo.nav-active {
   display: inline;
   border: none;
   box-shadow: none;

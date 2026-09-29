@@ -12,8 +12,8 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger" tabindex="0" role="button" aria-expanded="false"><span class="es">enseñanza</span><span class="en">teaching</span></h3>
-        <div class="dropdown-content" style="padding-left:15px;">
+        <h3 class="nav-titulo"><span class="es">enseñanza</span><span class="en">teaching</span></h3>
+        <div class="nav-contenido">
             <!-- ENSEÑANZA:GENERADO:INICIO (no editar a mano — ver scripts/generar-ensenanza.js y datos/ensenanza.yaml) -->
             <h5><span class="es">pregrado - universidad diego portales</span><span class="en">undergraduate - universidad diego portales</span></h5>
             <ol>
@@ -45,8 +45,8 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger" tabindex="0" role="button" aria-expanded="false"><span class="es">investigación</span><span class="en">research</span></h3>
-        <div class="dropdown-content" style="padding-left:15px;">
+        <h3 class="nav-titulo"><span class="es">investigación</span><span class="en">research</span></h3>
+        <div class="nav-contenido">
             <ol>
                 <li><span class="es">sin proyectos publicados</span><span class="en">no published projects</span></li>
             </ol>
@@ -54,8 +54,8 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger" tabindex="0" role="button" aria-expanded="false">performance</h3>
-        <div class="dropdown-content" style="padding-left:15px;">
+        <h3 class="nav-titulo">performance</h3>
+        <div class="nav-contenido">
             <ol>
                 <li><span class="es">sin obras publicadas</span><span class="en">no published works</span></li>
             </ol>
@@ -63,8 +63,8 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger" tabindex="0" role="button" aria-expanded="false">cv</h3>
-        <div class="dropdown-content cv-menu" style="padding-left:15px;">
+        <h3 class="nav-titulo">cv</h3>
+        <div class="nav-contenido cv-menu">
             <ol>
                 <li><a href="/cv/#educacion-universitaria"><span class="es">educación universitaria</span><span class="en">university education</span></a></li>
                 <li><a href="/cv/#breve-resumen-trayectoria-academica"><span class="es">breve resumen de trayectoria académica</span><span class="en">brief summary of academic career</span></a></li>
@@ -81,8 +81,8 @@ let navbar = `
     </div>
 
     <div class="nav-section">
-        <h3 class="dropdown-trigger" tabindex="0" role="button" aria-expanded="false"><span class="es">proyectos</span><span class="en">projects</span></h3>
-        <div class="dropdown-content" style="padding-left:15px;">
+        <h3 class="nav-titulo"><span class="es">proyectos</span><span class="en">projects</span></h3>
+        <div class="nav-contenido">
             <!-- OBRAS:GENERADO:INICIO (no editar a mano — ver scripts/generar-obras.js y datos/obras.yaml) -->
             <h5><span class="es">serie tamiz</span><span class="en">tamiz series</span></h5>
             <ol>
@@ -131,7 +131,7 @@ function markActiveLinks() {
     document.querySelectorAll('#divLeftMenu a.nav-active').forEach(link => {
         link.classList.remove('nav-active');
     });
-    document.querySelectorAll('#divLeftMenu h3.dropdown-trigger.nav-active').forEach(trigger => {
+    document.querySelectorAll('#divLeftMenu h3.nav-titulo.nav-active').forEach(trigger => {
         trigger.classList.remove('nav-active');
     });
 
@@ -149,14 +149,11 @@ function markActiveLinks() {
         }
 
         if (samePage) {
-            const dropdownContent = link.closest('.dropdown-content');
-            if (dropdownContent) {
-                const trigger = dropdownContent.previousElementSibling;
-                if (trigger && trigger.classList.contains('dropdown-trigger')) {
-                    trigger.classList.add('nav-active');
-                    trigger.classList.add('open');
-                    trigger.setAttribute('aria-expanded', 'true');
-                    dropdownContent.classList.add('open');
+            const contenido = link.closest('.nav-contenido');
+            if (contenido) {
+                const titulo = contenido.previousElementSibling;
+                if (titulo && titulo.classList.contains('nav-titulo')) {
+                    titulo.classList.add('nav-active');
                 }
             }
         }
@@ -165,24 +162,6 @@ function markActiveLinks() {
 
 markActiveLinks();
 window.addEventListener('hashchange', markActiveLinks);
-
-document.querySelectorAll('.dropdown-trigger').forEach(trigger => {
-    function toggleDropdown() {
-        const content = trigger.nextElementSibling;
-        if (!content || !content.classList.contains('dropdown-content')) return;
-        const isOpen = trigger.classList.toggle('open');
-        content.classList.toggle('open', isOpen);
-        trigger.setAttribute('aria-expanded', String(isOpen));
-    }
-
-    trigger.addEventListener('click', toggleDropdown);
-    trigger.addEventListener('keydown', event => {
-        if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault();
-            toggleDropdown();
-        }
-    });
-});
 
 window.addEventListener('scroll', function() {
     const footer = document.querySelector('.colophon-banner');

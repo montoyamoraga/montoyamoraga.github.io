@@ -40,12 +40,6 @@ function paginaEnlaces(datos) {
   </head>
   <body>
     <!-- generado por scripts/generar-enlaces.js desde datos/enlaces.yaml, no editar a mano -->
-    <button
-      id="menu-btn"
-      class="boton-piruetas"
-      onclick="document.getElementById('divLeftMenu').classList.toggle('active')"
-    ><span class="es">menú</span><span class="en">menu</span></button>
-
     <div class="flex-container">
       <nav id="divLeftMenu" class="left"></nav>
 

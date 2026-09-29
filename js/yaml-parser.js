@@ -55,11 +55,14 @@ function renderValue(value, container, language, label) {
   }
 
   if (Array.isArray(value)) {
+    if (label === 'frecuencia') {
+      renderFrequency(value, container, language);
+      return;
+    }
+
     value.forEach((item) => {
       const itemContainer = document.createElement('article');
-      itemContainer.className = label === 'frecuencia'
-        ? 'cv-frequency-item'
-        : 'cv-item';
+      itemContainer.className = 'cv-item';
       renderValue(item, itemContainer, language);
       if (itemContainer.hasChildNodes()) container.appendChild(itemContainer);
     });
@@ -119,6 +122,32 @@ function renderValue(value, container, language, label) {
   container.appendChild(row);
 }
 
+
+// cada período de frecuencia en una sola línea: "2025 – 2026 · cantidad: 1"
+function renderFrequency(periodos, container, language) {
+  const heading = document.createElement('h4');
+  heading.textContent = formatLabel('frecuencia', language);
+  container.appendChild(heading);
+
+  periodos.forEach((periodo) => {
+    const desde = periodo['anho-desde'];
+    const hasta = periodo['anho-hasta'];
+    const anhos = hasta && hasta !== desde ? `${desde} – ${hasta}` : String(desde);
+
+    const row = document.createElement('p');
+    row.className = 'cv-row cv-frequency-row';
+    row.appendChild(document.createTextNode(anhos));
+
+    if (periodo.cantidad !== undefined) {
+      const name = document.createElement('strong');
+      name.textContent = ` · ${formatLabel('cantidad', language)}: `;
+      row.appendChild(name);
+      row.appendChild(document.createTextNode(String(periodo.cantidad)));
+    }
+
+    container.appendChild(row);
+  });
+}
 
 function isLocalizedValue(value) {
   return typeof value === 'object' && value !== null &&
