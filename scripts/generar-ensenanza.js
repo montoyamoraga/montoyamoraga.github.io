@@ -40,6 +40,20 @@ function resolverImagen(slug, archivo) {
   return /^https?:\/\//.test(archivo) ? archivo : `images/${archivo}`;
 }
 
+function columnaImagenes(imagenesHtml) {
+  if (!imagenesHtml) return "";
+
+  return `          <div class="split-left">
+            <button class="img-nav-btn prev" onclick="moveImg(-1)">&#10094;</button>
+            <button class="img-nav-btn next" onclick="moveImg(1)">&#10095;</button>
+            <div class="img-track" id="img-track">
+${imagenesHtml}
+            </div>
+          </div>
+
+`;
+}
+
 function paginaCurso(curso) {
   const imagenesHtml = curso.imagenes
     .map((archivo, i) => `              <img src="${escaparHTML(resolverImagen(curso.slug, archivo))}" alt="trabajo ${i}" />`)
@@ -63,6 +77,9 @@ function paginaCurso(curso) {
     .map((persona) => `${escaparHTML(persona.nombre)}: ${dualSpan(persona.rol)}`)
     .join("<br />\n              ");
 
+  // sin imágenes no hay columna izquierda, así que el texto ocupa todo el ancho
+  const estiloTexto = curso.imagenes.length ? "" : ' style="flex: 1;"';
+
   return `<!doctype html>
 <html lang="es">
   <head>
@@ -80,15 +97,7 @@ function paginaCurso(curso) {
       <div class="right right--flush">
         <div class="split-layout">
 
-          <div class="split-left">
-            <button class="img-nav-btn prev" onclick="moveImg(-1)">&#10094;</button>
-            <button class="img-nav-btn next" onclick="moveImg(1)">&#10095;</button>
-            <div class="img-track" id="img-track">
-${imagenesHtml}
-            </div>
-          </div>
-
-          <div class="split-right">
+${columnaImagenes(imagenesHtml)}          <div class="split-right"${estiloTexto}>
             <h1 class="cajita">${dualSpan(curso.titulo)}</h1>
 
             <h2 class="cajita">${rotulo("institucion")}</h2>
