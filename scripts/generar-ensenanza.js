@@ -40,25 +40,22 @@ function resolverImagen(slug, archivo) {
   return /^https?:\/\//.test(archivo) ? archivo : `images/${archivo}`;
 }
 
-function columnaImagenes(imagenesHtml) {
-  if (!imagenesHtml) return "";
-
-  return `          <div class="split-left">
-            <button class="img-nav-btn prev" onclick="moveImg(-1)">&#10094;</button>
-            <button class="img-nav-btn next" onclick="moveImg(1)">&#10095;</button>
-            <div class="img-track" id="img-track">
-${imagenesHtml}
+// cada imagen va en su propia fila de ancho completo, después de la info del curso
+function filasImagenes(curso) {
+  return curso.imagenes
+    .map(
+      (archivo, i) => `
+          <section class="curso-fila curso-fila-imagen">
+            <div class="curso-fila-interior">
+              <img src="${escaparHTML(resolverImagen(curso.slug, archivo))}" alt="trabajo ${i}" loading="lazy" decoding="async" />
             </div>
-          </div>
-
-`;
+          </section>
+`
+    )
+    .join("");
 }
 
 function paginaCurso(curso) {
-  const imagenesHtml = curso.imagenes
-    .map((archivo, i) => `              <img src="${escaparHTML(resolverImagen(curso.slug, archivo))}" alt="trabajo ${i}" />`)
-    .join("\n");
-
   const institucionHtml = curso.institucion
     .map((linea) => dualSpan(linea))
     .join("<br />\n              ");
@@ -77,9 +74,6 @@ function paginaCurso(curso) {
     .map((persona) => `${escaparHTML(persona.nombre)}: ${dualSpan(persona.rol)}`)
     .join("<br />\n              ");
 
-  // sin imágenes no hay columna izquierda, así que el texto ocupa todo el ancho
-  const estiloTexto = curso.imagenes.length ? "" : ' style="flex: 1;"';
-
   return `<!doctype html>
 <html lang="es">
   <head>
@@ -95,33 +89,33 @@ function paginaCurso(curso) {
       <div class="left" id="divLeftMenu"></div>
 
       <div class="right right--flush">
-        <div class="split-layout">
+        <div class="curso-filas">
+          <section class="curso-fila curso-fila-texto">
+            <div class="curso-fila-interior">
+              <h1 class="cajita">${dualSpan(curso.titulo)}</h1>
 
-${columnaImagenes(imagenesHtml)}          <div class="split-right"${estiloTexto}>
-            <h1 class="cajita">${dualSpan(curso.titulo)}</h1>
+              <h2 class="cajita">${rotulo("institucion")}</h2>
+              <p>
+                ${institucionHtml}
+              </p>
 
-            <h2 class="cajita">${rotulo("institucion")}</h2>
-            <p>
-              ${institucionHtml}
-            </p>
+              <h2 class="cajita">${rotulo("fechas")}</h2>
+              <p>
+                ${fechasHtml}
+              </p>
 
-            <h2 class="cajita">${rotulo("fechas")}</h2>
-            <p>
-              ${fechasHtml}
-            </p>
+              <h2 class="cajita">${rotulo("descripcion")}</h2>
+              <p>
+                ${descripcionHtml}
+              </p>
 
-            <h2 class="cajita">${rotulo("descripcion")}</h2>
-            <p>
-              ${descripcionHtml}
-            </p>
-
-            <h2 class="cajita">${rotulo("equipo")}</h2>
-            <p class="credito-docente">
-              ${equipoHtml}
-            </p>
-          </div>
-
-        </div>
+              <h2 class="cajita">${rotulo("equipo")}</h2>
+              <p class="credito-docente">
+                ${equipoHtml}
+              </p>
+            </div>
+          </section>
+${filasImagenes(curso)}        </div>
       </div>
     </div>
 
@@ -129,14 +123,6 @@ ${columnaImagenes(imagenesHtml)}          <div class="split-right"${estiloTexto}
 
     <script src="../../js/nav.js"></script>
     <script src="../../js/script.js"></script>
-    <script>
-      function moveImg(direction) {
-        const track = document.getElementById('img-track');
-        if (track) {
-          track.scrollBy({ left: direction * track.clientWidth, behavior: 'smooth' });
-        }
-      }
-    </script>
   </body>
 </html>
 `;

@@ -13,48 +13,56 @@
       <div class="left" id="divLeftMenu"></div>
 
       <div class="right right--flush">
-        <div class="split-layout">
+        <div class="curso-filas">
+          <section class="curso-fila curso-fila-texto">
+            <div class="curso-fila-interior">
+              <h1 class="cajita"><span class="es">aud5i022 - diseño de interfaces electrónicas</span><span class="en">aud5i022 - design of electronic interfaces</span></h1>
 
-          <div class="split-left">
-            <button class="img-nav-btn prev" onclick="moveImg(-1)">&#10094;</button>
-            <button class="img-nav-btn next" onclick="moveImg(1)">&#10095;</button>
-            <div class="img-track" id="img-track">
-              <img src="images/aud5i022-francisco-cabrera-vanesa-angulo.jpg" alt="trabajo 0" />
-              <img src="images/aud5i022-pilar-vergara-valentina-fuentes-silvana-olivares.jpg" alt="trabajo 1" />
-              <img src="images/aud5i022-sofia-chavez-maria-diaz.jpg" alt="trabajo 2" />
-            </div>
-          </div>
-
-          <div class="split-right">
-            <h1 class="cajita"><span class="es">aud5i022 - diseño de interfaces electrónicas</span><span class="en">aud5i022 - design of electronic interfaces</span></h1>
-
-            <h2 class="cajita"><span class="es">institución</span><span class="en">institution</span></h2>
-            <p>
-              <span class="es">universidad de chile</span><span class="en">universidad de chile</span><br />
+              <h2 class="cajita"><span class="es">institución</span><span class="en">institution</span></h2>
+              <p>
+                <span class="es">universidad de chile</span><span class="en">universidad de chile</span><br />
               <span class="es">facultad de arquitectura y urbanismo</span><span class="en">faculty of architecture and urbanism</span><br />
               <span class="es">escuela de diseño</span><span class="en">design school</span>
-            </p>
+              </p>
 
-            <h2 class="cajita"><span class="es">fechas</span><span class="en">dates</span></h2>
-            <p>
-              <a href="https://github.com/FAU-UChile/aud5i022-2022-1" class="enlace-curso"><span class="es">primer semestre 2022 (marzo - julio)</span><span class="en">first semester 2022 (march - july)</span></a><br />
+              <h2 class="cajita"><span class="es">fechas</span><span class="en">dates</span></h2>
+              <p>
+                <a href="https://github.com/FAU-UChile/aud5i022-2022-1" class="enlace-curso"><span class="es">primer semestre 2022 (marzo - julio)</span><span class="en">first semester 2022 (march - july)</span></a><br />
               <a href="https://github.com/FAU-UChile/aud5i022-2023-1" class="enlace-curso"><span class="es">primer semestre 2023 (marzo - julio)</span><span class="en">first semester 2023 (march - july)</span></a>
-            </p>
+              </p>
 
-            <h2 class="cajita"><span class="es">descripción del curso</span><span class="en">course description</span></h2>
-            <p>
-              <span class="es">curso electivo de diseño, donde estudiamos los fundamentos de electrónica y computación física, incluyendo el estudio de código aplicado a microcontroladores.</span><span class="en">elective course of design, where we study the foundations of electronics and physical computing applied, including programming applied to microcontrollers.</span><br /><br />
+              <h2 class="cajita"><span class="es">descripción del curso</span><span class="en">course description</span></h2>
+              <p>
+                <span class="es">curso electivo de diseño, donde estudiamos los fundamentos de electrónica y computación física, incluyendo el estudio de código aplicado a microcontroladores.</span><span class="en">elective course of design, where we study the foundations of electronics and physical computing applied, including programming applied to microcontrollers.</span><br /><br />
               <span class="es">aprenderemos a usar sensores y actuadores, incluyendo potenciómetros, zumbadores, pulsadores, y su conexión a placas Arduino, además de protocolos como serial, MIDI y OSC.</span><span class="en">we will learn how to use and connect sensors and actuators, including potentiometers, buzzers, pushbuttons, and their conection to Arduino boards, and the serial, MIDI, and OSC protocols.</span><br /><br />
               <span class="es">el trabajo se hace de forma pública y compartida, con les estudiantes compartiendo sus apuntes y realizando trabajos grupales de investigación aplicada.</span><span class="en">all the work will be done in public, collaboratively, with the students sharing their notes and doing group projects of applied research.</span>
-            </p>
+              </p>
 
-            <h2 class="cajita"><span class="es">equipo docente</span><span class="en">teaching team</span></h2>
-            <p class="credito-docente">
-              aarón montoya-moraga: <span class="es">profesore, creadora del curso</span><span class="en">professor, creator of the course</span><br />
+              <h2 class="cajita"><span class="es">equipo docente</span><span class="en">teaching team</span></h2>
+              <p class="credito-docente">
+                aarón montoya-moraga: <span class="es">profesore, creadora del curso</span><span class="en">professor, creator of the course</span><br />
               ignacio passalacqua: <span class="es">ayudante (2023)</span><span class="en">ayudante (2023)</span>
-            </p>
-          </div>
+              </p>
+            </div>
+          </section>
 
+          <section class="curso-fila curso-fila-imagen">
+            <div class="curso-fila-interior">
+              <img src="images/aud5i022-francisco-cabrera-vanesa-angulo.jpg" alt="trabajo 0" loading="lazy" decoding="async" />
+            </div>
+          </section>
+
+          <section class="curso-fila curso-fila-imagen">
+            <div class="curso-fila-interior">
+              <img src="images/aud5i022-pilar-vergara-valentina-fuentes-silvana-olivares.jpg" alt="trabajo 1" loading="lazy" decoding="async" />
+            </div>
+          </section>
+
+          <section class="curso-fila curso-fila-imagen">
+            <div class="curso-fila-interior">
+              <img src="images/aud5i022-sofia-chavez-maria-diaz.jpg" alt="trabajo 2" loading="lazy" decoding="async" />
+            </div>
+          </section>
         </div>
       </div>
     </div>
@@ -63,13 +71,5 @@
 
     <script src="../../js/nav.js"></script>
     <script src="../../js/script.js"></script>
-    <script>
-      function moveImg(direction) {
-        const track = document.getElementById('img-track');
-        if (track) {
-          track.scrollBy({ left: direction * track.clientWidth, behavior: 'smooth' });
-        }
-      }
-    </script>
   </body>
 </html>
