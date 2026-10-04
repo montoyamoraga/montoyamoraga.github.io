@@ -8,6 +8,8 @@ const YAML_PATH = path.join(ROOT, "datos", "investigacion.yaml");
 const INVESTIGACION_DIR = path.join(ROOT, "investigacion");
 
 const EXTENSIONES_VIDEO = /\.(mp4|webm|mov)$/i;
+// vimeo.com/<id>, vimeo.com/<id>/<hash> (videos no listados) o player.vimeo.com/video/<id>
+const URL_VIMEO = /^https?:\/\/(?:www\.|player\.)?vimeo\.com\/(?:video\/)?(\d+)(?:\/([0-9a-f]+))?/i;
 
 const PROXIMAMENTE = { es: "próximamente.", en: "coming soon." };
 const SIN_PROYECTOS = { es: "sin proyectos publicados", en: "no published projects" };
@@ -40,8 +42,15 @@ function textoPlano(valor) {
   return esBilingue(valor) ? valor.es : valor;
 }
 
+function vimeoHtml(id, hash, titulo) {
+  const src = `https://player.vimeo.com/video/${id}${hash ? `?h=${hash}` : ""}`;
+  return `<iframe src="${escaparHTML(src)}" title="${escaparHTML(titulo)}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
+}
+
 function medioHtml(archivo, alt) {
   const src = escaparHTML(archivo);
+  const vimeo = String(archivo).match(URL_VIMEO);
+  if (vimeo) return vimeoHtml(vimeo[1], vimeo[2], alt);
   return EXTENSIONES_VIDEO.test(archivo)
     ? `<video controls playsinline preload="metadata" src="${src}"></video>`
     : `<img src="${src}" alt="${escaparHTML(alt)}" loading="lazy" decoding="async" />`;

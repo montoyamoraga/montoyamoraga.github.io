@@ -19,7 +19,9 @@
 #   enlaces:     lista de { url, texto } (opcional). texto es string o
 #                { es, en }; si no está se muestra la url
 #   medios:      lista de archivos (opcional). los .mp4/.webm/.mov se
-#                muestran como video, el resto como imagen. se aceptan
+#                muestran como video, los enlaces de vimeo
+#                (https://vimeo.com/<id>) como video de vimeo incrustado,
+#                y el resto como imagen. se aceptan
 #                rutas absolutas del sitio o URLs del repositorio
 #                montoyamoraga-web-media
 #   prevista:    opcional, imagen que se muestra al compartir el enlace:
@@ -98,6 +100,8 @@
       grado:
         es: magíster en estudios profesionales
         en: master of professional studies
+      medios:
+        - https://vimeo.com/216762164
 
     - slug: simulador-pulmon
       titulo: simulador-pulmón
