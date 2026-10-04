@@ -52,6 +52,13 @@
       descripcion:
         - es: cuenta regresiva hasta mi fecha de muerte esperada
           en: countdown to my expected death date
+      medios:
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2017-its-ok-to-die-v0/webp/00-front.webp
+          alt: { es: its-ok-to-die v0 de frente, en: its-ok-to-die v0 from the front }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2017-its-ok-to-die-v0/webp/01-side.webp
+          alt: { es: its-ok-to-die v0 de lado, en: its-ok-to-die v0 from the side }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2017-its-ok-to-die-v0/webp/02-back.webp
+          alt: { es: its-ok-to-die v0 por detrás, en: its-ok-to-die v0 from the back }
       # plantilla: descomentar y completar los campos que correspondan
       # ficha:
       #   - rotulo: { es: materiales, en: materials }
@@ -105,3 +112,9 @@
 
 - slug: caleidoscopar
   titulo: caleidoscopar
+  obras:
+    - slug: rube-telephone
+      titulo: rube telephone
+      enlaces:
+        - texto: { es: video en vimeo, en: video on vimeo }
+          url: https://vimeo.com/159317270

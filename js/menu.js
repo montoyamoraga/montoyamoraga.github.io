@@ -34,7 +34,7 @@ const navbar = `
 
             <h5>caleidoscopar</h5>
             <ol>
-                <li><span class="es">sin obras publicadas</span><span class="en">no published works</span></li>
+                <li><a href="/proyectos/caleidoscopar/rube-telephone/">rube telephone</a></li>
             </ol>
         </div>
     </div>
