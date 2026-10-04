@@ -80,7 +80,7 @@ const navbar = `
                 <li><a href="/investigacion/popusintesintesis/">2026 - popusintesíntesis</a></li>
                 <li><a href="/investigacion/tiny-trainable-instruments/">2021 - tiny trainable instruments</a></li>
                 <li><a href="/investigacion/its-ok/">2017 - its-ok</a></li>
-                <li><a href="/investigacion/simulador-de-pulmon/">2013 - <span class="es">simulador de pulmón</span><span class="en">lung simulator</span></a></li>
+                <li><a href="/investigacion/simulador-pulmon/">2013 - simulador-pulmón</a></li>
             </ol>
         </div>
     </div>

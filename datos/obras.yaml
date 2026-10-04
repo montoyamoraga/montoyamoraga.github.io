@@ -143,8 +143,11 @@
       ficha:
         - rotulo: { es: materiales, en: materials }
           valor: videogrep, vosk, youtube
+      enlaces:
+        - texto: vimeo
+          url: https://vimeo.com/1232783894
       medios:
-        - https://vimeo.com/1232783894
+        - https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2025-mil-rpm/mp4/00.mp4
         - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2025-mil-rpm/webp/00.webp
           alt: { es: "salvador allende sentado, con la mano en el mentón", en: "salvador allende seated, hand on his chin" }
         - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2025-mil-rpm/webp/01.webp

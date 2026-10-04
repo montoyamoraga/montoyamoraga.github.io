@@ -99,10 +99,8 @@
         es: magíster en estudios profesionales
         en: master of professional studies
 
-    - slug: simulador-de-pulmon
-      titulo:
-        es: simulador de pulmón
-        en: lung simulator
+    - slug: simulador-pulmon
+      titulo: simulador-pulmón
       anho: 2013
       institucion:
         - pontificia universidad católica de chile
