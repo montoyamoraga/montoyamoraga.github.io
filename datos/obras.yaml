@@ -118,8 +118,8 @@
       titulo: bajos de mena
       medios:
         - /assets/bajos-de-mena.mp4
-    - slug: alturas-de-macchu-picchu
-      titulo: alturas de macchu picchu
+    - slug: alturas-de-alturas-de-macchu-picchu
+      titulo: alturas de alturas de macchu picchu
       medios:
         - /assets/alturas-machu-picchu.mp4
     - slug: menatron
