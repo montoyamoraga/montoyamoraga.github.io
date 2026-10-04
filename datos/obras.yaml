@@ -87,12 +87,16 @@
       #     credito: ...
     - slug: its-ok-to-die-v1
       titulo: its-ok-to-die v1
+      anho: 2021
       descripcion:
         - es: cuenta regresiva hasta mi fecha de muerte esperada
           en: countdown to my expected death date
       enlaces:
         - texto: { es: versión web, en: web version }
           url: https://montoyamoraga.io/its-ok/its-ok-to-die/web/
+      medios:
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2021-its-ok-to-die-v1/webp/00-web.webp
+          alt: { es: captura de pantalla de la versión web de its-ok-to-die v1, en: screenshot of the web version of its-ok-to-die v1 }
     - slug: cuantosdiasquedan.cl
       titulo: cuantosdiasquedan.cl
 
