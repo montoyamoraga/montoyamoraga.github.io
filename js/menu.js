@@ -30,11 +30,13 @@ const navbar = `
                 <li><a href="/proyectos/tamizar/bajos-de-mena/">bajos de mena</a></li>
                 <li><a href="/proyectos/tamizar/alturas-de-alturas-de-macchu-picchu/">alturas de alturas de macchu picchu</a></li>
                 <li><a href="/proyectos/tamizar/menatron/">menatron</a></li>
+                <li><a href="/proyectos/tamizar/callese-hombre/">cállese hombre</a></li>
             </ol>
 
             <h5>caleidoscopar</h5>
             <ol>
                 <li><a href="/proyectos/caleidoscopar/rube-telephone/">rube telephone</a></li>
+                <li><a href="/proyectos/caleidoscopar/mil-rpm/">mil rpm</a></li>
             </ol>
         </div>
     </div>

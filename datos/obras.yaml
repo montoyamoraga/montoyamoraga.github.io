@@ -124,6 +124,9 @@
         - /assets/alturas-machu-picchu.mp4
     - slug: menatron
       titulo: menatron
+    - slug: callese-hombre
+      titulo: cállese hombre
+      anho: 2026
 
 - slug: caleidoscopar
   titulo: caleidoscopar
@@ -132,3 +135,21 @@
       titulo: rube telephone
       medios:
         - https://vimeo.com/159317270
+    - slug: mil-rpm
+      titulo: mil rpm
+      anho: 2025
+      descripcion:
+        - "mil revoluciones por minuto (2025) está compuesto de extractos de discursos del presidente Salvador Allende, donde dice la palabra revolución y similares, condensado a mil repeticiones en un minuto."
+      ficha:
+        - rotulo: { es: materiales, en: materials }
+          valor: videogrep, vosk, youtube
+      medios:
+        - https://vimeo.com/1232783894
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2025-mil-rpm/webp/00.webp
+          alt: { es: "salvador allende sentado, con la mano en el mentón", en: "salvador allende seated, hand on his chin" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2025-mil-rpm/webp/01.webp
+          alt: { es: salvador allende hablando en un podio con micrófonos, en: salvador allende speaking at a podium with microphones }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2025-mil-rpm/webp/02.webp
+          alt: { es: salvador allende gesticulando en un podio, en: salvador allende gesturing at a podium }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2025-mil-rpm/webp/03.webp
+          alt: { es: multitud en blanco y negro, en: crowd in black and white }
