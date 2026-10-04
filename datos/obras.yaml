@@ -46,13 +46,13 @@
 - slug: enumerar
   titulo: enumerar
   obras:
-    - slug: its-ok-to-die
-      titulo: its-ok-to-die
+    - slug: its-ok-to-die-v0
+      titulo: its-ok-to-die v0
+      anho: 2017
+      descripcion:
+        - es: cuenta regresiva hasta mi fecha de muerte esperada
+          en: countdown to my expected death date
       # plantilla: descomentar y completar los campos que correspondan
-      # anho: 2026
-      # descripcion:
-      #   - es: ...
-      #     en: ...
       # ficha:
       #   - rotulo: { es: materiales, en: materials }
       #     valor: { es: ..., en: ... }
@@ -78,6 +78,14 @@
       #     alt: { es: ..., en: ... }
       #     pie: { es: ..., en: ... }
       #     credito: ...
+    - slug: its-ok-to-die-v1
+      titulo: its-ok-to-die v1
+      descripcion:
+        - es: cuenta regresiva hasta mi fecha de muerte esperada
+          en: countdown to my expected death date
+      enlaces:
+        - texto: { es: versión web, en: web version }
+          url: https://montoyamoraga.io/its-ok/its-ok-to-die/web/
     - slug: cuantosdiasquedan.cl
       titulo: cuantosdiasquedan.cl
 

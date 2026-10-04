@@ -20,7 +20,8 @@ const navbar = `
         <div class="nav-contenido">
             <h5>enumerar</h5>
             <ol>
-                <li><a href="/proyectos/enumerar/its-ok-to-die/">its-ok-to-die</a></li>
+                <li><a href="/proyectos/enumerar/its-ok-to-die-v0/">its-ok-to-die v0</a></li>
+                <li><a href="/proyectos/enumerar/its-ok-to-die-v1/">its-ok-to-die v1</a></li>
                 <li><a href="/proyectos/enumerar/cuantosdiasquedan.cl/">cuantosdiasquedan.cl</a></li>
             </ol>
 
