@@ -43,28 +43,11 @@
 # para agregar una obra nueva: agregar una entrada acá y hacer push a main.
 # el GitHub Action regenera las páginas y el menú automáticamente.
 
-- slug: tamizar
-  titulo: tamizar
-  obras:
-    - slug: bajos-de-mena
-      titulo: bajos de mena
-      medios:
-        - /assets/bajos-de-mena.mp4
-    - slug: alturas-de-macchu-picchu
-      titulo: alturas de macchu picchu
-      medios:
-        - /assets/alturas-machu-picchu.mp4
-    - slug: menatron
-      titulo: menatron
-
-- slug: caleidoscopar
-  titulo: caleidoscopar
-
 - slug: enumerar
   titulo: enumerar
   obras:
     - slug: its-ok-to-die
-      titulo: it's ok to die
+      titulo: its-ok-to-die
       # plantilla: descomentar y completar los campos que correspondan
       # anho: 2026
       # descripcion:
@@ -95,3 +78,20 @@
       #     alt: { es: ..., en: ... }
       #     pie: { es: ..., en: ... }
       #     credito: ...
+
+- slug: tamizar
+  titulo: tamizar
+  obras:
+    - slug: bajos-de-mena
+      titulo: bajos de mena
+      medios:
+        - /assets/bajos-de-mena.mp4
+    - slug: alturas-de-macchu-picchu
+      titulo: alturas de macchu picchu
+      medios:
+        - /assets/alturas-machu-picchu.mp4
+    - slug: menatron
+      titulo: menatron
+
+- slug: caleidoscopar
+  titulo: caleidoscopar

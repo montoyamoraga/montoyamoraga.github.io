@@ -18,6 +18,11 @@ const navbar = `
     <div class="nav-section">
         <h3 class="nav-titulo"><span class="es">proyectos</span><span class="en">projects</span></h3>
         <div class="nav-contenido">
+            <h5>enumerar</h5>
+            <ol>
+                <li><a href="/proyectos/enumerar/its-ok-to-die/">its-ok-to-die</a></li>
+            </ol>
+
             <h5>tamizar</h5>
             <ol>
                 <li><a href="/proyectos/tamizar/bajos-de-mena/">bajos de mena</a></li>
@@ -28,11 +33,6 @@ const navbar = `
             <h5>caleidoscopar</h5>
             <ol>
                 <li><span class="es">sin obras publicadas</span><span class="en">no published works</span></li>
-            </ol>
-
-            <h5>enumerar</h5>
-            <ol>
-                <li><a href="/proyectos/enumerar/its-ok-to-die/">it's ok to die</a></li>
             </ol>
         </div>
     </div>
