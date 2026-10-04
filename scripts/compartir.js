@@ -3,13 +3,25 @@
 //
 // las imágenes de prevista (previstas) viven en la carpeta previstas/
 // del repositorio montoyamoraga-web-media. miden 1200×630 y pesan menos de
-// 300 KB, porque whatsapp no muestra imágenes más pesadas. las páginas sin
-// prevista propia usan previstas/sitio.jpg.
+// 300 KB, porque whatsapp no muestra imágenes más pesadas.
+//
+// cada página usa, en orden: la prevista indicada en su YAML, la generada
+// desde su primera imagen por scripts/generar-previstas.js (anotada en
+// datos/previstas.json), o previstas/favicon.jpg.
+
+const fs = require("fs");
+const path = require("path");
 
 const SITIO = "https://montoyamoraga.io";
 const PREVISTAS =
   "https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/previstas/";
-const PREVISTA_POR_DEFECTO = "sitio.jpg";
+const PREVISTA_POR_DEFECTO = "favicon.jpg";
+const MANIFIESTO_PATH = path.join(__dirname, "..", "datos", "previstas.json");
+
+// ruta de la página → nombre de archivo en previstas/
+const previstasGeneradas = fs.existsSync(MANIFIESTO_PATH)
+  ? JSON.parse(fs.readFileSync(MANIFIESTO_PATH, "utf8"))
+  : {};
 
 function escaparAtributo(valor) {
   return String(valor ?? "")
@@ -30,8 +42,8 @@ function resumir(texto, largo = 200) {
 }
 
 // acepta un nombre de archivo dentro de previstas/ o una URL completa
-function urlPrevista(prevista) {
-  const valor = prevista || PREVISTA_POR_DEFECTO;
+function urlPrevista(prevista, ruta) {
+  const valor = prevista || previstasGeneradas[ruta] || PREVISTA_POR_DEFECTO;
   return /^https?:\/\//.test(valor) ? valor : PREVISTAS + valor;
 }
 
@@ -39,7 +51,7 @@ function urlPrevista(prevista) {
 // prevista: opcional, ver urlPrevista
 function metaCompartir({ titulo, descripcion, ruta, prevista }) {
   const url = SITIO + ruta;
-  const imagen = urlPrevista(prevista);
+  const imagen = urlPrevista(prevista, ruta);
   const resumen = resumir(descripcion);
 
   return [
