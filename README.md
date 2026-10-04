@@ -6,7 +6,7 @@ página web creada por @montoyamoraga y desde 2026 mantenida por @janisepulveda.
 
 ## cómo se genera el sitio
 
-cada push a `main` que cambie un archivo `datos/*.yaml` o `scripts/*.js` corre el GitHub Action `.github/workflows/generar-sitio.yml`. este corre `node scripts/generar-sitio.js`, que ejecuta todos los generadores (`generar-inicio.js`, `generar-enlaces.js`, `generar-ensenanza.js`, `generar-obras.js`) y commitea los cambios automáticamente. el HTML entre marcadores `GENERADO:INICIO` / `GENERADO:FIN` no se edita a mano: se edita el YAML o la plantilla del script. para agregar una sección nueva generada, crear su script con una función `generar()` exportada y sumarlo a `scripts/generar-sitio.js`.
+cada push a `main` que cambie un archivo `datos/*.yaml` o `scripts/*.js` corre el GitHub Action `.github/workflows/generar-sitio.yml`. este corre `node scripts/generar-sitio.js`, que ejecuta todos los generadores (`generar-inicio.js`, `generar-enlaces.js`, `generar-ensenanza.js`, `generar-obras.js`, `generar-investigacion.js`, `generar-menu.js`) y commitea los cambios automáticamente. el HTML entre marcadores `GENERADO:INICIO` / `GENERADO:FIN` no se edita a mano: se edita el YAML o la plantilla del script. para agregar una sección nueva generada, crear su script con una función `generar()` exportada y sumarlo a `scripts/generar-sitio.js`.
 
 ### hook de pre-commit (recomendado)
 
@@ -32,7 +32,7 @@ la página `enlaces/index.html` se genera completa a partir de `datos/enlaces.ya
 
 ## cómo agregar un curso de enseñanza
 
-las páginas de `ensenanza/` y el menú de enseñanza en `js/nav.js` se generan automáticamente a partir de `datos/ensenanza.yaml`. para agregar o editar un curso:
+las páginas de `ensenanza/` y el menú de enseñanza en `js/menu.js` se generan automáticamente a partir de `datos/ensenanza.yaml`. para agregar o editar un curso:
 
 1. editar `datos/ensenanza.yaml` (el schema está documentado en un comentario al inicio del archivo).
 2. opcionalmente subir las fotos del curso al repositorio [montoyamoraga-web-media](https://github.com/montoyamoraga/montoyamoraga-web-media), en `ensenanza-<slug>/jpg/`, y listar sus nombres de archivo en `imagenes`.
@@ -42,13 +42,34 @@ el GitHub Action `.github/workflows/generar-sitio.yml` corre `node scripts/gener
 
 ## cómo agregar una obra
 
-las páginas de obras en `proyectos/<serie>/<obra>/`, la lista de series en `proyectos/index.html` y el menú de proyectos en `js/nav.js` se generan automáticamente a partir de `datos/obras.yaml`. para agregar o editar una obra:
+las páginas de obras en `proyectos/<serie>/<obra>/`, la lista de series en `proyectos/index.html` y el menú de proyectos en `js/menu.js` se generan automáticamente a partir de `datos/obras.yaml`. para agregar o editar una obra:
 
 1. editar `datos/obras.yaml` (el schema está documentado en un comentario al inicio del archivo).
 2. subir las fotos al repositorio [montoyamoraga-web-media](https://github.com/montoyamoraga/montoyamoraga-web-media) y enlazarlas desde `medios`, o usar archivos de `assets/`.
 3. hacer push a `main`.
 
 el GitHub Action `.github/workflows/generar-sitio.yml` corre `node scripts/generar-sitio.js`, que regenera esas páginas y commitea los cambios automáticamente. también se puede correr el script a mano en local para previsualizar el resultado antes de hacer push.
+
+## cómo agregar un proyecto de investigación
+
+las páginas de `investigacion/<slug>/` y el menú de investigación en `js/menu.js` se generan automáticamente a partir de `datos/investigacion.yaml`. para agregar o editar un proyecto (por ejemplo una tesis):
+
+1. editar `datos/investigacion.yaml` (el schema está documentado en un comentario al inicio del archivo).
+2. opcionalmente subir las fotos al repositorio [montoyamoraga-web-media](https://github.com/montoyamoraga/montoyamoraga-web-media) y enlazarlas desde `medios`.
+3. hacer push a `main`.
+
+un proyecto sin descripción ni medios se muestra como "próximamente".
+
+## cómo editar el menú
+
+el menú lateral se genera completo en `js/menu.js` a partir de `datos/menu.yaml`, que define el orden de las secciones y si cada una es un enlace directo (cv, enlaces, contacto), una sección vacía (performance) o una sección cuyo contenido sale de otro YAML (proyectos, enseñanza, investigación). `js/menu.js` no se edita a mano.
+
+el comportamiento del menú (abrir y cerrar, marcar el enlace activo, el pie de página) vive en `js/nav.js`, que sí se edita a mano. toda página nueva debe cargar `js/menu.js` antes de `js/nav.js`:
+
+```html
+<script src="/js/menu.js"></script>
+<script src="/js/nav.js"></script>
+```
 
 ## bibliografía
 

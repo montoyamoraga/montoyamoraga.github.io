@@ -1,6 +1,6 @@
 # datos de las obras, usados por scripts/generar-obras.js para generar
 # proyectos/<serie>/<obra>/index.html, la lista de series en
-# proyectos/index.html y el menú de proyectos en js/nav.js.
+# proyectos/index.html y el menú de proyectos en js/menu.js.
 #
 # el orden de las listas define el orden en la página y en el menú.
 #
@@ -51,3 +51,6 @@
 
 - slug: enumerar
   titulo: enumerar
+  obras:
+    - slug: its-ok-to-die
+      titulo: it's ok to die

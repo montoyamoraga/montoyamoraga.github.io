@@ -1,0 +1,111 @@
+# datos de los proyectos de investigación, usados por
+# scripts/generar-investigacion.js para generar investigacion/<slug>/index.html
+# y el menú de investigación en js/menu.js.
+#
+# el orden de las listas define el orden en el menú.
+#
+# schema por grupo:
+#   titulo:     string, o { es, en } si se traduce — subtítulo en el menú
+#   proyectos:  lista de proyectos
+#
+# schema por proyecto:
+#   slug:        string, nombre de la carpeta en investigacion/<slug>/
+#                (único entre todos los grupos)
+#   titulo:      string, o { es, en } si se traduce
+#   anho:        número
+#   institucion: lista de string o { es, en } (una línea por ítem, opcional)
+#   grado:       string o { es, en } (opcional)
+#   descripcion: lista de { es, en } (un párrafo por ítem, opcional)
+#   enlaces:     lista de { url, texto } (opcional). texto es string o
+#                { es, en }; si no está se muestra la url
+#   medios:      lista de archivos (opcional). los .mp4/.webm/.mov se
+#                muestran como video, el resto como imagen. se aceptan
+#                rutas absolutas del sitio o URLs del repositorio
+#                montoyamoraga-web-media
+#   prevista:    opcional, imagen que se muestra al compartir el enlace:
+#                nombre de archivo en la carpeta previstas/ del repositorio
+#                montoyamoraga-web-media, o URL completa. sin prevista se usa
+#                previstas/sitio.jpg
+#
+# un proyecto sin descripción ni medios se muestra como "próximamente".
+#
+# para agregar un proyecto nuevo: agregar una entrada acá y hacer push a main.
+# el GitHub Action regenera las páginas y el menú automáticamente.
+
+- titulo:
+    es: tesis
+    en: theses
+  proyectos:
+    - slug: popusintesintesis
+      titulo: popusintesíntesis
+      anho: 2026
+      institucion:
+        - universidad de santiago de chile
+        - es: instituto de estudios avanzados
+          en: institute of advanced studies
+      grado:
+        es: doctorado en artes y humanidades
+        en: phd in arts and humanities
+
+    - slug: tiny-trainable-instruments
+      titulo: tiny trainable instruments
+      anho: 2021
+      institucion:
+        - massachusetts institute of technology
+        - mit media lab
+      grado:
+        es: magíster en artes mediales y ciencias
+        en: master of science in media arts and sciences
+      descripcion:
+        - es: tiny trainable instruments fue la tesis de magíster de aarón en MIT Media Lab, donde fue asistente de investigación de los grupos Opera of the Future y Future Sketches entre 2019 y 2021.
+          en: tiny trainable instruments was aarón's master's thesis at MIT Media Lab, where they were a research assistant at the Opera of the Future and Future Sketches research groups between 2019 and 2021.
+        - es: esta tesis exploró la expresión artística y musical con el campo emergente del aprendizaje de máquinas diminuto (tiny machine learning), para un uso de baja fidelidad de la inteligencia artificial en microcontroladores.
+          en: this thesis was an exploration of artistic and musical expression using the nascent field of tiny machine learning, for low-fidelity use of artificial intelligence using microcontrollers.
+        - es: la biblioteca de software TinyTrainable, para Arduino, está publicada en el registro de bibliotecas de Arduino y se puede instalar directamente desde el IDE.
+          en: the TinyTrainable software library for Arduino is published at the Arduino library registry and can be installed directly from the IDE.
+        - es: el proyecto incluyó 3 talleres (2 en inglés para Estados Unidos y 1 en español para Chile), financiados por un fondo de MIT que cubrió los materiales y su envío a cada participante. en total participaron 30 personas sin experiencia previa en programación ni en aprendizaje de máquinas, en 12 horas de clases.
+          en: this thesis project included teaching 3 workshops (2 in English for the USA, 1 in Spanish for Chile), and won an MIT grant for funding the materials and shipping costs to all participants. 30 people with no programming or machine learning experience joined, for a total of 12 hours of teaching.
+      enlaces:
+        - url: https://dspace.mit.edu/handle/1721.1/142838
+          texto:
+            es: documento de tesis en MIT libraries
+            en: thesis document at MIT libraries
+        - url: https://github.com/montoyamoraga/tiny-trainable-instruments
+          texto:
+            es: repositorio principal, con el documento de tesis, los notebooks de entrenamiento y los materiales educativos
+            en: main repository, with the thesis document, the training notebooks and the educational materials
+        - url: https://github.com/montoyamoraga/TinyTrainable
+          texto:
+            es: biblioteca TinyTrainable para Arduino
+            en: TinyTrainable library for Arduino
+      medios:
+        - /proyectos/tiny-trainable-instruments/media/workshop-materials.jpg
+        - /proyectos/tiny-trainable-instruments/media/output-printer.jpg
+        - /proyectos/tiny-trainable-instruments/media/output-servo.jpg
+        - /proyectos/tiny-trainable-instruments/media/workshop-en-1.jpg
+        - /proyectos/tiny-trainable-instruments/media/workshop-en-2.jpg
+        - /proyectos/tiny-trainable-instruments/media/workshop-en-3.jpg
+        - /proyectos/tiny-trainable-instruments/media/workshop-en-4.jpg
+        - /proyectos/tiny-trainable-instruments/media/workshop-en-5.jpg
+        - /proyectos/tiny-trainable-instruments/media/workshop-en-6.jpg
+
+    - slug: its-ok
+      titulo: its-ok
+      anho: 2017
+      institucion:
+        - new york university
+        - tisch school of the arts, interactive telecommunications program
+      grado:
+        es: magíster en estudios profesionales
+        en: master of professional studies
+
+    - slug: simulador-de-pulmon
+      titulo:
+        es: simulador de pulmón
+        en: lung simulator
+      anho: 2013
+      institucion:
+        - pontificia universidad católica de chile
+      grado:
+        es: título profesional en ingeniería civil electricista
+        en: professional degree in electrical engineering

@@ -4,6 +4,8 @@ const generadores = [
   require("./generar-enlaces.js"),
   require("./generar-ensenanza.js"),
   require("./generar-obras.js"),
+  require("./generar-investigacion.js"),
+  require("./generar-menu.js"),
 ];
 
 generadores.forEach((generador) => generador.generar());

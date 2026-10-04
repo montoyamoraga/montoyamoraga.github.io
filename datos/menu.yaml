@@ -1,0 +1,50 @@
+# datos del menú lateral, usados por scripts/generar-menu.js para generar
+# js/menu.js completo. el comportamiento del menú (abrir/cerrar, marcar el
+# enlace activo) vive en js/nav.js, que se edita a mano.
+#
+# el orden de la lista define el orden de las secciones en el menú. la marca
+# (montoyamoraga) y el selector de idioma van siempre arriba y no se configuran acá.
+#
+# schema por sección (usar solo una de generador, url o vacio):
+#   titulo:     string, o { es, en } si se traduce
+#   generador:  obras | ensenanza | investigacion — la sección se despliega y
+#               su contenido sale de datos/<generador>.yaml
+#   url:        string — la sección es un enlace directo, sin contenido
+#   vacio:      { es, en } — la sección se despliega y muestra este texto,
+#               para secciones sin contenido publicado todavía
+#
+# para agregar, quitar o reordenar secciones: editar esta lista y hacer push a main.
+# el GitHub Action regenera js/menu.js automáticamente.
+
+- titulo:
+    es: proyectos
+    en: projects
+  generador: obras
+
+- titulo:
+    es: enseñanza
+    en: teaching
+  generador: ensenanza
+
+- titulo:
+    es: investigación
+    en: research
+  generador: investigacion
+
+- titulo: performance
+  vacio:
+    es: sin obras publicadas
+    en: no published works
+
+- titulo: cv
+  url: /cv/
+
+- titulo:
+    es: enlaces
+    en: links
+  url: /enlaces/
+
+- titulo:
+    es: contacto
+    en: contact
+  url: /contacto/

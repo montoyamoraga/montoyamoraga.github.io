@@ -1,5 +1,5 @@
 # datos de los cursos de enseñanza, usados por scripts/generar-ensenanza.js
-# para generar ensenanza/<slug>/index.html y el menú de enseñanza en js/nav.js.
+# para generar ensenanza/<slug>/index.html y el menú de enseñanza en js/menu.js.
 #
 # el orden de esta lista define el orden dentro de cada grupo del menú.
 #

@@ -6,7 +6,6 @@ const { metaCompartir } = require("./compartir.js");
 const ROOT = path.join(__dirname, "..");
 const YAML_PATH = path.join(ROOT, "datos", "ensenanza.yaml");
 const ENSENANZA_DIR = path.join(ROOT, "ensenanza");
-const NAV_PATH = path.join(ROOT, "js", "nav.js");
 
 const GRUPOS = [
   { universidad: "udp", es: "pregrado - universidad diego portales", en: "undergraduate - universidad diego portales" },
@@ -134,6 +133,7 @@ ${filasImagenes(curso)}        </div>
 
     <footer class="colophon-banner"></footer>
 
+    <script src="../../js/menu.js"></script>
     <script src="../../js/nav.js"></script>
     <script src="../../js/script.js"></script>
   </body>
@@ -158,7 +158,17 @@ function generarPaginas(cursos) {
   console.log(`Generadas ${cursos.length} páginas en ensenanza/*/index.html.`);
 }
 
-function fragmentoMenu(cursos) {
+function cargar() {
+  const cursos = yaml.load(fs.readFileSync(YAML_PATH, "utf8"));
+  if (!Array.isArray(cursos)) {
+    throw new Error("datos/ensenanza.yaml no contiene una lista de cursos.");
+  }
+  return cursos;
+}
+
+// lo usa scripts/generar-menu.js para armar la sección de enseñanza
+function fragmentoMenu() {
+  const cursos = cargar();
   const bloques = GRUPOS.map((grupo) => {
     const cursosGrupo = cursos.filter((curso) => curso.universidad === grupo.universidad);
     const items = cursosGrupo
@@ -177,38 +187,10 @@ ${items}
   return bloques.join("\n\n");
 }
 
-function actualizarNav(cursos) {
-  const navJs = fs.readFileSync(NAV_PATH, "utf8");
-  const inicio = "<!-- ENSEÑANZA:GENERADO:INICIO (no editar a mano — ver scripts/generar-ensenanza.js y datos/ensenanza.yaml) -->";
-  const fin = "<!-- ENSEÑANZA:GENERADO:FIN -->";
-
-  const indexInicio = navJs.indexOf(inicio);
-  const indexFin = navJs.indexOf(fin);
-  if (indexInicio === -1 || indexFin === -1) {
-    throw new Error(`No se encontraron los marcadores ${inicio} / ${fin} en js/nav.js`);
-  }
-
-  const nuevoNavJs =
-    navJs.slice(0, indexInicio + inicio.length) +
-    "\n" +
-    fragmentoMenu(cursos) +
-    "\n            " +
-    navJs.slice(indexFin);
-
-  fs.writeFileSync(NAV_PATH, nuevoNavJs);
-  console.log("Actualizado el menú de enseñanza en js/nav.js.");
-}
-
 function generar() {
-  const cursos = yaml.load(fs.readFileSync(YAML_PATH, "utf8"));
-  if (!Array.isArray(cursos)) {
-    throw new Error("datos/ensenanza.yaml no contiene una lista de cursos.");
-  }
-
-  generarPaginas(cursos);
-  actualizarNav(cursos);
+  generarPaginas(cargar());
 }
 
-module.exports = { generar };
+module.exports = { generar, fragmentoMenu };
 
 if (require.main === module) generar();

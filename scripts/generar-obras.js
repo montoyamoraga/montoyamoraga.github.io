@@ -7,7 +7,6 @@ const ROOT = path.join(__dirname, "..");
 const YAML_PATH = path.join(ROOT, "datos", "obras.yaml");
 const PROYECTOS_DIR = path.join(ROOT, "proyectos");
 const INDICE_PATH = path.join(PROYECTOS_DIR, "index.html");
-const NAV_PATH = path.join(ROOT, "js", "nav.js");
 
 const EXTENSIONES_VIDEO = /\.(mp4|webm|mov)$/i;
 
@@ -120,6 +119,7 @@ ${filaTexto(serie, obra)}${filasMedios(obra)}        </div>
     <footer class="colophon-banner"></footer>
 
     <script src="/lib/js-yaml.min.js"></script>
+    <script src="/js/menu.js"></script>
     <script src="/js/nav.js"></script>
     <script src="/js/script.js"></script>
   </body>
@@ -179,8 +179,9 @@ ${items}
     .join("\n\n");
 }
 
-function fragmentoMenu(series) {
-  return series
+// lo usa scripts/generar-menu.js para armar la sección de proyectos
+function fragmentoMenu() {
+  return cargar()
     .map((serie) => {
       const items = obrasDe(serie).length
         ? obrasDe(serie)
@@ -222,27 +223,20 @@ function actualizarIndice(series) {
   );
 }
 
-function actualizarNav(series) {
-  reemplazarEntreMarcadores(
-    NAV_PATH,
-    "<!-- OBRAS:GENERADO:INICIO (no editar a mano — ver scripts/generar-obras.js y datos/obras.yaml) -->",
-    "<!-- OBRAS:GENERADO:FIN -->",
-    fragmentoMenu(series),
-    "            "
-  );
-}
-
-function generar() {
+function cargar() {
   const series = yaml.load(fs.readFileSync(YAML_PATH, "utf8"));
   if (!Array.isArray(series)) {
     throw new Error("datos/obras.yaml no contiene una lista de series.");
   }
-
-  generarPaginas(series);
-  actualizarIndice(series);
-  actualizarNav(series);
+  return series;
 }
 
-module.exports = { generar };
+function generar() {
+  const series = cargar();
+  generarPaginas(series);
+  actualizarIndice(series);
+}
+
+module.exports = { generar, fragmentoMenu };
 
 if (require.main === module) generar();

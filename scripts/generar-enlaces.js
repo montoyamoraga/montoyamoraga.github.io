@@ -66,6 +66,7 @@ ${datos.enlaces.map(itemEnlace).join("\n")}
     <footer class="colophon-banner"></footer>
 
     <script src="/lib/js-yaml.min.js"></script>
+    <script src="/js/menu.js"></script>
     <script src="/js/nav.js"></script>
     <script src="/js/script.js"></script>
   </body>

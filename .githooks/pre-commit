@@ -20,4 +20,4 @@ node scripts/generar-sitio.js || {
   exit 1
 }
 
-git add index.html enlaces ensenanza proyectos js/nav.js
+git add index.html enlaces ensenanza proyectos investigacion js/menu.js
