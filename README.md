@@ -20,7 +20,20 @@ requiere node. si node no está disponible, el commit sigue igual y el GitHub Ac
 
 ## previsualización al compartir enlaces
 
-las páginas generadas incluyen etiquetas open graph (ver `scripts/compartir.js`), para que whatsapp, telegram y redes sociales muestren título, descripción e imagen. esa imagen se llama prevista, y vive en la carpeta `previstas/` del repositorio [montoyamoraga-web-media](https://github.com/montoyamoraga/montoyamoraga-web-media). cada curso u obra puede indicar la suya con el campo `prevista` en su YAML; si no, se usa `previstas/sitio.jpg`.
+las páginas generadas incluyen etiquetas open graph (ver `scripts/compartir.js`), para que whatsapp, telegram y redes sociales muestren título, descripción e imagen. esa imagen se llama prevista, y vive en la carpeta `previstas/` del repositorio [montoyamoraga-web-media](https://github.com/montoyamoraga/montoyamoraga-web-media). cada página usa, en orden:
+
+1. la indicada en el campo `prevista` de su YAML, si existe.
+2. una generada desde la primera imagen de la obra, curso o proyecto de investigación (o desde el primer video si no hay imágenes).
+3. `previstas/favicon.jpg`, hecha desde `assets/favicon.png`.
+
+para generar las previstas del punto 2, después de agregar o cambiar imágenes, correr en local (requiere ffmpeg y el repositorio montoyamoraga-web-media clonado al lado de este):
+
+```sh
+node scripts/generar-previstas.js
+node scripts/generar-sitio.js
+```
+
+el primero recorta cada imagen a 1200×630, la guarda en `previstas/` del repositorio de medios y anota en `datos/previstas.json` qué página usa cuál. hay que hacer push de ambos repositorios.
 
 ## cómo editar la página de inicio
 

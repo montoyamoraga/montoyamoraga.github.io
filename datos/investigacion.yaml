@@ -26,8 +26,9 @@
 #                montoyamoraga-web-media
 #   prevista:    opcional, imagen que se muestra al compartir el enlace:
 #                nombre de archivo en la carpeta previstas/ del repositorio
-#                montoyamoraga-web-media, o URL completa. sin prevista se usa
-#                previstas/sitio.jpg
+#                montoyamoraga-web-media, o URL completa.
+#                sin prevista se usa una generada desde su primera imagen
+#                (ver scripts/generar-previstas.js), o previstas/favicon.jpg
 #
 # un proyecto sin descripción ni medios se muestra como "próximamente".
 #

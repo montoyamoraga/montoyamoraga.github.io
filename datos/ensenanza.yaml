@@ -17,8 +17,9 @@
 #                webp/), o URLs absolutas (se usan tal cual)
 #   prevista:    opcional, imagen que se muestra al compartir el enlace (whatsapp,
 #                redes sociales): nombre de archivo en la carpeta previstas/ del
-#                repositorio montoyamoraga-web-media, o URL completa. sin prevista
-#                se usa previstas/sitio.jpg
+#                repositorio montoyamoraga-web-media, o URL completa.
+#                sin prevista se usa una generada desde su primera imagen
+#                (ver scripts/generar-previstas.js), o previstas/favicon.jpg
 #
 # para agregar un curso nuevo: agregar una entrada acá (+ opcionalmente
 # las fotos en ensenanza-<slug>/jpg/ de montoyamoraga-web-media), hacer push a main. el GitHub Action
