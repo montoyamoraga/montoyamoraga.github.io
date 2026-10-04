@@ -13,6 +13,7 @@ const EXTENSIONES_VIDEO = /\.(mp4|webm|mov)$/i;
 
 const PROXIMAMENTE = { es: "próximamente.", en: "coming soon." };
 const VOLVER = { es: "volver a proyectos", en: "back to projects" };
+const SIN_OBRAS = { es: "sin obras publicadas", en: "no published works" };
 
 function escaparHTML(valor) {
   return String(valor ?? "")
@@ -126,10 +127,14 @@ ${filaTexto(serie, obra)}${filasMedios(obra)}        </div>
 `;
 }
 
+function obrasDe(serie) {
+  return serie.obras || [];
+}
+
 function generarPaginas(series) {
   series.forEach((serie) => {
     const carpetaSerie = path.join(PROYECTOS_DIR, serie.slug);
-    const obrasEsperadas = new Set(serie.obras.map((obra) => obra.slug));
+    const obrasEsperadas = new Set(obrasDe(serie).map((obra) => obra.slug));
     if (fs.existsSync(carpetaSerie)) {
       fs.readdirSync(carpetaSerie)
         .filter((entrada) => fs.statSync(path.join(carpetaSerie, entrada)).isDirectory() && !obrasEsperadas.has(entrada))
@@ -138,27 +143,29 @@ function generarPaginas(series) {
         );
     }
 
-    serie.obras.forEach((obra) => {
+    obrasDe(serie).forEach((obra) => {
       const carpeta = path.join(carpetaSerie, obra.slug);
       if (!fs.existsSync(carpeta)) fs.mkdirSync(carpeta, { recursive: true });
       fs.writeFileSync(path.join(carpeta, "index.html"), paginaObra(serie, obra));
     });
   });
 
-  const total = series.reduce((suma, serie) => suma + serie.obras.length, 0);
+  const total = series.reduce((suma, serie) => suma + obrasDe(serie).length, 0);
   console.log(`Generadas ${total} páginas en proyectos/<serie>/<obra>/index.html.`);
 }
 
 function fragmentoIndice(series) {
   return series
     .map((serie) => {
-      const items = serie.obras
-        .map(
-          (obra) => `            <li class="obra-item">
+      const items = obrasDe(serie).length
+        ? obrasDe(serie)
+            .map(
+              (obra) => `            <li class="obra-item">
               <a class="obra-link" href="/proyectos/${serie.slug}/${obra.slug}/">${dualSpan(obra.titulo)}</a>
             </li>`
-        )
-        .join("\n");
+            )
+            .join("\n")
+        : `            <li class="obra-item">${dualSpan(SIN_OBRAS)}</li>`;
 
       return `        <section class="serie">
           <h2 class="serie-titulo">
@@ -175,9 +182,11 @@ ${items}
 function fragmentoMenu(series) {
   return series
     .map((serie) => {
-      const items = serie.obras
-        .map((obra) => `                <li><a href="/proyectos/${serie.slug}/${obra.slug}/">${dualSpan(obra.titulo)}</a></li>`)
-        .join("\n");
+      const items = obrasDe(serie).length
+        ? obrasDe(serie)
+            .map((obra) => `                <li><a href="/proyectos/${serie.slug}/${obra.slug}/">${dualSpan(obra.titulo)}</a></li>`)
+            .join("\n")
+        : `                <li>${dualSpan(SIN_OBRAS)}</li>`;
 
       return `            <h5>${dualSpan(serie.titulo)}</h5>
             <ol>

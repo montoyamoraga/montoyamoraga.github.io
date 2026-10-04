@@ -6,8 +6,9 @@
 #
 # schema por serie:
 #   slug:    string, nombre de la carpeta en proyectos/<slug>/
-#   titulo:  { es, en }
-#   obras:   lista de obras
+#   titulo:  string, o { es, en } si se traduce
+#   obras:   lista de obras (opcional; una serie sin obras se muestra
+#            como "sin obras publicadas")
 #
 # schema por obra:
 #   slug:        string, nombre de la carpeta en proyectos/<serie>/<slug>/
@@ -31,10 +32,8 @@
 # para agregar una obra nueva: agregar una entrada acá y hacer push a main.
 # el GitHub Action regenera las páginas y el menú automáticamente.
 
-- slug: tamiz
-  titulo:
-    es: serie tamiz
-    en: tamiz series
+- slug: tamizar
+  titulo: tamizar
   obras:
     - slug: bajos-de-mena
       titulo: bajos de mena
@@ -46,3 +45,9 @@
         - /assets/alturas-machu-picchu.mp4
     - slug: menatron
       titulo: menatron
+
+- slug: caleidoscopar
+  titulo: caleidoscopar
+
+- slug: enumerar
+  titulo: enumerar

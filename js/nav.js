@@ -13,6 +13,30 @@ let navbar = `
     </div>
 
     <div class="nav-section">
+        <h3 class="nav-titulo"><span class="es">proyectos</span><span class="en">projects</span></h3>
+        <div class="nav-contenido">
+            <!-- OBRAS:GENERADO:INICIO (no editar a mano — ver scripts/generar-obras.js y datos/obras.yaml) -->
+            <h5>tamizar</h5>
+            <ol>
+                <li><a href="/proyectos/tamizar/bajos-de-mena/">bajos de mena</a></li>
+                <li><a href="/proyectos/tamizar/alturas-de-macchu-picchu/">alturas de macchu picchu</a></li>
+                <li><a href="/proyectos/tamizar/menatron/">menatron</a></li>
+            </ol>
+
+            <h5>caleidoscopar</h5>
+            <ol>
+                <li><span class="es">sin obras publicadas</span><span class="en">no published works</span></li>
+            </ol>
+
+            <h5>enumerar</h5>
+            <ol>
+                <li><span class="es">sin obras publicadas</span><span class="en">no published works</span></li>
+            </ol>
+            <!-- OBRAS:GENERADO:FIN -->
+        </div>
+    </div>
+
+    <div class="nav-section">
         <h3 class="nav-titulo"><span class="es">enseñanza</span><span class="en">teaching</span></h3>
         <div class="nav-contenido">
             <!-- ENSEÑANZA:GENERADO:INICIO (no editar a mano — ver scripts/generar-ensenanza.js y datos/ensenanza.yaml) -->
@@ -65,20 +89,6 @@ let navbar = `
 
     <div class="nav-section">
         <h3><a href="/cv/">cv</a></h3>
-    </div>
-
-    <div class="nav-section">
-        <h3 class="nav-titulo"><span class="es">proyectos</span><span class="en">projects</span></h3>
-        <div class="nav-contenido">
-            <!-- OBRAS:GENERADO:INICIO (no editar a mano — ver scripts/generar-obras.js y datos/obras.yaml) -->
-            <h5><span class="es">serie tamiz</span><span class="en">tamiz series</span></h5>
-            <ol>
-                <li><a href="/proyectos/tamiz/bajos-de-mena/">bajos de mena</a></li>
-                <li><a href="/proyectos/tamiz/alturas-de-macchu-picchu/">alturas de macchu picchu</a></li>
-                <li><a href="/proyectos/tamiz/menatron/">menatron</a></li>
-            </ol>
-            <!-- OBRAS:GENERADO:FIN -->
-        </div>
     </div>
 
     <div class="nav-section">
