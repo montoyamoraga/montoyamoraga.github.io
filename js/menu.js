@@ -21,6 +21,7 @@ const navbar = `
             <h5>enumerar</h5>
             <ol>
                 <li><a href="/proyectos/enumerar/its-ok-to-die/">its-ok-to-die</a></li>
+                <li><a href="/proyectos/enumerar/cuantosdiasquedan.cl/">cuantosdiasquedan.cl</a></li>
             </ol>
 
             <h5>tamizar</h5>

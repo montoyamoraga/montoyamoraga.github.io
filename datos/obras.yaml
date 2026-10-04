@@ -78,6 +78,8 @@
       #     alt: { es: ..., en: ... }
       #     pie: { es: ..., en: ... }
       #     credito: ...
+    - slug: cuantosdiasquedan.cl
+      titulo: cuantosdiasquedan.cl
 
 - slug: tamizar
   titulo: tamizar
