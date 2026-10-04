@@ -17,11 +17,22 @@
 #   descripcion: lista de { es, en } (un párrafo por ítem, opcional)
 #   ficha:       lista de { rotulo: { es, en }, valor: string o { es, en } }
 #                (opcional, ej. materiales, duración, técnica)
+#   creditos:    lista de { rol: string o { es, en }, nombre: string,
+#                enlace: URL (opcional) } (opcional). los créditos con el
+#                mismo rol se muestran juntos en una línea.
+#   exhibiciones: lista de { anho, evento, lugar, ciudad, enlace } (opcional,
+#                todos los campos opcionales; evento, lugar y ciudad aceptan
+#                string o { es, en })
+#   enlaces:     lista de { texto: string o { es, en }, url } (opcional, ej.
+#                prensa, código, registro en video)
 #   medios:      lista de archivos (opcional). los .mp4/.webm/.mov se
 #                muestran como video, el resto como imagen. se aceptan
 #                rutas absolutas del sitio (/assets/...) o URLs, por
 #                ejemplo del repositorio montoyamoraga-web-media:
 #                https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/<carpeta>/webp/00.webp
+#                cada ítem puede ser solo la ruta, o { archivo, alt, pie,
+#                credito } para agregar texto alternativo, un pie de foto
+#                (string o { es, en }) y quién tomó la foto.
 #   prevista:    opcional, imagen que se muestra al compartir el enlace (whatsapp,
 #                redes sociales): nombre de archivo en la carpeta previstas/ del
 #                repositorio montoyamoraga-web-media, o URL completa. sin prevista
@@ -54,3 +65,33 @@
   obras:
     - slug: its-ok-to-die
       titulo: it's ok to die
+      # plantilla: descomentar y completar los campos que correspondan
+      # anho: 2026
+      # descripcion:
+      #   - es: ...
+      #     en: ...
+      # ficha:
+      #   - rotulo: { es: materiales, en: materials }
+      #     valor: { es: ..., en: ... }
+      #   - rotulo: { es: duración, en: duration }
+      #     valor: ...
+      # creditos:
+      #   - rol: { es: concepto y realización, en: concept and execution }
+      #     nombre: montoyamoraga
+      #   - rol: { es: producción, en: production }
+      #     nombre: ...
+      #     enlace: https://...
+      # exhibiciones:
+      #   - anho: 2026
+      #     evento: ...
+      #     lugar: ...
+      #     ciudad: santiago
+      #     enlace: https://...
+      # enlaces:
+      #   - texto: { es: código, en: code }
+      #     url: https://github.com/...
+      # medios:
+      #   - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/its-ok-to-die/webp/00.webp
+      #     alt: { es: ..., en: ... }
+      #     pie: { es: ..., en: ... }
+      #     credito: ...

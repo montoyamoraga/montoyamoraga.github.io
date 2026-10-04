@@ -222,6 +222,15 @@ a:hover {
   object-fit: contain;
 }
 
+.medio-pie {
+  font-family: var(--font-mono);
+  font-size: 8.5pt;
+  letter-spacing: 0.03em;
+  color: var(--ink-dim);
+  text-align: center;
+  margin: 8px 0 0;
+}
+
 .nav-titulo {
   color: var(--ink-dim);
   margin: 15px 0 5px 0;

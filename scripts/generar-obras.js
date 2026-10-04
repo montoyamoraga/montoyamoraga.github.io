@@ -13,6 +13,10 @@ const EXTENSIONES_VIDEO = /\.(mp4|webm|mov)$/i;
 const PROXIMAMENTE = { es: "próximamente.", en: "coming soon." };
 const VOLVER = { es: "volver a proyectos", en: "back to projects" };
 const SIN_OBRAS = { es: "sin obras publicadas", en: "no published works" };
+const CREDITOS = { es: "créditos", en: "credits" };
+const EXHIBICIONES = { es: "exhibiciones", en: "exhibitions" };
+const ENLACES = { es: "enlaces", en: "links" };
+const FOTO = { es: "foto", en: "photo" };
 
 function escaparHTML(valor) {
   return String(valor ?? "")
@@ -36,26 +40,84 @@ function textoPlano(valor) {
   return esBilingue(valor) ? valor.es : valor;
 }
 
-function medioHtml(archivo, alt) {
-  const src = escaparHTML(archivo);
-  return EXTENSIONES_VIDEO.test(archivo)
+// un medio puede ser un string (la ruta del archivo) o { archivo, alt, pie, credito }
+function normalizarMedio(medio) {
+  return typeof medio === "string" ? { archivo: medio } : medio;
+}
+
+function medioHtml(medio, altPorDefecto) {
+  const src = escaparHTML(medio.archivo);
+  const alt = medio.alt ? textoPlano(medio.alt) : altPorDefecto;
+  return EXTENSIONES_VIDEO.test(medio.archivo)
     ? `<video controls playsinline preload="metadata" src="${src}"></video>`
     : `<img src="${src}" alt="${escaparHTML(alt)}" loading="lazy" decoding="async" />`;
+}
+
+function pieHtml(medio) {
+  const partes = [];
+  if (medio.pie) partes.push(dualSpan(medio.pie));
+  if (medio.credito) partes.push(`${dualSpan(FOTO)}: ${escaparHTML(medio.credito)}`);
+  return partes.length ? `\n              <p class="medio-pie">${partes.join(" · ")}</p>` : "";
 }
 
 // cada imagen o video va en su propia fila de ancho completo, después de la info
 function filasMedios(obra) {
   return (obra.medios || [])
+    .map(normalizarMedio)
     .map(
-      (archivo, i) => `
+      (medio, i) => `
           <section class="fila fila-medio">
             <div class="fila-interior">
-              ${medioHtml(archivo, `${textoPlano(obra.titulo)} ${i}`)}
+              ${medioHtml(medio, `${textoPlano(obra.titulo)} ${i}`)}${pieHtml(medio)}
             </div>
           </section>
 `
     )
     .join("");
+}
+
+function enlaceHtml(texto, url) {
+  return url ? `<a href="${escaparHTML(url)}">${texto}</a>` : texto;
+}
+
+// agrupa los créditos con el mismo rol en una sola línea, respetando el orden
+function bloqueCreditos(creditos) {
+  const grupos = [];
+  creditos.forEach((credito) => {
+    const clave = JSON.stringify(credito.rol);
+    let grupo = grupos.find((g) => g.clave === clave);
+    if (!grupo) {
+      grupo = { clave, rol: credito.rol, nombres: [] };
+      grupos.push(grupo);
+    }
+    grupo.nombres.push(enlaceHtml(escaparHTML(credito.nombre), credito.enlace));
+  });
+
+  return `              <h2 class="cajita">${dualSpan(CREDITOS)}</h2>
+              <p>
+                ${grupos.map((g) => `${dualSpan(g.rol)}: ${g.nombres.join(", ")}`).join("<br />\n                ")}
+              </p>`;
+}
+
+function bloqueExhibiciones(exhibiciones) {
+  const lineas = exhibiciones.map((ex) => {
+    const partes = [ex.anho, ex.evento ? dualSpan(ex.evento) : null, ex.lugar ? dualSpan(ex.lugar) : null, ex.ciudad ? dualSpan(ex.ciudad) : null]
+      .filter((parte) => parte !== null && parte !== undefined && parte !== "")
+      .map((parte) => (typeof parte === "number" ? String(parte) : parte));
+    return enlaceHtml(partes.join(", "), ex.enlace);
+  });
+
+  return `              <h2 class="cajita">${dualSpan(EXHIBICIONES)}</h2>
+              <p>
+                ${lineas.join("<br />\n                ")}
+              </p>`;
+}
+
+function bloqueEnlaces(enlaces) {
+  return `              <h2 class="cajita">${dualSpan(ENLACES)}</h2>
+              <p>
+                ${enlaces.map((enlace) => enlaceHtml(dualSpan(enlace.texto), enlace.url)).join("<br />\n                ")}
+              </p>`;
 }
 
 function filaTexto(serie, obra) {
@@ -77,6 +139,10 @@ function filaTexto(serie, obra) {
     bloques.push(`              <h2 class="cajita">${dualSpan(fila.rotulo)}</h2>
               <p>${dualSpan(fila.valor)}</p>`);
   });
+
+  if ((obra.creditos || []).length) bloques.push(bloqueCreditos(obra.creditos));
+  if ((obra.exhibiciones || []).length) bloques.push(bloqueExhibiciones(obra.exhibiciones));
+  if ((obra.enlaces || []).length) bloques.push(bloqueEnlaces(obra.enlaces));
 
   bloques.push(`              <p><a href="/proyectos/">${dualSpan(VOLVER)}</a></p>`);
 
