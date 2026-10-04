@@ -26,7 +26,9 @@
 #   enlaces:     lista de { texto: string o { es, en }, url } (opcional, ej.
 #                prensa, código, registro en video)
 #   medios:      lista de archivos (opcional). los .mp4/.webm/.mov se
-#                muestran como video, el resto como imagen. se aceptan
+#                muestran como video, los enlaces de vimeo
+#                (https://vimeo.com/<id>) como video de vimeo incrustado,
+#                y el resto como imagen. se aceptan
 #                rutas absolutas del sitio (/assets/...) o URLs, por
 #                ejemplo del repositorio montoyamoraga-web-media:
 #                https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/<carpeta>/webp/00.webp
@@ -99,6 +101,15 @@
           alt: { es: captura de pantalla de la versión web de its-ok-to-die v1, en: screenshot of the web version of its-ok-to-die v1 }
     - slug: cuantosdiasquedan.cl
       titulo: cuantosdiasquedan.cl
+      anho: 2026
+      enlaces:
+        - texto: { es: sitio web, en: website }
+          url: https://cuantosdiasquedan.cl/
+        - texto: { es: código, en: code }
+          url: https://github.com/montoyamoraga/cuantosDiasQuedan
+      medios:
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-cuantosdiasquedan.cl/webp/00-web.webp
+          alt: { es: captura de pantalla de cuantosdiasquedan.cl, en: screenshot of cuantosdiasquedan.cl }
 
 - slug: tamizar
   titulo: tamizar
@@ -119,6 +130,5 @@
   obras:
     - slug: rube-telephone
       titulo: rube telephone
-      enlaces:
-        - texto: { es: video en vimeo, en: video on vimeo }
-          url: https://vimeo.com/159317270
+      medios:
+        - https://vimeo.com/159317270

@@ -222,6 +222,13 @@ a:hover {
   object-fit: contain;
 }
 
+.fila-medio iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
 .medio-pie {
   font-family: var(--font-mono);
   font-size: 8.5pt;

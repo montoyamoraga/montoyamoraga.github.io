@@ -9,6 +9,8 @@ const PROYECTOS_DIR = path.join(ROOT, "proyectos");
 const INDICE_PATH = path.join(PROYECTOS_DIR, "index.html");
 
 const EXTENSIONES_VIDEO = /\.(mp4|webm|mov)$/i;
+// vimeo.com/<id>, vimeo.com/<id>/<hash> (videos no listados) o player.vimeo.com/video/<id>
+const URL_VIMEO = /^https?:\/\/(?:www\.|player\.)?vimeo\.com\/(?:video\/)?(\d+)(?:\/([0-9a-f]+))?/i;
 
 const PROXIMAMENTE = { es: "próximamente.", en: "coming soon." };
 const VOLVER = { es: "volver a proyectos", en: "back to projects" };
@@ -45,9 +47,16 @@ function normalizarMedio(medio) {
   return typeof medio === "string" ? { archivo: medio } : medio;
 }
 
+function vimeoHtml(id, hash, titulo) {
+  const src = `https://player.vimeo.com/video/${id}${hash ? `?h=${hash}` : ""}`;
+  return `<iframe src="${escaparHTML(src)}" title="${escaparHTML(titulo)}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
+}
+
 function medioHtml(medio, altPorDefecto) {
   const src = escaparHTML(medio.archivo);
   const alt = medio.alt ? textoPlano(medio.alt) : altPorDefecto;
+  const vimeo = String(medio.archivo).match(URL_VIMEO);
+  if (vimeo) return vimeoHtml(vimeo[1], vimeo[2], alt);
   return EXTENSIONES_VIDEO.test(medio.archivo)
     ? `<video controls playsinline preload="metadata" src="${src}"></video>`
     : `<img src="${src}" alt="${escaparHTML(alt)}" loading="lazy" decoding="async" />`;
