@@ -118,11 +118,11 @@
     - slug: bajos-de-mena
       titulo: bajos de mena
       medios:
-        - /assets/bajos-de-mena.mp4
+        - https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-bajos-de-bajos-de-mena/mp4/00.mp4
     - slug: alturas-de-alturas-de-macchu-picchu
       titulo: alturas de alturas de macchu picchu
       medios:
-        - /assets/alturas-machu-picchu.mp4
+        - https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-alturas-de-alturas-de-macchu-picchu/mp4/00.mp4
     - slug: menatron
       titulo: menatron
     - slug: callese-hombre
