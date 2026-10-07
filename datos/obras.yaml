@@ -106,11 +106,20 @@
     - slug: cuantosdiasquedan.cl
       titulo: cuantosdiasquedan.cl
       anho: 2026
+      descripcion:
+        - es: cuenta regresiva de los días, horas, minutos y segundos que quedan del gobierno de josé antonio kast, desde el 11 de marzo de 2026 hasta el 11 de marzo de 2030.
+          en: countdown of the days, hours, minutes and seconds left in josé antonio kast's government, from march 11 2026 to march 11 2030.
+        - es: esta obra de arte es una respuesta a la obra performática de tehching hsieh y a los sitios web isitchristmas.com e isthatcherdeadyet.co.uk.
+          en: this artwork is a response to the performance work of tehching hsieh and to the websites isitchristmas.com and isthatcherdeadyet.co.uk.
       enlaces:
         - texto: { es: sitio web, en: website }
           url: https://cuantosdiasquedan.cl/
         - texto: { es: código, en: code }
           url: https://github.com/montoyamoraga/cuantosDiasQuedan
+        - texto: { es: "referencia: isitchristmas.com", en: "reference: isitchristmas.com" }
+          url: https://isitchristmas.com/
+        - texto: { es: "referencia: isthatcherdeadyet.co.uk", en: "reference: isthatcherdeadyet.co.uk" }
+          url: https://www.isthatcherdeadyet.co.uk/
       medios:
         - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-cuantosdiasquedan.cl/webp/00-web.webp
           alt: { es: captura de pantalla de cuantosdiasquedan.cl, en: screenshot of cuantosdiasquedan.cl }
@@ -120,14 +129,62 @@
   obras:
     - slug: bajos-de-mena
       titulo: bajos de mena
+      anho: 2026
+      descripcion:
+        - es: la discografía de javiera mena, destruida con un filtro pasa bajos.
+          en: the discography of javiera mena, destroyed with a low-pass filter.
+      ficha:
+        - rotulo: { es: materiales, en: materials }
+          valor: ffmpeg
       medios:
         - https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-bajos-de-bajos-de-mena/mp4/00.mp4
     - slug: alturas-de-alturas-de-macchu-picchu
       titulo: alturas de alturas de macchu picchu
+      anho: 2026
+      descripcion:
+        - es: el álbum alturas de macchu picchu de los jaivas, destruido con un filtro pasa altos.
+          en: the album alturas de macchu picchu by los jaivas, destroyed with a high-pass filter.
+      ficha:
+        - rotulo: { es: materiales, en: materials }
+          valor: ffmpeg
       medios:
         - https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-alturas-de-alturas-de-macchu-picchu/mp4/00.mp4
     - slug: menatron
       titulo: menatron
+      anho: 2026
+      descripcion:
+        - es: menatron es una familia de ROMplers que usan como material fuente la obra de javiera mena.
+          en: menatron is a family of ROMplers that use the work of javiera mena as source material.
+      creditos:
+        - rol: { es: gráficas de módulos, en: module graphics }
+          nombre: mateo arce
+        - rol: { es: "investigación, concepto, programación", en: "research, concept, programming" }
+          nombre: montoyamoraga
+      medios:
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-menatron/svg/00-menatron.svg
+          alt: { es: "panel del módulo principal de menatron para VCV Rack: retrato en semitono rosado sobre verde menta", en: "panel of the main menatron module for VCV Rack: pink halftone portrait on mint green" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-menatron/svg/01-esquemas-juveniles-album.svg
+          alt: { es: "panel del módulo de menatron para el álbum esquemas juveniles completo", en: "panel of the menatron module for the whole album esquemas juveniles" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-menatron/svg/02-al-siguiente-nivel.svg
+          alt: { es: "panel del módulo de menatron para la canción al siguiente nivel", en: "panel of the menatron module for the song al siguiente nivel" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-menatron/svg/03-esquemas-juveniles.svg
+          alt: { es: "panel del módulo de menatron para la canción esquemas juveniles", en: "panel of the menatron module for the song esquemas juveniles" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-menatron/svg/04-como-siempre-sone.svg
+          alt: { es: "panel del módulo de menatron para la canción como siempre soné", en: "panel of the menatron module for the song como siempre soné" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-menatron/svg/05-sol-de-invierno.svg
+          alt: { es: "panel del módulo de menatron para la canción sol de invierno", en: "panel of the menatron module for the song sol de invierno" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-menatron/svg/06-camara-lenta.svg
+          alt: { es: "panel del módulo de menatron para la canción cámara lenta", en: "panel of the menatron module for the song cámara lenta" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-menatron/svg/07-casan-no-puedo-bloquear-lo-que-quiero.svg
+          alt: { es: "panel del módulo de menatron para la canción casan no puedo bloquear lo que quiero", en: "panel of the menatron module for the song casan no puedo bloquear lo que quiero" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-menatron/svg/08-cuando-hablamos.svg
+          alt: { es: "panel del módulo de menatron para la canción cuando hablamos", en: "panel of the menatron module for the song cuando hablamos" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-menatron/svg/09-esta-en-tus-manos.svg
+          alt: { es: "panel del módulo de menatron para la canción está en tus manos", en: "panel of the menatron module for the song está en tus manos" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-menatron/svg/10-yo-no-te-pido-la-luna.svg
+          alt: { es: "panel del módulo de menatron para la canción yo no te pido la luna", en: "panel of the menatron module for the song yo no te pido la luna" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-menatron/svg/11-perlas.svg
+          alt: { es: "panel del módulo de menatron para la canción perlas", en: "panel of the menatron module for the song perlas" }
     - slug: callese-hombre
       titulo: cállese hombre
       anho: 2026
