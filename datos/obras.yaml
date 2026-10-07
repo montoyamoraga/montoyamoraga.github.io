@@ -128,6 +128,18 @@
     - slug: callese-hombre
       titulo: cállese hombre
       anho: 2026
+      ficha:
+        - rotulo: { es: materiales, en: materials }
+          valor: videogrep, vosk, youtube
+      medios:
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-04-16.mp4
+          pie: "2026-04-16"
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-06-01.mp4
+          pie: "2026-06-01"
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-08-06.mp4
+          pie: "2026-08-06"
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-09-16.mp4
+          pie: "2026-09-16"
 
 - slug: caleidoscopar
   titulo: caleidoscopar
