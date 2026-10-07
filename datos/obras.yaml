@@ -33,8 +33,10 @@
 #                ejemplo del repositorio montoyamoraga-web-media:
 #                https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/<carpeta>/webp/00.webp
 #                cada ítem puede ser solo la ruta, o { archivo, alt, pie,
-#                credito } para agregar texto alternativo, un pie de foto
-#                (string o { es, en }) y quién tomó la foto.
+#                credito, ficha } para agregar texto alternativo, un pie de
+#                foto (string o { es, en }), quién tomó la foto y una ficha
+#                propia del medio (mismo formato que la ficha de la obra, se
+#                muestra en el pie, ej. la duración de cada video).
 #   prevista:    opcional, imagen que se muestra al compartir el enlace (whatsapp,
 #                redes sociales): nombre de archivo en la carpeta previstas/ del
 #                repositorio montoyamoraga-web-media, o URL completa.
@@ -128,18 +130,39 @@
     - slug: callese-hombre
       titulo: cállese hombre
       anho: 2026
+      descripcion:
+        - es: "silencios en los discursos de josé antonio kast durante su presidencia, transcritos con vosk y silenciados de forma algorítmica con videogrep."
+          en: "silences in the speeches of josé antonio kast during his presidency, transcribed with vosk and algorithmically silenced with videogrep."
+        - es: "esta obra es un homenaje a la candidata presidencial jeannette jara, quien el 17 de octubre de 2025 respondió públicamente a un mensaje de josé antonio kast con el meme de los simpsons \"cállese hombre horrible\"."
+          en: "this work is an homage to presidential candidate jeannette jara, who on october 17 2025 publicly answered to a message by josé antonio kast with the simpsons meme \"cállese hombre horrible\"."
       ficha:
         - rotulo: { es: materiales, en: materials }
           valor: videogrep, vosk, youtube
+        - rotulo: { es: formato, en: format }
+          valor: { es: "serie de 4 videos monocanal, 1280×720, sonido estéreo", en: "series of 4 single-channel videos, 1280×720, stereo sound" }
+        - rotulo: { es: duración total, en: total duration }
+          valor: "4:47"
       medios:
         - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-04-16.mp4
           pie: "2026-04-16"
+          ficha:
+            - rotulo: { es: duración, en: duration }
+              valor: "0:22"
         - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-06-01.mp4
           pie: "2026-06-01"
+          ficha:
+            - rotulo: { es: duración, en: duration }
+              valor: "1:56"
         - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-08-06.mp4
           pie: "2026-08-06"
+          ficha:
+            - rotulo: { es: duración, en: duration }
+              valor: "1:05"
         - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-09-16.mp4
           pie: "2026-09-16"
+          ficha:
+            - rotulo: { es: duración, en: duration }
+              valor: "1:25"
 
 - slug: caleidoscopar
   titulo: caleidoscopar

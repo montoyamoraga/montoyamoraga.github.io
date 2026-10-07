@@ -42,7 +42,7 @@ function textoPlano(valor) {
   return esBilingue(valor) ? valor.es : valor;
 }
 
-// un medio puede ser un string (la ruta del archivo) o { archivo, alt, pie, credito }
+// un medio puede ser un string (la ruta del archivo) o { archivo, alt, pie, credito, ficha }
 function normalizarMedio(medio) {
   return typeof medio === "string" ? { archivo: medio } : medio;
 }
@@ -65,6 +65,7 @@ function medioHtml(medio, altPorDefecto) {
 function pieHtml(medio) {
   const partes = [];
   if (medio.pie) partes.push(dualSpan(medio.pie));
+  (medio.ficha || []).forEach((fila) => partes.push(`${dualSpan(fila.rotulo)}: ${dualSpan(fila.valor)}`));
   if (medio.credito) partes.push(`${dualSpan(FOTO)}: ${escaparHTML(medio.credito)}`);
   return partes.length ? `\n              <p class="medio-pie">${partes.join(" · ")}</p>` : "";
 }
