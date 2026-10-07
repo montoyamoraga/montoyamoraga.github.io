@@ -233,13 +233,23 @@
   obras:
     - slug: rube-telephone
       titulo: rube telephone
+      anho: 2015
+      descripcion:
+        - es: instalación multimedia en la que dos personas conversan por teléfono a través de una máquina de rube goldberg; el mensaje se traduce a morse, a un lenguaje aleatorio, se imprime, se lee con OCR y se dice con síntesis de voz al otro lado.
+          en: multimedia installation where two people talk on the phone through a rube goldberg machine; the message is translated to morse code, to a random language, printed, read with OCR and spoken with text-to-speech on the other side.
+      creditos:
+        - rol: { es: programación de la máquina de estados que organiza la interacción con el público, en: state machine programming for audience interaction }
+          nombre: montoyamoraga
+        - rol: { es: co-creación, en: co-creation }
+          nombre: chino kim
       medios:
         - https://vimeo.com/159317270
     - slug: mil-rpm
       titulo: mil rpm
       anho: 2025
       descripcion:
-        - "mil revoluciones por minuto (2025) está compuesto de extractos de discursos del presidente Salvador Allende, donde dice la palabra revolución y similares, condensado a mil repeticiones en un minuto."
+        - es: "mil revoluciones por minuto (2025) está compuesto de extractos de discursos del presidente Salvador Allende, donde dice la palabra revolución y similares, condensado a mil repeticiones en un minuto."
+          en: "mil revoluciones por minuto (a thousand revolutions per minute, 2025) is made of excerpts from speeches by president Salvador Allende where he says the word revolución and similar words, condensed into a thousand repetitions in one minute."
       ficha:
         - rotulo: { es: materiales, en: materials }
           valor: videogrep, vosk, youtube

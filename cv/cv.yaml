@@ -134,6 +134,7 @@ cv:
         - anho-desde: 2026
           anho-hasta: 2026
           cantidad: 1
+          estudiantes: 30
         rol:
           en: lead professor
           es: profesore responsable
@@ -157,6 +158,7 @@ cv:
         - anho-desde: 2026
           anho-hasta: 2026
           cantidad: 1
+          estudiantes: 28
         rol:
           en: lead professor
           es: profesore responsable
@@ -180,9 +182,11 @@ cv:
         - anho-desde: 2025
           anho-hasta: 2025
           cantidad: 1
+          estudiantes: 28
         - anho-desde: 2026
           anho-hasta: 2026
           cantidad: 1
+          estudiantes: 32
         rol:
           en: lead professor
           es: profesore responsable
@@ -206,9 +210,11 @@ cv:
         - anho-desde: 2025
           anho-hasta: 2025
           cantidad: 1
+          estudiantes: 26
         - anho-desde: 2026
           anho-hasta: 2026
           cantidad: 1
+          estudiantes: 31
         rol:
           en: lead professor
           es: profesore responsable
@@ -232,15 +238,19 @@ cv:
         - anho-desde: 2022
           anho-hasta: 2022
           cantidad: 1
+          estudiantes: 52
         - anho-desde: 2023
           anho-hasta: 2023
           cantidad: 1
+          estudiantes: 55
         - anho-desde: 2024
           anho-hasta: 2024
           cantidad: 2
+          estudiantes: "57 (23 + 34)"
         - anho-desde: 2025
           anho-hasta: 2025
           cantidad: 1
+          estudiantes: 37
         rol:
           en: professor
           es: profesore
@@ -264,12 +274,15 @@ cv:
         - anho-desde: 2023
           anho-hasta: 2023
           cantidad: 1
+          estudiantes: 25
         - anho-desde: 2024
           anho-hasta: 2024
           cantidad: 2
+          estudiantes: "30 (18 + 12)"
         - anho-desde: 2025
           anho-hasta: 2025
           cantidad: 1
+          estudiantes: 15
         rol:
           en: professor
           es: profesore
@@ -293,12 +306,15 @@ cv:
         - anho-desde: 2023
           anho-hasta: 2023
           cantidad: 1
+          estudiantes: 4
         - anho-desde: 2024
           anho-hasta: 2024
           cantidad: 1
+          estudiantes: 2
         - anho-desde: 2025
           anho-hasta: 2025
           cantidad: 1
+          estudiantes: 10
         rol:
           en: professor
           es: profesore
@@ -322,6 +338,7 @@ cv:
         - anho-desde: 2024
           anho-hasta: 2024
           cantidad: 1
+          estudiantes: 15
         rol:
           en: professor
           es: profesore
@@ -345,6 +362,7 @@ cv:
         - anho-desde: 2024
           anho-hasta: 2024
           cantidad: 1
+          estudiantes: 10
         rol:
           en: professor
           es: profesore
@@ -373,6 +391,7 @@ cv:
         - anho-desde: 2024
           anho-hasta: 2024
           cantidad: 1
+          estudiantes: 17
         rol:
           en: professor
           es: profesore
@@ -396,6 +415,7 @@ cv:
         - anho-desde: 2024
           anho-hasta: 2024
           cantidad: 1
+          estudiantes: 24
         rol:
           en: professor
           es: profesore
@@ -419,6 +439,7 @@ cv:
         - anho-desde: 2023
           anho-hasta: 2023
           cantidad: 1
+          estudiantes: 50
         rol:
           en: professor
           es: profesore
@@ -442,6 +463,7 @@ cv:
         - anho-desde: 2023
           anho-hasta: 2023
           cantidad: 1
+          estudiantes: 30
         rol:
           en: professor
           es: profesore
@@ -467,9 +489,11 @@ cv:
         - anho-desde: 2022
           anho-hasta: 2022
           cantidad: 1
+          estudiantes: 30
         - anho-desde: 2023
           anho-hasta: 2023
           cantidad: 1
+          estudiantes: 32
         rol:
           en: professor
           es: profesore
@@ -494,6 +518,7 @@ cv:
         - anho-desde: 2022
           anho-hasta: 2022
           cantidad: 1
+          estudiantes: 40
         rol:
           en: professor
           es: profesore
@@ -507,7 +532,7 @@ cv:
           es: pregrado
         programa:
           en: design
-          es: design
+          es: diseño
         institucion:
           en: universidad diego portales
           es: universidad diego portales
@@ -522,6 +547,7 @@ cv:
             en: 2024
             es: 2024
           cantidad: 1
+          estudiantes: 21
         rol:
           en: assistant professor
           es: profesore auxiliar
@@ -535,7 +561,7 @@ cv:
           es: pregrado
         programa:
           en: design
-          es: design
+          es: diseño
         institucion:
           en: universidad diego portales
           es: universidad diego portales
@@ -550,6 +576,7 @@ cv:
             en: 2024
             es: 2024
           cantidad: 1
+          estudiantes: 18
         rol:
           en: assistant professor
           es: profesore auxiliar
@@ -563,7 +590,7 @@ cv:
           es: pregrado
         programa:
           en: design
-          es: design
+          es: diseño
         institucion:
           en: universidad diego portales
           es: universidad diego portales
@@ -578,6 +605,7 @@ cv:
             en: 2023
             es: 2023
           cantidad: 1
+          estudiantes: 21
         rol:
           en: assistant professor
           es: profesore auxiliar
@@ -591,7 +619,7 @@ cv:
           es: pregrado
         programa:
           en: design
-          es: design
+          es: diseño
         institucion:
           en: universidad diego portales
           es: universidad diego portales
@@ -606,6 +634,7 @@ cv:
             en: 2023
             es: 2023
           cantidad: 1
+          estudiantes: 20
         rol:
           en: assistant professor
           es: profesore auxiliar
@@ -1045,6 +1074,10 @@ otros-escritos:
     medio:
       en: BOOK
       es: LIBRO
+    rol:
+      en: spanish translation
+      es: traducción al español
+    url: https://processingfoundation.press/
     programa-doctorado:
       en: false
       es: false
@@ -1063,6 +1096,10 @@ otros-escritos:
     medio:
       en: PDF available online
       es: PDF disponible en web
+    rol:
+      en: master's thesis author
+      es: autoría de tesis de magíster
+    url: https://dspace.mit.edu/handle/1721.1/142838
     programa-doctorado:
       en: false
       es: false

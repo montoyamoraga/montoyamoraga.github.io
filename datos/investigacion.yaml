@@ -16,7 +16,10 @@
 #   institucion: lista de string o { es, en } (una línea por ítem, opcional)
 #   grado:       string o { es, en } (opcional)
 #   descripcion: lista de { es, en } (un párrafo por ítem, opcional)
-#   enlaces:     lista de { url, texto } (opcional). texto es string o
+#   creditos:    lista de { rol: string o { es, en }, nombre: string }
+#                (opcional). el sitio no lo muestra; lo usa el portafoliador
+#                para el rol en el portafolio de proyectos.
+#   enlaces:    lista de { url, texto } (opcional). texto es string o
 #                { es, en }; si no está se muestra la url
 #   medios:      lista de archivos (opcional). los .mp4/.webm/.mov se
 #                muestran como video, los enlaces de vimeo
@@ -66,6 +69,9 @@
           en: this thesis was an exploration of artistic and musical expression using the nascent field of tiny machine learning, for low-fidelity use of artificial intelligence using microcontrollers.
         - es: la biblioteca de software TinyTrainable, para Arduino, está publicada en el registro de bibliotecas de Arduino y se puede instalar directamente desde el IDE.
           en: the TinyTrainable software library for Arduino is published at the Arduino library registry and can be installed directly from the IDE.
+      creditos:
+        - rol: { es: autoría de tesis de magíster, en: master's thesis author }
+          nombre: montoyamoraga
         - es: el proyecto incluyó 3 talleres (2 en inglés para Estados Unidos y 1 en español para Chile), financiados por un fondo de MIT que cubrió los materiales y su envío a cada participante. en total participaron 30 personas sin experiencia previa en programación ni en aprendizaje de máquinas, en 12 horas de clases.
           en: this thesis project included teaching 3 workshops (2 in English for the USA, 1 in Spanish for Chile), and won an MIT grant for funding the materials and shipping costs to all participants. 30 people with no programming or machine learning experience joined, for a total of 12 hours of teaching.
       enlaces:
