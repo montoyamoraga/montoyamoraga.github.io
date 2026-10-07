@@ -139,30 +139,35 @@
         - rotulo: { es: materiales, en: materials }
           valor: videogrep, vosk, youtube
         - rotulo: { es: formato, en: format }
-          valor: { es: "serie de 4 videos monocanal, 1280×720, sonido estéreo", en: "series of 4 single-channel videos, 1280×720, stereo sound" }
+          valor: { es: "serie de 5 videos monocanal, 1280×720, sonido estéreo", en: "series of 5 single-channel videos, 1280×720, stereo sound" }
         - rotulo: { es: duración total, en: total duration }
-          valor: "4:47"
+          valor: "6:23"
       medios:
-        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-04-16.mp4
-          pie: "2026-04-16"
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-09-22.mp4
+          pie: "2026-09-22"
           ficha:
             - rotulo: { es: duración, en: duration }
-              valor: "0:22"
-        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-06-01.mp4
-          pie: "2026-06-01"
-          ficha:
-            - rotulo: { es: duración, en: duration }
-              valor: "1:56"
-        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-08-06.mp4
-          pie: "2026-08-06"
-          ficha:
-            - rotulo: { es: duración, en: duration }
-              valor: "1:05"
+              valor: "1:36"
         - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-09-16.mp4
           pie: "2026-09-16"
           ficha:
             - rotulo: { es: duración, en: duration }
               valor: "1:25"
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-08-06.mp4
+          pie: "2026-08-06"
+          ficha:
+            - rotulo: { es: duración, en: duration }
+              valor: "1:05"
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-06-01.mp4
+          pie: "2026-06-01"
+          ficha:
+            - rotulo: { es: duración, en: duration }
+              valor: "1:56"
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-04-16.mp4
+          pie: "2026-04-16"
+          ficha:
+            - rotulo: { es: duración, en: duration }
+              valor: "0:22"
 
 - slug: caleidoscopar
   titulo: caleidoscopar
