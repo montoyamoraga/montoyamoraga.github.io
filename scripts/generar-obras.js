@@ -65,7 +65,7 @@ function medioHtml(medio, altPorDefecto) {
 function pieHtml(medio) {
   const partes = [];
   if (medio.pie) partes.push(dualSpan(medio.pie));
-  (medio.ficha || []).forEach((fila) => partes.push(`${dualSpan(fila.rotulo)}: ${dualSpan(fila.valor)}`));
+  (medio.ficha || []).forEach((fila) => partes.push(`${dualSpan(fila.rotulo)}: ${valorFicha(fila)}`));
   if (medio.credito) partes.push(`${dualSpan(FOTO)}: ${escaparHTML(medio.credito)}`);
   return partes.length ? `\n              <p class="medio-pie">${partes.join(" · ")}</p>` : "";
 }
@@ -88,6 +88,11 @@ function filasMedios(obra) {
 
 function enlaceHtml(texto, url) {
   return url ? `<a href="${escaparHTML(url)}">${texto}</a>` : texto;
+}
+
+// una fila de ficha puede tener enlace, y entonces el valor es un link
+function valorFicha(fila) {
+  return enlaceHtml(dualSpan(fila.valor), fila.enlace);
 }
 
 // agrupa los créditos con el mismo rol en una sola línea, respetando el orden
@@ -147,7 +152,7 @@ function filaTexto(serie, obra) {
 
   (obra.ficha || []).forEach((fila) => {
     bloques.push(`              <h2 class="cajita">${dualSpan(fila.rotulo)}</h2>
-              <p>${dualSpan(fila.valor)}</p>`);
+              <p>${valorFicha(fila)}</p>`);
   });
 
   if ((obra.creditos || []).length) bloques.push(bloqueCreditos(obra.creditos));

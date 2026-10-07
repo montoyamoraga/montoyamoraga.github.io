@@ -15,8 +15,9 @@
 #   titulo:      string, o { es, en } si se traduce
 #   anho:        número (opcional)
 #   descripcion: lista de { es, en } (un párrafo por ítem, opcional)
-#   ficha:       lista de { rotulo: { es, en }, valor: string o { es, en } }
-#                (opcional, ej. materiales, duración, técnica)
+#   ficha:       lista de { rotulo: { es, en }, valor: string o { es, en },
+#                enlace: URL (opcional) } (opcional, ej. materiales, duración,
+#                técnica, fuente). con enlace, el valor se muestra como link.
 #   creditos:    lista de { rol: string o { es, en }, nombre: string,
 #                enlace: URL (opcional) } (opcional). los créditos con el
 #                mismo rol se muestran juntos en una línea.
@@ -139,35 +140,93 @@
         - rotulo: { es: materiales, en: materials }
           valor: videogrep, vosk, youtube
         - rotulo: { es: formato, en: format }
-          valor: { es: "serie de 5 videos monocanal, 1280×720, sonido estéreo", en: "series of 5 single-channel videos, 1280×720, stereo sound" }
+          valor: { es: "serie de 7 videos monocanal, 1280×720, sonido estéreo", en: "series of 7 single-channel videos, 1280×720, stereo sound" }
         - rotulo: { es: duración total, en: total duration }
-          valor: "6:23"
+          valor: "10:16"
+      # en cada video, el nombre del archivo y el pie son la fecha en que se transmitió el discurso original
       medios:
-        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-09-22.mp4
-          pie: "2026-09-22"
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-03-11.mp4
+          pie: "2026-03-11"
           ficha:
+            - rotulo: { es: discurso, en: speech }
+              valor: { es: "primer discurso como presidente, desde el balcón de la moneda", en: "first speech as president, from the balcony of la moneda" }
+            - rotulo: { es: fuente, en: source }
+              valor: youtube
+              enlace: https://www.youtube.com/watch?v=YFmL1tSBi3g
+            - rotulo: video
+              valor: vimeo
+              enlace: https://vimeo.com/1233797144
             - rotulo: { es: duración, en: duration }
-              valor: "1:36"
-        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-09-16.mp4
-          pie: "2026-09-16"
+              valor: "3:04"
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-04-15.mp4
+          pie: "2026-04-15"
           ficha:
+            - rotulo: { es: discurso, en: speech }
+              valor: { es: "primera cadena nacional, sobre el proyecto de ley de reconstrucción y desarrollo económico y social", en: "first national broadcast, on the economic and social reconstruction and development bill" }
+            - rotulo: { es: fuente, en: source }
+              valor: youtube
+              enlace: https://www.youtube.com/watch?v=WFr3Gh9XbvE
+            - rotulo: video
+              valor: vimeo
+              enlace: https://vimeo.com/1233789778
             - rotulo: { es: duración, en: duration }
-              valor: "1:25"
-        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-08-06.mp4
-          pie: "2026-08-06"
-          ficha:
-            - rotulo: { es: duración, en: duration }
-              valor: "1:05"
+              valor: "0:22"
         - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-06-01.mp4
           pie: "2026-06-01"
           ficha:
+            - rotulo: { es: discurso, en: speech }
+              valor: { es: "primera cuenta pública, ante el congreso nacional", en: "first state of the nation address (cuenta pública), before the national congress" }
+            - rotulo: video
+              valor: vimeo
+              enlace: https://vimeo.com/1233789776
             - rotulo: { es: duración, en: duration }
               valor: "1:56"
-        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-04-16.mp4
-          pie: "2026-04-16"
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-08-05.mp4
+          pie: "2026-08-05"
           ficha:
+            - rotulo: { es: discurso, en: speech }
+              valor: { es: "cadena nacional tras la aprobación de la ley de reconstrucción nacional y desarrollo económico y social", en: "national broadcast after the passing of the national reconstruction and economic and social development law" }
+            - rotulo: { es: fuente, en: source }
+              valor: youtube
+              enlace: https://www.youtube.com/watch?v=9-amwvyUYdQ
+            - rotulo: video
+              valor: vimeo
+              enlace: https://vimeo.com/1233789775
             - rotulo: { es: duración, en: duration }
-              valor: "0:22"
+              valor: "1:05"
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-09-16.mp4
+          pie: "2026-09-16"
+          ficha:
+            - rotulo: { es: discurso, en: speech }
+              valor: { es: "inauguración de las fondas de fiestas patrias en el parque o'higgins, santiago", en: "opening of the fiestas patrias fondas at parque o'higgins, santiago" }
+            - rotulo: video
+              valor: vimeo
+              enlace: https://vimeo.com/1233789774
+            - rotulo: { es: duración, en: duration }
+              valor: "1:25"
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-09-22.mp4
+          pie: "2026-09-22"
+          ficha:
+            - rotulo: { es: discurso, en: speech }
+              valor: { es: "asamblea general de las naciones unidas, nueva york", en: "united nations general assembly, new york" }
+            - rotulo: video
+              valor: vimeo
+              enlace: https://vimeo.com/1233789806
+            - rotulo: { es: duración, en: duration }
+              valor: "1:36"
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-callese-hombre/mp4/2026-09-30.mp4
+          pie: "2026-09-30"
+          ficha:
+            - rotulo: { es: discurso, en: speech }
+              valor: { es: "cadena nacional sobre el proyecto de presupuesto 2027, desde el palacio cerro castillo", en: "national broadcast on the 2027 budget bill, from the cerro castillo palace" }
+            - rotulo: { es: fuente, en: source }
+              valor: youtube
+              enlace: https://www.youtube.com/watch?v=7zweAKov2CA
+            - rotulo: video
+              valor: vimeo
+              enlace: https://vimeo.com/1233798316
+            - rotulo: { es: duración, en: duration }
+              valor: "0:49"
 
 - slug: caleidoscopar
   titulo: caleidoscopar
