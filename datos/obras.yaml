@@ -150,6 +150,12 @@
       ficha:
         - rotulo: { es: materiales, en: materials }
           valor: ml5.js, p5.js
+      exhibiciones:
+        - anho: 2019
+          evento: "beyond punch cards, muestra satélite de currents new media festival 2019, curada por francesca rodríguez-sawaya y renata gaui"
+          lugar: form & concept
+          ciudad: { es: "santa fe, nuevo méxico", en: "santa fe, new mexico" }
+          enlace: https://web.archive.org/web/20190721062410/http://www.formandconcept.center/exhibitions/beyond-punch-cards/
       enlaces:
         - texto: { es: versión web, en: web version }
           url: https://montoyamoraga.io/arpillera-mirror/
@@ -167,10 +173,14 @@
         - rol: { es: "investigación, concepto, programación", en: "research, concept, programming" }
           nombre: montoyamoraga
       descripcion:
-        - es: espejo que transforma la imagen de la cámara web con transferencia de estilo, usando un modelo de aprendizaje de máquina entrenado con una imagen de camilo catrillanca.
-          en: mirror that transforms the webcam image with style transfer, using a machine learning model trained on an image of camilo catrillanca.
-        - es: se presentó en recientemente posible, instalación curada por montoyamoraga para uptown bounce en el museo del barrio, nueva york.
-          en: it was shown in recientemente posible, an installation curated by montoyamoraga for uptown bounce at el museo del barrio, new york.
+        - es: homenaje a camilo catrillanca, joven mapuche y activista por los derechos estudiantiles y del pueblo mapuche, asesinado el 14 de noviembre de 2018, a los 24 años, por un disparo por la espalda del sargento de carabineros carlos alarcón, en ercilla, en el sur de chile.
+          en: a tribute to camilo catrillanca, a young mapuche activist for the rights of students and of the mapuche people, killed on november 14 2018, at age 24, shot in the back by carlos alarcón, a sergeant of the chilean police, in ercilla, in the south of chile.
+        - es: un algoritmo de transferencia de estilo fue entrenado con la fotografía más difundida de camilo, y aplica su estilo en tiempo real a la imagen de la cámara web, para que nos veamos reflejades en la imagen de camilo.
+          en: a style transfer algorithm was trained on the most widely circulated photograph of camilo, and applies its style in real time to the webcam feed, so that we see ourselves reflected in camilo's image.
+        - es: la obra corre lento, a cerca de un cuadro por segundo, y produce una imagen borrosa, de baja fidelidad y críptica, como la memoria que nos va quedando de camilo, reducida a una fotografía y un video, mientras la violencia policial continúa.
+          en: the piece runs slowly, at about one frame per second, and produces a hazy, low-fidelity and cryptic image, like our fading memory of camilo, reduced to one photograph and one video, while police brutality continues.
+        - es: camilo debería estar vivo.
+          en: camilo should be alive.
       ficha:
         - rotulo: { es: materiales, en: materials }
           valor: ml5.js, p5.js
@@ -183,8 +193,6 @@
       enlaces:
         - texto: { es: versión web, en: web version }
           url: https://montoyamoraga.io/camilo-catrillanca-mirror/
-        - texto: { es: código, en: code }
-          url: https://github.com/montoyamoraga/camilo-catrillanca-mirror
     - slug: bajos-de-mena
       titulo: bajos de mena
       anho: 2026
