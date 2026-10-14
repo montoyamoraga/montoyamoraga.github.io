@@ -160,6 +160,31 @@
           alt: { es: "imagen de la cámara web con el estilo del afiche de violeta parra, sobre el afiche repetido de fondo", en: "webcam image in the style of violeta parra's poster, over the repeated poster in the background" }
         - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2019-arpillera-mirror/webp/01-arbol-de-la-vida.webp
           alt: { es: "imagen de la cámara web con el estilo de la arpillera árbol de la vida de violeta parra, sobre la arpillera repetida de fondo", en: "webcam image in the style of violeta parra's arpillera árbol de la vida, over the repeated arpillera in the background" }
+    - slug: camilo-catrillanca-mirror
+      titulo: camilo-catrillanca-mirror
+      anho: 2019
+      creditos:
+        - rol: { es: "investigación, concepto, programación", en: "research, concept, programming" }
+          nombre: montoyamoraga
+      descripcion:
+        - es: espejo que transforma la imagen de la cámara web con transferencia de estilo, usando un modelo de aprendizaje de máquina entrenado con una imagen de camilo catrillanca.
+          en: mirror that transforms the webcam image with style transfer, using a machine learning model trained on an image of camilo catrillanca.
+        - es: se presentó en recientemente posible, instalación curada por montoyamoraga para uptown bounce en el museo del barrio, nueva york.
+          en: it was shown in recientemente posible, an installation curated by montoyamoraga for uptown bounce at el museo del barrio, new york.
+      ficha:
+        - rotulo: { es: materiales, en: materials }
+          valor: ml5.js, p5.js
+      exhibiciones:
+        - anho: 2019
+          evento: "uptown bounce: emerging latinx identities, recientemente posible"
+          lugar: el museo del barrio
+          ciudad: { es: nueva york, en: new york }
+          enlace: https://web.archive.org/web/20190802124519/https://www.elmuseo.org/event/uptown-bounce-july-31-2019/
+      enlaces:
+        - texto: { es: versión web, en: web version }
+          url: https://montoyamoraga.io/camilo-catrillanca-mirror/
+        - texto: { es: código, en: code }
+          url: https://github.com/montoyamoraga/camilo-catrillanca-mirror
     - slug: bajos-de-mena
       titulo: bajos de mena
       anho: 2026
