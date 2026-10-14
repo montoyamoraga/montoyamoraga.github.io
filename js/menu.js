@@ -29,7 +29,6 @@ const navbar = `
             <ol>
                 <li><a href="/proyectos/tamizar/bajos-de-mena/">bajos de mena</a></li>
                 <li><a href="/proyectos/tamizar/alturas-de-alturas-de-macchu-picchu/">alturas de alturas de macchu picchu</a></li>
-                <li><a href="/proyectos/tamizar/menatron/">menatron</a></li>
                 <li><a href="/proyectos/tamizar/callese-hombre/">cállese hombre</a></li>
             </ol>
 
@@ -37,6 +36,7 @@ const navbar = `
             <ol>
                 <li><a href="/proyectos/caleidoscopar/rube-telephone/">rube telephone</a></li>
                 <li><a href="/proyectos/caleidoscopar/mil-rpm/">mil rpm</a></li>
+                <li><a href="/proyectos/caleidoscopar/menatron/">menatron</a></li>
             </ol>
         </div>
     </div>
