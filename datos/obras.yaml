@@ -136,6 +136,30 @@
 - slug: tamizar
   titulo: tamizar
   obras:
+    - slug: arpillera-mirror
+      titulo: arpillera-mirror
+      anho: 2019
+      creditos:
+        - rol: { es: "investigación, concepto, programación", en: "research, concept, programming" }
+          nombre: montoyamoraga
+      descripcion:
+        - es: espejo que transforma la imagen de la cámara web con transferencia de estilo, usando modelos de aprendizaje de máquina entrenados con nueve arpilleras de violeta parra. se cambia de arpillera con las teclas 1 a 9.
+          en: mirror that transforms the webcam image with style transfer, using machine learning models trained on nine arpilleras by violeta parra. press keys 1 to 9 to switch arpilleras.
+        - es: inspirado en los experimentos de transferencia de estilo de gene kogan.
+          en: inspired by gene kogan's experiments on style transfer.
+      ficha:
+        - rotulo: { es: materiales, en: materials }
+          valor: ml5.js, p5.js
+      enlaces:
+        - texto: { es: versión web, en: web version }
+          url: https://montoyamoraga.io/arpillera-mirror/
+        - texto: { es: código, en: code }
+          url: https://github.com/montoyamoraga/arpillera-mirror
+      medios:
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2019-arpillera-mirror/webp/00-afiche.webp
+          alt: { es: "imagen de la cámara web con el estilo del afiche de violeta parra, sobre el afiche repetido de fondo", en: "webcam image in the style of violeta parra's poster, over the repeated poster in the background" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2019-arpillera-mirror/webp/01-arbol-de-la-vida.webp
+          alt: { es: "imagen de la cámara web con el estilo de la arpillera árbol de la vida de violeta parra, sobre la arpillera repetida de fondo", en: "webcam image in the style of violeta parra's arpillera árbol de la vida, over the repeated arpillera in the background" }
     - slug: bajos-de-mena
       titulo: bajos de mena
       anho: 2026

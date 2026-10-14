@@ -27,6 +27,7 @@ const navbar = `
 
             <h5>tamizar</h5>
             <ol>
+                <li><a href="/proyectos/tamizar/arpillera-mirror/">arpillera-mirror</a></li>
                 <li><a href="/proyectos/tamizar/bajos-de-mena/">bajos de mena</a></li>
                 <li><a href="/proyectos/tamizar/alturas-de-alturas-de-macchu-picchu/">alturas de alturas de macchu picchu</a></li>
                 <li><a href="/proyectos/tamizar/callese-hombre/">cállese hombre</a></li>
