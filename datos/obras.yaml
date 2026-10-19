@@ -136,6 +136,25 @@
 - slug: tamizar
   titulo: tamizar
   obras:
+    - slug: transparencia
+      titulo: transparencia
+      anho: 2017
+      creditos:
+        - rol: { es: "investigación, concepto, programación", en: "research, concept, programming" }
+          nombre: montoyamoraga
+      descripcion:
+        - es: autorretrato multimedia en constante evolución, con texto e imágenes sobre la identidad, creencias, salud, educación, empleo y contacto de su autore, entre otras cosas.
+          en: an ever-evolving multimedia self-portrait, with text and images about its author's identity, beliefs, health, education, employment and contact, among other things.
+        - es: inspirado en el taller you.js dictado por sam lavigne en sfpc.
+          en: inspired by the you.js workshop taught by sam lavigne at sfpc.
+      ficha:
+        - rotulo: { es: materiales, en: materials }
+          valor: js-yaml, p5.js, yaml
+      enlaces:
+        - texto: { es: versión web, en: web version }
+          url: https://montoyamoraga.io/transparencia/
+        - texto: { es: código, en: code }
+          url: https://github.com/montoyamoraga/transparencia
     - slug: arpillera-mirror
       titulo: arpillera-mirror
       anho: 2019

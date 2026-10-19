@@ -27,6 +27,7 @@ const navbar = `
 
             <h5>tamizar</h5>
             <ol>
+                <li><a href="/proyectos/tamizar/transparencia/">transparencia</a></li>
                 <li><a href="/proyectos/tamizar/arpillera-mirror/">arpillera-mirror</a></li>
                 <li><a href="/proyectos/tamizar/camilo-catrillanca-mirror/">camilo-catrillanca-mirror</a></li>
                 <li><a href="/proyectos/tamizar/bajos-de-mena/">bajos de mena</a></li>
