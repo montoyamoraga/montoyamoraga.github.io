@@ -142,6 +142,32 @@
       creditos:
         - rol: { es: "investigación, concepto, programación", en: "research, concept, programming" }
           nombre: montoyamoraga
+        - rol: { es: agradecimientos, en: acknowledgments }
+          nombre: emma rae norton
+          enlace: http://marceldochamp.net/
+        - rol: { es: agradecimientos, en: acknowledgments }
+          nombre: guillermo montecinos-peña
+          enlace: https://guillemontecinos.github.io/
+        - rol: { es: agradecimientos, en: acknowledgments }
+          nombre: j.
+        - rol: { es: agradecimientos, en: acknowledgments }
+          nombre: lauren mccarthy
+          enlace: http://lauren-mccarthy.com/
+        - rol: { es: agradecimientos, en: acknowledgments }
+          nombre: nicolás escarpentier
+          enlace: http://nicolaspe.com/
+        - rol: { es: agradecimientos, en: acknowledgments }
+          nombre: rebecca (marks) leopold
+          enlace: http://site.rebeccaleopold.com/
+        - rol: { es: agradecimientos, en: acknowledgments }
+          nombre: roy macdonald
+          enlace: http://roymacdonald.github.io/
+        - rol: { es: agradecimientos, en: acknowledgments }
+          nombre: sam lavigne
+          enlace: http://lav.io/
+        - rol: { es: agradecimientos, en: acknowledgments }
+          nombre: wipawe sirikolkarn
+          enlace: http://www.wipawe.com/
       descripcion:
         - es: autorretrato multimedia en constante evolución, con texto e imágenes sobre la identidad, creencias, salud, educación, empleo y contacto de su autore, entre otras cosas.
           en: an ever-evolving multimedia self-portrait, with text and images about its author's identity, beliefs, health, education, employment and contact, among other things.
@@ -149,12 +175,19 @@
           en: inspired by the you.js workshop taught by sam lavigne at sfpc.
       ficha:
         - rotulo: { es: materiales, en: materials }
-          valor: js-yaml, p5.js, yaml
+          valor: css, github pages, html5, javascript, js-yaml, p5.js, yaml
       enlaces:
         - texto: { es: versión web, en: web version }
           url: https://montoyamoraga.io/transparencia/
         - texto: { es: código, en: code }
           url: https://github.com/montoyamoraga/transparencia
+      medios:
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2017-transparencia/webp/00-elegir.webp
+          alt: { es: "pantalla inicial de transparencia, con el título y un menú desplegable que dice elegir", en: "transparencia's start screen, with the title and a dropdown menu that reads elegir (choose)" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2017-transparencia/webp/01-version.webp
+          alt: { es: "categoría versión, con día 19, mes 10, año 2026 y número 5.0.0", en: "version category, showing day 19, month 10, year 2026 and number 5.0.0" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2017-transparencia/webp/02-alergias.webp
+          alt: { es: "categoría alergias, con picaduras de mosquito y camarones", en: "allergies category, showing mosquito bites and shrimp" }
     - slug: arpillera-mirror
       titulo: arpillera-mirror
       anho: 2019
