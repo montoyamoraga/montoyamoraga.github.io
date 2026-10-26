@@ -375,6 +375,38 @@
               enlace: https://vimeo.com/1233798316
             - rotulo: { es: duración, en: duration }
               valor: "0:49"
+    - slug: comentarios
+      titulo: comentarios
+      anho: 2025
+      creditos:
+        - rol: { es: coautoría, en: co-authorship }
+          nombre: martín gubbins
+          enlace: https://www.instagram.com/martin_gubbins/
+        - rol: { es: coautoría, en: co-authorship }
+          nombre: montoyamoraga
+      descripcion:
+        - es: web scraping de los comentarios del canal de youtube del poeta martín gubbins, y programación de un video que expone sucesivamente toda su metadata.
+          en: web scraping of the comments on the youtube channel of poet martín gubbins, and programming of a video that successively exposes all of their metadata.
+      ficha:
+        - rotulo: { es: materiales, en: materials }
+          valor: python 3, processing 4, raspberry pi 4, mp4museum
+      exhibiciones:
+        - anho: 2025
+          evento: 7° festival de libros "ida y vuelta"
+          lugar: galería de arte uc, centro de extensión alameda
+          ciudad: santiago
+          enlace: https://www.uc.cl/agenda/actividad/exposicion-7-festival-de-libros-ida-y-vuelta
+      medios:
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2025-comentarios/webp/02-pantalla.webp
+          alt: { es: "pantalla en la pared con comentarios de youtube en formato json, texto blanco sobre fondo negro", en: "screen on the wall showing youtube comments in json format, white text on a black background" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2025-comentarios/webp/01-sala.webp
+          alt: { es: "vista de la sala de exposición, con la pantalla en la pared y vitrinas en primer plano", en: "view of the exhibition room, with the screen on the wall and display cases in the foreground" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2025-comentarios/webp/03-detalle-ruta.webp
+          alt: { es: "detalle del texto en pantalla, con indicaciones de ruta como colina-alicahue-chincolco", en: "detail of the on-screen text, with route directions such as colina-alicahue-chincolco" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2025-comentarios/webp/04-detalle-json.webp
+          alt: { es: "detalle en ángulo de la esquina de la pantalla, con campos json como author, time y reply", en: "angled detail of the corner of the screen, with json fields such as author, time and reply" }
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2025-comentarios/webp/00-afiche.webp
+          alt: { es: "afiche del 7° festival de libros ida y vuelta, 14 de agosto al 30 de septiembre de 2025", en: "poster of the 7th book festival ida y vuelta, august 14 to september 30, 2025" }
 
 - slug: caleidoscopar
   titulo: caleidoscopar
