@@ -33,6 +33,7 @@ const navbar = `
                 <li><a href="/proyectos/tamizar/bajos-de-mena/">bajos de mena</a></li>
                 <li><a href="/proyectos/tamizar/alturas-de-alturas-de-macchu-picchu/">alturas de alturas de macchu picchu</a></li>
                 <li><a href="/proyectos/tamizar/callese-hombre/">cállese hombre</a></li>
+                <li><a href="/proyectos/tamizar/comentarios/">comentarios</a></li>
             </ol>
 
             <h5>caleidoscopar</h5>
