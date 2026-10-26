@@ -825,15 +825,15 @@ cv:
       en: "Mateo Arce Moore designed the boards in KiCad, and with Piruetas we had them manufactured in China."
       es: "Mateo Arce Moore diseñó las placas en KiCad, y con piruetas las mandamos a fabricar a China."
   exposiciones-presentaciones:
-  # pendiente: rol en ensamble místico
-  # pendiente: evento con hueso records del viernes 30 octubre 2026
   - nombre:
       en: "Ensamble Místico, Book Month at Fundación Lumbre"
       es: "Ensamble Místico, Mes del Libro en Fundación Lumbre"
     tipo:
       en: sound performance
       es: performance sonora
-    rol: false
+    rol:
+      en: performer in Ensamble Místico
+      es: intérprete en Ensamble Místico
     fecha:
       en: "25 April 2026, 18:00"
       es: "25 abril 2026, 18:00"
@@ -884,8 +884,8 @@ cv:
       en: "Martín Gubbins and Aarón Montoya (co-authors)"
       es: "Martín Gubbins y Aarón Montoya (coautoría)"
     detalle:
-      en: "Closing on 30 September 2025 with a guided visit and performance by Martín Gubbins and Cussen & Luna."
-      es: "Cierre el 30 de septiembre de 2025 con visita guiada y performance de Martín Gubbins y Cussen & Luna."
+      en: "Exhibited work: comentarios (2025), by Martín Gubbins and Aarón Montoya. Closing on 30 September 2025 with a guided visit and performance by Martín Gubbins and Cussen & Luna."
+      es: "Obra exhibida: comentarios (2025), de Martín Gubbins y Aarón Montoya. Cierre el 30 de septiembre de 2025 con visita guiada y performance de Martín Gubbins y Cussen & Luna."
     url: https://www.uc.cl/agenda/actividad/exposicion-7-festival-de-libros-ida-y-vuelta
   becas:
   - nombre:
