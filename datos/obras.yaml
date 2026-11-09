@@ -135,6 +135,7 @@
     - slug: hastaCuando
       titulo: hastaCuando
       anho: 2026
+      prevista: obras-enumerar-hastaCuando-faltan.jpg
       creditos:
         - rol: { es: "investigación, concepto, programación", en: "research, concept, programming" }
           nombre: montoyamoraga
@@ -147,15 +148,14 @@
       descripcion:
         - es: app para ios y android que cuenta, segundo a segundo, el tiempo que ha pasado desde el 11 de marzo de 2026 y el que falta para el 11 de marzo de 2030, los 1461 días del gobierno de josé antonio kast.
           en: ios and android app that counts, second by second, the time elapsed since march 11 2026 and the time left until march 11 2030, the 1461 days of josé antonio kast's government.
-        - es: el ícono de la app es el número de días que faltan, y cambia al pasar cada hito.
-          en: the app icon is the number of days left, and it changes as each milestone passes.
       enlaces:
         - texto: { es: app store, en: app store }
           url: https://apps.apple.com/cl/app/hasta-cu%C3%A1ndo/id6760987911
         - texto: { es: google play, en: google play }
           url: https://play.google.com/store/apps/details?id=xyz.piruetas.cuantos_dias_quedan
-        - texto: { es: código, en: code }
-          url: https://github.com/piruetasxyz/hastaCuando
+      medios:
+        - archivo: https://cdn.jsdelivr.net/gh/montoyamoraga/montoyamoraga-web-media@main/2026-hastaCuando/webp/00-ios.webp
+          alt: { es: captura de pantalla de hastaCuando en ios, en: screenshot of hastaCuando on ios }
 
 - slug: tamizar
   titulo: tamizar
