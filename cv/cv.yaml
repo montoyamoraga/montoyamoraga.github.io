@@ -824,6 +824,69 @@ cv:
     detalle:
       en: "Mateo Arce Moore designed the boards in KiCad, and with Piruetas we had them manufactured in China."
       es: "Mateo Arce Moore diseñó las placas en KiCad, y con piruetas las mandamos a fabricar a China."
+  exposiciones-presentaciones:
+  - nombre:
+      en: "Ensamble Místico, Book Month at Fundación Lumbre"
+      es: "Ensamble Místico, Mes del Libro en Fundación Lumbre"
+    tipo:
+      en: sound performance
+      es: performance sonora
+    rol:
+      en: performer in Ensamble Místico
+      es: intérprete en Ensamble Místico
+    fecha:
+      en: "25 April 2026, 18:00"
+      es: "25 abril 2026, 18:00"
+    lugar:
+      en: "Plazoleta Italia"
+      es: "Plazoleta Italia"
+    ciudad:
+      en: Limache
+      es: Limache
+    pais:
+      en: Chile
+      es: Chile
+    organizacion:
+      en: "Fundación Lumbre"
+      es: "Fundación Lumbre"
+    participantes:
+      en: "Martín Gubbins, Noctilucente, Aarón Montoya, Tarix Sepúlveda and Lukax Santana"
+      es: "Martín Gubbins, Noctilucente, Aarón Montoya, Tarix Sepúlveda y Lukax Santana"
+    detalle:
+      en: "An immersive quadraphonic concert for voices, bodies, instruments and effects. Sound performance at the Feria del Libro y Artes del Libro (Lumbre Leo), for Book Month. Free admission."
+      es: "Un concierto cuadrafónico inmersivo para voces, cuerpxs, instrumentos y efectos. Performance sonora en la Feria del Libro y Artes del Libro (Lumbre Leo), por el Mes del Libro. Entrada liberada."
+    url: https://www.observador.cl/feria-del-libro-en-limache-invita-a-celebrar-la-lectura-con-actividades-para-toda-la-familia/
+  - nombre:
+      en: "7th Book Festival \"Ida y vuelta\", exhibition of books and artworks about travel"
+      es: "7° Festival de libros \"Ida y vuelta\", exposición de libros y obras de arte en torno al viaje"
+    tipo:
+      en: group exhibition
+      es: exposición colectiva
+    rol:
+      en: co-author of a work with Martín Gubbins
+      es: coautoría de obra con Martín Gubbins
+    fecha:
+      en: "14 August to 30 September 2025"
+      es: "14 agosto al 30 septiembre 2025"
+    lugar:
+      en: "Galería de Arte UC, Centro de Extensión Alameda, Pontificia Universidad Católica de Chile"
+      es: "Galería de Arte UC, Centro de Extensión Alameda, Pontificia Universidad Católica de Chile"
+    ciudad:
+      en: Santiago
+      es: Santiago
+    pais:
+      en: Chile
+      es: Chile
+    organizacion:
+      en: "La Oficina de la Nada and Campus Creativo UNAB, with Extensión Cultural UC"
+      es: "La Oficina de la Nada y Campus Creativo UNAB, con Extensión Cultural UC"
+    participantes:
+      en: "Martín Gubbins and Aarón Montoya (co-authors)"
+      es: "Martín Gubbins y Aarón Montoya (coautoría)"
+    detalle:
+      en: "Exhibited work: comentarios (2025), by Martín Gubbins and Aarón Montoya. Closing on 30 September 2025 with a guided visit and performance by Martín Gubbins and Cussen & Luna."
+      es: "Obra exhibida: comentarios (2025), de Martín Gubbins y Aarón Montoya. Cierre el 30 de septiembre de 2025 con visita guiada y performance de Martín Gubbins y Cussen & Luna."
+    url: https://www.uc.cl/agenda/actividad/exposicion-7-festival-de-libros-ida-y-vuelta
   becas:
   - nombre:
       en: Tuition exemption, Doctoral program in Arts and Humanities, USACH
