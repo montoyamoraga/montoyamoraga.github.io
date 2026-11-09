@@ -23,6 +23,7 @@ const navbar = `
                 <li><a href="/proyectos/enumerar/its-ok-to-die-v0/">its-ok-to-die v0</a></li>
                 <li><a href="/proyectos/enumerar/its-ok-to-die-v1/">its-ok-to-die v1</a></li>
                 <li><a href="/proyectos/enumerar/cuantosdiasquedan.cl/">cuantosdiasquedan.cl</a></li>
+                <li><a href="/proyectos/enumerar/hastaCuando/">hastaCuando</a></li>
             </ol>
 
             <h5>tamizar</h5>
